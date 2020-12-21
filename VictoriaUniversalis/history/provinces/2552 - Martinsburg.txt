@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Martinsburg"
+base_manpower = 59
+base_production = 21
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = yankee

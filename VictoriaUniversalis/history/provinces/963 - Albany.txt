@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Albany"
+base_manpower = 291
+base_production = 112
+base_tax = 45
+is_city = yes
+religion = protestant
+culture = yankee

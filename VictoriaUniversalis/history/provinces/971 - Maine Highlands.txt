@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Bangor"
+base_manpower = 33
+base_production = 13
+base_tax = 10
+is_city = yes
+religion = protestant
+culture = yankee

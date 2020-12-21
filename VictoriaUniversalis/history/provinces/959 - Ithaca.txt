@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Ithaca"
+base_manpower = 192
+base_production = 74
+base_tax = 29
+is_city = yes
+religion = protestant
+culture = yankee

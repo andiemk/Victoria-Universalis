@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "San Patricio"
+base_manpower = 53
+base_production = 10
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = mexican

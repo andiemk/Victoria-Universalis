@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Williamsport"
+base_manpower = 41
+base_production = 11
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = yankee

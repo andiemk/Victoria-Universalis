@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Durango"
+base_manpower = 100
+base_production = 19
+base_tax = 7
+is_city = yes
+religion = catholic
+culture = mexican

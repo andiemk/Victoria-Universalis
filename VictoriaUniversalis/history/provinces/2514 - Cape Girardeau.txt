@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Cape Girardeau"
+base_manpower = 47
+base_production = 17
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = dixie

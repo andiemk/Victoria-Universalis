@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Bristol"
+base_manpower = 42
+base_production = 19
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = dixie

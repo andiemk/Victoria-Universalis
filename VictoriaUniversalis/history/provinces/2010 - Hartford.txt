@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Hartford"
+base_manpower = 109
+base_production = 42
+base_tax = 16
+is_city = yes
+religion = protestant
+culture = yankee

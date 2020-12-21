@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Hendersonville"
+base_manpower = 61
+base_production = 23
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = dixie

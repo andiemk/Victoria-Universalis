@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Milledgeville"
+base_manpower = 111
+base_production = 43
+base_tax = 17
+is_city = yes
+religion = protestant
+culture = dixie

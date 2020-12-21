@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Peoria"
+base_manpower = 15
+base_production = 5
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = yankee

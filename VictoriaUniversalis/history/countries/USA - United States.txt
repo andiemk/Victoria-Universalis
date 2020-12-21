@@ -1,0 +1,52 @@
+government = republic
+technology_group = western
+primary_culture = yankee
+add_accepted_culture = dixie
+add_accepted_culture = afro_american
+religion = protestant
+capital = 964	# District of Columbia
+
+1833.3.4  = {
+	monarch = {
+		name = "Andrew Jackson"
+		adm = 4	
+		dip = 3	
+		mil = 6
+	}
+}
+
+1837.3.4  = {
+	monarch = {
+		name = "Martin Van Buren"
+		adm = 4	
+		dip = 4	
+		mil = 4
+	}
+}
+
+1841.3.4  = {
+	monarch = {
+		name = "William Harrison"
+		adm = 4	
+		dip = 4	
+		mil = 4
+	}
+}
+
+1841.4.9  = {
+	monarch = {
+		name = "John Tyler"
+		adm = 4	
+		dip = 4	
+		mil = 4
+	}
+}
+
+1845.3.4  = {
+	monarch = {
+		name = "James Polk"
+		adm = 4	
+		dip = 4	
+		mil = 4
+	}
+}

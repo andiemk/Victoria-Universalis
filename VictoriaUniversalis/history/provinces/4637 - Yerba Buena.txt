@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Yerba Buena"
+base_manpower = 2
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = totemism
+culture = mexican

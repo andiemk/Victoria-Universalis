@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Las Peñas"
+base_manpower = 36
+base_production = 7
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = mexican

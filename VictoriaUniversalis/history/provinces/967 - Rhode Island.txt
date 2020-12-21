@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Providence"
+base_manpower = 65
+base_production = 25
+base_tax = 10
+is_city = yes
+religion = protestant
+culture = yankee

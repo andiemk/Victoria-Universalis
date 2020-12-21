@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Bloomington"
+base_manpower = 147
+base_production = 63
+base_tax = 21
+is_city = yes
+religion = protestant
+culture = yankee

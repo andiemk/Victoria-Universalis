@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Halifax"
+base_manpower = 55
+base_production = 19
+base_tax = 8
+is_city = yes
+religion = protestant
+culture = anglo_canadian

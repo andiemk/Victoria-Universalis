@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Lafayette"
+base_manpower = 49
+base_production = 14
+base_tax = 7
+is_city = yes
+religion = protestant
+culture = dixie

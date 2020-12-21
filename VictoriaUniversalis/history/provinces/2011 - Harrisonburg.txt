@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Harrisonburg"
+base_manpower = 142
+base_production = 55
+base_tax = 22
+is_city = yes
+religion = protestant
+culture = dixie

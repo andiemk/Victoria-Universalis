@@ -1,0 +1,21 @@
+country_event = {
+	id = vu_startup.1
+	is_triggered_only = yes
+	
+	option = {
+		add_country_modifier = {
+			name = corp_tax_rate_base
+			duration = -1
+		}
+		add_country_modifier = {
+			name = foreign_tax_rate_base
+			duration = -1
+		}
+		every_owned_province = {
+			add_permanent_province_modifier = {
+				name = income_tax_rate_base
+				duration = -1
+			}
+		}
+	}
+}

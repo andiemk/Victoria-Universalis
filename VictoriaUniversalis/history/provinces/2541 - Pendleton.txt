@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Pendleton"
+base_manpower = 103
+base_production = 23
+base_tax = 7
+is_city = yes
+religion = protestant
+culture = dixie

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Indianapolis"
+base_manpower = 146
+base_production = 56
+base_tax = 22
+is_city = yes
+religion = protestant
+culture = yankee

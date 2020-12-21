@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "New York City"
+base_manpower = 353
+base_production = 151
+base_tax = 80
+is_city = yes
+religion = protestant
+culture = yankee

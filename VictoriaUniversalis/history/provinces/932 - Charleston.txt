@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Charleston"
+base_manpower = 109
+base_production = 31
+base_tax = 16
+is_city = yes
+religion = protestant
+culture = afro_american

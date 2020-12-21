@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "San Diego"
+base_manpower = 7
+base_production = 1
+base_tax = 1
+is_city = yes
+religion = totemism
+culture = yuman

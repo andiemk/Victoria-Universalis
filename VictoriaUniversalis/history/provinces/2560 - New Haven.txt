@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "New Haven"
+base_manpower = 89
+base_production = 34
+base_tax = 14
+is_city = yes
+religion = protestant
+culture = yankee

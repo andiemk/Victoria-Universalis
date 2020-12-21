@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Syracuse"
+base_manpower = 150
+base_production = 58
+base_tax = 23
+is_city = yes
+religion = protestant
+culture = yankee

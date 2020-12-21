@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Harrisburg"
+base_manpower = 181
+base_production = 70
+base_tax = 28
+is_city = yes
+religion = protestant
+culture = yankee

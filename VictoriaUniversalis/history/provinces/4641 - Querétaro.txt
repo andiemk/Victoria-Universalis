@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Querétaro"
+base_manpower = 89
+base_production = 17
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = mexican

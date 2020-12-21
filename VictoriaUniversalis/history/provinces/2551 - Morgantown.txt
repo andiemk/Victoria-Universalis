@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Morgantown"
+base_manpower = 55
+base_production = 20
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = yankee

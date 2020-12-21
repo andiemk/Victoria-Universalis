@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Knife River"
+base_manpower = 1
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = totemism
+culture = lakota

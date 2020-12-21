@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Montreal"
+base_manpower = 124
+base_production = 44
+base_tax = 18
+is_city = yes
+religion = catholic
+culture = french_canadian

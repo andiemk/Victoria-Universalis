@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "San Cristóbal de las Casas"
+base_manpower = 76
+base_production = 14
+base_tax = 5
+is_city = yes
+religion = catholic
+culture = highland_mayan

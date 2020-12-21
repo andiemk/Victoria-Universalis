@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Nashville"
+base_manpower = 260
+base_production = 100
+base_tax = 40
+is_city = yes
+religion = protestant
+culture = dixie

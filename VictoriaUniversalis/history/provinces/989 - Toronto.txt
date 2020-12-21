@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Toronto"
+base_manpower = 88
+base_production = 31
+base_tax = 13
+is_city = yes
+religion = protestant
+culture = anglo_canadian

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Calais"
+base_manpower = 25
+base_production = 8
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = yankee

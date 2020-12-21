@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Trenton"
+base_manpower = 169
+base_production = 65
+base_tax = 26
+is_city = yes
+religion = protestant
+culture = yankee

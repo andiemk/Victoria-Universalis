@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Annapolis"
+base_manpower = 86
+base_production = 23
+base_tax = 6
+is_city = yes
+religion = protestant
+culture = afro_american

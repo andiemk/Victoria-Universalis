@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Arlington"
+base_manpower = 80
+base_production = 31
+base_tax = 12
+is_city = yes
+religion = protestant
+culture = afro_american

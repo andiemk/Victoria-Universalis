@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Beaufort"
+base_manpower = 49
+base_production = 11
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = afro_american

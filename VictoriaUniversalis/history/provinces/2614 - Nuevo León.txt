@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Monterrey"
+base_manpower = 126
+base_production = 24
+base_tax = 8
+is_city = yes
+religion = catholic
+culture = mexican

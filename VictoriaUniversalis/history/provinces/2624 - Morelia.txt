@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Morelia"
+base_manpower = 125
+base_production = 23
+base_tax = 8
+is_city = yes
+religion = catholic
+culture = mexican

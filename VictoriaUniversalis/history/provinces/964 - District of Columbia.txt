@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Washington"
+base_manpower = 20
+base_production = 7
+base_tax = 5
+is_city = yes
+religion = protestant
+culture = yankee

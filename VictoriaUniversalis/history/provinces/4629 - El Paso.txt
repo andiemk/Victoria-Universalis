@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "El Paso"
+base_manpower = 4
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = totemism
+culture = lipan

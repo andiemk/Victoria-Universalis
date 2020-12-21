@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Burlington"
+base_manpower = 97
+base_production = 37
+base_tax = 16
+is_city = yes
+religion = protestant
+culture = yankee

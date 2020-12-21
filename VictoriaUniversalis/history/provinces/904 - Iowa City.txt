@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Iowa City"
+base_manpower = 4
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = protestant
+culture = yankee

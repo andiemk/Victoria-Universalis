@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Tlaxcala"
+base_manpower = 66
+base_production = 12
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = mexican

@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Saint John's"
+base_manpower = 26
+base_production = 9
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = anglo_canadian

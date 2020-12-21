@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Lexington"
+base_manpower = 248
+base_production = 88
+base_tax = 14
+is_city = yes
+religion = protestant
+culture = yankee

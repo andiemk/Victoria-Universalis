@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Baton Rouge"
+base_manpower = 41
+base_production = 13
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = afro_american

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Fayetteville"
+base_manpower = 20
+base_production = 6
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = dixie

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Memphis"
+base_manpower = 138
+base_production = 43
+base_tax = 11
+is_city = yes
+religion = protestant
+culture = dixie

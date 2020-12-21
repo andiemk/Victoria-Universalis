@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Knoxville"
+base_manpower = 60
+base_production = 23
+base_tax = 9
+is_city = yes
+religion = protestant
+culture = dixie

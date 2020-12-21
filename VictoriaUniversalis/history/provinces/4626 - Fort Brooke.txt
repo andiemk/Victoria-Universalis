@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Fort Brooke"
+base_manpower = 2
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = protestant
+culture = dixie

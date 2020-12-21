@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Norfolk"
+base_manpower = 57
+base_production = 22
+base_tax = 9
+is_city = yes
+religion = protestant
+culture = dixie

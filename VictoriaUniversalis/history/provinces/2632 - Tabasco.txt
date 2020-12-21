@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Tabasco"
+base_manpower = 50
+base_production = 9
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = mexican

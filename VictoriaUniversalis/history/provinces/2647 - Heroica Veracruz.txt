@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Heroica Veracruz"
+base_manpower = 163
+base_production = 31
+base_tax = 10
+is_city = yes
+religion = catholic
+culture = mexican

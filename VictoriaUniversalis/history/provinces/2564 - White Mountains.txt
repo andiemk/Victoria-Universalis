@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Haverhill"
+base_manpower = 28
+base_production = 11
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = yankee

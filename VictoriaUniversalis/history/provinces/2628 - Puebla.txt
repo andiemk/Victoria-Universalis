@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Puebla"
+base_manpower = 234
+base_production = 44
+base_tax = 15
+is_city = yes
+religion = catholic
+culture = mexican

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Tarboro"
+base_manpower = 62
+base_production = 18
+base_tax = 7
+is_city = yes
+religion = protestant
+culture = dixie

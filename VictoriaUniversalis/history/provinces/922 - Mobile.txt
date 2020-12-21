@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Mobile"
+base_manpower = 39
+base_production = 10
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = dixie

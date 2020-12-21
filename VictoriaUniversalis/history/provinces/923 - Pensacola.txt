@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Pensacola"
+base_manpower = 12
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = dixie

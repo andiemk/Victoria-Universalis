@@ -1,0 +1,10 @@
+add_core = TEX
+owner = TEX
+controller = TEX
+capital = "San Antonio"
+base_manpower = 4
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = protestant
+culture = texan

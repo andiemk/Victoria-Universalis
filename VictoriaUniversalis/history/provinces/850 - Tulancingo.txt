@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Tulancingo"
+base_manpower = 81
+base_production = 15
+base_tax = 5
+is_city = yes
+religion = catholic
+culture = mexican

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Plattsburg"
+base_manpower = 122
+base_production = 38
+base_tax = 8
+is_city = yes
+religion = protestant
+culture = yankee

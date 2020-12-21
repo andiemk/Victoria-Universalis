@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Columbus"
+base_manpower = 63
+base_production = 17
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = dixie

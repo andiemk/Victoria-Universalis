@@ -1,0 +1,10 @@
+add_core = TEX
+owner = TEX
+controller = TEX
+capital = "Austin"
+base_manpower = 7
+base_production = 2
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = texan

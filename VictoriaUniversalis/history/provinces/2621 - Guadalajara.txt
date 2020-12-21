@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Guadalajara"
+base_manpower = 220
+base_production = 41
+base_tax = 14
+is_city = yes
+religion = catholic
+culture = mexican

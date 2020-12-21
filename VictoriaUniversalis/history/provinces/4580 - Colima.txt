@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Colima"
+base_manpower = 17
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = mexican

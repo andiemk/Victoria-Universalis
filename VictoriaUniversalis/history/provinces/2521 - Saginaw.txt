@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Saginaw"
+base_manpower = 15
+base_production = 4
+base_tax = 1
+is_city = yes
+religion = totemism
+culture = anishinabe

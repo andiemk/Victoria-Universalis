@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Skowhegan"
+base_manpower = 70
+base_production = 31
+base_tax = 15
+is_city = yes
+religion = protestant
+culture = yankee

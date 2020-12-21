@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Grand Rapids"
+base_manpower = 21
+base_production = 8
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = yankee

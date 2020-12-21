@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Fredericton"
+base_manpower = 30
+base_production = 11
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = anglo_canadian

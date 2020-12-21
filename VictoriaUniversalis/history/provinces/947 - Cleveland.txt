@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Cleveland"
+base_manpower = 165
+base_production = 64
+base_tax = 26
+is_city = yes
+religion = protestant
+culture = yankee

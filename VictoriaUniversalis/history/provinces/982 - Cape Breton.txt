@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Sydney"
+base_manpower = 14
+base_production = 4
+base_tax = 2
+is_city = yes
+religion = reformed
+culture = scottish

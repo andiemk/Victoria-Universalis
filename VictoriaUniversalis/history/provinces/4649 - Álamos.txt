@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Álamos"
+base_manpower = 30
+base_production = 6
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = mexican

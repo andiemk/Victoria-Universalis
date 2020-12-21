@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "London"
+base_manpower = 1328
+base_production = 511
+base_tax = 204
+is_city = yes
+religion = protestant
+culture = english

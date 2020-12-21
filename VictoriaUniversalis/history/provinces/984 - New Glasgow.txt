@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "New Glasgow"
+base_manpower = 28
+base_production = 8
+base_tax = 4
+is_city = yes
+religion = reformed
+culture = scottish

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "London"
+base_manpower = 94
+base_production = 26
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = dixie

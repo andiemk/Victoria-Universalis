@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Champaign"
+base_manpower = 51
+base_production = 20
+base_tax = 7
+is_city = yes
+religion = protestant
+culture = yankee

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Boston"
+base_manpower = 157
+base_production = 60
+base_tax = 24
+is_city = yes
+religion = protestant
+culture = yankee

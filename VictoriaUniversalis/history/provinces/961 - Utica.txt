@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Utica"
+base_manpower = 174
+base_production = 67
+base_tax = 27
+is_city = yes
+religion = protestant
+culture = yankee

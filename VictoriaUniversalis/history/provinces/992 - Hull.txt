@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Hull"
+base_manpower = 34
+base_production = 10
+base_tax = 5
+is_city = yes
+religion = protestant
+culture = anglo_canadian

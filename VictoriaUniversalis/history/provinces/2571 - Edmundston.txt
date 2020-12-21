@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Edmundston"
+base_manpower = 2
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = protestant
+culture = anglo_canadian

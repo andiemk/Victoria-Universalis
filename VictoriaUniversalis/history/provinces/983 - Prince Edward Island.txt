@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Charlottetown"
+base_manpower = 24
+base_production = 7
+base_tax = 4
+is_city = yes
+religion = protestant
+culture = anglo_canadian

@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Trois-Rivières"
+base_manpower = 41
+base_production = 13
+base_tax = 5
+is_city = yes
+religion = catholic
+culture = french_canadian

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Buffalo"
+base_manpower = 119
+base_production = 46
+base_tax = 18
+is_city = yes
+religion = protestant
+culture = yankee

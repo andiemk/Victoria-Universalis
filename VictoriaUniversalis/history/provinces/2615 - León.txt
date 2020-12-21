@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "León"
+base_manpower = 210
+base_production = 39
+base_tax = 13
+is_city = yes
+religion = catholic
+culture = mexican

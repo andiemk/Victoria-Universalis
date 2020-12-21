@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Toledo"
+base_manpower = 71
+base_production = 28
+base_tax = 12
+is_city = yes
+religion = protestant
+culture = yankee

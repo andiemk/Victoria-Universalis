@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Pochutla"
+base_manpower = 145
+base_production = 27
+base_tax = 9
+is_city = yes
+religion = catholic
+culture = afro_mexican

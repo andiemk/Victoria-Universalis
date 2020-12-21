@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Cincinnati"
+base_manpower = 121
+base_production = 47
+base_tax = 19
+is_city = yes
+religion = protestant
+culture = yankee

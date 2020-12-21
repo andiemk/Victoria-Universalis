@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Little Rock"
+base_manpower = 3
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = protestant
+culture = dixie

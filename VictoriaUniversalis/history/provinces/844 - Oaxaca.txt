@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Oaxaca"
+base_manpower = 199
+base_production = 37
+base_tax = 13
+is_city = yes
+religion = catholic
+culture = mixtec

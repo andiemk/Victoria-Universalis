@@ -1,0 +1,10 @@
+add_core = MEX
+owner = MEX
+controller = MEX
+capital = "Cuernavaca"
+base_manpower = 61
+base_production = 11
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = mexican

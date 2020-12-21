@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Wilmington"
+base_manpower = 29
+base_production = 9
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = dixie

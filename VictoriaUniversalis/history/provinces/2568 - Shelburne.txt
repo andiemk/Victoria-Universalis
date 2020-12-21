@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Shelburne"
+base_manpower = 42
+base_production = 15
+base_tax = 6
+is_city = yes
+religion = protestant
+culture = anglo_canadian

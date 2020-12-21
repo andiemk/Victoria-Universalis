@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Augusta"
+base_manpower = 144
+base_production = 51
+base_tax = 10
+is_city = yes
+religion = protestant
+culture = afro_american

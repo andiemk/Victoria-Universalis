@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Tuscaloosa"
+base_manpower = 239
+base_production = 54
+base_tax = 15
+is_city = yes
+religion = protestant
+culture = afro_american

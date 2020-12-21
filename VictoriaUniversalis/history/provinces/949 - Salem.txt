@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Salem"
+base_manpower = 100
+base_production = 33
+base_tax = 6
+is_city = yes
+religion = protestant
+culture = dixie

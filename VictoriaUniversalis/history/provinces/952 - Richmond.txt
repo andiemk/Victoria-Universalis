@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Richmond"
+base_manpower = 137
+base_production = 53
+base_tax = 21
+is_city = yes
+religion = protestant
+culture = afro_american

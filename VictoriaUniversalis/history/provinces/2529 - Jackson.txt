@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Jackson"
+base_manpower = 143
+base_production = 32
+base_tax = 9
+is_city = yes
+religion = protestant
+culture = afro_american

@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Pittsburg"
+base_manpower = 156
+base_production = 61
+base_tax = 24
+is_city = yes
+religion = protestant
+culture = yankee

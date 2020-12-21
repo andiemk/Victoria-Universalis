@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Erie"
+base_manpower = 69
+base_production = 28
+base_tax = 10
+is_city = yes
+religion = protestant
+culture = yankee

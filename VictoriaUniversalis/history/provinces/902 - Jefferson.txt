@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Jefferson"
+base_manpower = 48
+base_production = 13
+base_tax = 3
+is_city = yes
+religion = protestant
+culture = yankee

@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Sherbrooke"
+base_manpower = 45
+base_production = 16
+base_tax = 6
+is_city = yes
+religion = protestant
+culture = anglo_canadian

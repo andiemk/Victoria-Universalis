@@ -1,0 +1,10 @@
+add_core = USA
+owner = USA
+controller = USA
+capital = "Sault Sainte Marie"
+base_manpower = 5
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = totemism
+culture = anishinabe

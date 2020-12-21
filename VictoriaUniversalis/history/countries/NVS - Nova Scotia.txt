@@ -1,8 +1,0 @@
-government = monarchy
-technology_group = western
-primary_culture = anglo_canadian
-add_accepted_culture = french_canadian
-add_accepted_culture = british
-religion = protestant
-capital = 2569 	# Halifax
-

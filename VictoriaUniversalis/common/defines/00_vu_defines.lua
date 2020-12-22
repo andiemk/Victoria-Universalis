@@ -1,7 +1,7 @@
 -- Custom defines for start/end date:
 
 NDefines.NGame.START_DATE = "1835.1.1"
-NDefines.NGame.END_DATE = "1835.1.1"
+NDefines.NGame.END_DATE = "1935.1.1"
 
 -- Custom defines to disable the Random New World:
 

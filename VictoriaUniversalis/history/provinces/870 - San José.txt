@@ -1,7 +1,7 @@
 add_core = MEX
 owner = MEX
 controller = MEX
-capital = "San JosÃ©"
+capital = "San José"
 base_manpower = 4
 base_production = 1
 base_tax = 0

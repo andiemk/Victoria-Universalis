@@ -876,7 +876,7 @@ province;red;green;blue;x;x
 875;133;114;79;Keewatin;x
 876;6;116;126;Gila;x
 877;134;118;173;Tuscón;x
-878;6;120;32;Fort Misery;x
+878;6;120;32;Fort Davy Crockett;x
 879;134;122;79;Apache;x
 880;6;124;126;Pueblo;x
 881;134;126;173;New Echota;x
@@ -915,7 +915,7 @@ province;red;green;blue;x;x
 914;11;64;32;Milwaukee;x
 915;139;66;79;Chicago;x
 916;11;68;126;Springfield;x
-917;139;70;173;Peoria;x
+917;139;70;173;Rockford;x
 918;12;72;32;Memphis;x
 919;140;74;79;Gum Pond;x
 920;12;76;126;Meridian;x
@@ -2633,7 +2633,7 @@ province;red;green;blue;x;x
 2632;20;131;46;Tabasco;x
 2633;146;146;246;Mani;x
 2634;83;119;196;Uaymil;x
-2635;209;219;145;San Cristóbal de las Casas;x
+2635;209;219;145;San Cristóbal;x
 2636;41;15;95;Chacujal;x
 2637;167;37;46;Chortli;x
 2638;104;124;246;Xoconochco;x
@@ -3003,24 +3003,24 @@ province;red;green;blue;x;x
 3002;134;198;192;Sarajevo;x
 3003;188;110;220;Euboea;x
 3004;189;110;220;Unused1
-3005;190;110;220;Unused2
+3005;135;3;102;Sevsk;x
 3006;191;110;220;Unused3
-3007;192;110;220;Unused4
+3007;65;61;74;Unused4
 3008;193;110;220;Unused5
 3009;194;110;220;Unused6
-3010;195;110;220;Unused7
-3011;196;110;220;Unused8
-3012;197;110;220;Unused9
-3013;199;110;220;Unused10
-3014;200;110;220;Unused11
-3015;201;110;220;Unused12
-3016;202;110;220;Unused13
-3017;203;110;220;Unused14
-3018;204;110;220;Unused15
-3019;205;110;220;Unused16
-3020;206;110;220;Unused17
-3021;207;110;220;Unused18
-3022;207;110;221;Unused19
+3010;109;2;55;Khakassia;x
+3011;130;109;255;Unused8
+3012;216;111;106;Belgorod;x
+3013;71;177;34;Stary Oskol;x
+3014;220;236;155;Klin;x
+3015;165;138;206;Kamyshin;x
+3016;57;109;19;Holzminden;x
+3017;100;88;160;San Marino;x
+3018;84;172;150;Unused15
+3019;101;96;75;Andorra;x
+3020;24;204;162;Massa;x
+3021;162;200;79;Sandžak;x
+3022;170;204;196;Liechtenstein;x
 3023;207;110;222;Unused20
 3024;207;110;223;Unused11
 3025;207;110;224;Unused12
@@ -4569,7 +4569,7 @@ province;red;green;blue;x;x
 4568;173;82;127;Demnate;x
 4569;198;135;133;High Atlas3;x
 4570;0;14;150;Pachuca;x
-4571;40;69;175;Ciudad de México;x
+4571;40;69;175;Mexico City;x
 4572;80;137;200;Morelos;x
 4573;120;176;225;Irapuato;x
 4574;160;14;250;Zamora;x

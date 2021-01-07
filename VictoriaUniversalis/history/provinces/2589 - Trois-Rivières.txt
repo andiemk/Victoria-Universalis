@@ -1,7 +1,7 @@
 add_core = GBR
 owner = GBR
 controller = GBR
-capital = "Trois-RiviÃ¨res"
+capital = "Trois-Rivières"
 base_manpower = 41
 base_production = 13
 base_tax = 5

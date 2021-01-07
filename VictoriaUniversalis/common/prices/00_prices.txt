@@ -139,6 +139,6 @@ unknown = {
 	base_price = 0
 }
 
-fruits_veggies = {
+fruit_veggie = {
 	base_price = 2.5
 }

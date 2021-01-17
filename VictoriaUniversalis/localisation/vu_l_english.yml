@@ -1,0 +1,9 @@
+﻿l_english:
+ VICTORIAN_ERA_NAME:0 "Victorian Era"
+ colonial_north_america:0 "Colonial North America"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica:0 "[Root.GetAdjective] North America"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica_ADJ:0 "[Root.GetAdjective] North American"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_Antilles:0 "[Root.GetAdjective] West Indies"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_Antilles_ADJ:0 "[Root.GetAdjective] Antillean"
+ COLONIAL_THE_CARRIBEAN_Cuba:0 "[Root.GetAdjective] Cuba"
+ COLONIAL_THE_CARRIBEAN_Cuba_ADJ:0 "[Root.GetAdjective] Cuban"

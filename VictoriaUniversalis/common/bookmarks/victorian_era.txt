@@ -1,6 +1,6 @@
 bookmark =
 {
-	name = "Victorian Era"
+	name = "VICTORIAN_ERA_NAME"
 	desc = "VICTORIA_ERA_DESC"
 	date = 1835.1.1
 	

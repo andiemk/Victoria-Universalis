@@ -1,0 +1,36 @@
+defined_text = {
+	name = GetAdjectiveMasculine
+	text = {
+		localisation_key = GBR_ADJ_MASC
+		trigger = {
+			tag = GBR
+		}
+	}
+}
+defined_text = {
+	name = GetAdjectiveMasculinePlural
+	text = {
+		localisation_key = GBR_ADJ_MASC_PLURAL
+		trigger = {
+			tag = GBR
+		}
+	}
+}
+defined_text = {
+	name = GetAdjectiveFeminine
+	text = {
+		localisation_key = GBR_ADJ_FEM
+		trigger = {
+			tag = GBR
+		}
+	}
+}
+defined_text = {
+	name = GetAdjectiveFemininePlural
+	text = {
+		localisation_key = GBR_ADJ_FEM_PLURAL
+		trigger = {
+			tag = GBR
+		}
+	}
+}

@@ -64,7 +64,7 @@ western_indian_ocean_area = {
 }
 
 south_indian_ocean_area = {
-	1417 1418 1419 1632 1631 1633 1634 1636 1637 1638 1639 1640 1643 1645 1646 1647 3010
+	1417 1418 1419 1632 1631 1633 1634 1636 1637 1638 1639 1640 1643 1645 1646 1647
 }
 
 great_australian_bight_area = {
@@ -393,7 +393,7 @@ aragon_area = { #4
 }
 
 catalonia_area = { #5
-	197 212 213 2987 2988
+	197 212 213 2987 2988 3019
 }
 
 valencia_area = { #5
@@ -463,7 +463,7 @@ venetia_area = { #5
 }
 
 lombardy_area = { #5
-	104 1862 4728 4740 2979
+	104 1862 4740 2979
 }
 
 po_valley_area = { #3
@@ -476,7 +476,7 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978 2980
+	115 116 117 2978 2980 3020 4728
 }
 
 liguria_area = { #3
@@ -621,7 +621,7 @@ norrland_area = { #4
 }
 
 finland_area = { #5
-	27 28 29 31 4123
+	27 28 29 31 4123 4124
 }
 
 bothnia_area = { #3
@@ -629,15 +629,15 @@ bothnia_area = { #3
 }
 
 laponia_area = { #3
-	315 1777 4151
+	315 4151
 }
 
 karelia_area = { #4
-	30 33 34 1961
+	30 33 34 1961 2749
 }
 
 north_karelia = { #3
-	32 309 4124
+	32 309 1776 1777
 }
 
 northern_norway = { #3
@@ -665,11 +665,11 @@ greenland_area = { #2
 ########################################
 
 estonia_ingria_area = { #3
-	36 1834 1842
+	36 37 1834 1842
 }
 
 livonia_area = { #4
-	37 38 273 4241
+	38 273 4241
 }
 
 curonia_area = { #3
@@ -709,7 +709,7 @@ pripyat_area = { #4
 }
 
 podlasie_area = {
-	269 277 1937
+	269 277 1936
 }
 
 mazovia_area = { #4
@@ -717,7 +717,7 @@ mazovia_area = { #4
 }
 
 central_poland_area = {
-	258 1939 4533
+	258 1939
 }
 
 sandomierz_area = {
@@ -729,11 +729,11 @@ kuyavia_area = {
 }
 
 samogitia_area = { #4
-	270 271 1936 4534 
+	270 271 1937 4534 4535
 }
 
 lithuania_area = { #5
-	272 770 4535 4536
+	272 770 4536
 }
 
 west_dniepr_area = { #4 Right Bank Ukraine
@@ -749,7 +749,7 @@ chernigov_area = {
 }
 
 sloboda_ukraine_area = { #4
-	291 298 299 2408
+	298 299 467 2408 3012 3013
 }
 
 yedisan_area = { #3
@@ -757,11 +757,11 @@ yedisan_area = { #3
 }
 
 zaporizhia_area = { #3
-	283 2411 2412
+	283 291 2411 2412
 }
 
 azov_area = { #4
-	286 287 2413 2414
+	286 287 2409 2413 2414
 }
 
 crimea_area = { #4
@@ -769,7 +769,7 @@ crimea_area = { #4
 }
 
 white_ruthenia_area = { #3
-	292 771 4246
+	275 292 771 4246
 }
 
 minsk_area = { #4
@@ -783,23 +783,23 @@ ryazan_area = { #4
 }
 
 moscow_area = { #4
-	295 4251 4252
+	295 3014 4251 4252
 }
 
 vladimir_area = { #3
-	307 4147 4253
+	307 1754 3023 4147 4253 4254
 }
 
 yaroslavl_area = { #4
-	308 1753 4117 4250
+	308 1753 1957 4250
 }
 
 tver_area = { #5
-	294 1752 4243 4248 4249 
+	294 1752 1959 4117 4243 4248 4249 
 }
 
 suzdal_area = { #3
-	1754 1956 4254
+	1956 
 }
 
 smolensk_area = { #4
@@ -811,11 +811,11 @@ oka_area = { #3
 }
 
 novgorod_area = { #5
-	310 311 1959 2749 4260
+	310 311 4260
 }
 
 pskov_area = { #4
-	274 275 1960 4148
+	274 1960 4148
 }
 
 vologda_area = { #3
@@ -827,15 +827,15 @@ beloozero_area = { #3
 }
 
 astrakhan_area = { #5
-	464 466 468 2416 2417
+	464 466 2416 2417
 }
 
 lower_don_area = { #4
-	288 467 1971 2409
+	288 468 1971 3015
 }
 
 kazan_area = { #3
-	1082 2422 4264
+	1082 2421 4264 4265 4267
 }
 
 samara_area = { #3
@@ -851,11 +851,11 @@ nogai_area = { #5
 }
 
 ural_area = { #5
-	1080 1078 1780 2427 2441 
+	1080 1078 1780 2425 2427 2441 
 }
 
 pomor_area = { #4
-	313 1776 1958 4258
+	313  1958 4258
 }
 
 arkhangelsk_area = { #4
@@ -867,15 +867,14 @@ bashkiria_area = { #5
 }
 
 volga_area = { #3
-	2421 4265 4267
 }
 
 galich_area = { #4
-	306 1079 1083 1957
+	306 1079 1083 1972 2422 3024 4266
 }
 
 kama_area = { #4
-	305 1962 1972 4266
+	305 1962
 }
 
 tambov_area = { #3
@@ -989,7 +988,7 @@ carinthia_area = { #4 # Carniola in-game
 }
 
 switzerland_area = { #4
-	166 1869 1870 1873 4722
+	166 1869 1870 1873 3022 4722
 }
 
 romandie_area = { #3
@@ -1041,7 +1040,7 @@ holstein_area = { #3
 }
 
 lower_saxony_area = { #4
-	44 53 1857 4772
+	44 53 1857 3016 4772
 }
 
 mecklenburg_area = { #5
@@ -1069,7 +1068,7 @@ thrace_area = { #5
 }
 
 bulgaria_area = { #5
-	150 1765 2746 2750 4703
+	150 1765 2750 4703
 }
 
 silistria_area = {
@@ -1081,7 +1080,7 @@ wallachia_area = { #5
 }
 
 moldavia_area = { #5
-	268 1756 2405 4529 4530
+	268 1756 2405 4529 4530 4533
 }
 
 transylvania_area = { #4 #Northern Transylvania
@@ -1097,11 +1096,11 @@ slovakia_area = { #5
 }
 
 serbia_area = { #5
-	141 3000 4176 4239 4757
+	141 1954 2746 3000 4126 4173 4176 4239 4757
 }
 
 rascia_area = { #4
-	138 1766 1827 4754
+	138 1766 1827 1831 3021 4754
 }
 
 albania_area = { #4
@@ -1109,16 +1108,16 @@ albania_area = { #4
 }
 
 bosnia_area = { #5
-	139 140 1831 3002 4755
+	139 140 1828 3002 4755
 }
 
 croatia_area = { #4
 	color = { 18 126 16 }
-	131 1826 1828 4752
+	131 1826 4752
 }
 
 slavonia_area = { #4
-	152 4756 1767 4173
+	152 4756 1767
 }
 
 east_adriatic_coast_area = { #3
@@ -1126,12 +1125,12 @@ east_adriatic_coast_area = { #3
 }
 
 alfold_area = { #4
-	155 1953 1954 4125
+	155 1953 4125
 }
 
 transdanubia_area = { #5
 	color = { 171 92 22 }
-	135 153 1864 4126 4240
+	135 153 1864 4240
 }
 
 ########################################
@@ -2559,7 +2558,7 @@ okhotsk_area = { #4
 }
 
 yakutia_area = { #5
-	1045 1051 1054 2435 2437
+	1045 1051 1054 1782 2435 2437
 }
 
 sakha_area = { #3
@@ -2571,11 +2570,11 @@ buryatia_area = { #5
 }
 
 tunguska_area = { #5
-	1059 1061 2431 2432 2436  
+	1059 1061 1781 2431 2432 2436  
 }
 
 central_siberia_area = { #5
-	1064 1067 1068 1070 2430
+	1064 1065 1067 1068 1070 2430
 }
 
 kara_area = { #5
@@ -2607,7 +2606,7 @@ syr_darya_area = { #4
 }
 
 yrtesh_area = { #5
-	1071 2434 4687 4688 4689
+	1071 4687 4688 4689
 }
 
 ishim_area = { #5
@@ -2696,7 +2695,7 @@ altai_sayan_area = { #3
 }
 
 tannu_uriankhai_area = {#3
-	716 1065 1066 4679
+	716 1066 2434 3010 3025 4679
 }
 
 central_mongolia_area = { #3

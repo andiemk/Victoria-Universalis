@@ -5,4 +5,3 @@ add_accepted_culture = french_canadian
 add_accepted_culture = british
 religion = protestant
 capital = 989	# Toronto
-

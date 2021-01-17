@@ -1,3 +1,162 @@
+# North America
+colonial_north_america = {
+	color = { 200 16 46 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		fur = 20
+		fish = 10
+		naval_supplies = 3
+		grain = 1
+	}
+
+	culture = {
+		inuit = 10
+		aleutian = 8
+		cree = 10
+		nakota = 2
+		cheyenne = 2
+		anishinabe = 2
+		huron = 2
+		iroquois = 2
+		mahican = 2
+		abenaki = 2
+		mikmaq = 2
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+	
+	provinces = {
+		1010 1008 1009 1011 1006 1005 1004 1007 1002 1003 1000 999 998 1001 992 991 989 988 987
+		993 990 994 986 985 984 995 996 997 981 980 983 982 1813 2012 2015 2567 2568 2569 2570
+		2571 2572 2573 2574 2575 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
+		2589 2590 2591 2592 2593 2594 2595 2597 2670 2671
+		
+		979 978 977 976 975 974 972 1809 2022 2609 2610 2611 2612 2613
+		2481 2482 2483 872 2019 2020 2489 2486 2487 2488 2505 873 2484 2485 874 875 2604 2605 2606 2607
+		2003 973 2004 2602 2017 2018 2533 2598 2599 2600 2601 2603 2616 4639
+	}
+	
+	
+	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica"
+	}
+}
+
+# The Carribean
+colonial_the_carribean = {
+	color = { 78 202 78 }
+
+	# Random New World
+	tax_income = 4
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 3
+	
+	trade_goods = {
+		sugar = 18
+		cocoa = 1
+		cotton = 2
+	}
+	
+	culture = {
+		arawak = 15
+		carib = 8
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 838 1881
+		2654 2655 2656 2658 2659
+		4589 4624 4622 4623 4619 4618 4620 4621
+	}
+	# Specific
+	names = {
+		trigger = {
+			owns = 4624
+			owns = 4622
+			owns = 2656
+			owns = 2654
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Cuba"
+	}
+	
+	# Generic
+	names = {
+		name = "COLONIAL_THE_CARRIBEAN_Root_Culture_GetGroupName_Antilles"
+	}
+}
+# Australia
+colonial_australia = {
+	color = { 126 20 20 }
+
+	provinces = {
+		1084 1085 1086 1087 1088 1089 1090 1091 1092 1093 1094
+		1246 1109 1107 1108 1106 2726 2727 2728 2729 2730 2731
+		2732 2733 2734 2735 2736 2737 2738 2739
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Australia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Tierra_Austral"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Terre_Australe"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_New_Holland"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_AUSTRALIA_Root_Culture_GetName_Australia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_REGION_Terra_Australis"
+	}
+}
+
 # Used for RNW
 colonial_placeholder_1 = {
 	color = { 211 108 45 }

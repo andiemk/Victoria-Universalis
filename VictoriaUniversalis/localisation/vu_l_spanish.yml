@@ -1,0 +1,9 @@
+﻿l_spanish:
+ VICTORIAN_ERA_NAME:0 "Época Victoriana"
+ colonial_north_america:0 "Norteamérica Colonial"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica:0 "Norteamérica [Root.GetAdjectiveFeminine]"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica_ADJ:0 "de Norteamérica [Root.GetAdjectiveFeminine]"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_Antilles:0 "Antillas [Root.GetAdjectiveFemininePlural]"
+ COLONIAL_CANADA_Root_Culture_GetGroupName_Antilles_ADJ:0 "de las Antillas [Root.GetAdjectiveFemininePlural]"
+ COLONIAL_THE_CARRIBEAN_Cuba:0 "Cuba [Root.GetAdjectiveFeminine]"
+ COLONIAL_THE_CARRIBEAN_Cuba_ADJ:0 "de Cuba [Root.GetAdjectiveFeminine]"

@@ -1,0 +1,10 @@
+add_core = COL
+owner = COL
+controller = COL
+capital = "Las Tablas"
+base_manpower = 15
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = central_american

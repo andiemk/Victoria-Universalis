@@ -1146,7 +1146,6 @@ canada_region = {
 		upper_canada_area
 		laurentian_area
 		huronia_area
-		upper_ontario_area
 		greenland_area
 	}
 }
@@ -1160,6 +1159,7 @@ great_lakes_region = {
 		lake_superior_area 
 		wisconsin_area
 		upper_louisiana_area
+		upper_ontario_area
 		ozarks_area
 	}
 }

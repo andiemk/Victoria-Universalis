@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Spanish Town"
+base_manpower = 279
+base_production = 52
+base_tax = 17
+is_city = yes
+religion = protestant
+culture = anglo_caribbean

@@ -1,0 +1,10 @@
+add_core = FRA
+owner = FRA
+controller = FRA
+capital = "David"
+base_manpower = 110
+base_production = 21
+base_tax = 7
+is_city = yes
+religion = catholic
+culture = antillean

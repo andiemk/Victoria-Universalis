@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Roseau"
+base_manpower = 16
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = antillean

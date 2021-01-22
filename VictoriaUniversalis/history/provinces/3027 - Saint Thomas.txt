@@ -1,0 +1,10 @@
+add_core = DAN
+owner = DAN
+controller = DAN
+capital = "Charlotte Amalie"
+base_manpower = 34
+base_production = 6
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = anglo_caribbean

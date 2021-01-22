@@ -1,0 +1,10 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Havana"
+base_manpower = 252
+base_production = 47
+base_tax = 16
+is_city = yes
+religion = catholic
+culture = caribeno

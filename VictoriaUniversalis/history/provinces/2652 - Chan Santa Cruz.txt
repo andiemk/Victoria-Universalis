@@ -6,5 +6,5 @@ base_manpower = 48
 base_production = 9
 base_tax = 3
 is_city = yes
-religion = mayan
+religion = mesoamerican_religion
 culture = yucatec

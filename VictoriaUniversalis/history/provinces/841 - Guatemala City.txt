@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Guatemala City"
+base_manpower = 333
+base_production = 62
+base_tax = 21
+is_city = yes
+religion = catholic
+culture = central_american

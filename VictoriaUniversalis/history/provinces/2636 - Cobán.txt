@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Cobán"
+base_manpower = 47
+base_production = 9
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = highland_mayan

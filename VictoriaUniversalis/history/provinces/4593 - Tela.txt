@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Tela"
+base_manpower = 20
+base_production = 4
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = central_american

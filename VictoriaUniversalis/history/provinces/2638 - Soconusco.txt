@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Tapachula"
+base_manpower = 36
+base_production = 7
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = highland_mayan

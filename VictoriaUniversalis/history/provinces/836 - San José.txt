@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "San José"
+base_manpower = 44
+base_production = 8
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = central_american

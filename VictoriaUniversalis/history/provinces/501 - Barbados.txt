@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Bridgetown "
+base_manpower = 87
+base_production = 16
+base_tax = 5
+is_city = yes
+religion = anglican
+culture = anglo_caribbean

@@ -1,0 +1,10 @@
+add_core = FRA
+owner = FRA
+controller = FRA
+capital = "Fort-de-France"
+base_manpower = 105
+base_production = 20
+base_tax = 7
+is_city = yes
+religion = catholic
+culture = antillean

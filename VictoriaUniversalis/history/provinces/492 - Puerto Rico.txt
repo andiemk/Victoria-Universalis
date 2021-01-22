@@ -1,0 +1,10 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "San Juan"
+base_manpower = 278
+base_production = 52
+base_tax = 17
+is_city = yes
+religion = catholic
+culture = caribeno

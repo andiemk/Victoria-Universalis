@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Liberia"
+base_manpower = 34
+base_production = 6
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = central_american

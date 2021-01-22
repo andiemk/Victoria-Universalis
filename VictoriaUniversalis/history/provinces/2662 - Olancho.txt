@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Juticalpa"
+base_manpower = 7
+base_production = 1
+base_tax = 0
+is_city = yes
+religion = catholic
+culture = central_american

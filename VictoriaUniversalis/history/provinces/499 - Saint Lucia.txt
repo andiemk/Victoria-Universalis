@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Castries"
+base_manpower = 15
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = antillean

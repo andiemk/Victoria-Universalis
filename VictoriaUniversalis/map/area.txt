@@ -513,7 +513,7 @@ apulia_area = { #4
 
 emilia_romagna_area = { #5
 	color = { 24 222 66 }
-	105 106 113 114 4730
+	105 106 113 114 3017 4730
 }
 
 central_italy_area = { #3
@@ -657,7 +657,7 @@ subarctic_islands_area = { #4
 }
 
 greenland_area = { #2
-	1104 1105 4634
+	1104 1105 1804 4634
 }
 
 ########################################
@@ -3601,11 +3601,11 @@ lucayan_area = { #2
 }
 
 leeward_islands_area = { #5
-    493 494 495 496 1881
+    493 494 495 496 1881 3027
 }
 
 windward_islands_area = { #5
-    497 498 499 500 501
+    497 498 499 500 501 3026
 }
 
 transvaal_area = { #4

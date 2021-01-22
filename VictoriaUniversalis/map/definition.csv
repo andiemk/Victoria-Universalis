@@ -481,24 +481,24 @@ province;red;green;blue;x;x
 480;68;96;0;Kulunda;x
 481;196;98;64;Bermuda;x
 482;68;100;128;Bahamas;x
-483;197;102;192;Turks Islands;x
+483;197;102;192;Turks & Caicos;x
 484;69;104;255;Havana;x
 485;197;106;0;Moron;x
-486;69;108;64;Guantamano;x
+486;69;108;64;Guantánamo;x
 487;197;110;128;Jamaica;x
-488;69;112;192;Les Cayes;x
-489;197;114;255;Tortuga;x
+488;69;112;192;Port-au-Prince;x
+489;197;114;255;Port-de-Paix;x
 490;70;116;0;Barahonas;x
-491;198;118;64;Curacao;x
+491;198;118;64;ABC Islands;x
 492;70;120;128;Puerto Rico;x
-493;198;122;192;St. Thomas;x
-494;70;124;255;St. Martin;x
-495;198;126;0;St. Kitts;x
-496;70;128;64;Antigua;x
-497;199;130;128;Guadelopue;x
-498;71;132;192;Dominica;x
-499;199;134;255;Martinique;x
-500;71;136;0;St. Lucia;x
+493;198;122;192;Tortola;x
+494;70;124;255;Saint Kitts & Nevis;x
+495;198;126;0;Antigua & Barbuda;x
+496;70;128;64;Guadalupe;x
+497;199;130;128;Dominica;x
+498;71;132;192;Martinque;x
+499;199;134;255;Saint Lucia;x
+500;71;136;0;Saint Vincent;x
 501;199;138;64;Barbados;x
 502;71;140;128;Trinidad;x
 503;199;142;192;Kutch;x
@@ -833,13 +833,13 @@ province;red;green;blue;x;x
 832;118;32;128;Chiancon;x
 833;247;34;192;Graaff-Reinet;x
 834;119;36;255;Barinas;x
-835;128;34;79;Panama;x
-836;0;36;126;Chorotega;x
-837;128;38;173;Nicaragua;x
-838;0;40;32;Mosquito;x
-839;128;42;79;Pipil;x
-840;0;44;126;Honduras;x
-841;129;46;173;Guatemala;x
+835;128;34;79;Panama City;x
+836;0;36;126;San José;x
+837;128;38;173;León;x
+838;0;40;32;Mosquito Coast;x
+839;128;42;79;El Salvador;x
+840;0;44;126;Trujillo;x
+841;129;46;173;Guatemala City;x
 842;1;48;32;Petén;x
 843;129;50;79;Belize;x
 844;1;52;126;Oaxaca;x
@@ -873,7 +873,7 @@ province;red;green;blue;x;x
 872;5;108;126;Kalapuya;x
 873;133;110;173;Chinook;x
 874;5;112;32;Elliott Bay;x
-875;133;114;79;Keewatin;x
+875;76;80;32;Keewatin;x
 876;6;116;126;Gila;x
 877;134;118;173;Tuscón;x
 878;6;120;32;Fort Davy Crockett;x
@@ -1809,7 +1809,7 @@ province;red;green;blue;x;x
 1808;204;74;79;Great Basin;x
 1809;76;76;126;Great Plains;x
 1810;204;78;173;Alaska;x
-1811;76;80;32;Nunavut;x
+1811;176;80;255;Nunavut;x
 1812;204;82;79;Northwest Territories;x
 1813;76;84;126;Saskatchewan;x
 1814;205;86;173;Columbia;x
@@ -1879,7 +1879,7 @@ province;red;green;blue;x;x
 1878;214;86;173;Aachen;x
 1879;86;88;32;Alencon;x
 1880;214;90;79;Sundgau;x
-1881;213;74;79;St. Barthélemy;x
+1881;213;74;79;Anguilla;x
 1882;214;94;173;Bône;x
 1883;0;0;232;Western Finish lakes;x
 1884;1;0;236;East Finish lakes;x
@@ -2475,7 +2475,7 @@ province;red;green;blue;x;x
 2474;148;133;60;Tajarhi;x
 2475;37;133;180;Djado;x
 2476;1;0;145;San Diego;x
-2477;127;20;145;Rancho Buena Ventura;x
+2477;127;20;145;Rancho Buenaventura;x
 2478;64;119;246;Tachi;x
 2479;190;100;196;Sutter's Fort;x
 2480;22;32;145;Shasta;x
@@ -2634,11 +2634,11 @@ province;red;green;blue;x;x
 2633;146;146;246;Mani;x
 2634;83;119;196;Uaymil;x
 2635;209;219;145;San Cristóbal;x
-2636;41;15;95;Chacujal;x
-2637;167;37;46;Chortli;x
-2638;104;124;246;Xoconochco;x
+2636;41;15;95;Cobán;x
+2637;167;37;46;Puerto Cortés;x
+2638;104;124;246;Soconusco;x
 2639;230;31;196;Newark;x
-2640;104;54;246;Lenca;x
+2640;104;54;246;Tegucigalpa;x
 2641;240;31;196;Ciudad Valles;x
 2642;62;45;145;Metztitlan;x
 2643;188;191;95;Ciudad Guzmán;x
@@ -2651,18 +2651,18 @@ province;red;green;blue;x;x
 2650;25;31;246;Ciudad del Carmen;x
 2651;150;231;196;Mérida;x
 2652;87;31;145;Chan Santa Cruz;x
-2653;213;213;95;Iximché;x
-2654;45;131;46;Baracoa;x
+2653;213;213;95;Izabal;x
+2654;45;131;46;Oriente;x
 2655;171;31;246;Bayamo;x
-2656;108;31;196;Camaguey;x
+2656;108;31;196;Camagüey;x
 2657;234;31;145;San Patricio;x
-2658;6;15;95;Maguana;x
+2658;6;15;95;Santiago;x
 2659;132;16;46;Magua;x 	
 2660;69;31;246;Managua;x
-2661;195;31;196;Uluas;x
+2661;195;31;196;Prinzapolka;x
 2662;27;141;145;Olancho;x
-2663;153;31;95;Nicoya;x
-2664;90;31;46;Veraguas;x
+2663;153;31;95;Liberia;x
+2664;90;31;46;Las Tablas;x
 2665;216;31;246;Washington;x
 2666;48;31;196;Tuintsundé;x
 2667;174;231;145;Piedras Negras;x
@@ -2817,7 +2817,7 @@ province;red;green;blue;x;x
 2816;232;144;132;Guavire;x
 2817;215;227;10;Nieva;x
 2818;215;34;10;Popayan;x
-2819;205;227;166;Darien;x
+2819;205;227;166;Darién;x
 2820;210;55;24;Esmeraldas;x
 2821;203;13;178;Piwra;x
 2822;203;230;178;Tucume;x
@@ -3024,8 +3024,8 @@ province;red;green;blue;x;x
 3023;228;120;55;Ivanovo;x
 3024;178;48;155;Tsaryovokokshaysk;x
 3025;129;102;29;Kemerovo;x
-3026;207;110;225;Unused13
-3027;207;110;226;Unused14
+3026;226;0;117;Grenada;x
+3027;22;2;107;Saint Thomas;x
 3028;207;110;227;Unused15
 3029;207;110;228;Unused16
 3030;207;110;229;Unused17
@@ -4585,17 +4585,17 @@ province;red;green;blue;x;x
 4584;241;69;225;Mitla;x
 4585;2;137;250;Tzotzil;x
 4586;42;176;150;Tuxtla Gutiérrez;x
-4587;82;14;175;Qumarkaj;x
+4587;82;14;175;Quetzaltenango;x
 4588;122;69;200;Kobox;x
-4589;162;137;225;Moran;x
+4589;162;137;225;Belize;x
 4590;202;176;250;Xiu;x
 4591;242;14;150;Sotuta;x
-4592;3;69;175;Ulva;x
-4593;43;137;200;Xicaque;x
+4592;3;69;175;El Rama;x
+4593;43;137;200;Tela;x
 4594;83;176;225;Tzul;x
-4595;123;14;250;Guaymi;x
+4595;123;14;250;David;x
 4596;163;69;150;Kuna;x
-4597;203;137;175;Talamanca;x
+4597;203;137;175;Limón;x
 4598;243;176;200;Cuauhtochco;x
 4599;4;14;225;Sinu;x
 4600;44;69;250;Magangue;x
@@ -4619,10 +4619,10 @@ province;red;green;blue;x;x
 4618;166;137;175;Yaquimo;x
 4619;206;176;200;Marien;x
 4620;246;14;225;Ciguayo;x
-4621;7;69;250;Higuey;x
-4622;67;137;150;Canimar;x
+4621;7;69;250;Santo Domingo;x
+4622;67;137;150;Santa Clara;x
 4623;87;176;175;Escambrey;x
-4624;127;14;200;Guane;x
+4624;127;14;200;Havana;x
 4625;167;69;225;Fort Gatlin;x
 4626;247;176;150;Fort Brooke;x
 4627;8;14;175;Tanu;x

@@ -1,0 +1,10 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "Izabal"
+base_manpower = 16
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = central_american

@@ -1,0 +1,10 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Kingstown"
+base_manpower = 18
+base_production = 3
+base_tax = 1
+is_city = yes
+religion = anglican
+culture = anglo_caribbean

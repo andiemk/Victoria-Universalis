@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Wilmington"
-base_manpower = 29
-base_production = 9
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 40.74
+	}
+	set_variable = {
+		which = lower_pop
+		value = 29.413
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.26
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.066
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 72.2
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 22.73
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.07
+	}
+}

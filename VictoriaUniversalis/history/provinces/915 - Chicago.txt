@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Chicago"
-base_manpower = 12
-base_production = 5
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 18.246
+	}
+	set_variable = {
+		which = lower_pop
+		value = 11.936
+	}
+	set_variable = {
+		which = mid_pop
+		value = 4.569
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.741
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 65.41
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.04
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.54
+	}
+}

@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Roseau"
-base_manpower = 16
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = catholic
 culture = antillean
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 19.856
+	}
+	set_variable = {
+		which = lower_pop
+		value = 15.911
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.977
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.969
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.13
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.99
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.88
+	}
+}

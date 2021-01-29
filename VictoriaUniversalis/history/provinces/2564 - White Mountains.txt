@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Haverhill"
-base_manpower = 28
-base_production = 11
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 42.663
+	}
+	set_variable = {
+		which = lower_pop
+		value = 27.968
+	}
+	set_variable = {
+		which = mid_pop
+		value = 10.62
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.076
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 65.55
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 24.89
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.55
+	}
+}

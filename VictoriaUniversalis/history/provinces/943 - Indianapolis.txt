@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Indianapolis"
-base_manpower = 146
-base_production = 56
-base_tax = 22
+base_manpower = 0
+base_production = 0
+base_tax = 6
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 224.135
+	}
+	set_variable = {
+		which = lower_pop
+		value = 143.881
+	}
+	set_variable = {
+		which = mid_pop
+		value = 57.448
+	}
+	set_variable = {
+		which = upper_pop
+		value = 22.807
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.19
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.63
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.18
+	}
+}

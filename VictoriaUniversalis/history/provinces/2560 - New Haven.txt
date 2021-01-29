@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "New Haven"
-base_manpower = 89
-base_production = 34
-base_tax = 14
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 136.729
+	}
+	set_variable = {
+		which = lower_pop
+		value = 88.09
+	}
+	set_variable = {
+		which = mid_pop
+		value = 34.918
+	}
+	set_variable = {
+		which = upper_pop
+		value = 13.721
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.43
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.54
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.04
+	}
+}

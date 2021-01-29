@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "San Blas"
-base_manpower = 17
-base_production = 3
+base_manpower = 0
+base_production = 0
 base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 21.449
+	}
+	set_variable = {
+		which = lower_pop
+		value = 17.038
+	}
+	set_variable = {
+		which = mid_pop
+		value = 3.256
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.156
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.43
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.18
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.39
+	}
+}

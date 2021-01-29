@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Bathurst"
-base_manpower = 7
-base_production = 2
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 9.518
+	}
+	set_variable = {
+		which = lower_pop
+		value = 6.609
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.907
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.002
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.43
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.04
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.53
+	}
+}

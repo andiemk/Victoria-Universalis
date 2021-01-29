@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Elizabeth City"
-base_manpower = 132
-base_production = 41
-base_tax = 9
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 181.191
+	}
+	set_variable = {
+		which = lower_pop
+		value = 129.821
+	}
+	set_variable = {
+		which = mid_pop
+		value = 41.94
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.43
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 71.65
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.15
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.2
+	}
+}

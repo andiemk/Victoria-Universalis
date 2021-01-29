@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Laredo"
-base_manpower = 10
-base_production = 2
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = totemism
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 11.924
+	}
+	set_variable = {
+		which = lower_pop
+		value = 9.563
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.807
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.555
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.2
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.15
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.65
+	}
+}

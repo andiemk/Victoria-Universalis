@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "London"
-base_manpower = 94
-base_production = 26
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 121.509
+	}
+	set_variable = {
+		which = lower_pop
+		value = 92.833
+	}
+	set_variable = {
+		which = mid_pop
+		value = 26.45
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.225
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 76.4
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 21.77
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 1.83
+	}
+}

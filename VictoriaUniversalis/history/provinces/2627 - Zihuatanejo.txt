@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Zihuatanejo"
-base_manpower = 37
-base_production = 7
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 45.711
+	}
+	set_variable = {
+		which = lower_pop
+		value = 36.461
+	}
+	set_variable = {
+		which = mid_pop
+		value = 6.882
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.368
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.77
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.06
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.18
+	}
+}

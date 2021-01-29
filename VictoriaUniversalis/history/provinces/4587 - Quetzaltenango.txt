@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Quetzaltenango"
-base_manpower = 149
-base_production = 28
-base_tax = 9
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = catholic
 culture = highland_mayan
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 186.169
+	}
+	set_variable = {
+		which = lower_pop
+		value = 146.825
+	}
+	set_variable = {
+		which = mid_pop
+		value = 29.551
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.793
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.87
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.87
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.26
+	}
+}

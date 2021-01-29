@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Plattsburg"
-base_manpower = 122
-base_production = 38
-base_tax = 8
+base_manpower = 0
+base_production = 0
+base_tax = 4
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 167.302
+	}
+	set_variable = {
+		which = lower_pop
+		value = 120.529
+	}
+	set_variable = {
+		which = mid_pop
+		value = 38.518
+	}
+	set_variable = {
+		which = upper_pop
+		value = 8.255
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 72.04
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.02
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.93
+	}
+}

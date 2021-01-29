@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Basseterre"
-base_manpower = 87
-base_production = 16
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = anglican
 culture = anglo_caribbean
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 109.619
+	}
+	set_variable = {
+		which = lower_pop
+		value = 86.89
+	}
+	set_variable = {
+		which = mid_pop
+		value = 17.053
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.676
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.27
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.56
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.18
+	}
+}

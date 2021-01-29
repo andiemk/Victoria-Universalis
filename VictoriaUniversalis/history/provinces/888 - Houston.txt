@@ -2,9 +2,39 @@ add_core = TEX
 owner = TEX
 controller = TEX
 capital = "Houston"
-base_manpower = 12
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = texan
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 15.688
+	}
+	set_variable = {
+		which = lower_pop
+		value = 11.682
+	}
+	set_variable = {
+		which = mid_pop
+		value = 3.144
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.862
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.46
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.04
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.5
+	}
+}

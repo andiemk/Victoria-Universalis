@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Burlington"
-base_manpower = 97
-base_production = 37
-base_tax = 16
+base_manpower = 0
+base_production = 0
+base_tax = 4
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 149.816
+	}
+	set_variable = {
+		which = lower_pop
+		value = 96.355
+	}
+	set_variable = {
+		which = mid_pop
+		value = 37.736
+	}
+	set_variable = {
+		which = upper_pop
+		value = 15.724
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.32
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.19
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.5
+	}
+}

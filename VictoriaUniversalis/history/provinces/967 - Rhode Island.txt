@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Providence"
-base_manpower = 65
-base_production = 25
-base_tax = 10
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 100.141
+	}
+	set_variable = {
+		which = lower_pop
+		value = 64.866
+	}
+	set_variable = {
+		which = mid_pop
+		value = 25.26
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.015
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.77
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.22
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10
+	}
+}

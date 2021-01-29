@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Arlington"
-base_manpower = 80
-base_production = 31
-base_tax = 12
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 122.112
+	}
+	set_variable = {
+		which = lower_pop
+		value = 78.925
+	}
+	set_variable = {
+		which = mid_pop
+		value = 30.977
+	}
+	set_variable = {
+		which = upper_pop
+		value = 12.209
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.63
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.37
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10
+	}
+}

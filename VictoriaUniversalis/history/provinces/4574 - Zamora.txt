@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Zamora"
-base_manpower = 71
-base_production = 13
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 89.584
+	}
+	set_variable = {
+		which = lower_pop
+		value = 71.025
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.834
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.724
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.28
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.44
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.27
+	}
+}

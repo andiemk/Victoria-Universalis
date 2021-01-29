@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Newark"
-base_manpower = 111
-base_production = 43
-base_tax = 17
+base_manpower = 0
+base_production = 0
+base_tax = 4
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 169.809
+	}
+	set_variable = {
+		which = lower_pop
+		value = 109.306
+	}
+	set_variable = {
+		which = mid_pop
+		value = 43.31
+	}
+	set_variable = {
+		which = upper_pop
+		value = 17.193
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.37
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.5
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.13
+	}
+}

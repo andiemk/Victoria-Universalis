@@ -1,0 +1,3 @@
+﻿l_english:
+ population_display:0 "Population"
+ desc_population_display:0 "Total Population: §Y[Root.total_pop.GetValue]k§!\n     Upper Class: §Y[Root.upper_pop_percent.GetValue]%§!\n     Middle Class: §Y[Root.mid_pop_percent.GetValue]%§!\n     Lower Class: §Y[Root.lower_pop_percent.GetValue]%§!"

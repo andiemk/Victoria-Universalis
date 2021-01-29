@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Nashville"
-base_manpower = 260
-base_production = 100
-base_tax = 40
+base_manpower = 0
+base_production = 0
+base_tax = 10
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 399.028
+	}
+	set_variable = {
+		which = lower_pop
+		value = 253.022
+	}
+	set_variable = {
+		which = mid_pop
+		value = 104.485
+	}
+	set_variable = {
+		which = upper_pop
+		value = 41.522
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 63.41
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 26.18
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.41
+	}
+}

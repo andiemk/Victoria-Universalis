@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Iowa City"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 6.271
+	}
+	set_variable = {
+		which = lower_pop
+		value = 4.595
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.287
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.389
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 73.27
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.52
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 6.2
+	}
+}

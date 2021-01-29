@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Campeche"
-base_manpower = 16
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = catholic
 culture = yucatec
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 19.415
+	}
+	set_variable = {
+		which = lower_pop
+		value = 15.555
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.889
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.971
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.12
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.88
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5
+	}
+}

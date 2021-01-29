@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Tuscaloosa"
-base_manpower = 191
-base_production = 42
-base_tax = 12
+base_manpower = 0
+base_production = 0
+base_tax = 6
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 245.72
+	}
+	set_variable = {
+		which = lower_pop
+		value = 187.472
+	}
+	set_variable = {
+		which = mid_pop
+		value = 45.006
+	}
+	set_variable = {
+		which = upper_pop
+		value = 13.243
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 76.29
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 18.32
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.39
+	}
+}

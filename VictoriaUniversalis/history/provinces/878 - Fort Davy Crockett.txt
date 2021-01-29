@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Fort Davy Crockett"
-base_manpower = 1
+base_manpower = 0
 base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = shoshone
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 1.144
+	}
+	set_variable = {
+		which = lower_pop
+		value = 1.142
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.001
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 99.9
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 0.1
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 0
+	}
+}

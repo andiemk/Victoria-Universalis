@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Madison"
-base_manpower = 7
-base_production = 2
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 8.018
+	}
+	set_variable = {
+		which = lower_pop
+		value = 6.105
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.584
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.328
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 76.14
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 19.76
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.09
+	}
+}

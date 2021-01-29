@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Annapolis"
-base_manpower = 86
-base_production = 23
-base_tax = 6
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 114.62
+	}
+	set_variable = {
+		which = lower_pop
+		value = 85.252
+	}
+	set_variable = {
+		which = mid_pop
+		value = 23.51
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.858
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.38
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.51
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.11
+	}
+}

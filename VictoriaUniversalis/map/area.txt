@@ -593,7 +593,7 @@ jutland_area = { #4
 }
 
 denmark_area = { #4 +Bornholm
-	12 14 1981 1983
+	12 14 1981 1983 3028
 }
 
 skaneland_area = { #4

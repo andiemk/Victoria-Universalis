@@ -8,3 +8,33 @@ base_tax = 0
 is_city = yes
 religion = totemism
 culture = kiowa
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 0.578
+	}
+	set_variable = {
+		which = lower_pop
+		value = 0.571
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.007
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 98.79
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 1.21
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 0
+	}
+}

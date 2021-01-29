@@ -2,9 +2,39 @@ add_core = SPA
 owner = SPA
 controller = SPA
 capital = "Sanitago de Cuba"
-base_manpower = 127
-base_production = 24
-base_tax = 8
+base_manpower = 0
+base_production = 0
+base_tax = 4
 is_city = yes
 religion = catholic
 culture = afro_caribeno
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 157.992
+	}
+	set_variable = {
+		which = lower_pop
+		value = 124.722
+	}
+	set_variable = {
+		which = mid_pop
+		value = 24.902
+	}
+	set_variable = {
+		which = upper_pop
+		value = 8.368
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.94
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.76
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.3
+	}
+}

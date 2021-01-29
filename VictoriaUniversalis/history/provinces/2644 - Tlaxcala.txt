@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Tlaxcala"
-base_manpower = 66
-base_production = 12
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 82.574
+	}
+	set_variable = {
+		which = lower_pop
+		value = 65.506
+	}
+	set_variable = {
+		which = mid_pop
+		value = 12.756
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.312
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.33
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.45
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.22
+	}
+}

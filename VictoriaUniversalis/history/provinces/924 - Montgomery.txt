@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Montgomery"
-base_manpower = 104
-base_production = 27
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 137.877
+	}
+	set_variable = {
+		which = lower_pop
+		value = 102.828
+	}
+	set_variable = {
+		which = mid_pop
+		value = 27.874
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.175
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.58
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.22
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.2
+	}
+}

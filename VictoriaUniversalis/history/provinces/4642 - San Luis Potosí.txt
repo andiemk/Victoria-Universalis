@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "San Luis Potosí"
-base_manpower = 111
-base_production = 21
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 137.964
+	}
+	set_variable = {
+		which = lower_pop
+		value = 109.183
+	}
+	set_variable = {
+		which = mid_pop
+		value = 21.529
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.252
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.14
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.6
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.26
+	}
+}

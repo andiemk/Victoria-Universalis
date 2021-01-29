@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Trois-Rivières"
-base_manpower = 41
-base_production = 13
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = french_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 59.221
+	}
+	set_variable = {
+		which = lower_pop
+		value = 40.774
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.4
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.047
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 68.85
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 22.63
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 8.52
+	}
+}

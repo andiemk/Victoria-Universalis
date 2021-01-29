@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Halifax"
-base_manpower = 55
-base_production = 19
-base_tax = 8
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 82.913
+	}
+	set_variable = {
+		which = lower_pop
+		value = 55.371
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.607
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.935
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.78
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.65
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.57
+	}
+}

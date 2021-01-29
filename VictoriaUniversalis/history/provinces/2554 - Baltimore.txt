@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Baltimore"
-base_manpower = 171
-base_production = 66
-base_tax = 26
+base_manpower = 0
+base_production = 0
+base_tax = 7
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 263.163
+	}
+	set_variable = {
+		which = lower_pop
+		value = 168.321
+	}
+	set_variable = {
+		which = mid_pop
+		value = 68.107
+	}
+	set_variable = {
+		which = upper_pop
+		value = 26.735
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 63.96
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.88
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.16
+	}
+}

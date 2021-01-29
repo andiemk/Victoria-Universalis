@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Rimouski"
-base_manpower = 48
-base_production = 14
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = french_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 69.587
+	}
+	set_variable = {
+		which = lower_pop
+		value = 48.068
+	}
+	set_variable = {
+		which = mid_pop
+		value = 14.238
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.282
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.08
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.46
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.46
+	}
+}

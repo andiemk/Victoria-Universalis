@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Saint George's"
-base_manpower = 15
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = anglo_caribbean
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 19.191
+	}
+	set_variable = {
+		which = lower_pop
+		value = 15.261
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.91
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.02
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.52
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.16
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.32
+	}
+}

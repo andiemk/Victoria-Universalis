@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Bytown"
-base_manpower = 51
-base_production = 18
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 75.537
+	}
+	set_variable = {
+		which = lower_pop
+		value = 50.236
+	}
+	set_variable = {
+		which = mid_pop
+		value = 18.042
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.259
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.51
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.89
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.61
+	}
+}

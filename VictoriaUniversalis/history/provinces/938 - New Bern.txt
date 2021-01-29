@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "New Bern"
-base_manpower = 42
-base_production = 13
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 57.253
+	}
+	set_variable = {
+		which = lower_pop
+		value = 41.242
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.014
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.997
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 72.03
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 22.73
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.23
+	}
+}

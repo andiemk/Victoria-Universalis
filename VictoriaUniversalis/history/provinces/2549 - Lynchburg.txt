@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Lynchburg"
-base_manpower = 130
-base_production = 50
-base_tax = 20
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 199.764
+	}
+	set_variable = {
+		which = lower_pop
+		value = 128.327
+	}
+	set_variable = {
+		which = mid_pop
+		value = 51.128
+	}
+	set_variable = {
+		which = upper_pop
+		value = 20.308
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.24
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.59
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.17
+	}
+}

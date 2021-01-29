@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Saint John's"
-base_manpower = 26
-base_production = 9
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 38.951
+	}
+	set_variable = {
+		which = lower_pop
+		value = 25.881
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.285
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.786
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.44
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.84
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.72
+	}
+}

@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Rockford"
-base_manpower = 15
-base_production = 5
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 21.436
+	}
+	set_variable = {
+		which = lower_pop
+		value = 14.476
+	}
+	set_variable = {
+		which = mid_pop
+		value = 4.869
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.091
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 67.53
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 22.72
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.76
+	}
+}

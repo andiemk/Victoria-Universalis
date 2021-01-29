@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Fayetteville"
-base_manpower = 27
-base_production = 7
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 35.811
+	}
+	set_variable = {
+		which = lower_pop
+		value = 26.892
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.198
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.721
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 75.09
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.1
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.81
+	}
+}

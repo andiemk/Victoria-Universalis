@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Albany"
-base_manpower = 291
-base_production = 112
-base_tax = 45
+base_manpower = 0
+base_production = 0
+base_tax = 11
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 446.722
+	}
+	set_variable = {
+		which = lower_pop
+		value = 282.478
+	}
+	set_variable = {
+		which = mid_pop
+		value = 117.318
+	}
+	set_variable = {
+		which = upper_pop
+		value = 46.926
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 63.23
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 26.26
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.5
+	}
+}

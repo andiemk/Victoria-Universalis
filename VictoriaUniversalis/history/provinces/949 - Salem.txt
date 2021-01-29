@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Salem"
-base_manpower = 100
-base_production = 33
-base_tax = 6
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 137.336
+	}
+	set_variable = {
+		which = lower_pop
+		value = 98.544
+	}
+	set_variable = {
+		which = mid_pop
+		value = 33.091
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.701
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 71.75
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 24.09
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.15
+	}
+}

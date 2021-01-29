@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "New Echota"
-base_manpower = 8
-base_production = 2
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = totemism
 culture = cherokee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 10.504
+	}
+	set_variable = {
+		which = lower_pop
+		value = 8.223
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.784
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.497
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.28
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 16.98
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.74
+	}
+}

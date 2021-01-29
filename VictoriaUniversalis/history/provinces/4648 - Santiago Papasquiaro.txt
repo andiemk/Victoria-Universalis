@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Santiago Papasquiaro"
-base_manpower = 15
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 17.787
+	}
+	set_variable = {
+		which = lower_pop
+		value = 14.156
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.711
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.92
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.59
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.24
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.17
+	}
+}

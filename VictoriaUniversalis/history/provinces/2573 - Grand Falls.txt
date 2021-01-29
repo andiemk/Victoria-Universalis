@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Grand Falls"
-base_manpower = 7
-base_production = 2
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 10.708
+	}
+	set_variable = {
+		which = lower_pop
+		value = 7.492
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.108
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.108
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.96
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 19.69
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.35
+	}
+}

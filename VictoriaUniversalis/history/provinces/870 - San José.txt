@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "San José"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 5.305
+	}
+	set_variable = {
+		which = lower_pop
+		value = 4.122
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.788
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.394
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.71
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.86
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 7.43
+	}
+}

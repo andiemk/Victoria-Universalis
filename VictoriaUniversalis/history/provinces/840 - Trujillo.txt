@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Trujillo"
-base_manpower = 5
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = catholic
 culture = miskito
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 6.91
+	}
+	set_variable = {
+		which = lower_pop
+		value = 5.482
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.054
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.374
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.34
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.25
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.41
+	}
+}

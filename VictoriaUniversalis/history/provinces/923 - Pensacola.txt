@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Pensacola"
-base_manpower = 12
-base_production = 3
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 16.843
+	}
+	set_variable = {
+		which = lower_pop
+		value = 12.618
+	}
+	set_variable = {
+		which = mid_pop
+		value = 3.397
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.828
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.91
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.17
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.92
+	}
+}

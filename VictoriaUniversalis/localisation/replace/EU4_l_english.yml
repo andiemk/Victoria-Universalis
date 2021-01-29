@@ -1,0 +1,4 @@
+﻿l_english:
+ IMPPR_TOO_MUCH_ONE_TYPE_ADM:0 ""
+ IMPPR_TOO_MUCH_ONE_TYPE_DIP:0 "You cannot improve the Base Production of §Y$PROVINCE$§! because it is greater than its Base Tax and Manpower combined."
+ IMPPR_TOO_MUCH_ONE_TYPE_MIL:0 "You cannot improve the Base Manpower of §Y$PROVINCE$§! because it is greater than its Base Tax and Base Production combined."

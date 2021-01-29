@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Cuernavaca"
-base_manpower = 61
-base_production = 11
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 76.529
+	}
+	set_variable = {
+		which = lower_pop
+		value = 60.786
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.767
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.975
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.43
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.38
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.19
+	}
+}

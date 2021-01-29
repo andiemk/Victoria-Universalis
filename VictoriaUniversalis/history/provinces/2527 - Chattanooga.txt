@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Chattanooga"
-base_manpower = 65
-base_production = 22
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 90.494
+	}
+	set_variable = {
+		which = lower_pop
+		value = 63.936
+	}
+	set_variable = {
+		which = mid_pop
+		value = 21.692
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.866
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 70.65
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.97
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.38
+	}
+}

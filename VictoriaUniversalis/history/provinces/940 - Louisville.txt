@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Louisville"
-base_manpower = 173
-base_production = 61
-base_tax = 9
+base_manpower = 0
+base_production = 0
+base_tax = 6
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 241.896
+	}
+	set_variable = {
+		which = lower_pop
+		value = 169.885
+	}
+	set_variable = {
+		which = mid_pop
+		value = 62.599
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.411
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 70.23
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.88
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 3.89
+	}
+}

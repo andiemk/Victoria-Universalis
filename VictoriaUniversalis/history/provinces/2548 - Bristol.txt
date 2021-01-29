@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Bristol"
-base_manpower = 42
-base_production = 19
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 63.98
+	}
+	set_variable = {
+		which = lower_pop
+		value = 41.924
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.131
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.926
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 65.53
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 29.9
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.57
+	}
+}

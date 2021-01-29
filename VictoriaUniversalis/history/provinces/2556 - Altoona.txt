@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Altoona"
-base_manpower = 181
-base_production = 70
-base_tax = 28
+base_manpower = 0
+base_production = 0
+base_tax = 7
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 278.172
+	}
+	set_variable = {
+		which = lower_pop
+		value = 177.466
+	}
+	set_variable = {
+		which = mid_pop
+		value = 71.88
+	}
+	set_variable = {
+		which = upper_pop
+		value = 28.826
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 63.8
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.84
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.36
+	}
+}

@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Durango"
-base_manpower = 100
-base_production = 19
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 124.647
+	}
+	set_variable = {
+		which = lower_pop
+		value = 98.042
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.328
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.276
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.66
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.51
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.84
+	}
+}

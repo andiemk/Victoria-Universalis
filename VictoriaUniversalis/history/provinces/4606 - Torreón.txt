@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Torreón"
-base_manpower = 39
-base_production = 7
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 50.231
+	}
+	set_variable = {
+		which = lower_pop
+		value = 39.685
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.663
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.883
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.01
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.26
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.74
+	}
+}

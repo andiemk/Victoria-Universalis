@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Knoxville"
-base_manpower = 60
-base_production = 23
-base_tax = 9
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 91.446
+	}
+	set_variable = {
+		which = lower_pop
+		value = 59.773
+	}
+	set_variable = {
+		which = mid_pop
+		value = 23.1
+	}
+	set_variable = {
+		which = upper_pop
+		value = 8.572
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 65.36
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.26
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.37
+	}
+}

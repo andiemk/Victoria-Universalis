@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "London"
-base_manpower = 76
-base_production = 27
-base_tax = 11
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 113.247
+	}
+	set_variable = {
+		which = lower_pop
+		value = 75.19
+	}
+	set_variable = {
+		which = mid_pop
+		value = 27.272
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.785
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.39
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 24.08
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.52
+	}
+}

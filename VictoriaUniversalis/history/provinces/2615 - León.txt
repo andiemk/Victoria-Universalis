@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "León"
-base_manpower = 210
-base_production = 39
-base_tax = 13
+base_manpower = 0
+base_production = 0
+base_tax = 7
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 262.145
+	}
+	set_variable = {
+		which = lower_pop
+		value = 205.434
+	}
+	set_variable = {
+		which = mid_pop
+		value = 42.573
+	}
+	set_variable = {
+		which = upper_pop
+		value = 14.137
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.37
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 16.24
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.39
+	}
+}

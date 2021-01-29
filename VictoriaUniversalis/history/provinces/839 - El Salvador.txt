@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "San Salvador"
-base_manpower = 169
-base_production = 32
-base_tax = 11
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = catholic
 culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 210.271
+	}
+	set_variable = {
+		which = lower_pop
+		value = 165.444
+	}
+	set_variable = {
+		which = mid_pop
+		value = 33.654
+	}
+	set_variable = {
+		which = upper_pop
+		value = 11.173
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.68
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 16.01
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.31
+	}
+}

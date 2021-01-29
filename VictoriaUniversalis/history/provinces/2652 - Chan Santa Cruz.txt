@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Chan Santa Cruz"
-base_manpower = 48
-base_production = 9
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = mesoamerican_religion
 culture = yucatec
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 59.411
+	}
+	set_variable = {
+		which = lower_pop
+		value = 47.179
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.085
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.147
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.41
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.29
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.3
+	}
+}

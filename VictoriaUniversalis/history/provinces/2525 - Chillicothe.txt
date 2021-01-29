@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Chillicothe"
-base_manpower = 237
-base_production = 91
-base_tax = 36
+base_manpower = 0
+base_production = 0
+base_tax = 9
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 362.762
+	}
+	set_variable = {
+		which = lower_pop
+		value = 230.971
+	}
+	set_variable = {
+		which = mid_pop
+		value = 94.559
+	}
+	set_variable = {
+		which = upper_pop
+		value = 37.233
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 63.67
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 26.07
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.26
+	}
+}

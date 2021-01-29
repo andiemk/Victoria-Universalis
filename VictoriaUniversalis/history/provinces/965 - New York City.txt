@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "New York City"
-base_manpower = 353
-base_production = 151
-base_tax = 80
+base_manpower = 0
+base_production = 0
+base_tax = 15
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 583.715
+	}
+	set_variable = {
+		which = lower_pop
+		value = 341.182
+	}
+	set_variable = {
+		which = mid_pop
+		value = 159.666
+	}
+	set_variable = {
+		which = upper_pop
+		value = 82.866
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 58.45
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 27.35
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 14.2
+	}
+}

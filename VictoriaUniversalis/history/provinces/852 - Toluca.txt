@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Toluca"
-base_manpower = 179
-base_production = 34
-base_tax = 11
+base_manpower = 0
+base_production = 0
+base_tax = 6
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 223.494
+	}
+	set_variable = {
+		which = lower_pop
+		value = 175.435
+	}
+	set_variable = {
+		which = mid_pop
+		value = 35.899
+	}
+	set_variable = {
+		which = upper_pop
+		value = 12.16
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.5
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 16.06
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.44
+	}
+}

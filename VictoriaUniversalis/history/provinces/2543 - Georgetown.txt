@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Georgetown"
-base_manpower = 35
-base_production = 8
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 44.721
+	}
+	set_variable = {
+		which = lower_pop
+		value = 34.647
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.937
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.136
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.47
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.75
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.78
+	}
+}

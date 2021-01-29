@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Tegucigalpa"
-base_manpower = 35
-base_production = 7
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 43.748
+	}
+	set_variable = {
+		which = lower_pop
+		value = 34.807
+	}
+	set_variable = {
+		which = mid_pop
+		value = 6.677
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.264
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.56
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.26
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.18
+	}
+}

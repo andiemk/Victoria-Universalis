@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Buffalo"
-base_manpower = 119
-base_production = 46
-base_tax = 18
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 182.052
+	}
+	set_variable = {
+		which = lower_pop
+		value = 117.206
+	}
+	set_variable = {
+		which = mid_pop
+		value = 46.5
+	}
+	set_variable = {
+		which = upper_pop
+		value = 18.347
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.38
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.54
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.08
+	}
+}

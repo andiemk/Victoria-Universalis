@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Morgantown"
-base_manpower = 55
-base_production = 20
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 77.851
+	}
+	set_variable = {
+		which = lower_pop
+		value = 54.135
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.658
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.058
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.54
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.25
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.21
+	}
+}

@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Bangor"
-base_manpower = 33
-base_production = 13
-base_tax = 10
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 55.061
+	}
+	set_variable = {
+		which = lower_pop
+		value = 32.375
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.063
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.623
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 58.8
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.72
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 17.48
+	}
+}

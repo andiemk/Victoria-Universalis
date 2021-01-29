@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "El Paso"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = lipan
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 4.992
+	}
+	set_variable = {
+		which = lower_pop
+		value = 4.002
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.726
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.263
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.18
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.55
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.27
+	}
+}

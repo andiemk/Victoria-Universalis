@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Martinsburg"
-base_manpower = 59
-base_production = 21
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 84.076
+	}
+	set_variable = {
+		which = lower_pop
+		value = 58.722
+	}
+	set_variable = {
+		which = mid_pop
+		value = 21.265
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.09
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.84
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.29
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.86
+	}
+}

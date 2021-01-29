@@ -1,0 +1,3 @@
+population_display = {
+	picture = "province_trade_power_value"
+}

@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Biloxi"
-base_manpower = 9
-base_production = 2
-base_tax = 1
+base_manpower = 0
+base_production = 0
+base_tax = 0
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 10.916
+	}
+	set_variable = {
+		which = lower_pop
+		value = 8.43
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.91
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.576
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.23
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.5
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.27
+	}
+}

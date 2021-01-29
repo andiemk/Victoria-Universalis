@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Edmundston"
-base_manpower = 2
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 2.273
+	}
+	set_variable = {
+		which = lower_pop
+		value = 1.713
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.451
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.109
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 75.35
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 19.84
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.81
+	}
+}

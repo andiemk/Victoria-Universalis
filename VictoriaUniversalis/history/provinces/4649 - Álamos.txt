@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Álamos"
-base_manpower = 30
-base_production = 6
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 36.903
+	}
+	set_variable = {
+		which = lower_pop
+		value = 29.512
+	}
+	set_variable = {
+		which = mid_pop
+		value = 5.518
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.874
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.97
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.95
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.08
+	}
+}

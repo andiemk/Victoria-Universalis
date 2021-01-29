@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Actopan"
-base_manpower = 47
-base_production = 9
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 57.694
+	}
+	set_variable = {
+		which = lower_pop
+		value = 45.955
+	}
+	set_variable = {
+		which = mid_pop
+		value = 8.792
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.946
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.65
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.24
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.11
+	}
+}

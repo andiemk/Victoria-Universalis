@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Beaufort"
-base_manpower = 49
-base_production = 11
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 63.515
+	}
+	set_variable = {
+		which = lower_pop
+		value = 48.903
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.308
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.303
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 76.99
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.8
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.2
+	}
+}

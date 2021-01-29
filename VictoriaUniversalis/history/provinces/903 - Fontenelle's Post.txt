@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Fontenelle's Post"
-base_manpower = 1
+base_manpower = 0
 base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = omaha
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 1.084
+	}
+	set_variable = {
+		which = lower_pop
+		value = 1.083
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.001
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 99.87
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 0.13
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 0
+	}
+}

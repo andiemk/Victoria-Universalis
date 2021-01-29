@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Bent's Fort"
-base_manpower = 1
+base_manpower = 0
 base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = arapaho
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 1.14
+	}
+	set_variable = {
+		which = lower_pop
+		value = 1.138
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.002
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 99.79
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 0.21
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 0
+	}
+}

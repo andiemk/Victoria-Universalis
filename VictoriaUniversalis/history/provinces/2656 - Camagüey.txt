@@ -2,9 +2,39 @@ add_core = SPA
 owner = SPA
 controller = SPA
 capital = "Camagüey"
-base_manpower = 37
-base_production = 7
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = caribeno
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 46.699
+	}
+	set_variable = {
+		which = lower_pop
+		value = 37.091
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.157
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.452
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.43
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.32
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.25
+	}
+}

@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Shelburne"
-base_manpower = 42
-base_production = 15
-base_tax = 6
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 63.011
+	}
+	set_variable = {
+		which = lower_pop
+		value = 41.978
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.047
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.987
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.62
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 23.88
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.5
+	}
+}

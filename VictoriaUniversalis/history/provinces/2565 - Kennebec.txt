@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Skowhegan"
-base_manpower = 70
-base_production = 31
-base_tax = 15
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 115.751
+	}
+	set_variable = {
+		which = lower_pop
+		value = 69.822
+	}
+	set_variable = {
+		which = mid_pop
+		value = 31.339
+	}
+	set_variable = {
+		which = upper_pop
+		value = 14.59
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 60.32
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 27.07
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 12.6
+	}
+}

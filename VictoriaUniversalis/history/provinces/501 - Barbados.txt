@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Bridgetown "
-base_manpower = 87
-base_production = 16
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = anglican
 culture = anglo_caribbean
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 109.339
+	}
+	set_variable = {
+		which = lower_pop
+		value = 86.755
+	}
+	set_variable = {
+		which = mid_pop
+		value = 16.947
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.636
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.35
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.5
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.16
+	}
+}

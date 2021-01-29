@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Savannah"
-base_manpower = 34
-base_production = 8
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = afro_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 43.304
+	}
+	set_variable = {
+		which = lower_pop
+		value = 33.501
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.618
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.185
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.36
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.59
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.04
+	}
+}

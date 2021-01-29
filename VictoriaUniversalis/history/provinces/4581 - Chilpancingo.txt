@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Chilpancingo"
-base_manpower = 82
-base_production = 15
-base_tax = 5
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 103.022
+	}
+	set_variable = {
+		which = lower_pop
+		value = 81.675
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.887
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.46
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.28
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.42
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.3
+	}
+}

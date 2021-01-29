@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Fort Wayne"
-base_manpower = 21
-base_production = 8
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 31.924
+	}
+	set_variable = {
+		which = lower_pop
+		value = 20.622
+	}
+	set_variable = {
+		which = mid_pop
+		value = 8.074
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.228
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.6
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.29
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.11
+	}
+}

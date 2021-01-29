@@ -50,17 +50,12 @@ on_startup = {
 	}
 	### TEMPORARY STUFF ###
 	every_province = {
-		limit = { is_city = yes
-			OR = {
-				trade_goods = grain
-				trade_goods = fish
-				trade_goods = livestock
-			}
+		limit = { is_city = yes }
+		add_province_modifier = {
+			name = population_display
+			duration = -1
 		}
-		random = {
-			chance = 20
-			change_trade_goods = fruit_veggie
-		}
+
 	}
 }
 
@@ -1512,10 +1507,18 @@ on_adm_development = {
 
 # province
 on_dip_development = {
+	owner = {
+		add_treasury = -100
+		
+	}
 }
 
 # province
 on_mil_development = {
+	owner = {
+		add_treasury = -25
+
+	}
 }
 
 on_overextension_pulse = {

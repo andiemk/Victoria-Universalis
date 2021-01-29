@@ -7,6 +7,10 @@ NDefines.NGame.END_DATE = "1935.1.1"
 
 NDefines.NGame.MAX_RANDOM_NEW_WORLD = "1000.1.1"
 
+-- Country defines
+NDefines.NCountry.ALLOW_ZERO_BASE_VALUES = 1
+NDefines.NCountry.PS_IMPROVE_PROVINCE_BASE = 0
+
 -- Custom defines to adjust unit speed for the larger map:
 
 NDefines.NDiplomacy.DIPLOMAT_SPEED = 22.0

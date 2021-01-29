@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Tela"
-base_manpower = 20
-base_production = 4
+base_manpower = 0
+base_production = 0
 base_tax = 1
 is_city = yes
 religion = catholic
 culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 25.038
+	}
+	set_variable = {
+		which = lower_pop
+		value = 20.077
+	}
+	set_variable = {
+		which = mid_pop
+		value = 3.779
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.182
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.19
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.09
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.72
+	}
+}

@@ -1809,7 +1809,7 @@ province;red;green;blue;x;x
 1808;204;74;79;Great Basin;x
 1809;76;76;126;Great Plains;x
 1810;204;78;173;Alaska;x
-1811;176;80;255;Nunavut;x
+1811;133;114;79;Nunavut;x
 1812;204;82;79;Northwest Territories;x
 1813;76;84;126;Saskatchewan;x
 1814;205;86;173;Columbia;x
@@ -3026,7 +3026,7 @@ province;red;green;blue;x;x
 3025;129;102;29;Kemerovo;x
 3026;226;0;117;Grenada;x
 3027;22;2;107;Saint Thomas;x
-3028;207;110;227;Unused15
+3028;192;97;151;Sønderborg;x
 3029;207;110;228;Unused16
 3030;207;110;229;Unused17
 3031;207;110;230;Unused18

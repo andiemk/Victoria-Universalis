@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Des Moines"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = dakota
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 4.923
+	}
+	set_variable = {
+		which = lower_pop
+		value = 3.863
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.866
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.193
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 78.48
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.6
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 3.92
+	}
+}

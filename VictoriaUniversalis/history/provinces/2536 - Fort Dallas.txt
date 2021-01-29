@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Fort Dallas"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = seminole
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 4.998
+	}
+	set_variable = {
+		which = lower_pop
+		value = 3.78
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.901
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.317
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 75.62
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 18.03
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 6.34
+	}
+}

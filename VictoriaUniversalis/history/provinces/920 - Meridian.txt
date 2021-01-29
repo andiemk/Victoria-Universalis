@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Meridian"
-base_manpower = 26
-base_production = 6
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 33.598
+	}
+	set_variable = {
+		which = lower_pop
+		value = 25.833
+	}
+	set_variable = {
+		which = mid_pop
+		value = 5.984
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.782
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 76.89
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.81
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.3
+	}
+}

@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Sherbrooke"
-base_manpower = 45
-base_production = 16
-base_tax = 6
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = anglo_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 66.609
+	}
+	set_variable = {
+		which = lower_pop
+		value = 44.238
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.995
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.376
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.41
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 24.01
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.57
+	}
+}

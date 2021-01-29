@@ -2,9 +2,39 @@ add_core = FRA
 owner = FRA
 controller = FRA
 capital = "Fort-de-France"
-base_manpower = 105
-base_production = 20
-base_tax = 7
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = antillean
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 130.534
+	}
+	set_variable = {
+		which = lower_pop
+		value = 103.266
+	}
+	set_variable = {
+		which = mid_pop
+		value = 20.399
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.868
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.11
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.63
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.26
+	}
+}

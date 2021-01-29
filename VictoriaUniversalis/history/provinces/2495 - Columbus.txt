@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Columbus"
-base_manpower = 129
-base_production = 50
-base_tax = 20
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 197.817
+	}
+	set_variable = {
+		which = lower_pop
+		value = 126.896
+	}
+	set_variable = {
+		which = mid_pop
+		value = 50.57
+	}
+	set_variable = {
+		which = upper_pop
+		value = 20.352
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.15
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.56
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.29
+	}
+}

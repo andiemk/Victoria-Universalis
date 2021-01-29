@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Quebec City"
-base_manpower = 74
-base_production = 26
-base_tax = 11
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = french_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 111.109
+	}
+	set_variable = {
+		which = lower_pop
+		value = 73.58
+	}
+	set_variable = {
+		which = mid_pop
+		value = 26.79
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.739
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 66.22
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 24.11
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 9.67
+	}
+}

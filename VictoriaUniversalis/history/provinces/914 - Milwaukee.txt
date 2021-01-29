@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Milwaukee"
-base_manpower = 4
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = protestant
 culture = anishinabe
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 4.705
+	}
+	set_variable = {
+		which = lower_pop
+		value = 3.623
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.815
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.267
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.01
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 17.33
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.67
+	}
+}

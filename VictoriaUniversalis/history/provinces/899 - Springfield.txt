@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Springfield"
-base_manpower = 16
-base_production = 4
+base_manpower = 0
+base_production = 0
 base_tax = 1
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 21.345
+	}
+	set_variable = {
+		which = lower_pop
+		value = 15.977
+	}
+	set_variable = {
+		which = mid_pop
+		value = 4.299
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.069
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.85
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.14
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.01
+	}
+}

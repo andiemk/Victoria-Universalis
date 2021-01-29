@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Charleston"
-base_manpower = 19
-base_production = 8
+base_manpower = 0
+base_production = 0
 base_tax = 1
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 27.851
+	}
+	set_variable = {
+		which = lower_pop
+		value = 18.921
+	}
+	set_variable = {
+		which = mid_pop
+		value = 7.998
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.932
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 67.94
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 28.72
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 3.35
+	}
+}

@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Fort Albany"
-base_manpower = 1
+base_manpower = 0
 base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
 culture = cree
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 1.206
+	}
+	set_variable = {
+		which = lower_pop
+		value = 1.197
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.008
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 99.31
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 0.69
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 0
+	}
+}

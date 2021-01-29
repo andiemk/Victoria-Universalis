@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Philadelphia"
-base_manpower = 307
-base_production = 147
-base_tax = 80
+base_manpower = 0
+base_production = 0
+base_tax = 13
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 534.058
+	}
+	set_variable = {
+		which = lower_pop
+		value = 298.505
+	}
+	set_variable = {
+		which = mid_pop
+		value = 153.403
+	}
+	set_variable = {
+		which = upper_pop
+		value = 82.151
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 55.89
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 28.72
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 15.38
+	}
+}

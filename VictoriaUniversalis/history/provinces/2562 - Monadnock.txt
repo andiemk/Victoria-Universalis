@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Concord"
-base_manpower = 72
-base_production = 28
-base_tax = 11
+base_manpower = 0
+base_production = 0
+base_tax = 3
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 111.036
+	}
+	set_variable = {
+		which = lower_pop
+		value = 71.933
+	}
+	set_variable = {
+		which = mid_pop
+		value = 27.953
+	}
+	set_variable = {
+		which = upper_pop
+		value = 11.151
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.78
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.17
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.04
+	}
+}

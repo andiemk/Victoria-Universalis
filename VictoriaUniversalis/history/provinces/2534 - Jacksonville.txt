@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Jacksonville"
-base_manpower = 5
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 6.376
+	}
+	set_variable = {
+		which = lower_pop
+		value = 4.918
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.154
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.303
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.14
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 18.1
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.76
+	}
+}

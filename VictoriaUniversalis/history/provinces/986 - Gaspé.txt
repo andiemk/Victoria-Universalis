@@ -2,9 +2,39 @@ add_core = GBR
 owner = GBR
 controller = GBR
 capital = "Gaspé"
-base_manpower = 38
-base_production = 11
-base_tax = 6
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = french_canadian
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 55.547
+	}
+	set_variable = {
+		which = lower_pop
+		value = 38.425
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.369
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.753
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 69.18
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.47
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.36
+	}
+}

@@ -2,9 +2,39 @@ add_core = SPA
 owner = SPA
 controller = SPA
 capital = "Havana"
-base_manpower = 252
-base_production = 47
-base_tax = 16
+base_manpower = 0
+base_production = 0
+base_tax = 8
 is_city = yes
 religion = catholic
 culture = caribeno
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 315.036
+	}
+	set_variable = {
+		which = lower_pop
+		value = 245.618
+	}
+	set_variable = {
+		which = mid_pop
+		value = 51.991
+	}
+	set_variable = {
+		which = upper_pop
+		value = 17.428
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 77.96
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 16.5
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.53
+	}
+}

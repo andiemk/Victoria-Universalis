@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Harrisonburg"
-base_manpower = 142
-base_production = 55
-base_tax = 22
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 217.753
+	}
+	set_variable = {
+		which = lower_pop
+		value = 139.511
+	}
+	set_variable = {
+		which = mid_pop
+		value = 55.835
+	}
+	set_variable = {
+		which = upper_pop
+		value = 22.407
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 64.07
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 25.64
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.29
+	}
+}

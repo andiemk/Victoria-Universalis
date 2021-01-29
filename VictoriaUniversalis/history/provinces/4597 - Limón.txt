@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Puerto Limón"
-base_manpower = 7
-base_production = 1
+base_manpower = 0
+base_production = 0
 base_tax = 0
 is_city = yes
 religion = catholic
 culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 9.67
+	}
+	set_variable = {
+		which = lower_pop
+		value = 7.797
+	}
+	set_variable = {
+		which = mid_pop
+		value = 1.418
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.455
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.63
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.67
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.7
+	}
+}

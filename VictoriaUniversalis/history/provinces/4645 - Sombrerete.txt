@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Sombrerete"
-base_manpower = 46
-base_production = 8
-base_tax = 3
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 57.678
+	}
+	set_variable = {
+		which = lower_pop
+		value = 46.417
+	}
+	set_variable = {
+		which = mid_pop
+		value = 8.432
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.829
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 80.48
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 14.62
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 4.9
+	}
+}

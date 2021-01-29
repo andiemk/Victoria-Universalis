@@ -2,9 +2,39 @@ add_core = CAM
 owner = CAM
 controller = CAM
 capital = "Puerto Cortés"
-base_manpower = 59
-base_production = 11
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 74.025
+	}
+	set_variable = {
+		which = lower_pop
+		value = 58.915
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.362
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.749
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.59
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.35
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.06
+	}
+}

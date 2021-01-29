@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Portland"
-base_manpower = 131
-base_production = 63
-base_tax = 22
+base_manpower = 0
+base_production = 0
+base_tax = 5
 is_city = yes
 religion = protestant
 culture = yankee
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 214.048
+	}
+	set_variable = {
+		which = lower_pop
+		value = 128.766
+	}
+	set_variable = {
+		which = mid_pop
+		value = 63.493
+	}
+	set_variable = {
+		which = upper_pop
+		value = 21.789
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 60.16
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 29.66
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 10.18
+	}
+}

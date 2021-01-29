@@ -2,9 +2,39 @@ add_core = USA
 owner = USA
 controller = USA
 capital = "Columbus"
-base_manpower = 63
-base_production = 17
-base_tax = 4
+base_manpower = 0
+base_production = 0
+base_tax = 2
 is_city = yes
 religion = protestant
 culture = dixie
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 84.596
+	}
+	set_variable = {
+		which = lower_pop
+		value = 62.952
+	}
+	set_variable = {
+		which = mid_pop
+		value = 17.273
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.371
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 74.42
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 20.42
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.17
+	}
+}

@@ -2,9 +2,39 @@ add_core = MEX
 owner = MEX
 controller = MEX
 capital = "Las Peñas"
-base_manpower = 36
-base_production = 7
-base_tax = 2
+base_manpower = 0
+base_production = 0
+base_tax = 1
 is_city = yes
 religion = catholic
 culture = mexican
+1000.1.1 = {
+	set_variable = {
+		which = total_pop
+		value = 44.224
+	}
+	set_variable = {
+		which = lower_pop
+		value = 35.178
+	}
+	set_variable = {
+		which = mid_pop
+		value = 6.739
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.307
+	}
+	set_variable = {
+		which = lower_pop_percent
+		value = 79.54
+	}
+	set_variable = {
+		which = mid_pop_percent
+		value = 15.24
+	}
+	set_variable = {
+		which = upper_pop_percent
+		value = 5.22
+	}
+}

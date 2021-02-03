@@ -1,0 +1,6 @@
+production_generic1_display = {
+	picture = "province_trade_power_value"
+}
+production_generic2_display = {
+	picture = "province_trade_power_value"
+}

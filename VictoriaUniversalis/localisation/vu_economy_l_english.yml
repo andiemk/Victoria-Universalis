@@ -1,0 +1,5 @@
+﻿l_english:
+ production_generic1_display: "Provincial Production"
+ desc_production_generic1_display: "Generic Raw Good:\n   Production: §T[Root.vu_prod_generic1.GetValue]§!\n   Demand: §T[Root.vu_dmnd_generic1.GetValue]§!\n   Price: §Y[Root.vu_prod_generic1_p.GetValue]§!\n   Value: §G[Root.vu_prod_generic1_v.GetValue]§!"
+ production_generic2_display: "Provincial Production"
+ desc_production_generic2_display: "Generic Factory Good:\n   Production: §T[Root.vu_prod_generic2.GetValue]§!\n   Demand: §T[Root.vu_dmnd_generic2.GetValue]§!\n   Price: §Y[Root.vu_prod_generic2_p.GetValue]§!\n   Value: §G[Root.vu_prod_generic2_v.GetValue]§!"

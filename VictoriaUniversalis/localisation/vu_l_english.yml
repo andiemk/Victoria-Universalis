@@ -1,4 +1,10 @@
 ﻿l_english:
+ no_loc: ""
+ continue: "§GContinue§!"
+ next: "§GNext§!"
+ okay: "§GOkay§!"
+ back: "§OBack§!"
+ exit: "§RExit§!"
  VICTORIAN_ERA_NAME:0 "Victorian Era"
  colonial_north_america:0 "Colonial North America"
  COLONIAL_CANADA_Root_Culture_GetGroupName_NorthAmerica:0 "[Root.GetAdjective] North America"

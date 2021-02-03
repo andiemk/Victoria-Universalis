@@ -1,0 +1,26 @@
+#vu_all_tgs = { #effect [#datas]
+#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+#vu_raw_tgs = { #effect [#datas]
+#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+#vu_fact_tgs = { #effect [#datas]
+#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+
+vu_calc_demand = {
+	####add tgs here
+	vu_calc_demand_h = { good=generic1 f_upper=0.5 f_mid=1 f_lower=1.2  }
+	vu_calc_demand_h = { good=generic2 f_upper=1.5 f_mid=1 f_lower=0.8  }
+}
+vu_calc_demand_h = { #good #f_lower #f_mid #f_upper
+	set_variable = { which = vu_dmnd_$good$ value = $f_upper$ }
+	multiply_variable = { which = vu_dmnd_$good$ which = upper_pop }
+	set_variable = { which = temp value = $f_mid$ }
+	multiply_variable = { which = temp which = mid_pop }
+	change_variable = { which = vu_dmnd_$good$ which = temp }
+	set_variable = { which = temp value = $f_lower$ }
+	multiply_variable = { which = temp which = lower_pop }
+	change_variable = { which = vu_dmnd_$good$ which = temp }
+}

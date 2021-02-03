@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "empty"
+		texturefile = "gfx/economy/1px.dds"
+		allwaystransparent = yes
+	}
+}

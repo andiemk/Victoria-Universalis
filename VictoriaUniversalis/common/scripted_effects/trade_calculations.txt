@@ -1,0 +1,106 @@
+set_prices = {
+	set_variable = {	which = grain_price	value = 2.00	}
+	set_variable = {	which = coal_price	value = 7.00	}
+}
+calculate_total_goods = {
+	set_variable = {	which = production_modifiers	value = 0	}
+	set_variable = {	which = global_production_modifiers	value = 0	}
+	set_variable = {	which = province_labor_force	value = 0	}
+	set_variable = {	which = province_goods_produced	value = 0	}
+	
+	export_to_variable = {
+		which = province_factories
+		value = base_production
+	}
+	export_to_variable = {
+		which = province_labor_force
+		value = base_tax
+	}
+	export_to_variable = {
+		which = production_modifiers
+		value = modifier:trade_goods_size_modifier
+	}
+	export_to_variable = {
+		which = global_production_modifiers
+		value = modifier:global_trade_goods_size_modifier
+		who = owner
+	}
+
+	change_variable = {
+		which = production_modifiers
+		which = global_production_modifiers
+	}
+	change_variable = {
+		which = production_modifiers
+		value = 1
+	}
+	set_variable = {	
+		which = province_goods_produced	
+		which = province_labor_force	
+	}
+	multiply_variable = {
+		which = province_goods_produced
+		value = 0.2
+	}
+	multiply_variable = {
+		which = province_goods_produced
+		which = production_modifiers
+	}
+
+}
+calculate_good_amount_effect = {
+	set_variable = {	which = $GOOD$_amount	value = 0	}
+	
+	if = {
+		limit = {
+			has_province_modifier = $GOOD$_display	
+		}
+		change_variable = {
+			which = $GOOD$_amount
+			which = province_goods_produced
+		}
+		if = {
+			limit = {
+				has_province_modifier = $GOOD$_20
+			}
+			multiply_variable = {
+				which = $GOOD$_amount
+				value = 0.2
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = $GOOD$_40
+			}
+			multiply_variable = {
+				which = $GOOD$_amount
+				value = 0.4
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = $GOOD$_60
+			}
+			multiply_variable = {
+				which = $GOOD$_amount
+				value = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = $GOOD$_80
+			}
+			multiply_variable = {
+				which = $GOOD$_amount
+				value = 0.8
+			}
+		}
+	}
+
+	# Refresh	
+	remove_province_modifier = $GOOD$_display
+	add_permanent_province_modifier = {
+		name = $GOOD$_display
+		duration = -1
+	}
+}

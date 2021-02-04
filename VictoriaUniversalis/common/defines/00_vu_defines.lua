@@ -11,6 +11,9 @@ NDefines.NGame.MAX_RANDOM_NEW_WORLD = "1000.1.1"
 NDefines.NCountry.ALLOW_ZERO_BASE_VALUES = 1
 NDefines.NCountry.PS_IMPROVE_PROVINCE_BASE = 0
 
+-- Military
+NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0
+
 -- Custom defines to adjust unit speed for the larger map:
 
 NDefines.NDiplomacy.DIPLOMAT_SPEED = 22.0

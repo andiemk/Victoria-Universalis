@@ -1,6 +1,6 @@
-production_generic1_display = {
-	picture = "province_trade_power_value"
+production_grain_display = {
+	picture = "trade_goods_grain"
 }
-production_generic2_display = {
-	picture = "province_trade_power_value"
+production_coal_display = {
+	picture = "trade_goods_coal"
 }

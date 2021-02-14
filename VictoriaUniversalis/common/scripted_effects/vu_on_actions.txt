@@ -1,69 +1,34 @@
 on_setup = { #once only, first time a game is started
-	every_country = { #
-		set_prices = yes
+	tn_group = {
+		vu_calc_price = yes
 	}
-	
-	
 	every_province = {
 		limit = { is_wasteland = no }
 		var_init = { var=total_pop }
 		var_init = { var=upper_pop }
 		var_init = { var=mid_pop }
 		var_init = { var=lower_pop }
-
-		var_init = { var=vu_prod_generic1 }
-		var_init = { var=vu_prod_generic1_p }
-		var_init = { var=vu_prod_generic1_v }
-		var_init = { var=vu_prod_generic2 }
-		var_init = { var=vu_prod_generic2_p }
-		var_init = { var=vu_prod_generic2_v }
 		
 		vu_pop_recalc = yes
 		vu_calc_demand = yes
+		vu_calc_value = yes
 		
 		add_permanent_province_modifier = {
 			name = population_display
 			duration = -1
 		}
-		add_permanent_province_modifier = {
-			name = production_generic1_display
-			duration = -1
-		}
-		add_permanent_province_modifier = {
-			name = production_generic2_display
-			duration = -1
-		}
 		
-
-		add_permanent_province_modifier = { #
-			name = coal_20
-			duration = -1
-			hidden = yes
+		random_list = {
+			50 = { vu_add_good = { good = coal } }
+			50 = { vu_add_good = { good = grain } }
 		}
-		add_permanent_province_modifier = {
-			name = coal_display
-			duration = -1
-		}
-
-		add_permanent_province_modifier = {
-			name = grain_80
-			duration = -1
-			hidden = yes
-		}
-		add_permanent_province_modifier = {
-			name = grain_display
-			duration = -1
-		}
-		
-		calculate_total_goods = yes
-		calculate_good_amount_effect = {
-			GOOD = coal
-		}
-		calculate_good_amount_effect = {
-			GOOD = grain
-		}
-		
-		
+#		calculate_total_goods = yes
+#		calculate_good_amount_effect = {
+#			GOOD = coal
+#		}
+#		calculate_good_amount_effect = {
+#			GOOD = grain
+#		}
 	}
 	country_event = { id = vu_e.1 }
 }

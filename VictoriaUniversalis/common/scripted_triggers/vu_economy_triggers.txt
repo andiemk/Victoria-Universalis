@@ -1,0 +1,17 @@
+vu_has_raw_tg = {
+	OR = {
+		has_province_flag = tg_grain
+		has_province_flag = tg_coal
+	}
+}
+vu_has_fact_tg = {
+	OR = {
+		always = no
+	}
+}
+vu_has_tg = {
+	OR = {
+		has_raw_tg = yes
+		has_fact_tg = yes
+	}
+}

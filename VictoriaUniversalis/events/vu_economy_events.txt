@@ -6,7 +6,19 @@ country_event = {
 	picture = empty
 	is_triggered_only = yes
 	hidden = yes
+	trigger = {
+		OR = {
+			had_global_flag = {
+				flag = on_yearly_timer
+				days = 720
+			}
+			NOT = { has_global_flag = on_yearly_timer }
+		}
+	}
 	immediate = {
+		clr_global_flag = on_yearly_timer
+		set_global_flag = on_yearly_timer
+		on_yearly = yes
 	}
 	option = { name = no_loc }
 }

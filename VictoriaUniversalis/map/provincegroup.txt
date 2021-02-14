@@ -1,0 +1,3 @@
+tn_group = { #one province in every trade node
+	2544 2514 944
+}

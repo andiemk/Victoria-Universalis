@@ -1,0 +1,194 @@
+
+  #### add more tgs everywhere here ####
+
+# do effect for all goods
+#vu_all_tgs = { #effect [#datas]
+#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+
+# do effect for all raw goods
+#vu_raw_tgs = { #effect [#datas]
+#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+
+# do effect for all factory goods
+#vu_fact_tgs = { #effect [#datas]
+#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+
+# do effect for the present raw good
+vu_raw_tg_switch = { #effect [#datas]
+	trigger_switch = {
+		on_trigger = has_province_flag
+		tg_grain = { $effect$ = { good=grain [[data1]data1 = $data1$] } }
+		tg_coal = { $effect$ = { good=coal [[data1]data1 = $data1$] } }
+	}
+}
+
+# do effect for the present factory good
+#vu_fact_tg_switch = { #effect [#datas]
+#	trigger_switch = {
+#		on_trigger = has_province_flag
+#	}
+#}
+
+# do effect for the present goods
+vu_all_tg_switch = { #effect [#datas]
+	vu_raw_tg_switch = { effect=$effect$ }
+#	vu_fact_tg_switch = { effect=$effect$ }
+}
+
+#recalculate provincial demand
+vu_calc_demand = {
+	vu_calc_demand_h = { good=grain f_upper=0.5 f_mid=1 f_lower=1.2  }
+	vu_calc_demand_h = { good=coal f_upper=1.5 f_mid=1 f_lower=0.8  }
+}
+vu_calc_demand_h = { #good #f_lower #f_mid #f_upper
+	set_variable = { which = vu_$good$_dmnd value = $f_upper$ }
+	multiply_variable = { which = vu_$good$_dmnd which = upper_pop }
+	set_variable = { which = temp value = $f_mid$ }
+	multiply_variable = { which = temp which = mid_pop }
+	change_variable = { which = vu_$good$_dmnd which = temp }
+	set_variable = { which = temp value = $f_lower$ }
+	multiply_variable = { which = temp which = lower_pop }
+	change_variable = { which = vu_$good$_dmnd which = temp }
+}
+
+# recalculate provincial production
+vu_calc_prod = {
+	export_to_variable = { which = vu_total_prod value = base_tax }
+	
+	export_to_variable = {
+		which = temp
+		value = modifier:global_trade_goods_size_modifier
+		who = owner
+	}
+	change_variable = { which = temp value = 1 }
+	multiply_variable = { which = vu_total_prod which = temp }
+	
+#	export_to_variable = { which = province_factories value = base_production }
+	
+	vu_all_tg_switch = { effect=vu_calc_prod_h }
+}
+vu_calc_prod_h = { #good
+	#percentage of total production
+	set_variable = { which = vu_$good$_prod which = vu_total_prod }
+	multiply_variable = { which = vu_$good$_prod which = vu_$good$_p }
+}
+# recalculate provincial production value, after production & price
+vu_calc_value = {
+	set_variable = { which = temp value = 0 }
+	vu_all_tg_switch = { effect=vu_calc_value_h }
+	
+	vu_apply_modifier_8 = { var=temp mod=prodmod type=province }
+}
+vu_calc_value_h = {
+	set_variable = { which = vu_$good$_val which = vu_$good$_prod }
+	multiply_variable = { which = vu_$good$_val which = vu_$good$_p }
+	change_variable = { which = temp which = vu_$good$_val }
+}
+
+# recalculate prices in a tradenode
+vu_calc_price = {
+	every_trade_node_member_province = {
+		vu_calc_price_h = { good=grain base=2.0 }
+		vu_calc_price_h = { good=coal base=7.0 }
+	}
+}
+vu_calc_price_h = { #good #base
+	set_variable = { which = vu_$good$_p value = $base$ }
+}
+
+# add good if there's space
+vu_add_good = { #good #type
+	if = {
+		limit = {
+			has_$type$_tg = no
+		}
+		set_province_flag = tg_$good$
+		add_permanent_province_modifier = {
+			name = production_$good$_display
+			duration = -1
+		}
+		vu_calc_prod = yes
+	}
+}
+
+# replace good of the same type
+vu_replace_good = { #good #type
+	vu_$type$_switch = { effect=vu_replace_good_helper data1=$good$ }
+}
+vu_replace_good_helper = { #good #data1 (target good)
+	vu_remove_good = { good=$good$ }
+	vu_add_good = { good=data1 }
+}
+
+# remove a good
+vu_remove_good = { #good
+	clr_province_flag = tg_$good$
+	remove_province_modifier = production_$good$_display
+}
+
+vu_add_factory = { #good
+}
+### other stuff ###
+
+vu_apply_modifier_8 = { #type #mod #var
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=8.192 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=4.096 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.048 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.024 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.512 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.256 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.128 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.064 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.032 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.016 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.008 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.004 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.002 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.001 }
+}
+vu_apply_modifier_300 = {
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=327.68 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=163.84 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=81.92 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=40.96 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=20.48 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=10.24 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=5.12 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.56 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.28 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.64 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.32 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.16 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.08 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.04 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.02 }
+	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.01 }
+}
+vu_helper1 = {
+	if = {
+		limit = {
+			check_variable = { which = $var$ value = $val$ }
+		}
+		subtract_variable = { which = $var$ value = $val$ }
+		add_permanent_$type$_modifier = {
+			name = $mod$_$val$
+			duration = -1
+			hidden = yes
+		}
+	}
+	else = {
+		remove_$type$_modifier = $mod$_$val$
+	}
+}
+
+
+
+
+
+
+
+

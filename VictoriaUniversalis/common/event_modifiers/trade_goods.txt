@@ -1,667 +1,87 @@
 fruits_veggies_display = { #price = 3.0
 	picture = "trade_good_fruits_veggies"
 }
-fruits_veggies_20 = {
-	trade_value_modifier = 0.6
-
-}
-fruits_veggies_40 = {
-	trade_value_modifier = 1.2
-
-}
-fruits_veggies_60 = {
-	trade_value_modifier = 1.8
-
-}
-fruits_veggies_80 = {
-	trade_value_modifier = 2.4
-
-}
-fruits_veggies_100 = {
-	trade_value_modifier = 3
-
-}
 sulfur_display = { #price = 3.3
 	picture = "trade_good_sulfur"
-}
-sulfur_20 = {
-	trade_value_modifier = 0.66
-
-}
-sulfur_40 = {
-	trade_value_modifier = 1.32
-
-}
-sulfur_60 = {
-	trade_value_modifier = 1.98
-
-}
-sulfur_80 = {
-	trade_value_modifier = 2.64
-
-}
-sulfur_100 = {
-	trade_value_modifier = 3.3
-
 }
 oil_display = { #price = 10.0
 	picture = "trade_good_oil"
 }
-oil_20 = {
-	trade_value_modifier = 2
-
-}
-oil_40 = {
-	trade_value_modifier = 4
-
-}
-oil_60 = {
-	trade_value_modifier = 6
-
-}
-oil_80 = {
-	trade_value_modifier = 8
-
-}
-oil_100 = {
-	trade_value_modifier = 10
-
-}
 timber_display = { #price = 2.0
 	picture = "trade_good_timber"
-}
-timber_20 = {
-	trade_value_modifier = 0.4
-
-}
-timber_40 = {
-	trade_value_modifier = 0.8
-
-}
-timber_60 = {
-	trade_value_modifier = 1.2
-
-}
-timber_80 = {
-	trade_value_modifier = 1.6
-
-}
-timber_100 = {
-	trade_value_modifier = 2
-
 }
 rubber_display = { #price = 4.0
 	picture = "trade_good_rubber"
 }
-rubber_20 = {
-	trade_value_modifier = 0.8
-
-}
-rubber_40 = {
-	trade_value_modifier = 1.6
-
-}
-rubber_60 = {
-	trade_value_modifier = 2.4
-
-}
-rubber_80 = {
-	trade_value_modifier = 3.2
-
-}
-rubber_100 = {
-	trade_value_modifier = 4
-
-}
 opium_display = { #price = 4.5
 	picture = "trade_good_opium"
-}
-opium_20 = {
-	trade_value_modifier = 0.9
-
-}
-opium_40 = {
-	trade_value_modifier = 1.8
-
-}
-opium_60 = {
-	trade_value_modifier = 2.7
-
-}
-opium_80 = {
-	trade_value_modifier = 3.6
-
-}
-opium_100 = {
-	trade_value_modifier = 4.5
-
 }
 iron_display = { #price = 4.5
 	picture = "trade_good_iron"
 }
-iron_20 = {
-	trade_value_modifier = 0.9
-
-}
-iron_40 = {
-	trade_value_modifier = 1.8
-
-}
-iron_60 = {
-	trade_value_modifier = 2.7
-
-}
-iron_80 = {
-	trade_value_modifier = 3.6
-
-}
-iron_100 = {
-	trade_value_modifier = 4.5
-
-}
 fish_display = { #price = 2.0
 	picture = "trade_good_fish"
-}
-fish_20 = {
-	trade_value_modifier = 0.4
-
-}
-fish_40 = {
-	trade_value_modifier = 0.8
-
-}
-fish_60 = {
-	trade_value_modifier = 1.2
-
-}
-fish_80 = {
-	trade_value_modifier = 1.6
-
-}
-fish_100 = {
-	trade_value_modifier = 2
-
 }
 fur_display = { #price = 3.5
 	picture = "trade_good_fur"
 }
-fur_20 = {
-	trade_value_modifier = 0.7
-
-}
-fur_40 = {
-	trade_value_modifier = 1.4
-
-}
-fur_60 = {
-	trade_value_modifier = 2.1
-
-}
-fur_80 = {
-	trade_value_modifier = 2.8
-
-}
-fur_100 = {
-	trade_value_modifier = 3.5
-
-}
 grain_display = { #price = 2.0
 	picture = "trade_good_grain"
-}
-grain_20 = {
-	trade_value_modifier = 0.4
-
-}
-grain_40 = {
-	trade_value_modifier = 0.8
-
-}
-grain_60 = {
-	trade_value_modifier = 1.2
-
-}
-grain_80 = {
-	trade_value_modifier = 1.6
-
-}
-grain_100 = {
-	trade_value_modifier = 2
-
 }
 livestock_display = { #price = 3.5
 	picture = "trade_good_livestock"
 }
-livestock_20 = {
-	trade_value_modifier = 0.7
-
-}
-livestock_40 = {
-	trade_value_modifier = 1.4
-
-}
-livestock_60 = {
-	trade_value_modifier = 2.1
-
-}
-livestock_80 = {
-	trade_value_modifier = 2.8
-
-}
-livestock_100 = {
-	trade_value_modifier = 3.5
-
-}
 salt_display = { #price = 3.3
 	picture = "trade_good_salt"
-}
-salt_20 = {
-	trade_value_modifier = 0.66
-
-}
-salt_40 = {
-	trade_value_modifier = 1.32
-
-}
-salt_60 = {
-	trade_value_modifier = 1.98
-
-}
-salt_80 = {
-	trade_value_modifier = 2.64
-
-}
-salt_100 = {
-	trade_value_modifier = 3.3
-
 }
 wool_display = { #price = 2.9
 	picture = "trade_good_wool"
 }
-wool_20 = {
-	trade_value_modifier = 0.58
-
-}
-wool_40 = {
-	trade_value_modifier = 1.16
-
-}
-wool_60 = {
-	trade_value_modifier = 1.74
-
-}
-wool_80 = {
-	trade_value_modifier = 2.32
-
-}
-wool_100 = {
-	trade_value_modifier = 2.9
-
-}
 copper_display = { #price = 3.45
 	picture = "trade_good_copper"
-}
-copper_20 = {
-	trade_value_modifier = 0.69
-
-}
-copper_40 = {
-	trade_value_modifier = 1.38
-
-}
-copper_60 = {
-	trade_value_modifier = 2.07
-
-}
-copper_80 = {
-	trade_value_modifier = 2.76
-
-}
-copper_100 = {
-	trade_value_modifier = 3.45
-
 }
 spices_display = { #price = 3.3
 	picture = "trade_good_spices"
 }
-spices_20 = {
-	trade_value_modifier = 0.66
-
-}
-spices_40 = {
-	trade_value_modifier = 1.32
-
-}
-spices_60 = {
-	trade_value_modifier = 1.98
-
-}
-spices_80 = {
-	trade_value_modifier = 2.64
-
-}
-spices_100 = {
-	trade_value_modifier = 3.3
-
-}
 tea_display = { #price = 3.0
 	picture = "trade_good_tea"
-}
-tea_20 = {
-	trade_value_modifier = 0.6
-
-}
-tea_40 = {
-	trade_value_modifier = 1.2
-
-}
-tea_60 = {
-	trade_value_modifier = 1.8
-
-}
-tea_80 = {
-	trade_value_modifier = 2.4
-
-}
-tea_100 = {
-	trade_value_modifier = 3
-
 }
 cocoa_display = { #price = 5.4
 	picture = "trade_good_cocoa"
 }
-cocoa_20 = {
-	trade_value_modifier = 1.08
-
-}
-cocoa_40 = {
-	trade_value_modifier = 2.16
-
-}
-cocoa_60 = {
-	trade_value_modifier = 3.24
-
-}
-cocoa_80 = {
-	trade_value_modifier = 4.32
-
-}
-cocoa_100 = {
-	trade_value_modifier = 5.4
-
-}
 coffee_display = { #price = 3.3
 	picture = "trade_good_coffee"
-}
-coffee_20 = {
-	trade_value_modifier = 0.66
-
-}
-coffee_40 = {
-	trade_value_modifier = 1.32
-
-}
-coffee_60 = {
-	trade_value_modifier = 1.98
-
-}
-coffee_80 = {
-	trade_value_modifier = 2.64
-
-}
-coffee_100 = {
-	trade_value_modifier = 3.3
-
 }
 cotton_display = { #price = 5.0
 	picture = "trade_good_cotton"
 }
-cotton_20 = {
-	trade_value_modifier = 1
-
-}
-cotton_40 = {
-	trade_value_modifier = 2
-
-}
-cotton_60 = {
-	trade_value_modifier = 3
-
-}
-cotton_80 = {
-	trade_value_modifier = 4
-
-}
-cotton_100 = {
-	trade_value_modifier = 5
-
-}
 sugar_display = { #price = 5.3
 	picture = "trade_good_sugar"
-}
-sugar_20 = {
-	trade_value_modifier = 1.06
-
-}
-sugar_40 = {
-	trade_value_modifier = 2.12
-
-}
-sugar_60 = {
-	trade_value_modifier = 3.18
-
-}
-sugar_80 = {
-	trade_value_modifier = 4.24
-
-}
-sugar_100 = {
-	trade_value_modifier = 5.3
-
 }
 tobacco_display = { #price = 4.5
 	picture = "trade_good_tobacco"
 }
-tobacco_20 = {
-	trade_value_modifier = 0.9
-
-}
-tobacco_40 = {
-	trade_value_modifier = 1.8
-
-}
-tobacco_60 = {
-	trade_value_modifier = 2.7
-
-}
-tobacco_80 = {
-	trade_value_modifier = 3.6
-
-}
-tobacco_100 = {
-	trade_value_modifier = 4.5
-
-}
 dyes_display = { #price = 4.0
 	picture = "trade_good_dyes"
-}
-dyes_20 = {
-	trade_value_modifier = 0.8
-
-}
-dyes_40 = {
-	trade_value_modifier = 1.6
-
-}
-dyes_60 = {
-	trade_value_modifier = 2.4
-
-}
-dyes_80 = {
-	trade_value_modifier = 3.2
-
-}
-dyes_100 = {
-	trade_value_modifier = 4
-
 }
 tropical_wood_display = { #price = 3.0
 	picture = "trade_good_tropical_wood"
 }
-tropical_wood_20 = {
-	trade_value_modifier = 0.6
-
-}
-tropical_wood_40 = {
-	trade_value_modifier = 1.2
-
-}
-tropical_wood_60 = {
-	trade_value_modifier = 1.8
-
-}
-tropical_wood_80 = {
-	trade_value_modifier = 2.4
-
-}
-tropical_wood_100 = {
-	trade_value_modifier = 3
-
-}
 gems_display = { #price = 3.0
 	picture = "trade_good_gems"
-}
-gems_20 = {
-	trade_value_modifier = 0.6
-
-}
-gems_40 = {
-	trade_value_modifier = 1.2
-
-}
-gems_60 = {
-	trade_value_modifier = 1.8
-
-}
-gems_80 = {
-	trade_value_modifier = 2.4
-
-}
-gems_100 = {
-	trade_value_modifier = 3
-
 }
 coal_display = { #price = 7.0
 	picture = "trade_good_coal"
 }
-coal_20 = {
-	trade_value_modifier = 1.4
-
-}
-coal_40 = {
-	trade_value_modifier = 2.8
-
-}
-coal_60 = {
-	trade_value_modifier = 4.2
-
-}
-coal_80 = {
-	trade_value_modifier = 5.6
-
-}
-coal_100 = {
-	trade_value_modifier = 7
-
-}
 ivory_display = { #price = 5.0
 	picture = "trade_good_ivory"
-}
-ivory_20 = {
-	trade_value_modifier = 1
-
-}
-ivory_40 = {
-	trade_value_modifier = 2
-
-}
-ivory_60 = {
-	trade_value_modifier = 3
-
-}
-ivory_80 = {
-	trade_value_modifier = 4
-
-}
-ivory_100 = {
-	trade_value_modifier = 5
-
 }
 slaves_display = { #price = 2.2
 	picture = "trade_good_slaves"
 }
-slaves_20 = {
-	trade_value_modifier = 0.44
-
-}
-slaves_40 = {
-	trade_value_modifier = 0.88
-
-}
-slaves_60 = {
-	trade_value_modifier = 1.32
-
-}
-slaves_80 = {
-	trade_value_modifier = 1.76
-
-}
-slaves_100 = {
-	trade_value_modifier = 2.2
-
-}
 silk_display = { #price = 5.0
 	picture = "trade_good_silk"
 }
-silk_20 = {
-	trade_value_modifier = 1
-
-}
-silk_40 = {
-	trade_value_modifier = 2
-
-}
-silk_60 = {
-	trade_value_modifier = 3
-
-}
-silk_80 = {
-	trade_value_modifier = 4
-
-}
-silk_100 = {
-	trade_value_modifier = 5
-
-}
 assorted_minerals_display = { #price = 4.0
 	picture = "trade_good_assorted_minerals"
-}
-assorted_minerals_20 = {
-	trade_value_modifier = 0.8
-
-}
-assorted_minerals_40 = {
-	trade_value_modifier = 1.6
-
-}
-assorted_minerals_60 = {
-	trade_value_modifier = 2.4
-
-}
-assorted_minerals_80 = {
-	trade_value_modifier = 3.2
-
-}
-assorted_minerals_100 = {
-	trade_value_modifier = 4
-
 }

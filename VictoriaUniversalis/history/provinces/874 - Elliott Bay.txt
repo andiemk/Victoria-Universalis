@@ -10,31 +10,15 @@ religion = totemism
 culture = chinook
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.231
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.231
+		value = 1.059
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 0.002
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.98
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.02
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

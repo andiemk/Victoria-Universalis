@@ -10,31 +10,15 @@ religion = totemism
 culture = cherokee
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.26
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.258
+		value = 1.309
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.003
+		value = 0.006
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.79
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.2
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

@@ -10,31 +10,15 @@ religion = totemism
 culture = pawnee
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.395
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.392
+		value = 1.09
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.003
+		value = 0.002
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.76
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.24
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

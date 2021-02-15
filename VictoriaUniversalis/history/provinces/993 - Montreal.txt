@@ -10,31 +10,15 @@ religion = catholic
 culture = french_canadian
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 184.714
-	}
-	set_variable = {
 		which = lower_pop
-		value = 122.018
+		value = 122.012
 	}
 	set_variable = {
 		which = mid_pop
-		value = 44.873
+		value = 44.802
 	}
 	set_variable = {
 		which = upper_pop
-		value = 17.822
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 66.06
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 24.29
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 9.65
+		value = 17.812
 	}
 }

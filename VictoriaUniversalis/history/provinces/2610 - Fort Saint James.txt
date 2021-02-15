@@ -10,31 +10,15 @@ religion = totemism
 culture = salish
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.284
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.28
+		value = 1.033
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.004
+		value = 0.003
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.71
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.29
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

@@ -10,31 +10,15 @@ religion = protestant
 culture = anglo_caribbean
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 349.331
-	}
-	set_variable = {
 		which = lower_pop
-		value = 271.667
+		value = 271.643
 	}
 	set_variable = {
 		which = mid_pop
-		value = 58.231
+		value = 58.222
 	}
 	set_variable = {
 		which = upper_pop
-		value = 19.433
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 77.77
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 16.67
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.56
+		value = 19.44
 	}
 }

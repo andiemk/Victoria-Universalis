@@ -10,31 +10,15 @@ religion = catholic
 culture = caribeno
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 294.585
-	}
-	set_variable = {
 		which = lower_pop
-		value = 230.036
+		value = 229.965
 	}
 	set_variable = {
 		which = mid_pop
-		value = 48.402
+		value = 48.384
 	}
 	set_variable = {
 		which = upper_pop
-		value = 16.147
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 78.09
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 16.43
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.48
+		value = 16.14
 	}
 }

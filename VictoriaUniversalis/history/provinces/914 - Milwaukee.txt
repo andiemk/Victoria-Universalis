@@ -10,31 +10,15 @@ religion = protestant
 culture = anishinabe
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 4.705
-	}
-	set_variable = {
 		which = lower_pop
-		value = 3.623
+		value = 3.649
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.815
+		value = 0.811
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.267
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 77.01
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 17.33
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.67
+		value = 0.26
 	}
 }

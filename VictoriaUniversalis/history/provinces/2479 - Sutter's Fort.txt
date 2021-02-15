@@ -10,12 +10,8 @@ religion = totemism
 culture = yokuts
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.245
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.239
+		value = 1.22
 	}
 	set_variable = {
 		which = mid_pop
@@ -23,18 +19,6 @@ culture = yokuts
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.49
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.5
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

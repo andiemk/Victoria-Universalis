@@ -10,31 +10,15 @@ religion = catholic
 culture = yucatec
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 8.497
-	}
-	set_variable = {
 		which = lower_pop
-		value = 6.696
+		value = 6.678
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.332
+		value = 1.287
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.469
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 78.8
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.67
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.52
+		value = 0.495
 	}
 }

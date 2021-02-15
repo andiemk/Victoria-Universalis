@@ -10,31 +10,15 @@ religion = protestant
 culture = texan
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 9.419
-	}
-	set_variable = {
 		which = lower_pop
-		value = 6.901
+		value = 6.89
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.928
+		value = 1.888
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.591
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 73.26
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 20.47
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 6.27
+		value = 0.574
 	}
 }

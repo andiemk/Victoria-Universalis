@@ -10,31 +10,15 @@ religion = protestant
 culture = dixie
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 40.74
-	}
-	set_variable = {
 		which = lower_pop
-		value = 29.413
+		value = 29.401
 	}
 	set_variable = {
 		which = mid_pop
-		value = 9.26
+		value = 9.229
 	}
 	set_variable = {
 		which = upper_pop
-		value = 2.066
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 72.2
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 22.73
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.07
+		value = 2.084
 	}
 }

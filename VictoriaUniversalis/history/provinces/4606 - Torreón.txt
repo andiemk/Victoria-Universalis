@@ -10,31 +10,15 @@ religion = catholic
 culture = mexican
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 50.231
-	}
-	set_variable = {
 		which = lower_pop
-		value = 39.685
+		value = 39.639
 	}
 	set_variable = {
 		which = mid_pop
-		value = 7.663
+		value = 7.622
 	}
 	set_variable = {
 		which = upper_pop
-		value = 2.883
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.01
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.26
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.74
+		value = 2.87
 	}
 }

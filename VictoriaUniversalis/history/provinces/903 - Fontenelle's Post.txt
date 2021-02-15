@@ -10,31 +10,15 @@ religion = totemism
 culture = omaha
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.084
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.083
+		value = 1.044
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.001
+		value = 0.009
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.87
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.13
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

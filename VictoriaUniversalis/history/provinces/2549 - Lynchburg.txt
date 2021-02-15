@@ -10,31 +10,15 @@ religion = protestant
 culture = afro_american
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 199.764
-	}
-	set_variable = {
 		which = lower_pop
-		value = 128.327
+		value = 128.309
 	}
 	set_variable = {
 		which = mid_pop
-		value = 51.128
+		value = 51.181
 	}
 	set_variable = {
 		which = upper_pop
-		value = 20.308
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 64.24
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 25.59
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 10.17
+		value = 20.35
 	}
 }

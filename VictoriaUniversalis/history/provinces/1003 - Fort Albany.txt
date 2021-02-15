@@ -10,31 +10,15 @@ religion = totemism
 culture = cree
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.206
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.197
+		value = 1.219
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.008
+		value = 0.003
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.31
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.69
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

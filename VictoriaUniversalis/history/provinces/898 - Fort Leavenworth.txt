@@ -10,31 +10,15 @@ religion = totemism
 culture = osage
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.145
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.14
+		value = 1.068
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.005
+		value = 0.002
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.54
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.46
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

@@ -10,31 +10,15 @@ religion = totemism
 culture = chickasaw
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.249
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.245
+		value = 1.3
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.004
-	}
-	set_variable = {
-		which = upper_pop
 		value = 0
 	}
 	set_variable = {
-		which = lower_pop_percent
-		value = 99.66
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.33
-	}
-	set_variable = {
-		which = upper_pop_percent
+		which = upper_pop
 		value = 0
 	}
 }

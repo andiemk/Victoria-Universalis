@@ -10,31 +10,15 @@ religion = totemism
 culture = anishinabe
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.125
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.122
+		value = 1.387
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.003
+		value = 0.008
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.76
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.24
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

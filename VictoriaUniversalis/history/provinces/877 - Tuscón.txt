@@ -10,31 +10,15 @@ religion = totemism
 culture = apache
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 2.26
-	}
-	set_variable = {
 		which = lower_pop
-		value = 2.252
+		value = 2.289
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.008
+		value = 0.004
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.63
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.36
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

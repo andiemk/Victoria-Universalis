@@ -10,31 +10,15 @@ religion = totemism
 culture = dakota
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.099
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.096
+		value = 1.239
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.002
+		value = 0.007
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.8
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.2
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

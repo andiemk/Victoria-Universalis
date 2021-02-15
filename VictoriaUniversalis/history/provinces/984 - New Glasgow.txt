@@ -10,31 +10,15 @@ religion = reformed
 culture = scottish
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 39.325
-	}
-	set_variable = {
 		which = lower_pop
-		value = 27.338
+		value = 27.354
 	}
 	set_variable = {
 		which = mid_pop
-		value = 7.994
+		value = 7.96
 	}
 	set_variable = {
 		which = upper_pop
-		value = 3.993
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 69.52
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 20.33
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 10.15
+		value = 4.022
 	}
 }

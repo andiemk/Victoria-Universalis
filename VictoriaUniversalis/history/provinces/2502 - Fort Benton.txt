@@ -10,12 +10,8 @@ religion = totemism
 culture = blackfoot
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.145
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.14
+		value = 1.358
 	}
 	set_variable = {
 		which = mid_pop
@@ -23,18 +19,6 @@ culture = blackfoot
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.59
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.41
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

@@ -10,31 +10,15 @@ religion = protestant
 culture = yankee
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 55.061
-	}
-	set_variable = {
 		which = lower_pop
-		value = 32.375
+		value = 32.353
 	}
 	set_variable = {
 		which = mid_pop
-		value = 13.063
+		value = 12.999
 	}
 	set_variable = {
 		which = upper_pop
-		value = 9.623
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 58.8
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 23.72
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 17.48
+		value = 9.57
 	}
 }

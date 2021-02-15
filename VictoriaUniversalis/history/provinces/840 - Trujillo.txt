@@ -10,31 +10,15 @@ religion = catholic
 culture = miskito
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 6.91
-	}
-	set_variable = {
 		which = lower_pop
-		value = 5.482
+		value = 5.453
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.054
+		value = 1.034
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.374
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.34
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.25
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.41
+		value = 0.356
 	}
 }

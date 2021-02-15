@@ -10,31 +10,15 @@ religion = totemism
 culture = athabascan
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.318
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.312
+		value = 1.32
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.005
+		value = 0.007
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.6
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.4
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

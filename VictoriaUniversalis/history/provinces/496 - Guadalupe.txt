@@ -10,31 +10,15 @@ religion = catholic
 culture = antillean
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 137.205
-	}
-	set_variable = {
 		which = lower_pop
-		value = 108.456
+		value = 108.48
 	}
 	set_variable = {
 		which = mid_pop
-		value = 21.516
+		value = 21.514
 	}
 	set_variable = {
 		which = upper_pop
-		value = 7.233
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.05
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.68
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.27
+		value = 7.2
 	}
 }

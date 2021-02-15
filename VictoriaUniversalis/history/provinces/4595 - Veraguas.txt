@@ -1,0 +1,24 @@
+add_core = COL
+owner = COL
+controller = COL
+capital = "Santiago"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = catholic
+culture = central_american
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 14.892
+	}
+	set_variable = {
+		which = mid_pop
+		value = 2.758
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.875
+	}
+}

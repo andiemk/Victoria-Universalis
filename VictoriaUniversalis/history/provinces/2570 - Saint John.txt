@@ -10,31 +10,15 @@ religion = catholic
 culture = irish
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 56.81
-	}
-	set_variable = {
 		which = lower_pop
-		value = 37.707
+		value = 37.727
 	}
 	set_variable = {
 		which = mid_pop
-		value = 13.593
+		value = 13.526
 	}
 	set_variable = {
 		which = upper_pop
-		value = 5.509
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 66.37
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 23.93
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 9.7
+		value = 5.561
 	}
 }

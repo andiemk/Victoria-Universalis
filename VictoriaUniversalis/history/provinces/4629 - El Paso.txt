@@ -10,31 +10,15 @@ religion = totemism
 culture = lipan
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 4.992
-	}
-	set_variable = {
 		which = lower_pop
-		value = 4.002
+		value = 4.017
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.726
+		value = 0.746
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.263
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 80.18
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 14.55
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.27
+		value = 0.208
 	}
 }

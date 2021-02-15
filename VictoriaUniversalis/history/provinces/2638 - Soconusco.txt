@@ -10,31 +10,15 @@ religion = catholic
 culture = highland_mayan
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 45.404
-	}
-	set_variable = {
 		which = lower_pop
-		value = 36.063
+		value = 36.121
 	}
 	set_variable = {
 		which = mid_pop
-		value = 6.948
+		value = 6.882
 	}
 	set_variable = {
 		which = upper_pop
-		value = 2.393
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.43
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.3
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.27
+		value = 2.301
 	}
 }

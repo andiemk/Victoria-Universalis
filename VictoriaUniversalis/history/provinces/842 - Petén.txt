@@ -10,31 +10,15 @@ religion = catholic
 culture = itza
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 15.415
-	}
-	set_variable = {
 		which = lower_pop
-		value = 12.294
+		value = 12.364
 	}
 	set_variable = {
 		which = mid_pop
-		value = 2.339
+		value = 2.392
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.782
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.75
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.17
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.08
+		value = 0.87
 	}
 }

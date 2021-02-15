@@ -10,31 +10,15 @@ religion = totemism
 culture = kiliwa
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 9.526
-	}
-	set_variable = {
 		which = lower_pop
-		value = 7.608
+		value = 7.637
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.454
+		value = 1.388
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.464
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.87
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.27
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 4.87
+		value = 0.492
 	}
 }

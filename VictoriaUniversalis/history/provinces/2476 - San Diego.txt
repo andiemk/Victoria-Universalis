@@ -10,31 +10,15 @@ religion = totemism
 culture = yuman
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 9.264
-	}
-	set_variable = {
 		which = lower_pop
-		value = 7.323
+		value = 7.337
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.359
+		value = 1.39
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.581
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.05
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 14.67
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 6.27
+		value = 0.508
 	}
 }

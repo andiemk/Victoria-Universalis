@@ -10,31 +10,15 @@ religion = totemism
 culture = seminole
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 1.012
-	}
-	set_variable = {
 		which = lower_pop
-		value = 1.01
+		value = 1.355
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.003
+		value = 0.008
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 99.71
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 0.28
-	}
-	set_variable = {
-		which = upper_pop_percent
 		value = 0
 	}
 }

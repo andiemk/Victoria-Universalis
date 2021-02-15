@@ -10,31 +10,15 @@ religion = mesoamerican_religion
 culture = yucatec
 1000.1.1 = {
 	set_variable = {
-		which = total_pop
-		value = 59.411
-	}
-	set_variable = {
 		which = lower_pop
-		value = 47.179
+		value = 47.184
 	}
 	set_variable = {
 		which = mid_pop
-		value = 9.085
+		value = 9.108
 	}
 	set_variable = {
 		which = upper_pop
-		value = 3.147
-	}
-	set_variable = {
-		which = lower_pop_percent
-		value = 79.41
-	}
-	set_variable = {
-		which = mid_pop_percent
-		value = 15.29
-	}
-	set_variable = {
-		which = upper_pop_percent
-		value = 5.3
+		value = 3.151
 	}
 }

@@ -1,6 +1,6 @@
-namespace = vu_e
+namespace = vu_econ
 country_event = {
-	id = vu_e.1
+	id = vu_econ.1
 	title = no_loc
 	desc = no_loc
 	picture = empty
@@ -21,4 +21,70 @@ country_event = {
 		on_yearly = yes
 	}
 	option = { name = no_loc }
+}
+country_event = {
+	id = vu_econ.2
+	title = no_loc
+	desc = no_loc
+	picture = empty
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+	immediate = {
+		on_setup = yes
+	}
+	option = { name = no_loc }
+}
+province_event = { #new factory menu
+	id = vu_econ.100
+	title = vu_econ.100_t
+	desc = vu_econ.100_d
+	picture = empty
+	
+	immediate = { set_province_flag = new_factory_menu }
+	is_triggered_only = yes
+	
+	option = {
+		name = vu_econ.100_o1
+		custom_tooltip = vu_econ.100_tt
+		hidden_effect = {
+			province_event = { id = vu_econ.101 }
+		}
+	}
+	option = {
+		name = vu_econ.100_o2
+		clr_province_flag = new_factory_menu
+	}
+}
+province_event = { #new factory menu - x
+	id = vu_econ.101
+	title = vu_econ.101_t
+	desc = vu_econ.101_d
+	picture = empty
+	
+	is_triggered_only = yes
+	immediate = { menu_factory_calc = { good = factory } }
+	option = {
+		name = vu_econ.101_o1
+		custom_tooltip = vu_econ.101_o1_tt
+		hidden_effect = {
+			add_factory = { good = factory amount = 1 }
+			var_effect = { effect = add_treasury var = menu_factory_1 negate = yes }
+		}
+		clr_province_flag = new_factory_menu
+	}
+	option = {
+		name = vu_econ.101_o2
+		custom_tooltip = vu_econ.101_o2_tt
+		hidden_effect = {
+			add_factory = { good = factory amount = 5 }
+			var_effect = { effect = add_treasury var = menu_factory_5 negate = yes }
+		}
+		clr_province_flag = new_factory_menu
+	}
+	option = {
+		name = vu_econ.101_o3
+		clr_province_flag = new_factory_menu
+	}
+	after = { menu_factory_clean = yes }
 }

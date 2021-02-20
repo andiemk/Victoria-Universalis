@@ -1,17 +1,35 @@
 on_setup = { #once only, first time a game is started
-	tn_group = {
-		vu_calc_price = yes
-	}
+
+	# Basic setup
+	
+	set_variable = { which = prov_id value = 1 }
 	every_province = {
-		limit = { is_wasteland = no }
+		set_variable = { which = prov_id value = PREV }
+		PREV = { change_variable = { which = prov_id value = 1 } }
+	}
+	tn_group = {
+		set_variable = { which = tn_id which = prov_id }
+		every_trade_node_member_province = {
+			set_variable = { which = tn_id which = PREV }
+		}
+	}
+	
+	# Pop & Economy setup
+	
+	every_country = {
+		set_variable = { which = workforce_rate value = 0.25 }
+	}
+	
+	every_province = {
+		limit = { is_empty = no } ### change to wasteland
+		
 		var_init = { var=total_pop }
 		var_init = { var=upper_pop }
 		var_init = { var=mid_pop }
 		var_init = { var=lower_pop }
+		var_init = { var=workforce_rate }
 		
-		vu_pop_recalc = yes
-		vu_calc_demand = yes
-		vu_calc_value = yes
+		pop_recalc = yes
 		
 		add_permanent_province_modifier = {
 			name = population_display
@@ -19,9 +37,15 @@ on_setup = { #once only, first time a game is started
 		}
 		
 		random_list = {
-			50 = { vu_add_good = { good = coal } }
-			50 = { vu_add_good = { good = grain } }
+			50 = { add_good = { good = coal } }
+			50 = { add_good = { good = grain } }
 		}
+		random_list = {
+			10 = { add_factory = { good = factory amount = 2 } }
+			5 = { add_factory = { good = factory amount = 5 } }
+			85 = {}
+		}
+
 #		calculate_total_goods = yes
 #		calculate_good_amount_effect = {
 #			GOOD = coal
@@ -30,7 +54,9 @@ on_setup = { #once only, first time a game is started
 #			GOOD = grain
 #		}
 	}
-	country_event = { id = vu_e.1 }
+	calc_economy_all = yes
+	
+	country_event = { id = vu_econ.1 }
 }
 
 on_yearly = { #once a year, each country, somewhat unreliable

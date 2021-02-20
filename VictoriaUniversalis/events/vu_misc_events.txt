@@ -1,0 +1,88 @@
+namespace = vu_misc
+country_event = {
+	id = vu_misc.1
+	title = no_loc
+	desc = no_loc
+	picture = empty
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		on_yearly = yes
+	}
+	option = { name = no_loc }
+}
+country_event = {
+	id = vu_misc.2
+	title = vu_misc.2_t
+	desc = no_loc
+	picture = empty
+	is_triggered_only = yes
+	
+	option = {
+		name = vu_misc.2_o1
+		hidden_effect = {
+			calc_economy_all = yes
+			country_event = { id = vu_misc.3 }
+		}
+	}
+	option = {
+		name = vu_misc.2_o2
+		hidden_effect = {
+			pop_grow_all = yes
+			country_event = { id = vu_misc.3 }
+		}
+	}
+	option = {
+		name = vu_misc.2_o3
+		hidden_effect = {
+		tn_group = {
+			pop_grow = { growth = 1.051 }
+		}
+			country_event = { id = vu_misc.3 }
+		}
+	}
+	option = {
+		name = exit
+	}
+}
+country_event = {
+	id = vu_misc.3
+	title = no_loc
+	desc = no_loc
+	picture = empty
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = no_loc
+		country_event = { id = vu_misc.2 }
+	}
+}
+
+
+province_event = {
+	id = vu_misc.900
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		log = ""
+		log = "[This.GetName] grain_sply = [This.grain_sply.GetValue]"
+		log = "[This.GetName] grain_dmnd = [This.grain_dmnd.GetValue]"
+		log = "[This.GetName] temp = [This.temp.GetValue]"
+		log = "[This.GetName] temp2 = [This.temp2.GetValue]"
+		log = "[This.GetName] grain_oversupply = [This.grain_oversupply.GetValue]"
+	}
+	option = {}
+}
+province_event = {
+	id = vu_misc.901
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		log = ""
+		log = "  [This.GetName] grain_dmnd = [This.grain_dmnd.GetValue]"
+		log = "  [This.GetName] temp2 = [This.temp2.GetValue]"
+		log = "  [This.GetName] grain_sply = [This.grain_sply.GetValue]"
+		log = "  [This.GetName] grain_oversupply = [This.grain_sply.GetValue]"
+	}
+	option = {}
+}

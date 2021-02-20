@@ -1,12 +1,32 @@
 ﻿l_english:
- production_grain_display: "Grain Production"
- desc_production_grain_display: "Grain Raw Good:\n   Production: §T[Root.vu_grain_prod.GetValue]§!\n   Demand: §T[Root.vu_grain_dmnd.GetValue]§!\n   Price: §Y[Root.vu_grain_p.GetValue]§!\n   Value: §G[Root.vu_grain_val.GetValue]§!"
- production_coal_display: "Coal Production"
- desc_production_coal_display: "Coal Raw Good:\n   Production: §T[Root.vu_coal_prod.GetValue]§!\n   Demand: §T[Root.vu_coal_dmnd.GetValue]§!\n   Price: §Y[Root.vu_coal_p.GetValue]§!\n   Value: §G[Root.vu_coal_val.GetValue]§!"
+ grain_display: "Grain Production"
+ desc_grain_display: "Grain Raw Good:\n   Production: §T[Root.grain_prod.GetValue]§! ([Root.grain_prodshare.GetValue] of TN)\n   Demand: §T[Root.grain_dmnd.GetValue]§! (§T[Root.grain_dmnd_per.GetValue]%§!)\n   Supply: §T[Root.grain_sply.GetValue]§!\n   Price: §Y[Root.grain_p.GetValue]§!\n   Value: §G[Root.grain_val.GetValue]§!"
+ grain_surplus: ""
+ 
+ coal_display: "Coal Production"
+ desc_coal_display: "Coal Raw Good:\n   Production: §T[Root.coal_prod.GetValue]§! ([Root.coal_prodshare.GetValue] of TN)\n   Demand: §T[Root.coal_dmnd.GetValue]§! (§T[Root.coal_dmnd_per.GetValue]%§!)\n   Supply: §T[Root.coal_sply.GetValue]§!\n   Price: §Y[Root.coal_p.GetValue]§!\n   Value: §G[Root.coal_val.GetValue]§!"
+ coal_surplus: ""
+ 
+ factory_display: "Some Factory Good Production"
+ desc_factory_display: "Factory Good:\n   Production: §T[Root.factory_prod.GetValue]§! ([Root.factory_prodshare.GetValue] of TN)\n   Demand: §T[Root.factory_dmnd.GetValue]§! (§T[Root.factory_dmnd_per.GetValue]%§!)\n   Supply: §T[Root.factory_sply.GetValue]§!\n   Price: §Y[Root.factory_p.GetValue]§!\n   Value: §G[Root.factory_val.GetValue]§!"
+ factory_surplus: ""
  
  provincial_demand_display: "Province Demand"
- desc_provincial_demand_display: "Province Demand:\n   Grain: Demand [Root.vu_grain_dmnd.GetValue]\n   Coal: Demand [Root.vu_coal_dmnd.GetValue]"
+ desc_provincial_demand_display: "Province Demand:\n   Grain: Demand [Root.grain_dmnd.GetValue]\n   Coal: Demand [Root.coal_dmnd.GetValue]"
  
+ vu_econ.100_t: "New Factory"
+ vu_econ.100_d: "A new factory is being built in [Root.GetName]. Choose what type of factory to build:"
+ vu_econ.100_o1: "Some factory type that isn't implemented yet"
+ vu_econ.100_o2: "Do not build"
+ vu_econ.100_tt: "Choose how many to build"
+ 
+ vu_econ.101_t: "New Factory"
+ vu_econ.101_d: "A new generic factory good factory is being built in [Root.GetName].\n\nChoose how many factories to build:"
+ vu_econ.101_o1: "Build 1"
+ vu_econ.101_o2: "Build 5"
+ vu_econ.101_o3: "Do not build"
+ vu_econ.101_o1_tt: "Costs [This.menu_factory_1.GetValue] ducats"
+ vu_econ.101_o1_tt: "Costs [This.menu_factory_5.GetValue] ducats  ([This.menu_factory_1.GetValue] per factory)"
  
  
  fruits_veggies_display: "Fruits and Vegetables"
@@ -35,9 +55,6 @@
 
  fur_display: "Fur"
  desc_fur_display: "Fur Produced: §T[Root.fur_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.fur_price.GetValue]§!¤"
-
- grain_display: "Grain"
- desc_grain_display: "Grain Produced: §T[Root.grain_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.grain_price.GetValue]§!¤"
 
  livestock_display: "Livestock"
  desc_livestock_display: "Livestock Produced: §T[Root.livestock_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.livestock_price.GetValue]§!¤"
@@ -80,9 +97,6 @@
 
  gems_display: "Gems"
  desc_gems_display: "Gems Produced: §T[Root.gems_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.gems_price.GetValue]§!¤"
-
- coal_display: "Coal"
- desc_coal_display: "Coal Produced: §T[Root.coal_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.coal_price.GetValue]§!¤"
 
  ivory_display: "Ivory"
  desc_ivory_display: "Ivory Produced: §T[Root.ivory_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.ivory_price.GetValue]§!¤"

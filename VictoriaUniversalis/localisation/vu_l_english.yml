@@ -13,3 +13,7 @@
  COLONIAL_CANADA_Root_Culture_GetGroupName_Antilles_ADJ:0 "[Root.GetAdjective] Antillean"
  COLONIAL_THE_CARRIBEAN_Cuba:0 "[Root.GetAdjective] Cuba"
  COLONIAL_THE_CARRIBEAN_Cuba_ADJ:0 "[Root.GetAdjective] Cuban"
+ vu_misc.2_t: "Timelapse Event"
+ vu_misc.2_o1: "Economy recalculation"
+ vu_misc.2_o2: "A year's worth of pop growth"
+ vu_misc.2_o3: "5 years' worth of pop growth"

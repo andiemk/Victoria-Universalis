@@ -96,12 +96,10 @@ can_improve_tax = {
 can_improve_production = {
 	condition = {
 		potential = {
-			NOT = { technology_group = western } #Temporary
+			always = yes
 		}
 		allow = {
-			FROM = {
-				treasury = 100
-			}
+			NOT = { has_province_flag = build_factory_menu }
 		}
 	}
 }

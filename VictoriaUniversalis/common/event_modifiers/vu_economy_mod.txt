@@ -1,28 +1,7 @@
 provincial_demand_display = {
 	picture = "province_trade_power_value"
 }
-
-production_grain_display = {
-	picture = "trade_goods_grain"
-}
-production_coal_display = {
-	picture = "trade_goods_coal"
-}
-
-prodmod_0.001 = { trade_goods_size_modifier = 0.001 }
-prodmod_0.002 = { trade_goods_size_modifier = 0.002 }
-prodmod_0.004 = { trade_goods_size_modifier = 0.004 }
-prodmod_0.008 = { trade_goods_size_modifier = 0.008 }
-prodmod_0.016 = { trade_goods_size_modifier = 0.016 }
-prodmod_0.032 = { trade_goods_size_modifier = 0.032 }
-prodmod_0.064 = { trade_goods_size_modifier = 0.064 }
-prodmod_0.128 = { trade_goods_size_modifier = 0.128 }
-prodmod_0.256 = { trade_goods_size_modifier = 0.256 }
-prodmod_0.512 = { trade_goods_size_modifier = 0.512 }
-prodmod_1.024 = { trade_goods_size_modifier = 1.024 }
-prodmod_2.048 = { trade_goods_size_modifier = 2.048 }
-prodmod_4.096 = { trade_goods_size_modifier = 4.096 }
-prodmod_8.192 = { trade_goods_size_modifier = 8.192 }
+factory_display = {} ####temporary
 
 prod_0.01 = { trade_goods_size = 0.01 }
 prod_0.02 = { trade_goods_size = 0.02 }
@@ -41,34 +20,81 @@ prod_81.92 = { trade_goods_size = 81.92 }
 prod_163.84 = { trade_goods_size = 163.84 }
 prod_327.68 = { trade_goods_size = 327.68 }
 
-trade_0.01 = { trade_value = 0.01 }
-trade_0.02 = { trade_value = 0.02 }
-trade_0.04 = { trade_value = 0.04 }
-trade_0.08 = { trade_value = 0.08 }
-trade_0.16 = { trade_value = 0.16 }
-trade_0.32 = { trade_value = 0.32 }
-trade_0.64 = { trade_value = 0.64 }
-trade_1.28 = { trade_value = 1.28 }
-trade_2.56 = { trade_value = 2.56 }
-trade_5.12 = { trade_value = 5.12 }
-trade_10.24 = { trade_value = 10.24 }
-trade_20.48 = { trade_value = 20.48 }
-trade_40.96 = { trade_value = 40.96 }
-trade_81.92 = { trade_value = 81.92 }
-trade_163.84 = { trade_value = 163.84 }
-trade_327.68 = { trade_value = 327.68 }
+prodmod_0.001 = { trade_goods_size_modifier = 0.001 }
+prodmod_0.002 = { trade_goods_size_modifier = 0.002 }
+prodmod_0.004 = { trade_goods_size_modifier = 0.004 }
+prodmod_0.008 = { trade_goods_size_modifier = 0.008 }
+prodmod_0.016 = { trade_goods_size_modifier = 0.016 }
+prodmod_0.032 = { trade_goods_size_modifier = 0.032 }
+prodmod_0.064 = { trade_goods_size_modifier = 0.064 }
+prodmod_0.128 = { trade_goods_size_modifier = 0.128 }
+prodmod_0.256 = { trade_goods_size_modifier = 0.256 }
+prodmod_0.512 = { trade_goods_size_modifier = 0.512 }
+prodmod_1.024 = { trade_goods_size_modifier = 1.024 }
+prodmod_2.048 = { trade_goods_size_modifier = 2.048 }
+prodmod_4.096 = { trade_goods_size_modifier = 4.096 }
+prodmod_8.192 = { trade_goods_size_modifier = 8.192 }
 
-trademod_0.001 = { trade_value_modifier = 0.001 }
-trademod_0.002 = { trade_value_modifier = 0.002 }
-trademod_0.004 = { trade_value_modifier = 0.004 }
-trademod_0.008 = { trade_value_modifier = 0.008 }
-trademod_0.016 = { trade_value_modifier = 0.016 }
-trademod_0.032 = { trade_value_modifier = 0.032 }
-trademod_0.064 = { trade_value_modifier = 0.064 }
-trademod_0.128 = { trade_value_modifier = 0.128 }
-trademod_0.256 = { trade_value_modifier = 0.256 }
-trademod_0.512 = { trade_value_modifier = 0.512 }
-trademod_1.024 = { trade_value_modifier = 1.024 }
-trademod_2.048 = { trade_value_modifier = 2.048 }
-trademod_4.096 = { trade_value_modifier = 4.096 }
-trademod_8.192 = { trade_value_modifier = 8.192 }
+value_0.01 = { trade_value = 0.01 }
+value_0.02 = { trade_value = 0.02 }
+value_0.04 = { trade_value = 0.04 }
+value_0.08 = { trade_value = 0.08 }
+value_0.16 = { trade_value = 0.16 }
+value_0.32 = { trade_value = 0.32 }
+value_0.64 = { trade_value = 0.64 }
+value_1.28 = { trade_value = 1.28 }
+value_2.56 = { trade_value = 2.56 }
+value_5.12 = { trade_value = 5.12 }
+value_10.24 = { trade_value = 10.24 }
+value_20.48 = { trade_value = 20.48 }
+value_40.96 = { trade_value = 40.96 }
+value_81.92 = { trade_value = 81.92 }
+value_163.84 = { trade_value = 163.84 }
+value_327.68 = { trade_value = 327.68 }
+
+valuemod_0.001 = { trade_value_modifier = 0.001 }
+valuemod_0.002 = { trade_value_modifier = 0.002 }
+valuemod_0.004 = { trade_value_modifier = 0.004 }
+valuemod_0.008 = { trade_value_modifier = 0.008 }
+valuemod_0.016 = { trade_value_modifier = 0.016 }
+valuemod_0.032 = { trade_value_modifier = 0.032 }
+valuemod_0.064 = { trade_value_modifier = 0.064 }
+valuemod_0.128 = { trade_value_modifier = 0.128 }
+valuemod_0.256 = { trade_value_modifier = 0.256 }
+valuemod_0.512 = { trade_value_modifier = 0.512 }
+valuemod_1.024 = { trade_value_modifier = 1.024 }
+valuemod_2.048 = { trade_value_modifier = 2.048 }
+valuemod_4.096 = { trade_value_modifier = 4.096 }
+valuemod_8.192 = { trade_value_modifier = 8.192 }
+
+trade_0.01 = { province_trade_power_value = 0.01 }
+trade_0.02 = { province_trade_power_value = 0.02 }
+trade_0.04 = { province_trade_power_value = 0.04 }
+trade_0.08 = { province_trade_power_value = 0.08 }
+trade_0.16 = { province_trade_power_value = 0.16 }
+trade_0.32 = { province_trade_power_value = 0.32 }
+trade_0.64 = { province_trade_power_value = 0.64 }
+trade_1.28 = { province_trade_power_value = 1.28 }
+trade_2.56 = { province_trade_power_value = 2.56 }
+trade_5.12 = { province_trade_power_value = 5.12 }
+trade_10.24 = { province_trade_power_value = 10.24 }
+trade_20.48 = { province_trade_power_value = 20.48 }
+trade_40.96 = { province_trade_power_value = 40.96 }
+trade_81.92 = { province_trade_power_value = 81.92 }
+trade_163.84 = { province_trade_power_value = 163.84 }
+trade_327.68 = { province_trade_power_value = 327.68 }
+
+trademod_0.001 = { province_trade_power_modifier = 0.001 }
+trademod_0.002 = { province_trade_power_modifier = 0.002 }
+trademod_0.004 = { province_trade_power_modifier = 0.004 }
+trademod_0.008 = { province_trade_power_modifier = 0.008 }
+trademod_0.016 = { province_trade_power_modifier = 0.016 }
+trademod_0.032 = { province_trade_power_modifier = 0.032 }
+trademod_0.064 = { province_trade_power_modifier = 0.064 }
+trademod_0.128 = { province_trade_power_modifier = 0.128 }
+trademod_0.256 = { province_trade_power_modifier = 0.256 }
+trademod_0.512 = { province_trade_power_modifier = 0.512 }
+trademod_1.024 = { province_trade_power_modifier = 1.024 }
+trademod_2.048 = { province_trade_power_modifier = 2.048 }
+trademod_4.096 = { province_trade_power_modifier = 4.096 }
+trademod_8.192 = { province_trade_power_modifier = 8.192 }

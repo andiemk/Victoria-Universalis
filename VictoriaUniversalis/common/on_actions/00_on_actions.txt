@@ -2,12 +2,8 @@
 
 # country
 on_startup = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = vu_init }
-		}
-		set_global_flag = vu_init
-		on_setup = yes
+	events = {
+		vu_econ.2 #on_startup
 	}
 	emperor = {
 		save_global_event_target_as = Emperor
@@ -1505,9 +1501,9 @@ on_adm_development = {
 
 # province
 on_dip_development = {
-	owner = {
-		add_treasury = -100
-		
+	hidden_effect = {
+		add_base_production = -1
+		province_event = { id = vu_econ.100 }
 	}
 }
 

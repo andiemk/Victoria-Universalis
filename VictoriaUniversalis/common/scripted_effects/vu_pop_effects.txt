@@ -1,0 +1,80 @@
+#pops = { #effect [#datas]
+#	$effect$ = { pop = upper [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#	$effect$ = { pop = mid [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#	$effect$ = { pop = lower [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
+#}
+
+
+#recalculate other pop data from upper/mid/lower pop values
+pop_recalc = {
+	set_variable = { which = total_pop which = upper_pop }
+	change_variable = { which = total_pop which = mid_pop }
+	change_variable = { which = total_pop which = lower_pop }
+	if = {
+		limit = {
+			check_variable = { which = total_pop value = 0.001 }
+		}
+		pop_recalc_h = { pop=upper }
+		pop_recalc_h = { pop=mid }
+		pop_recalc_h = { pop=lower }
+	}
+	set_variable = { which = workforce which = total_pop }
+	set_variable = { which = workforce_rate which = owner }
+	multiply_variable = { which = workforce which = workforce_rate }
+	export_to_variable = { which = temp value = base_tax }
+	multiply_variable = { which = temp value = 10 }
+	change_variable = { which = temp value = -5 }
+	subtract_variable = { which = temp which = workforce } #dev-workforce - actual workforce
+	while = {
+		limit = {
+			check_variable = { which = temp value = 10 }
+		}
+		change_variable = { which = temp value = -10 }
+		add_base_tax = -1
+	}
+	while = {
+		limit = {
+			NOT = { check_variable = { which = temp value = -9.999 } }
+		}
+		change_variable = { which = temp value = 10 }
+		add_base_tax = 1
+	}
+	multiply_variable = { which = workforce_rate value = 0.1 }
+	multiply_variable = { which = workforce_rate value = 0.001 }
+}
+pop_recalc_h = {
+	set_variable = { which = $pop$_pop_percent which = $pop$_pop }
+	divide_variable = { which = $pop$_pop_percent which = total_pop }
+	multiply_variable = { which = $pop$_pop_percent value = 100 }
+	
+#	set_variable = { which = $pop$_epop which = $pop$_pop }
+#	multiply_variable = { which = $pop$_epop value = 0.001 }
+#	set_variable = { which = temp which = $pop$_epop }
+#	multiply_variable = { which = temp value = 1000 }
+#	subtract_variable = { which = temp which = $pop$_pop }
+#	if = {
+#		limit = {
+#			
+#		}
+#	}
+}
+
+
+#grow pop in all provinces
+pop_grow_all = {
+	tn_group = {
+		pop_grow = { growth = 1.01 }
+	}
+}
+#grow pop in all provinces in a tradenode
+pop_grow = { #growth
+	every_trade_node_member_province = {
+		limit = {
+			NOT = { province_group = tn_group }
+		}
+		multiply_variable = { which = upper_pop value = $growth$ }
+		multiply_variable = { which = mid_pop value = $growth$ }
+		multiply_variable = { which = lower_pop value = $growth$ }
+		pop_recalc = yes
+	}
+}

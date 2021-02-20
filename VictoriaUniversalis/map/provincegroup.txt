@@ -1,3 +1,4 @@
 tn_group = { #one province in every trade node
-	2544 2514 944
+	#2544 2514 944 ##testing sea provinces
+	1666 1667 1668
 }

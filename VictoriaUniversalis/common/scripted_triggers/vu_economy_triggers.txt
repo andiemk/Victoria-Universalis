@@ -1,15 +1,15 @@
-vu_has_raw_tg = {
+has_raw_tg = {
 	OR = {
 		has_province_flag = tg_grain
 		has_province_flag = tg_coal
 	}
 }
-vu_has_fact_tg = {
+has_fact_tg = {
 	OR = {
-		always = no
+		has_province_flag = tg_factory
 	}
 }
-vu_has_tg = {
+has_tg = {
 	OR = {
 		has_raw_tg = yes
 		has_fact_tg = yes

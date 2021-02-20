@@ -1,180 +1,370 @@
 
-  #### add more tgs everywhere here ####
+## utility effects
+
 
 # do effect for all goods
-#vu_all_tgs = { #effect [#datas]
-#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
-#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
-#}
+all_tgs = { #effect [#datas]
+	$effect$ = { good = grain [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
+	$effect$ = { good = coal [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
+	$effect$ = { good = factory [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
+}
 
 # do effect for all raw goods
-#vu_raw_tgs = { #effect [#datas]
-#	$effect$ = { good = generic1 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
-#}
+raw_tgs = { #effect [#datas]
+	$effect$ = { good = grain [[data1]data1 = $data1$] }
+	$effect$ = { good = coal [[data1]data1 = $data1$] }
+}
 
 # do effect for all factory goods
-#vu_fact_tgs = { #effect [#datas]
-#	$effect$ = { good = generic2 [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] [[data4]data4 = $data4$] [[data5]data5 = $data5$] }
-#}
+fact_tgs = { #effect [#datas]
+	$effect$ = { good = factory [[data1]data1 = $data1$] }
+}
 
 # do effect for the present raw good
-vu_raw_tg_switch = { #effect [#datas]
+raw_tg_check = { #effect [#datas]
 	trigger_switch = {
 		on_trigger = has_province_flag
-		tg_grain = { $effect$ = { good=grain [[data1]data1 = $data1$] } }
-		tg_coal = { $effect$ = { good=coal [[data1]data1 = $data1$] } }
+		tg_grain = { $effect$ = { good=grain [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] } }
+		tg_coal = { $effect$ = { good=coal [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] } }
 	}
 }
 
-# do effect for the present factory good
-#vu_fact_tg_switch = { #effect [#datas]
-#	trigger_switch = {
-#		on_trigger = has_province_flag
-#	}
-#}
+# do effect for the present factory goods
+fact_tg_check = { #effect [#datas]
+	if = { limit = { has_province_flag = tg_factory }
+		$effect$ = { good=factory [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
+	}
+}
 
 # do effect for the present goods
-vu_all_tg_switch = { #effect [#datas]
-	vu_raw_tg_switch = { effect=$effect$ }
-#	vu_fact_tg_switch = { effect=$effect$ }
+all_tg_check = { #effect [#datas]
+	raw_tg_check = { effect=$effect$ [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
+	fact_tg_check = { effect=$effect$ [[data1]data1 = $data1$] [[data2]data2 = $data2$] [[data3]data3 = $data3$] }
 }
 
-#recalculate provincial demand
-vu_calc_demand = {
-	vu_calc_demand_h = { good=grain f_upper=0.5 f_mid=1 f_lower=1.2  }
-	vu_calc_demand_h = { good=coal f_upper=1.5 f_mid=1 f_lower=0.8  }
+
+## calculation effects
+
+
+#main effect for recalculating everything, better performance than individual steps
+calc_economy_all = {
+	tn_group = {
+		calc_economy = yes
+	}
 }
-vu_calc_demand_h = { #good #f_lower #f_mid #f_upper
-	set_variable = { which = vu_$good$_dmnd value = $f_upper$ }
-	multiply_variable = { which = vu_$good$_dmnd which = upper_pop }
+
+#main effect for recalculating everything in a trade node (calc prov)
+calc_economy = {
+	set_variable = { which = temp value = 0.001 } #total demand
+	set_variable = { which = temp2 value = 0.001 } #total pop
+	all_tgs = { effect=math_tg_value data1=set data2=dmnd data3=0.001 }
+	all_tgs = { effect=math_tg_value data1=set data2=sply data3=0.001 }
+	every_trade_node_member_province = {
+		limit = {
+			NOT = { province_group = tn_group }
+		}
+		#calculate base values, pass to calc prov
+		set_variable = { which = total_oversupply value = 0 }
+		calc_prod = yes
+		calc_value = yes
+		all_tg_check = { effect=math_tg_both data1=set data2=sply data3=prod }
+		
+		calc_demand_base = yes
+		set_variable = { which = temp2 which = total_pop }
+		PREV = {
+			change_variable = { which = temp2 which = PREV }
+			all_tgs = { effect=math_tg_lhs data1=change data2=dmnd data3=PREV }
+			all_tgs = { effect=math_tg_lhs data1=change data2=sply data3=PREV }
+		}
+		province_event = { id = vu_misc.901 }
+	}
+	all_tgs = { effect=math_tg_rhs data1=change data2=temp data3=dmnd }
+	all_tgs = { effect=math_tg_both data1=set data2=oversupply data3=dmnd }
+	all_tgs = { effect=math_tg_lhs data1=divide data2=dmnd data3=temp }
+	all_tgs = { effect=math_tg_both data1=multiply data2=oversupply data3=dmnd }
+		province_event = { id = vu_misc.900 }
+	every_trade_node_member_province = {
+		limit = {
+			NOT = { province_group = tn_group }
+		}
+		#demand *= total demand / total demand of all goods produced
+		all_tgs = { effect=math_tg_lhs data1=multiply data2=dmnd data3=PREV }
+		
+		#prod share = prod / total prod
+		all_tg_check = { effect=math_tg_lhs data1=divide data2=sply data3=PREV }
+		all_tg_check = { effect=math_tg_both data1=set data2=prodshare data3=sply }
+		
+		#supply = total supply of that good * pop ratio
+		all_tgs = { effect=math_tg_lhs data1=set data2=sply data3=PREV }
+		divide_variable = { which = temp2 which = PREV }
+		all_tgs = { effect=math_tg_lhs data1=multiply data2=sply data3=temp2 }
+		####actual supply value not even needed currently, just population ratio
+		province_event = { id = vu_misc.901 }
+		
+	}
+	all_tgs = { effect=calc_economy_h }
+		province_event = { id = vu_misc.900 }
+	every_trade_node_member_province = {
+		limit = {
+			NOT = { province_group = tn_group }
+		}
+		apply_modifier_300 = { var=total_oversupply mod=trade type=province }
+	}
+}
+calc_economy_h = {  #### move to between scopes
+	if = {
+		limit = {
+			NOT = { check_variable = { which = $good$_oversupply which = $good$_sply } } #sply > dmnd
+		}
+		#oversupply ratio
+		multiply_variable = { which = $good$_oversupply value = -1 }
+		change_variable = { which = $good$_oversupply which = $good$_sply }
+		divide_variable = { which = $good$_oversupply which = $good$_sply }
+		every_trade_node_member_province = {
+			limit = {
+				has_province_flag = tg_$good$
+				NOT = { province_group = tn_group }
+			}
+			set_variable = { which = $good$_oversupply which = $good$_prod }
+			multiply_variable = { which = $good$_oversupply which = PREV }
+			change_variable = { which = total_oversupply which = $good$_oversupply }
+		}
+	}
+}
+
+#sets base demand for goods
+calc_demand_base = {
+	calc_demand_base_h = { good=grain f_mid=0.03 f_lower=0.01 }
+	calc_demand_base_h = { good=coal f_upper=0.02 f_mid=0.01 f_lower=0.02 }
+	calc_demand_base_h = { good=factory f_upper=0.01 f_mid=0.004 }
+}
+calc_demand_base_h = { #good #f_lower #f_mid #f_upper
+	set_variable = { which = $good$_dmnd value = 0 }
+	[[f_upper]
+	set_variable = { which = temp value = $f_mid$ }
+	multiply_variable = { which = temp which = upper_pop }
+	change_variable = { which = $good$_dmnd which = temp }
+	]
+	[[f_mid]
 	set_variable = { which = temp value = $f_mid$ }
 	multiply_variable = { which = temp which = mid_pop }
-	change_variable = { which = vu_$good$_dmnd which = temp }
+	change_variable = { which = $good$_dmnd which = temp }
+	]
+	[[f_lower]
 	set_variable = { which = temp value = $f_lower$ }
 	multiply_variable = { which = temp which = lower_pop }
-	change_variable = { which = vu_$good$_dmnd which = temp }
+	change_variable = { which = $good$_dmnd which = temp }
+	]
 }
 
+#recalculate trade node demand
+#calc_demand = {
+#}
+#recalculate demand in one province
+#calc_demand_prov = {
+#}
+
 # recalculate provincial production
-vu_calc_prod = {
-	export_to_variable = { which = vu_total_prod value = base_tax }
-	
+calc_prod = {
+	export_to_variable = { which = total_prod value = base_tax }
+	export_to_variable = { which = factories value = base_production }
 	export_to_variable = {
 		which = temp
 		value = modifier:global_trade_goods_size_modifier
 		who = owner
 	}
 	change_variable = { which = temp value = 1 }
-	multiply_variable = { which = vu_total_prod which = temp }
+	multiply_variable = { which = total_prod which = temp }
+	multiply_variable = { which = factories which = temp }
 	
-#	export_to_variable = { which = province_factories value = base_production }
-	
-	vu_all_tg_switch = { effect=vu_calc_prod_h }
-}
-vu_calc_prod_h = { #good
-	#percentage of total production
-	set_variable = { which = vu_$good$_prod which = vu_total_prod }
-	multiply_variable = { which = vu_$good$_prod which = vu_$good$_p }
-}
-# recalculate provincial production value, after production & price
-vu_calc_value = {
-	set_variable = { which = temp value = 0 }
-	vu_all_tg_switch = { effect=vu_calc_value_h }
-	
-	vu_apply_modifier_8 = { var=temp mod=prodmod type=province }
-}
-vu_calc_value_h = {
-	set_variable = { which = vu_$good$_val which = vu_$good$_prod }
-	multiply_variable = { which = vu_$good$_val which = vu_$good$_p }
-	change_variable = { which = temp which = vu_$good$_val }
-}
-
-# recalculate prices in a tradenode
-vu_calc_price = {
-	every_trade_node_member_province = {
-		vu_calc_price_h = { good=grain base=2.0 }
-		vu_calc_price_h = { good=coal base=7.0 }
-	}
-}
-vu_calc_price_h = { #good #base
-	set_variable = { which = vu_$good$_p value = $base$ }
-}
-
-# add good if there's space
-vu_add_good = { #good #type
 	if = {
 		limit = {
-			has_$type$_tg = no
+			NOT = { check_variable = { which = total_prod which = factories } }
+		}
+		set_variable = { which = temp value = total_prod }
+		divide_variable = { which = temp which = factories }
+		multiply_variable = { which = temp which = total_prod } #reduced total production for all factories
+		fact_tg_check = { effect=calc_prod_h3 }
+	}
+	else = {
+		set_variable = { which = temp which = total_prod }
+		fact_tg_check = { effect=calc_prod_h }
+		raw_tg_check = { effect=calc_prod_h2 }
+	}
+}
+calc_prod_h = { #factory < total
+	set_variable = { which = $good$_prod which = factory_$good$ }
+	subtract_variable = { which = temp which = $good$_prod }
+}
+calc_prod_h2 = { #leftover to raw
+	set_variable = { which = $good$_prod which = temp }
+}
+calc_prod_h3 = { #factory > total
+	set_variable = { which = $good$_prod which = factory_$good$ }
+	multiply_variable = { which = $good$_prod which = temp }
+}
+
+# recalculate prices
+#calc_price = {
+#	every_trade_node_member_province = {
+#		calc_price_h = { good=grain base=2.0 }
+#		calc_price_h = { good=coal base=7.0 }
+#	}
+#}
+calc_price_h = { #good #base
+	set_variable = { which = $good$_p value = $base$ }
+}
+
+# recalculate provincial production value, after production & price
+calc_value = {
+	calc_price_h = { good=grain base=0.2 }
+	calc_price_h = { good=coal base=0.7 }
+	calc_price_h = { good=factory base=1.5 }
+	
+	set_variable = { which = temp value = 0 }
+	all_tg_check = { effect=calc_value_h }
+	apply_modifier_8 = { var=temp mod=prodmod type=province }
+}
+calc_value_h = {
+	set_variable = { which = $good$_val which = $good$_prod }
+	multiply_variable = { which = $good$_val which = $good$_p }
+	change_variable = { which = temp which = $good$_val }
+}
+
+# add a good if there's space
+add_good = { #good #type
+	if = {
+		limit = {
+			NOT = { has_province_flag = tg_$good$ }
 		}
 		set_province_flag = tg_$good$
-		add_permanent_province_modifier = {
-			name = production_$good$_display
+		add_province_modifier = {
+			name = $good$_display
 			duration = -1
 		}
-		vu_calc_prod = yes
 	}
 }
 
-# replace good of the same type
-vu_replace_good = { #good #type
-	vu_$type$_switch = { effect=vu_replace_good_helper data1=$good$ }
+# replace raw good
+replace_raw_good = { #good #type
+	raw_check = { effect=replace_raw_good_helper data1=$good$ }
 }
-vu_replace_good_helper = { #good #data1 (target good)
-	vu_remove_good = { good=$good$ }
-	vu_add_good = { good=data1 }
+replace_raw_good_helper = { #good #data1 (target good)
+	remove_good = { good=$good$ }
+	add_good = { good=data1 }
 }
 
-# remove a good
-vu_remove_good = { #good
+# remove a good from a province
+remove_good = { #good
 	clr_province_flag = tg_$good$
-	remove_province_modifier = production_$good$_display
+	remove_province_modifier = $good$_display
+	
+	set_variable = { which = $good$_prod value = 0 }
+	set_variable = { which = $good$_oversupply value = 0 }
+	### split up factories among other factory goods
+	### recalculate province economy
 }
 
-vu_add_factory = { #good
+# add factories for a good
+add_factory = { #good #amount
+	if = {
+		limit = {
+			NOT = { has_province_flag = tg_$good$ }
+		}
+		set_province_flag = tg_$good$
+		add_province_modifier = {
+			name = $good$_display
+			duration = -1
+		}
+	}
+	change_variable = { which = factory_$good$ value = $amount$ }
+	add_base_production = $amount$
+}
+# remove factories for a good
+remove_factory = { #good #amount
+	set_variable = { which = temp value = -$amount$ }
+	change_variable = { which = temp which = factory_$good$ }
+	if = {
+		limit = {
+			check_variable = { which = temp value = 1 }
+		}
+		subtract_variable = { which = factory_$good$ value = $amount$ }
+		add_base_production = -$amount$
+	}
+	else = {
+		while = {
+			limit = {
+				check_variable = { which = factory_$good$ value = 1 }
+			}
+			subtract_variable = { which = factory_$good$ value = 1 }
+			add_base_production = -1
+		}
+		remove_good = { good=$good$ }
+	}
+}
+
+### menu effects ###
+menu_factory_calc = { #good
+	hidden_effect = {
+		set_variable = { which = menu_factory_1 value = 10 }
+		multiply_variable = { which = menu_factory_1 which = $good$_p }
+		set_variable = { which = menu_factory_5 which = menu_factory_1 }
+		multiply_variable = { which = menu_factory_5 value = 5 }
+	}
+}
+menu_factory_clean = {
+	hidden_effect = {
+		set_variable = { which = menu_factory_1 value = 0 }
+		set_variable = { which = menu_factory_5 value = 0 }
+	}
 }
 ### other stuff ###
 
-vu_apply_modifier_8 = { #type #mod #var
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=8.192 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=4.096 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.048 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.024 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.512 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.256 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.128 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.064 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.032 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.016 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.008 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.004 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.002 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.001 }
+# Apply a binary modifier with high precision (for e.g. value modifiers)
+# modifiers need to be created separately
+apply_modifier_8 = { #type #mod #var
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=8.192 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=4.096 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.048 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.024 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.512 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.256 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.128 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.064 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.032 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.016 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.008 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.004 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.002 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.001 }
 }
-vu_apply_modifier_300 = {
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=327.68 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=163.84 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=81.92 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=40.96 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=20.48 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=10.24 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=5.12 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.56 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.28 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.64 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.32 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.16 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.08 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.04 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.02 }
-	vu_helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.01 }
+# Apply a binary modifier with high range (for e.g. flat values)
+# modifiers need to be created separately
+apply_modifier_300 = { #type #mod #var
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=327.68 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=163.84 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=81.92 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=40.96 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=20.48 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=10.24 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=5.12 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=2.56 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=1.28 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.64 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.32 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.16 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.08 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.04 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.02 }
+	helper1 = { type=$type$ mod=$mod$ var=$var$ val=0.01 }
 }
-vu_helper1 = {
+helper1 = {
 	if = {
 		limit = {
 			check_variable = { which = $var$ value = $val$ }
 		}
 		subtract_variable = { which = $var$ value = $val$ }
-		add_permanent_$type$_modifier = {
+		add_$type$_modifier = {
 			name = $mod$_$val$
 			duration = -1
 			hidden = yes
@@ -185,10 +375,112 @@ vu_helper1 = {
 	}
 }
 
+# Do an effect according to a variable's value, low precision (for e.g. monarch points)
+var_effect = { #effect #var (#negate = yes)
+	[[negate]multiply_variable = { which = $var$ value = -1 }]
+	if = {
+		limit = {
+			check_variable = { which = $var$ value = 0 }
+		}
+		helper2 = { effect=$effect$ sign=+ type=while var=$var$ val=4096 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=2048 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=1024 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=512 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=256 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=128 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=64 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=32 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=16 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=8 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=4 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=2 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=1 }
+	}
+	else = {
+		multiply_variable = { which = $var$ value = -1 }
+		helper2 = { effect=$effect$ sign=- type=while var=$var$ val=4096 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=2048 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=1024 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=512 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=256 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=128 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=64 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=32 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=16 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=8 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=4 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=2 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=1 }
+	}
+	set_variable = { which = $var$ value = 0 }
+}
+# Do an effect according to a variable's value, high precision (for e.g. army professionalism)
+var_effect_precise = { #effect #var (#negate = yes)
+	[[negate]multiply_variable = { which = $var$ value = -1 }]
+	if = {
+		limit = {
+			check_variable = { which = $var$ value = 0 }
+		}
+		helper2 = { effect=$effect$ sign=+ type=while var=$var$ val=65.536 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=32.768 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=16.384 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=8.192 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=4.096 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=2.048 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=1.024 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.512 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.256 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.128 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.064 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.032 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.016 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.008 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.004 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.002 }
+		helper2 = { effect=$effect$ sign=+ type=if var=$var$ val=0.001 }
+	}
+	else = {
+		multiply_variable = { which = $var$ value = -1 }
+		helper2 = { effect=$effect$ sign=- type=while var=$var$ val=65.536 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=32.768 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=16.384 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=8.192 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=4.096 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=2.048 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=1.024 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.512 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.256 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.128 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.064 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.032 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.016 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.008 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.004 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.002 }
+		helper2 = { effect=$effect$ sign=- type=if var=$var$ val=0.001 }
+	}
+	set_variable = { which = $var$ value = 0 }
+}
+helper2 = {
+	$type$ = {
+		limit = {
+			check_variable = { which = $var$ value = $val$ }
+		}
+		subtract_variable = { which = $var$ value = $val$ }
+		$effect$ = $sign$$val$
+	}
+}
 
-
-
-
-
-
-
+# Various math effects with tradegoods
+math_tg_value = {
+	$data1$_variable = { which = $good$_$data2$ value = $data3$ }
+}
+math_tg_lhs = {
+	$data1$_variable = { which = $good$_$data2$ which = $data3$ }
+}
+math_tg_rhs = {
+	$data1$_variable = { which = $data2$ which = $good$_$data3$ }
+}
+math_tg_both = {
+	$data1$_variable = { which = $good$_$data2$ which = $good$_$data3$ }
+}

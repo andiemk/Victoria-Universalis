@@ -32,7 +32,8 @@
  east_yucatan_area:0 "Quintana Roo"
  cuba_area:0 "Cuba"
  hispaniola_area:0 "Hispaniola"
- canada_region:0 "Eastern Canada"
+ canada_region:0 "Quebec"
+ atlantic_canada_region:0 "Atlantic Canada"
 
  carribeans_region:0 "Carribean"
 

@@ -1,0 +1,74 @@
+
+#Scandinavia
+
+#Balkans
+
+#British Isles 
+
+#Colonies
+ARG	= "countries/Argentina.txt"
+ARC	= "countries/ArgentineConfederation.txt"
+BUE	= "countries/BuenosAires.txt"
+ENR	= "countries/EntreRios.txt"
+CRR = "countries/Corrientes.txt"
+BOL	= "countries/Bolivia.txt" 
+PBC	= "countries/PeruBolivia.txt"
+NPU = "countries/NorthPeru.txt"
+SPU = "countries/SouthPeru.txt"
+ECU	= "countries/Ecuador.txt"
+URG	= "countries/Uruguay.txt"
+UPC	= "countries/UpperCanada.txt"
+LOC	= "countries/LowerCanada.txt"
+NFL	= "countries/Newfoundland.txt"
+EBZ	= "countries/EmpireofBrazil.txt"
+EMX = "countries/EmpireofMexico.txt"
+
+#Eastern Europe
+
+#France 
+	
+#HRE
+	
+#Spain
+
+#Italy
+
+#Low Countries
+
+#Russia 
+
+#Arabia	
+
+#Asia Minor		
+	
+#Maghreb
+
+#Central Asia
+
+#Persia	
+
+#Americas
+
+#Africa
+
+#East African Additions
+
+#Kongo, Great Lakes & Central Africa
+
+#Madagascar
+
+#Far East
+
+#Daimyos
+
+#Manchuria tags
+
+#Mongol tags
+
+#Great Tibet tags
+
+#Non-Han China proper tags
+
+#Chinese Revolters
+
+#India

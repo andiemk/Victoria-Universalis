@@ -104,6 +104,7 @@ north_america_superregion = {
 	northeast_america_region
 	great_lakes_region
 	canada_region
+	atlantic_canada_region
 	central_america_region
 	mexico_region
 	carribeans_region

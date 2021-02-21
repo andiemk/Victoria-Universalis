@@ -1,13 +1,4 @@
 defined_text = {
-	name = GetAdjectiveMasculine
-	text = {
-		localisation_key = GBR_ADJ_MASC
-		trigger = {
-			tag = GBR
-		}
-	}
-}
-defined_text = {
 	name = GetAdjectiveMasculinePlural
 	text = {
 		localisation_key = GBR_ADJ_MASC_PLURAL

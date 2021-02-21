@@ -1136,10 +1136,6 @@ indo_china_region = {
 
 canada_region = {
 	areas = {
-		upper_acadia_area
-		lower_acadia_area
-		newfoundland_area
-		labrador_area
 		cote_nord_area
 		notre_dame_mountains_area
 		lower_canada_area
@@ -1147,6 +1143,14 @@ canada_region = {
 		laurentian_area
 		huronia_area
 		greenland_area
+	}
+}
+atlantic_canada_region = {
+	areas = {
+		upper_acadia_area
+		lower_acadia_area
+		newfoundland_area
+		labrador_area
 	}
 }
 

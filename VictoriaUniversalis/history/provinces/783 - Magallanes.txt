@@ -1,0 +1,21 @@
+
+capital = "Magallanes"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+religion = animism
+culture = patagonian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 0.627
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.054
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.018
+	}
+}

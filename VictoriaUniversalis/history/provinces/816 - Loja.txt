@@ -1,0 +1,24 @@
+add_core = ECU
+owner = ECU
+controller = ECU
+capital = "Loja"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = north_andean
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 36.646
+	}
+	set_variable = {
+		which = mid_pop
+		value = 6.672
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.224
+	}
+}

@@ -1,0 +1,24 @@
+add_core = COL
+owner = COL
+controller = COL
+capital = "Santa Marta"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = caribeno
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 48.483
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.679
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.226
+	}
+}

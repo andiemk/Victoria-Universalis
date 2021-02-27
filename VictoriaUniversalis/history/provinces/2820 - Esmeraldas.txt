@@ -1,0 +1,24 @@
+add_core = ECU
+owner = ECU
+controller = ECU
+capital = "Esmeraldas"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = afro_latino
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 63.039
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.631
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.544
+	}
+}

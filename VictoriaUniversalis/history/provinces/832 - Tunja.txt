@@ -1,0 +1,24 @@
+add_core = COL
+owner = COL
+controller = COL
+capital = "Tunja"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = north_andean
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 174.146
+	}
+	set_variable = {
+		which = mid_pop
+		value = 47.128
+	}
+	set_variable = {
+		which = upper_pop
+		value = 15.709
+	}
+}

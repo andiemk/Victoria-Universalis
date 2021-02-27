@@ -1,0 +1,24 @@
+add_core = ARC
+owner = ARC
+controller = ARC
+capital = "Jujuy"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = south_andean
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 20.586
+	}
+	set_variable = {
+		which = mid_pop
+		value = 3.075
+	}
+	set_variable = {
+		which = upper_pop
+		value = 1.025
+	}
+}

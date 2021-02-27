@@ -1,0 +1,24 @@
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "King Edward Point"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = anglican
+culture = english
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 0.013
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.001
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0
+	}
+}

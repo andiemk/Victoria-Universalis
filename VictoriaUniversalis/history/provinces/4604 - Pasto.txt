@@ -1,0 +1,24 @@
+add_core = COL
+owner = COL
+controller = COL
+capital = "Pasto"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = afro_latino
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 46.408
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.136
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.045
+	}
+}

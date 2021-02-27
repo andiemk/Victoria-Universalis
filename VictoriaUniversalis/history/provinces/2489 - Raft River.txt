@@ -1,0 +1,21 @@
+
+capital = "Raft River"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+religion = totemism
+culture = shoshone
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 3.117
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.298
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.099
+	}
+}

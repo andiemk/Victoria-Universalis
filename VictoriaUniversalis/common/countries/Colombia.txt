@@ -2,10 +2,9 @@
 
 graphical_culture = westerngfx
 
-colonial_parent = SPA
 random_nation_chance = 0
 
-color = { 255  204  94 }
+color = { 248  234  141 }
 
 revolutionary_colors = { 5 15 8 }
 

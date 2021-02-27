@@ -1,0 +1,24 @@
+add_core = BOL
+owner = BOL
+controller = BOL
+capital = "Sucre"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = inca
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 73.044
+	}
+	set_variable = {
+		which = mid_pop
+		value = 16.459
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.486
+	}
+}

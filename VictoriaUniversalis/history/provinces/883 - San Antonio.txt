@@ -1,6 +1,6 @@
-add_core = TEX
-owner = TEX
-controller = TEX
+add_core = MEX
+owner = MEX
+controller = MEX
 capital = "San Antonio"
 base_manpower = 0
 base_production = 0

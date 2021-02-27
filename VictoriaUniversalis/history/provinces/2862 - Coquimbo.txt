@@ -1,0 +1,24 @@
+add_core = CHL
+owner = CHL
+controller = CHL
+capital = "Coquimbo"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = south_andean
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 56.344
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.785
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.928
+	}
+}

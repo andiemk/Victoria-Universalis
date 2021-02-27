@@ -1,0 +1,21 @@
+
+capital = "Tapalqué"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+religion = animism
+culture = mapuche
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 1.11
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.098
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.033
+	}
+}

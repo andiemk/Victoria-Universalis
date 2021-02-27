@@ -964,6 +964,11 @@ la_plata_region = {
 		misiones_area
 		patagonian_andes
 		bahia_blanca_area
+		cordoba_area
+		jujuy_area
+		tucuman_area
+		chaco_area
+		paraguay_area
 	}
 }
 
@@ -979,7 +984,6 @@ colombia_region = {
 		coquivacoa_area
 		bogota_area
 		popayan_area
-		panama_area
 		maracaibo_area
 		central_llanos_area
 		cordillera_occidental_area
@@ -998,7 +1002,6 @@ peru_region = {
 		ucayali_area
 		cajamarca_area
 		huanuco_area
-		antisuyu_area
 		quito_area
 		iquitos_area
 		peruan_coast
@@ -1012,14 +1015,11 @@ peru_region = {
 upper_peru_region = {
 	areas = {
 		beni_area
-		upper_peru
-		tucuman_area
-		chaco_area
-		paraguay_area
+		upper_peru	
 		northern_chile_area
 		potosi_area
-		jujuy_area
 		moxos_area
+		antisuyu_area
 	}
 }
 
@@ -1142,7 +1142,6 @@ canada_region = {
 		upper_canada_area
 		laurentian_area
 		huronia_area
-		greenland_area
 	}
 }
 atlantic_canada_region = {
@@ -1274,6 +1273,7 @@ hudson_bay_region = {
 		athabasca_area
 		inner_ontario_area
 		assiniboia_area
+		greenland_area
 	}
 }
 
@@ -1327,6 +1327,7 @@ central_america_region = {
 		east_yucatan_area
 		chiapas_area
 		guatemala_lowlands_area
+		panama_area
 		costa_rica_area
 		campeche_area
 	}

@@ -1,0 +1,24 @@
+add_core = BOL
+owner = BOL
+controller = BOL
+capital = "Oruro"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = aimara
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 84.594
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.804
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.601
+	}
+}

@@ -1,0 +1,21 @@
+
+capital = "Astoria"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+religion = totemism
+culture = chinook
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 3.459
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.335
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.112
+	}
+}

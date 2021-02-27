@@ -1,0 +1,24 @@
+add_core = CRR
+owner = CRR
+controller = CRR
+capital = "Corrientes"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = catholic
+culture = rioplatense
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 55.533
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.565
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.855
+	}
+}

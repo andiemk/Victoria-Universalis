@@ -1,0 +1,24 @@
+add_core = EBZ
+owner = EBZ
+controller = EBZ
+capital = "Curral del Rey"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = afro_brazilian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 182.479
+	}
+	set_variable = {
+		which = mid_pop
+		value = 49.733
+	}
+	set_variable = {
+		which = upper_pop
+		value = 16.578
+	}
+}

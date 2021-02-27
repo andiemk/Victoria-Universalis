@@ -1,0 +1,24 @@
+add_core = RUS
+owner = RUS
+controller = RUS
+capital = "Sitka"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = totemism
+culture = athabascan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 6.73
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.732
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.244
+	}
+}

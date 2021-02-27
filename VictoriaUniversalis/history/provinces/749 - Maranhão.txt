@@ -1,0 +1,24 @@
+add_core = EBZ
+owner = EBZ
+controller = EBZ
+capital = "São Luís"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = brazilian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 129.122
+	}
+	set_variable = {
+		which = mid_pop
+		value = 33.188
+	}
+	set_variable = {
+		which = upper_pop
+		value = 11.063
+	}
+}

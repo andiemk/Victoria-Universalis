@@ -1,0 +1,21 @@
+
+capital = "Fort Resolution"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+religion = totemism
+culture = athabascan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 1.51
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.135
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.045
+	}
+}

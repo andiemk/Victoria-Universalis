@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Palma"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = catholic
+culture = catalan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 38.034
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.2
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.055
+	}
+}

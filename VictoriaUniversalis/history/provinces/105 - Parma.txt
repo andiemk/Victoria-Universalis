@@ -1,0 +1,24 @@
+add_core = PAR
+owner = PAR
+controller = PAR
+capital = "Parma"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = romagnan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 146.173
+	}
+	set_variable = {
+		which = mid_pop
+		value = 75.196
+	}
+	set_variable = {
+		which = upper_pop
+		value = 29.242
+	}
+}

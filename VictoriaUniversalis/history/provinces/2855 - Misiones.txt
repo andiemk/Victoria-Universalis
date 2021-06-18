@@ -1,6 +1,7 @@
 add_core = CRR
-owner = CRR
-controller = CRR
+add_core = ARC
+owner = ARC
+controller = ARC
 capital = "Misiones"
 base_manpower = 0
 base_production = 0

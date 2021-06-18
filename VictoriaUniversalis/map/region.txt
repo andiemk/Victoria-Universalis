@@ -178,8 +178,8 @@ iberia_region = {
 		lower_andalucia_area
 		upper_andalucia_area
 		castille_area
-		toledo_area
-		asturias_area
+		murcia_area
+		old_castile_area
 		leon_area
 		alentejo_area
 		beieras_area

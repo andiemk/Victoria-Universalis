@@ -11,14 +11,14 @@ culture = inca
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 10.799
+		value = 8.915
 	}
 	set_variable = {
 		which = mid_pop
-		value = 1.32
+		value = 2.576
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.44
+		value = 1.068
 	}
 }

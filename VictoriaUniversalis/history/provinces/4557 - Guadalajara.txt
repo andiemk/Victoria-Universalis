@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Guadalajara"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = castillian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 147.769
+	}
+	set_variable = {
+		which = mid_pop
+		value = 76.118
+	}
+	set_variable = {
+		which = upper_pop
+		value = 29.598
+	}
+}

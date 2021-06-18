@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Teruel"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+religion = catholic
+culture = aragonese
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 113.728
+	}
+	set_variable = {
+		which = mid_pop
+		value = 56.56
+	}
+	set_variable = {
+		which = upper_pop
+		value = 22.059
+	}
+}

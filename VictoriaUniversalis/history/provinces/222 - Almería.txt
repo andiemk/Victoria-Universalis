@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Almería"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = andalucian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 103.573
+	}
+	set_variable = {
+		which = mid_pop
+		value = 50.784
+	}
+	set_variable = {
+		which = upper_pop
+		value = 19.831
+	}
+}

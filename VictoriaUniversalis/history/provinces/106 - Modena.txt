@@ -1,0 +1,24 @@
+add_core = MOD
+owner = MOD
+controller = MOD
+capital = "Modena"
+base_manpower = 0
+base_production = 0
+base_tax = 7
+is_city = yes
+religion = catholic
+culture = romagnan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 155.499
+	}
+	set_variable = {
+		which = mid_pop
+		value = 80.589
+	}
+	set_variable = {
+		which = upper_pop
+		value = 31.32
+	}
+}

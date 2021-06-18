@@ -1,7 +1,8 @@
 add_core = ENR
-owner = ENR
-controller = ENR
-capital = "Paran·"
+add_core = ARC
+owner = ARC
+controller = ARC
+capital = "Paran√°"
 base_manpower = 0
 base_production = 0
 base_tax = 2

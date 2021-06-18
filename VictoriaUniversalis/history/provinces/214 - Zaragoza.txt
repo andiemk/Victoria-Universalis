@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Zaragoza"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+religion = catholic
+culture = aragonese
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 229.459
+	}
+	set_variable = {
+		which = mid_pop
+		value = 123.667
+	}
+	set_variable = {
+		which = upper_pop
+		value = 47.906
+	}
+}

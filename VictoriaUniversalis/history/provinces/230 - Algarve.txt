@@ -1,0 +1,24 @@
+add_core = POR
+owner = POR
+controller = POR
+capital = "Algarve"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = portugese
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 72.778
+	}
+	set_variable = {
+		which = mid_pop
+		value = 33.551
+	}
+	set_variable = {
+		which = upper_pop
+		value = 13.176
+	}
+}

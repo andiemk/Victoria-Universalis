@@ -1,0 +1,24 @@
+add_core = PAP
+owner = PAP
+controller = PAP
+capital = "Rome"
+base_manpower = 0
+base_production = 0
+base_tax = 7
+is_city = yes
+religion = catholic
+culture = umbrian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 167.848
+	}
+	set_variable = {
+		which = mid_pop
+		value = 87.748
+	}
+	set_variable = {
+		which = upper_pop
+		value = 34.077
+	}
+}

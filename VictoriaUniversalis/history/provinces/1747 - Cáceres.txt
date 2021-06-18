@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Cáceres"
+base_manpower = 0
+base_production = 0
+base_tax = 11
+is_city = yes
+religion = catholic
+culture = leonese
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 251.912
+	}
+	set_variable = {
+		which = mid_pop
+		value = 127.197
+	}
+	set_variable = {
+		which = upper_pop
+		value = 49.543
+	}
+}

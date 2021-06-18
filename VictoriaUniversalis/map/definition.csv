@@ -100,8 +100,8 @@ province;red;green;blue;x;x
 99;142;102;255;Gelre;x
 100;14;104;0;Friesland;x
 101;142;106;64;Liguria;x
-102;14;108;128;Nice;x
-103;85;80;32;Niklas;x
+102;14;108;128;Nizza;x
+103;85;80;32;Turin;x
 104;14;112;255;Lombardia;x
 105;143;114;0;Parma;x
 106;15;116;64;Modena;x
@@ -112,20 +112,20 @@ province;red;green;blue;x;x
 111;143;126;64;Friuli;x
 112;16;128;128;Venezia;x
 113;144;130;192;Ferrara;x
-114;16;132;255;Romagna;x
-115;144;134;0;Pisa;x
+114;16;132;255;Ravenna;x
+115;144;134;0;Livorno;x
 116;16;136;64;Firenze;x
 117;144;138;128;Siena;x
-118;16;140;192;Roma;x
-119;145;142;255;Ancona;x
-120;17;144;0;Abbruzzi;x
-121;145;146;64;Napoli;x
-122;17;148;128;Apulia;x
+118;16;140;192;Rome;x
+119;145;142;255;Marche;x
+120;17;144;0;Abruzzo;x
+121;145;146;64;Naples;x
+122;17;148;128;Salento;x
 123;145;150;192;Calabria;x
 124;17;152;255;Messina;x
 125;145;154;0;Palermo;x
 126;18;156;64;Malta;x
-127;146;158;128;Sardinia;x
+127;146;158;128;Sassari;x
 128;18;32;192;Kärnten;x
 129;146;34;255;Krain;x
 130;18;36;0;Istria;x
@@ -203,34 +203,34 @@ province;red;green;blue;x;x
 202;28;52;128;Avignon;x
 203;157;54;192;Lyonnais;x
 204;29;56;255;Dauphiné;x
-205;157;58;0;Savoie;x
-206;29;60;64;Galicia;x
+205;157;58;0;Savoy;x
+206;29;60;64;A Coruña;x
 207;157;62;128;Asturias;x
 208;29;64;192;León;x
-209;157;66;255;Vizcaya;x
-210;30;68;0;Navarra;x
-211;158;70;64;Pirineo;x
+209;157;66;255;Bilbao;x
+210;30;68;0;Navarre;x
+211;158;70;64;Huesca;x
 212;30;72;128;Girona;x
 213;158;74;192;Barcelona;x
 214;30;76;255;Zaragoza;x
-215;158;78;0;Castilla La Vieja;x
+215;158;78;0;Valladolid;x
 216;30;80;64;Salamanca;x
 217;159;82;128;Madrid;x
 218;31;84;192;Badajoz;x
 219;159;86;255;Toledo;x
-220;31;88;0;València;x
+220;31;88;0;Valencia;x
 221;159;90;64;Murcia;x
 222;31;92;128;Almería;x
 223;159;94;192;Granada;x
-224;32;96;255;Andalucía;x
+224;32;96;255;Seville;x
 225;160;98;0;Córdoba;x
 226;32;100;64;Gibraltar;x
-227;160;102;128;Lisboa;x
-228;32;104;192;Beira;x
-229;160;106;255;Beja;x
+227;160;102;128;Lisbon;x
+228;32;104;192;Beira Interior;x
+229;160;106;255;Alentejo;x
 230;32;108;0;Algarve;x
-231;161;110;64;Porto;x
-232;33;112;128;Bragança;x
+231;161;110;64;Minho;x
+232;33;112;128;Trás-os-Montes;x
 233;166;203;93;Cornwall;x
 234;33;116;255;Wessex;x
 235;161;118;0;Kent;x
@@ -331,7 +331,7 @@ province;red;green;blue;x;x
 330;47;52;0;Trebizond;x
 331;175;54;64;Erzurum;x
 332;47;56;128;Marash;x
-333;175;58;192;The Baleares;x
+333;175;58;192;Mallorca;x
 334;47;60;255;Tangiers;x
 335;175;62;0;Mellila;x
 336;48;244;64;Tlemcen;x
@@ -365,7 +365,7 @@ province;red;green;blue;x;x
 364;52;120;255;Gaza;x
 365;180;122;0;Sinai;x
 366;52;124;64;The Canarias;x
-367;180;126;128;The Azores;x
+367;180;126;128;Azores;x
 368;52;128;192;Purús;x
 369;180;130;255;Orkney;x
 370;52;132;0;Reykjavik;x
@@ -816,7 +816,7 @@ province;red;green;blue;x;x
 815;244;126;0;Putumayo;x
 816;116;128;64;Loja;x
 817;244;130;128;Cuenca;x
-818;116;132;192;Pastaza;x
+818;116;132;192;Chimborazo;x
 819;245;134;255;Guayaquil;x
 820;117;136;0;Quito;x
 821;245;138;64;Maynas;x
@@ -866,7 +866,7 @@ province;red;green;blue;x;x
 865;132;94;173;Baja California Sur;x
 866;4;96;32;Guaycura;x
 867;132;98;79;Mojave;x
-868;4;100;126;Los Ángeles;x
+868;4;100;126;Los Angeles;x
 869;133;102;173;Monterey;x
 870;5;104;32;San José;x
 871;133;106;79;Pomo;x
@@ -1743,11 +1743,11 @@ province;red;green;blue;x;x
 1742;66;68;126;Limburg;x
 1743;194;70;173;Cambray;x
 1744;66;72;32;Antwerpen;x
-1745;195;74;79;Cantabria;x
+1745;195;74;79;Santander;x
 1746;67;76;126;Burgos;x
-1747;195;78;173;Caceres;x
-1748;67;80;32;La Mancha;x
-1749;195;82;79;Cadiz;x
+1747;195;78;173;Cáceres;x
+1748;67;80;32;Jaén;x
+1749;195;82;79;Cádiz;x
 1750;67;84;126;Alicante;x
 1751;195;86;173;Ceuta;x
 1752;68;88;32;Rzhev;x
@@ -1849,7 +1849,7 @@ province;red;green;blue;x;x
 1848;209;154;79;Hamid;x
 1849;82;156;126;Hama;x
 1850;210;158;173;Mudanjiang;x
-1851;82;32;32;Ribatejo;x
+1851;82;32;32;Coimbra;x
 1852;210;34;79;Tokachi;x
 1853;82;36;126;Kozani;x
 1854;210;38;173;Jaffa;x
@@ -1873,7 +1873,7 @@ province;red;green;blue;x;x
 1872;86;84;126;Ulm;x
 1873;85;76;126;Chur;x
 1874;213;78;173;Bremen;x
-1875;142;110;192;Turin;x
+1875;142;110;192;Cuneo;x
 1876;213;82;79;Frankfurt;x
 1877;86;92;126;Charolais;x
 1878;214;86;173;Aachen;x
@@ -1931,8 +1931,8 @@ province;red;green;blue;x;x
 1930;237;154;79;Åland;x
 1931;130;60;50;East Frisia;x
 1932;49;150;248;Gulf of Satalia;x
-1933;50;0;232;Bari;x
-1934;251;0;36;Lucania;x
+1933;50;0;232;Puglia;x
+1934;251;0;36;Basilicata;x
 1935;52;0;240;Semigallia;x
 1936;55;0;0;Kovno;x
 1937;65;0;250;Grodno;x
@@ -2752,8 +2752,8 @@ province;red;green;blue;x;x
 2751;68;230;179;Cuenca;x
 2752;3;196;128;Romsdal;x
 2753;188;67;67;Narbonne;x
-2754;231;35;179;La Mancha;x
-2755;68;8;179;Soria;x
+2754;231;35;179;Ciudad Real;x
+2755;68;8;179;Soría;x
 2756;166;56;206;Welayta;x
 2757;86;116;66;Kaffa;x
 2758;46;186;146;Illubabor;x
@@ -2974,20 +2974,20 @@ province;red;green;blue;x;x
 2973;255;162;53;Meppen;x
 2974;248;19;19;Loon;x
 2975;42;231;108;Kleves;x
-2976;205;23;23;Umbria;x
+2976;205;23;23;Perugia;x
 2977;248;231;136;Urbino;x
 2978;99;204;234;Arezzo;x
 2979;192;219;10;Novara;x
 2980;241;15;15;Lucca;x
-2981;222;108;69;Asti;x
-2982;227;135;53;Syracuse;x
+2981;222;108;69;Monferrato;x
+2982;227;135;53;Siracusa;x
 2983;150;159;47;Salerno;x
-2984;206;227;169;Costenza;x
+2984;206;227;169;Cosenza;x
 2985;223;236;73;Capitanata;x
 2986;55;246;23;Cagliari;x
-2987;220;251;47;Urgell;x
+2987;220;251;47;Lleida;x
 2988;232;11;11;Tarragona;x
-2989;200;58;78;Rioja;x
+2989;200;58;78;La Rioja;x
 2990;181;150;96;Teruel;x
 2991;243;21;172;Draguignan;x
 2992;91;125;222;Albenga;x
@@ -3009,7 +3009,7 @@ province;red;green;blue;x;x
 3008;193;110;220;East Siberian Sea;x
 3009;194;110;220;Laptev Sea
 3010;109;2;55;Khakassia;x
-3011;130;109;255;Auckland Islands;x
+3011;196;110;220;Auckland Islands;x
 3012;216;111;106;Belgorod;x
 3013;71;177;34;Stary Oskol;x
 3014;220;236;155;Klin;x
@@ -4148,7 +4148,7 @@ province;red;green;blue;x;x
 4147;74;217;74;Rostov;x
 4148;222;151;200;Luki;x
 4149;44;184;44;Kolding;x
-4150;145;151;212;Évora;x
+4150;145;151;212;Porto;x
 4151;208;10;168;Kuusamo;x
 4152;113;153;0;Enare;x
 4153;225;223;21;Scandes;x
@@ -4544,20 +4544,20 @@ province;red;green;blue;x;x
 4543;3;190;120;Rylsk;x
 4544;235;46;209;Bobrujsk;x
 4545;145;7;164;Sluck;x
-4546;121;225;48;Malaga;x
+4546;121;225;48;Málaga;x
 4547;155;170;197;Albacete;x
 4548;242;90;38;Huelva;x
-4549;7;115;1;Xativa;x
-4550;217;244;86;Castellon;x
-4551;73;146;227;Avila;x
+4549;7;115;1;Xàtiva;x
+4550;217;244;86;Castellón;x
+4551;73;146;227;Ávila;x
 4552;130;85;172;Palencia;x
 4553;43;46;167;Zamora;x
 4554;146;111;28;Lugo;x
-4555;183;26;10;Vigo;x
-4556;184;42;69;Aviero;x
-4557;240;89;1;Lleida;x
+4555;183;26;10;Pontevedra;x
+4556;184;42;69;Aveiro;x
+4557;240;89;1;Guadalajara;x
 4558;155;55;22;Orense;x
-4559;0;63;140;Minorca;x
+4559;0;63;140;Menorca;x
 4560;118;241;78;Ibiza;x
 4561;1;230;30;Tetouan;x
 4562;182;33;133;Mers el Kebir;x
@@ -4726,16 +4726,16 @@ province;red;green;blue;x;x
 4725;182;22;144;Jindrichuv Hradec;x
 4726;14;8;38;Ostrava;x
 4727;11;159;77;Saluzzo;x
-4728;23;128;70;Pavia;x
+4728;23;128;70;Pontremoli;x
 4729;111;248;124;Padova;x
 4730;24;248;124;Bologna;x
 4731;50;217;66;Spoleto;x
 4732;216;236;203;Terracina;x
 4733;144;222;92;Molise;x
-4734;239;33;241;Avellino;x
-4735;77;22;255;Arborea;x
+4734;239;33;241;Benevento;x
+4735;77;22;255;Oristano;x
 4736;255;193;247;Trapani;x
-4737;172;68;159;Girgenti;x
+4737;172;68;159;Agrigento;x
 4738;110;243;21;Trieste;x
 4739;255;193;31;Bergamo;x
 4740;123;111;79;Como;x

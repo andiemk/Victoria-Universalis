@@ -61,6 +61,9 @@
  patagonian_andes:0 "Patagonia Norte"
  patagonia_area:0 "Patagonia Sur"
  central_chile_area:0 "Chile"
+ beieras_area:0 "Beira"
+ castile_area:0 "Castilla la Nueva"
+ lower_andalucia_area:0 "Andalucía"
  
  canada_region:0 "Quebec"
  atlantic_canada_region:0 "Canadá Atlántico"

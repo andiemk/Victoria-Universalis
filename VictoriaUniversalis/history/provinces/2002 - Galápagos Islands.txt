@@ -11,14 +11,14 @@ culture = north_andean
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0.481
+		value = 0.401
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.041
+		value = 0.095
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.014
+		value = 0.04
 	}
 }

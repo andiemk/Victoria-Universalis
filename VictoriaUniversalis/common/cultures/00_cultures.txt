@@ -5041,10 +5041,10 @@ chibchan = {
 		}
 	}
 }
-mataco = {	#Matacoan
+guaycuru_g = {	#Matacoan
 	graphical_culture = northamericagfx
 	
-	chacoan = {
+	guaycuru = {
 		male_names = {
 			Sopa Cayo Topa Coyllas Cusichaca Huachuri Huaypalcon Luyes Marcavilca
 		}

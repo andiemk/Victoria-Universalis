@@ -29,9 +29,10 @@ EMX = "countries/EmpireofMexico.txt"
 #HRE
 	
 #Spain
+AND = "countries/Andorra.txt"
 
 #Italy
-
+SMA = "countries/SanMarino.txt"
 #Low Countries
 
 #Russia 

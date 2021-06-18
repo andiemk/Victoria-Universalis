@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Oviedo"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+religion = catholic
+culture = leonese
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 207.92
+	}
+	set_variable = {
+		which = mid_pop
+		value = 111.08
+	}
+	set_variable = {
+		which = upper_pop
+		value = 43.061
+	}
+}

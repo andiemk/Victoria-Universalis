@@ -1,0 +1,24 @@
+add_core = PAP
+owner = PAP
+controller = PAP
+capital = "Spoleto"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = umbrian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 106.616
+	}
+	set_variable = {
+		which = mid_pop
+		value = 52.511
+	}
+	set_variable = {
+		which = upper_pop
+		value = 20.497
+	}
+}

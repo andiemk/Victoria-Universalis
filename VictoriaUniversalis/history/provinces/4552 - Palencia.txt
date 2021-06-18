@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Palencia"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = castillian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 82.458
+	}
+	set_variable = {
+		which = mid_pop
+		value = 38.909
+	}
+	set_variable = {
+		which = upper_pop
+		value = 15.246
+	}
+}

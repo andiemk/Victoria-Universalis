@@ -84,6 +84,16 @@
  OPG_ADJ_MASC_PLURAL:0 "oregonianos"
  OPG_ADJ_FEM:0 "oregoniana"
  OPG_ADJ_FEM_PLURAL:0 "oregonianas"
+ AND:0 "Andorra"
+ AND_ADJ:0 "andorrano"
+ AND_ADJ_MASC_PLURAL:0 "andorranos
+ AND_ADJ_FEM:0 "andorrano"
+ AND_ADJ_FEM_PLURAL:0 "andorranas"
+ SMA:0 "San Marino"
+ SMA_ADJ:0 "sammarinese"
+ SMA_ADJ_MASC_PLURAL:0 "sammarineses"
+ SMA_ADJ_FEM:0 "sammarinese"
+ SMA_ADJ_FEM_PLURAL:0 "sammarineses"
  
  GBR_ADJ_MASC_PLURAL:0 "británicos"
  GBR_ADJ_FEM:0 "británica"

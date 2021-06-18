@@ -4,21 +4,21 @@ controller = ECU
 capital = "Cuenca"
 base_manpower = 0
 base_production = 0
-base_tax = 1
+base_tax = 3
 is_city = yes
 religion = catholic
 culture = north_andean
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 21.873
+		value = 65.699
 	}
 	set_variable = {
 		which = mid_pop
-		value = 3.336
+		value = 29.682
 	}
 	set_variable = {
 		which = upper_pop
-		value = 1.112
+		value = 11.678
 	}
 }

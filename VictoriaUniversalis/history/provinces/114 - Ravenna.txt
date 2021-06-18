@@ -1,0 +1,24 @@
+add_core = PAP
+owner = PAP
+controller = PAP
+capital = "Ravenna"
+base_manpower = 0
+base_production = 0
+base_tax = 14
+is_city = yes
+religion = catholic
+culture = romagnan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 321.367
+	}
+	set_variable = {
+		which = mid_pop
+		value = 177.575
+	}
+	set_variable = {
+		which = upper_pop
+		value = 68.652
+	}
+}

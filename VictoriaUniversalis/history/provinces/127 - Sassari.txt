@@ -1,0 +1,24 @@
+add_core = SPI
+owner = SPI
+controller = SPI
+capital = "Sassari"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+religion = catholic
+culture = sardinian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 80.152
+	}
+	set_variable = {
+		which = mid_pop
+		value = 37.627
+	}
+	set_variable = {
+		which = upper_pop
+		value = 14.751
+	}
+}

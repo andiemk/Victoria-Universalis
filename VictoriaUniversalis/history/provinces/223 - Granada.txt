@@ -1,0 +1,24 @@
+add_core = SPA
+owner = SPA
+controller = SPA
+capital = "Granada"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = catholic
+culture = andalucian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 148.819
+	}
+	set_variable = {
+		which = mid_pop
+		value = 76.725
+	}
+	set_variable = {
+		which = upper_pop
+		value = 29.831
+	}
+}

@@ -576,6 +576,8 @@ PixelShader =
 			}
 	#endif	// end COLOR_SHADER
 
+			vOut = ApplyPaper(vOut, Input.prepos, TITexture);
+
 			// Grab the shadow term
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_MAP, Input.vScreenCoord, ShadowMap );
 			vOut *= fShadowTerm;

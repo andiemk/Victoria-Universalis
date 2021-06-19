@@ -1,0 +1,24 @@
+add_core = CAM
+owner = CAM
+controller = CAM
+capital = "El Cayo"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = catholic
+culture = itza
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 1.776
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.273
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.08
+	}
+}

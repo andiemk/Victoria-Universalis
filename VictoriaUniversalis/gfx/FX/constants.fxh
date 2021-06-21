@@ -120,8 +120,8 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 
 static const bool  PAPER						= true;
 
-static const float PAPER_HEIGHT_MIN				= 375.0f;  // no paper effect below this
-static const float PAPER_HEIGHT_MAX				= 400.0f;  // full paper effect above this
+static const float PAPER_HEIGHT_MIN				= 400.0f;  // no paper effect below this
+static const float PAPER_HEIGHT_MAX				= 450.0f;  // full paper effect above this
 
 // static const float LINE1_DISTANCE				= 144.0f;
 // static const float LINE1_WIDTH					= 1.0f;

@@ -1,5 +1,7 @@
-
-capital = "Fortaleza Protectora"
+add_core = CSG
+owner = CSG
+controller = CSG
+capital = "Salinas Grandes"
 base_manpower = 0
 base_production = 0
 base_tax = 0

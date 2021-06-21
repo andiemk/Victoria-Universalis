@@ -2956,11 +2956,10 @@ patagonia_area  = { #3
 }
 
 bahia_blanca_area = { #3
-	780
 }
 
 patagonian_andes = { #4
-	2868 2870 2871
+	780 2868 2870 2871
 }
 
 cuyo_area  = { #5

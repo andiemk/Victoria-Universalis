@@ -195,7 +195,7 @@ float GetTI( float4 vFoWColor )
 
 float4 GetTIColor( float3 vPos, in sampler2D TITexture )
 {
-	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 1876.0f, 2048.0f ) );
+	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 512.0f, 512.0f ) );
 }
 
 float GetFoW( float3 vPos, float4 vFoWColor, in sampler2D FoWDiffuse )
@@ -301,7 +301,7 @@ const static float Paper_HDiv = PAPER_HEIGHT_MAX - PAPER_HEIGHT_MIN;
 const static float Paper_HSub = PAPER_HEIGHT_MIN / Paper_HDiv;
 float3 Paper(float3 pos, in sampler2D TItex)
 {
-	float3 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 1876.0f, 2048.0f ) );
+	float3 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 512.0f, 512.0f ) );
 	return lerp(float3(0.5, 0.5, 0.5), color, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 }
 

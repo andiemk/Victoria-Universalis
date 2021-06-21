@@ -1,7 +1,7 @@
-add_core = USA
-owner = USA
-controller = USA
-capital = "Fort Dallas"
+add_core = SEM
+owner = SEM
+controller = SEM
+capital = "Everglades"
 base_manpower = 0
 base_production = 0
 base_tax = 0

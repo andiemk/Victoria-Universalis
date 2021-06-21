@@ -5,23 +5,6 @@
 
 #British Isles 
 
-#Colonies
-ARG	= "countries/Argentina.txt"
-ARC	= "countries/ArgentineConfederation.txt"
-BUE	= "countries/BuenosAires.txt"
-ENR	= "countries/EntreRios.txt"
-CRR = "countries/Corrientes.txt"
-BOL	= "countries/Bolivia.txt" 
-PBC	= "countries/PeruBolivia.txt"
-SPU = "countries/SouthPeru.txt"
-ECU	= "countries/Ecuador.txt"
-URG	= "countries/Uruguay.txt"
-UPC	= "countries/UpperCanada.txt"
-LOC	= "countries/LowerCanada.txt"
-NFL	= "countries/Newfoundland.txt"
-EBZ	= "countries/EmpireofBrazil.txt"
-EMX = "countries/EmpireofMexico.txt"
-
 #Eastern Europe
 
 #France 
@@ -48,6 +31,24 @@ SMA = "countries/SanMarino.txt"
 #Persia	
 
 #Americas
+ARG	= "countries/Argentina.txt"
+ARC	= "countries/ArgentineConfederation.txt"
+BUE	= "countries/BuenosAires.txt"
+ENR	= "countries/EntreRios.txt"
+CRR = "countries/Corrientes.txt"
+BOL	= "countries/Bolivia.txt" 
+PBC	= "countries/PeruBolivia.txt"
+SPU = "countries/SouthPeru.txt"
+ECU	= "countries/Ecuador.txt"
+URG	= "countries/Uruguay.txt"
+UPC	= "countries/UpperCanada.txt"
+LOC	= "countries/LowerCanada.txt"
+NFL	= "countries/Newfoundland.txt"
+EBZ	= "countries/EmpireofBrazil.txt"
+EMX = "countries/EmpireofMexico.txt"
+CHZ = "countries/ChanSantaCruz.txt"
+CSG = "countries/SalinasGrandes.txt"
+SEM = "countries/Seminole.txt"
 
 #Africa
 

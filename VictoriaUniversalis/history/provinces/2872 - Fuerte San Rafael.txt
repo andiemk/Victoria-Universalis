@@ -1,4 +1,6 @@
-
+add_core = CSG
+owner = CSG
+controller = CSG
 capital = "Fuerte San Rafael"
 base_manpower = 0
 base_production = 0

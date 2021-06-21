@@ -815,34 +815,6 @@ latin_american = {
 	}
 
 }
-yuman_cochimi = {
-	graphical_culture = northamericagfx
-
-	yuman = {
-		dynasty_names = {
-			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
-			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
-		}
-		male_names = {
-			Sequoyah Attakullaculla "Johan Ross" Moytoy Yonaguska Dragging Canoe Agi It Boudinot 
-		}
-		female_names = {
-			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
-		}
-	}
-	kiliwa = {
-		dynasty_names = {
-			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
-			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
-		}
-		male_names = {
-			Sequoyah Attakullaculla "Johan Ross" Moytoy Yonaguska Dragging Canoe Agi It Boudinot 
-		}
-		female_names = {
-			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
-		}
-	}
-}
 amazonian = {
 	graphical_culture = northamericagfx
 
@@ -5941,8 +5913,7 @@ sonoran = {
 
 apachean = {
 	graphical_culture = northamericagfx
-	apache = {
-		primary = APA
+	western_apache = {
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
@@ -5962,6 +5933,24 @@ apachean = {
 	}
 	mescalero = {
 		primary = MSC
+		dynasty_names = {
+			Jicarilla Chiricahua Tonto Ramah Mojave
+			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
+			Arivaipa Carlanas Chiricahua Ch'uuk'anen Cibecue Coyotero
+			Faraones Gileno KIowa Llanero Lipiyanes
+			Mimbrenos Mogollon Na'iisha Natages Pinal 
+			Querechos
+		}
+		male_names = {
+			"Nanni Chaddi" "Na tio tish" Sitahle Oahtekah Ahzaah Kootzzah Moketaveto Ohtoahnesotowheo Harkkahome 
+			Munamenek Otoahnisto Mahvipah Choseta Nahtan Konzhontaco Bazheech Tillaka Chacon Dasoda-hae Cochise 
+			Delshay Goyaale Juh
+		}
+		female_names = {
+			Dahteste Ilthgozay Gouyen Lozen Tohayea 
+		}
+	}
+	chiricahua = {
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva

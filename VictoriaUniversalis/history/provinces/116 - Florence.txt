@@ -1,7 +1,7 @@
 add_core = TUS
 owner = TUS
 controller = TUS
-capital = "Firenze"
+capital = "Florence"
 base_manpower = 0
 base_production = 0
 base_tax = 14

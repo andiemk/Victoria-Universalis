@@ -1,24 +1,24 @@
 add_core = MEX
 owner = MEX
 controller = MEX
-capital = "El Paso"
+capital = "El Paso del Norte"
 base_manpower = 0
 base_production = 0
 base_tax = 0
 is_city = yes
 religion = totemism
-culture = lipan
+culture = chiricahua
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 4.017
+		value = 12.435
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0.746
+		value = 2.264
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.208
+		value = 0.791
 	}
 }

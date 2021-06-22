@@ -1,0 +1,24 @@
+add_core = CSG
+owner = CSG
+controller = CSG
+capital = "Río Quinto"
+base_manpower = 0
+base_production = 0
+base_tax = 0
+is_city = yes
+religion = animism
+culture = mapuche
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 0.884
+	}
+	set_variable = {
+		which = mid_pop
+		value = 0.077
+	}
+	set_variable = {
+		which = upper_pop
+		value = 0.026
+	}
+}

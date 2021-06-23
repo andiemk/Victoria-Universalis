@@ -1,24 +1,24 @@
 add_core = GBR
 owner = GBR
 controller = GBR
-capital = "London"
+capital = "Tullamore"
 base_manpower = 0
 base_production = 0
-base_tax = 51
+base_tax = 10
 is_city = yes
-religion = anglican
-culture = english
+religion = catholic
+culture = irish
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 1136.439
+		value = 227.428
 	}
 	set_variable = {
 		which = mid_pop
-		value = 658.443
+		value = 122.479
 	}
 	set_variable = {
 		which = upper_pop
-		value = 253.623
+		value = 47.449
 	}
 }

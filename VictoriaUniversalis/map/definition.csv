@@ -232,7 +232,7 @@ province;red;green;blue;x;x
 231;161;110;64;Minho;x
 232;33;112;128;Trás-os-Montes;x
 233;166;203;93;Cornwall;x
-234;33;116;255;Wessex;x
+234;33;116;255;Hampshire;x
 235;161;118;0;Kent;x
 236;33;120;64;London;x
 237;161;122;128;Oxfordshire;x
@@ -241,17 +241,17 @@ province;red;green;blue;x;x
 240;34;128;0;Shrewsbury;x
 241;162;130;64;Glamorgan;x
 242;34;132;128;Gwynedd;x
-243;162;134;192;Lincoln;x
+243;162;134;192;Lincolnshire;x
 244;34;136;255;Lancashire;x
-245;163;138;0;Yorkshire;x
+245;163;138;0;West Riding;x
 246;35;140;64;Northumberland;x
 247;163;142;128;Cumbria;x
-248;35;144;192;Lothian;x
-249;163;146;255;Ayrshire;x
+248;35;144;192;Edinburgh;x
+249;163;146;255;Ayr;x
 250;35;148;0;Perth;x
 251;163;150;64;Aberdeen;x
 252;36;152;128;Inverness;x
-253;164;154;192;Outer Hebrides;x
+253;164;154;192;Mayo;x
 254;36;156;255;Poznan;x
 255;164;158;0;Kalisz;x
 256;36;32;64;Plock;x
@@ -370,11 +370,11 @@ province;red;green;blue;x;x
 369;180;130;255;Orkney;x
 370;52;132;0;Reykjavik;x
 371;181;134;64;Akureyri;x
-372;53;136;128;Tyrone;x
-373;181;138;192;Meath;x
-374;53;140;255;Leinster;x
-375;181;142;0;Munster;x
-376;53;144;64;Connaught;x
+372;53;136;128;Derry;x
+373;181;138;192;Dublin;x
+374;53;140;255;Wexford;x
+375;181;142;0;Limerick;x
+376;53;144;64;Galway;x
 377;181;146;128;Aleppo;x
 378;54;148;192;Tripoli;x
 379;182;150;255;Jerusalem;x
@@ -1859,7 +1859,7 @@ province;red;green;blue;x;x
 1858;211;46;173;Stettin;x
 1859;83;48;32;Torun;x
 1860;211;50;79;Norfolk;x
-1861;83;52;126;Derby;x
+1861;83;52;126;Nottinghamshire;x
 1862;211;54;173;Cremona;x
 1863;84;56;32;Graz;x
 1864;212;58;79;Somogy;x
@@ -1976,7 +1976,7 @@ province;red;green;blue;x;x
 1975;105;225;255;Sea of Jutland;x
 1976;93;0;244;Dead Sea;x
 1977;94;0;248;Mälaren;x
-1978;95;0;232;Shetlands;x
+1978;95;0;232;Shetland;x
 1979;96;0;236;Färöarnax;x
 1980;136;253;253;Sea of Japan;x
 1981;98;0;244;Bornholm;x
@@ -4116,10 +4116,10 @@ province;red;green;blue;x;x
 4115;156;39;189;Mazyr;x
 4116;119;162;166;Belyov;x
 4117;205;163;151;Bezhetsk;x
-4118;180;212;180;Desmond;x
+4118;180;212;180;Tipperary;x
 4119;177;112;53;Sligo;x
 4120;160;91;132;Kildare;x
-4121;185;241;202;Ulster;x
+4121;185;241;202;Belfast;x
 4122;43;136;207;Shenkursk;x
 4123;43;106;43;Birkaland;x
 4124;109;195;109;Kexholm;x
@@ -4359,25 +4359,25 @@ province;red;green;blue;x;x
 4358;112;219;220;Cuyo Archipelago;x
 4359;185;227;40;Ise;x
 4360;235;159;33;Mikawa;x
-4361;203;124;124;East March;x
-4362;220;22;22;West March;x
+4361;203;124;124;Roxburgh;x
+4362;220;22;22;Dumfries;x
 4363;212;118;56;Argyll;x
-4364;236;203;22;Inner Hebrides;x
-4365;177;171;135;Mann;x
-4366;196;128;0;Montgomery;x
-4367;219;150;147;Hull;x
-4368;231;51;43;Scarborough;x
+4364;236;203;22;Ross & Cromarty;x
+4365;177;171;135;Isle of Man;x
+4366;196;128;0;Powys;x
+4367;219;150;147;East Riding;x
+4368;231;51;43;North Riding;x
 4369;221;244;212;Carmarthen;x
 4370;115;143;176;Cambridgeshire;x
 4371;146;207;152;Sussex;x
-4372;207;182;116;Coventry;x
+4372;207;182;116;Birmingham;x
 4373;161;114;192;Devon;x
 4374;155;153;90;Dorset;x
-4375;229;133;39;Chester;x
-4376;160;66;61;Leicester;x
-4377;91;132;207;Ormond;x
-4378;207;145;145;Kinsale;x
-4379;181;38;38;Middlands;x
+4375;229;133;39;Cheshire;x
+4376;160;66;61;Leicestershire;x
+4377;91;132;207;Kilkenny;x
+4378;207;145;145;Cork;x
+4379;181;38;38;Offaly;x
 4380;186;74;52;Donegal;x
 4381;24;57;119;Oversticht;x
 4382;213;194;38;Ommeland;x
@@ -4783,7 +4783,7 @@ province;red;green;blue;x;x
 4782;45;197;9;Tswana;x
 4783;9;45;197;Swazi;x
 4784;135;45;9;Upper Limpopo;x
-4785;98;179;208;Sheffield;x
+4785;98;179;208;Kerry;x
 4786;45;27;97;Priegnitz;x
 4787;91;178;26;Ribatejo;x
 4788;168;196;4;Plasencia;x

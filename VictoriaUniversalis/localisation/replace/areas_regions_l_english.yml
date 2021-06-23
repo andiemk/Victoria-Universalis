@@ -64,6 +64,8 @@
  beieras_area:0 "Beira"
  castile_area:0 "New Castile"
  lower_andalucia_area:0 "Andalusia"
+ wessex_area:0 "South West England"
+ east_anglia_area:0 "East of England"
  
  canada_region:0 "Quebec"
  atlantic_canada_region:0 "Atlantic Canada"

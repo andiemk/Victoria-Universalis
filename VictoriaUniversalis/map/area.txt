@@ -524,15 +524,15 @@ central_italy_area = { #3
 ########################################
 
 munster_area = { #3
-	4118 4377 4378
+	375 4118 4378 4785
 }
 
 connacht_area = { #3
-	375 376 4119
+	253 376 4119
 }
 
 leinster_area = { #4
-	373 374 4120 4379
+	373 374 4120 4377 4379
 }
 
 ulster_area = { #3
@@ -540,15 +540,15 @@ ulster_area = { #3
 }
 
 kingdom_of_the_isles_area = { #3
-	253 4364 4365
+	4365
 }
 
 highlands_area = { #5
-	250 252 369 4110 4363
+	250 251 252 369 4110 4363 4364
 }
 
 lowlands_area = { #5
-	248 249 251 4361 4362
+	248 249 4361 4362
 }
 
 wales_area = { #4
@@ -560,11 +560,11 @@ scottish_marches_area = { #4
 }
 
 yorkshire_area = { #4
-	245 4367 4368 4785
+	245 4367 4368
 }
 
 west_midlands_area = { #3
-	239 240 4372
+	240 4372
 }
 
 east_midlands_area = { #3
@@ -572,7 +572,7 @@ east_midlands_area = { #3
 }
 
 wessex_area = { #5
-	233 234 4130 4373 4374
+	233 239 234 4130 4373 4374
 }
 
 home_counties_area = { #4

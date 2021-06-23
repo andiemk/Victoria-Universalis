@@ -17,10 +17,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4699;1773;sea;1312;-1;-1;-1;-1;Janina-Achaea
 146;164;sea;1319;-1;-1;-1;-1;Athens-Naxos
 4779;2296;sea;1320;-1;-1;-1;-1;Gallipoli-Biga
-4110;253;sea;1283;-1;-1;-1;-1;Sutherland-Western Isles
-4364;253;sea;1283;-1;-1;-1;-1;Inner Hebrides-Outer Hebrides
-4364;4110;sea;1283;-1;-1;-1;-1;Inner Hebrides-Sutherland
-4364;4363;sea;1283;-1;-1;-1;-1;Inner Hebrides-Argyll
 4110;369;sea;1282;-1;-1;-1;-1;Sutherland-Orkney
 97;100;sea;1269;-1;-1;-1;-1;Holland-Friesland
 96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent

@@ -1,24 +1,24 @@
-add_core = TTS
-owner = TTS
-controller = TTS
-capital = "Naples"
+add_core = FRA
+owner = FRA
+controller = FRA
+capital = "Strasbourg"
 base_manpower = 0
 base_production = 0
-base_tax = 35
+base_tax = 14
 is_city = yes
 religion = catholic
-culture = neapolitan
+culture = aslatian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 783.227
+		value = 315.781
 	}
 	set_variable = {
 		which = mid_pop
-		value = 449.867
+		value = 174.292
 	}
 	set_variable = {
 		which = upper_pop
-		value = 173.397
+		value = 67.389
 	}
 }

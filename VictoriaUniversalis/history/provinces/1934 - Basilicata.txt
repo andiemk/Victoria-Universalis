@@ -4,21 +4,21 @@ controller = TTS
 capital = "Potenza"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 11
 is_city = yes
 religion = catholic
 culture = neapolitan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0
+		value = 257.94
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 140.344
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
+		value = 54.325
 	}
 }

@@ -4,21 +4,21 @@ controller = TTS
 capital = "Campobasso"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 9
 is_city = yes
 religion = catholic
 culture = neapolitan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0
+		value = 197.216
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 104.835
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
+		value = 40.657
 	}
 }

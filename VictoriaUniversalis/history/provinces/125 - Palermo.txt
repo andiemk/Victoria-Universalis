@@ -4,21 +4,21 @@ controller = TTS
 capital = "Palermo"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 12
 is_city = yes
 religion = catholic
 culture = sicilian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0
+		value = 272.913
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 149.123
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
+		value = 57.703
 	}
 }

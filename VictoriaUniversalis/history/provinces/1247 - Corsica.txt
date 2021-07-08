@@ -1,24 +1,24 @@
-add_core = TTS
-owner = TTS
-controller = TTS
-capital = "Agrigento"
+add_core = FRA
+owner = FRA
+controller = FRA
+capital = "Ajaccio"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 5
 is_city = yes
 religion = catholic
-culture = sicilian
+culture = sardinian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0
+		value = 121.272
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 60.872
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
+		value = 23.722
 	}
 }

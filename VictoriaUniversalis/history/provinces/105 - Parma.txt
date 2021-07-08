@@ -4,21 +4,21 @@ controller = PAR
 capital = "Parma"
 base_manpower = 0
 base_production = 0
-base_tax = 6
+base_tax = 11
 is_city = yes
 religion = catholic
 culture = romagnan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 146.173
+		value = 241.275
 	}
 	set_variable = {
 		which = mid_pop
-		value = 75.196
+		value = 130.582
 	}
 	set_variable = {
 		which = upper_pop
-		value = 29.242
+		value = 50.568
 	}
 }

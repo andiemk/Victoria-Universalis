@@ -73,7 +73,7 @@ province;red;green;blue;x;x
 72;10;48;128;Breisgau;x
 73;138;50;192;Tirol;x
 74;10;52;255;Baden;x
-75;138;54;0;Elsass;x
+75;138;54;0;Bas-Rhin;x
 76;10;56;64;Salzburg;x
 77;139;58;128;Worms;x
 78;11;60;192;Pfalz;x
@@ -85,9 +85,9 @@ province;red;green;blue;x;x
 84;12;72;255;Berg;x
 85;140;74;0;Köln;x
 86;12;76;64;Münster;x
-87;140;78;128;Calais;x
-88;12;80;192;Artois;x
-89;140;82;255;Picardie;x
+87;140;78;128;Pas-de-Calais;x
+88;12;80;192;Vienne;x
+89;140;82;255;Somme;x
 90;12;84;0;Vlaanderen;x
 91;141;86;64;Hainault;x
 92;13;88;128;Brabant;x
@@ -120,8 +120,8 @@ province;red;green;blue;x;x
 119;145;142;255;Marche;x
 120;17;144;0;Abruzzo;x
 121;145;146;64;Naples;x
-122;17;148;128;Salento;x
-123;145;150;192;Calabria;x
+122;17;148;128;Terra d'Otranto;x
+123;145;150;192;Calabria Ulteriore;x
 124;17;152;255;Messina;x
 125;145;154;0;Palermo;x
 126;18;156;64;Malta;x
@@ -165,44 +165,44 @@ province;red;green;blue;x;x
 164;23;104;255;Naxos;x
 165;151;106;0;Bern;x
 166;23;108;64;Schwyz;x
-167;151;110;128;Caux;x
-168;24;112;192;Normandie;x
-169;152;114;255;Armor;x
+167;151;110;128;Seine-Inférieure;x
+168;24;112;192;Calvados;x
+169;152;114;255;Côtes-du-Nord;x
 170;24;116;0;Finistère;x
 171;152;118;64;Morbihan;x
-172;24;120;128;Vendée;x
-173;152;122;192;Labourd;x
-174;24;124;255;Gascogne;x
-175;153;126;0;Armagnac;x
-176;25;128;64;Béarn;x
-177;153;130;128;Maine;x
-178;25;132;192;Anjou;x
-179;153;134;255;Berry;x
-180;25;136;0;Poitou;x
-181;153;138;64;Valenciennes;x
-182;26;140;128;Vermandois;x
-183;154;142;192;Île-de-France;x
-184;26;144;255;Orléannais;x
-185;147;222;218;Nemours;x
-186;26;148;64;Champagne;x
-187;154;150;128;Barrois;x
-188;26;152;192;Metz;x
-189;155;154;255;Lothringen;x
-190;27;156;0;Bourbon;x
-191;155;158;64;Nevers;x
-192;27;32;128;Bourgogne;x
-193;155;34;192;Franche-Comté;x
-194;27;36;255;Périgord;x
-195;155;38;0;Limousin;x
-196;28;40;64;Toulouse;x
-197;156;42;128;Roussillon;x
-198;28;44;192;Rouergue;x
-199;156;46;255;Auvergne;x
-200;28;248;0;Languedoc;x
-201;156;50;64;Toulon;x
-202;28;52;128;Avignon;x
-203;157;54;192;Lyonnais;x
-204;29;56;255;Dauphiné;x
+172;24;120;128;Loire-Inférieure;x
+173;152;122;192;Landes;x
+174;24;124;255;Gironde;x
+175;153;126;0;Gers;x
+176;25;128;64;Basses-Pyrénées;x
+177;153;130;128;Maine-et-Loire;x
+178;25;132;192;Deux-Sèvres;x
+179;153;134;255;Indre;x
+180;25;136;0;Haute-Vienne;x
+181;153;138;64;Ardennes;x
+182;26;140;128;Oise;x
+183;154;142;192;Paris;x
+184;26;144;255;Loiret;x
+185;147;222;218;Yonne;x
+186;26;148;64;Marne;x
+187;154;150;128;Cher;x
+188;26;152;192;Moselle;x
+189;155;154;255;Meurthe;x
+190;27;156;0;Allier;x
+191;155;158;64;Nièvre;x
+192;27;32;128;Côte-d'Or;x
+193;155;34;192;Haute-Saône;x
+194;27;36;255;Dordogne;x
+195;155;38;0;Corrèze;x
+196;28;40;64;Haute-Garonne;x
+197;156;42;128;Pyrénées-Orientales;x
+198;28;44;192;Aveyron;x
+199;156;46;255;Puy-de-Dôme;x
+200;28;248;0;Gard;x
+201;156;50;64;Bouches-du-Rhône;x
+202;28;52;128;Drôme;x
+203;157;54;192;Lozère;x
+204;29;56;255;Isère;x
 205;157;58;0;Savoy;x
 206;29;60;64;A Coruña;x
 207;157;62;128;Asturias;x
@@ -1741,7 +1741,7 @@ province;red;green;blue;x;x
 1740;109;203;203;Southern Pacifc #25;x
 1741;110;203;253;Southern Pacifc #26;x
 1742;66;68;126;Limburg;x
-1743;194;70;173;Cambray;x
+1743;194;70;173;Aisne;x
 1744;66;72;32;Antwerpen;x
 1745;195;74;79;Santander;x
 1746;67;76;126;Burgos;x
@@ -1865,7 +1865,7 @@ province;red;green;blue;x;x
 1864;212;58;79;Somogy;x
 1865;84;60;126;Ghent;x
 1866;212;62;173;Namur ;x
-1867;84;64;32;Freiburg;x
+1867;84;64;32;Cantal;x
 1868;212;66;79;Augsburg;x
 1869;84;68;126;Zürich;x
 1870;213;70;173;S:t Gallen;x
@@ -1875,10 +1875,10 @@ province;red;green;blue;x;x
 1874;213;78;173;Bremen;x
 1875;142;110;192;Cuneo;x
 1876;213;82;79;Frankfurt;x
-1877;86;92;126;Charolais;x
+1877;86;92;126;Saône-et-Loire;x
 1878;214;86;173;Aachen;x
-1879;86;88;32;Alencon;x
-1880;214;90;79;Sundgau;x
+1879;86;88;32;Sarthe;x
+1880;214;90;79;Haut-Rhin;x
 1881;213;74;79;Anguilla;x
 1882;214;94;173;Bône;x
 1883;0;0;232;Western Finish lakes;x
@@ -1931,7 +1931,7 @@ province;red;green;blue;x;x
 1930;237;154;79;Åland;x
 1931;130;60;50;East Frisia;x
 1932;49;150;248;Gulf of Satalia;x
-1933;50;0;232;Puglia;x
+1933;50;0;232;Terra di Bari;x
 1934;251;0;36;Basilicata;x
 1935;52;0;240;Semigallia;x
 1936;55;0;0;Kovno;x
@@ -2751,7 +2751,7 @@ province;red;green;blue;x;x
 2750;234;227;107;Plovdiv;x
 2751;68;230;179;Cuenca;x
 2752;3;196;128;Romsdal;x
-2753;188;67;67;Narbonne;x
+2753;188;67;67;Hérault;x
 2754;231;35;179;Ciudad Real;x
 2755;68;8;179;Soría;x
 2756;166;56;206;Welayta;x
@@ -2980,16 +2980,16 @@ province;red;green;blue;x;x
 2979;192;219;10;Novara;x
 2980;241;15;15;Lucca;x
 2981;222;108;69;Monferrato;x
-2982;227;135;53;Siracusa;x
-2983;150;159;47;Salerno;x
-2984;206;227;169;Cosenza;x
+2982;227;135;53;Syracuse;x
+2983;150;159;47;Principato Citeriore;x
+2984;206;227;169;Calabria Citeriore;x
 2985;223;236;73;Capitanata;x
 2986;55;246;23;Cagliari;x
 2987;220;251;47;Lleida;x
 2988;232;11;11;Tarragona;x
 2989;200;58;78;La Rioja;x
 2990;181;150;96;Teruel;x
-2991;243;21;172;Draguignan;x
+2991;243;21;172;Alpes;x
 2992;91;125;222;Albenga;x
 2993;136;48;142;Stargard;x
 2994;248;245;157;Greifswald;x
@@ -4109,8 +4109,8 @@ province;red;green;blue;x;x
 4108;207;15;100;Kaonde;x
 4109;197;15;150;Lega;x
 4110;231;127;43;Sutherland;x
-4111;119;212;150;Saintonge;x
-4112;157;124;213;Aurilac;x
+4111;119;212;150;Charente-Inférieure;x
+4112;157;124;213;Lot-et-Garonne;x
 4113;103;160;108;Uleaborg;x
 4114;145;85;134;Luleå;x
 4115;156;39;189;Mazyr;x
@@ -4382,15 +4382,15 @@ province;red;green;blue;x;x
 4381;24;57;119;Oversticht;x
 4382;213;194;38;Ommeland;x
 4383;220;189;139;Haag;x
-4384;234;156;30;Rennes;x
-4385;206;210;106;Cotentin;x
-4386;153;88;207;Vendee;x
-4387;227;104;55;Angouleme;x
-4388;90;50;219;Chartres;x
-4389;212;131;52;Touraine;x
-4390;154;146;0;Troyes;x
-4391;208;37;117;Vivarais;x
-4392;227;148;148;Auxerrois;x
+4384;234;156;30;Ille-et-Vilaine;x
+4385;206;210;106;Manche;x
+4386;153;88;207;Vendée;x
+4387;227;104;55;Charente;x
+4388;90;50;219;Eure-et-Loir;x
+4389;212;131;52;Indre-et-Loire;x
+4390;154;146;0;Aube;x
+4391;208;37;117;Haute-Loire;x
+4392;227;148;148;Haute-Marne;x
 4393;181;227;89;Tabayin;x
 4394;223;76;249;Salin;x
 4395;7;183;221;Yamethin;x
@@ -4692,10 +4692,10 @@ province;red;green;blue;x;x
 4691;255;227;0;As;x
 4692;255;213;0;Turgay;x
 4693;254;103;217;Keriya;x
-4694;172;194;112;Foix;x
-4695;195;118;123;Carcassonne;x
-4696;243;42;7;Toulon;x
-4697;22;120;77;La Marche;x
+4694;172;194;112;Ariège;x
+4695;195;118;123;Aude;x
+4696;243;42;7;Var;x
+4697;22;120;77;Creuse;x
 4698;223;0;153;Cephalonia;x
 4699;164;48;47;Arta;x
 4700;137;22;12;Lesbos;x
@@ -4717,7 +4717,7 @@ province;red;green;blue;x;x
 4716;223;230;73;Coburg;x
 4717;184;22;22;Bayreuth;x
 4718;8;175;128;Aschaffenburg;x
-4719;161;116;28;Annecy;x
+4719;161;116;28;Ain;x
 4720;29;123;204;Geneva;x
 4721;192;98;255;Fribourg;x
 4722;33;178;172;Illanz;x
@@ -4732,10 +4732,10 @@ province;red;green;blue;x;x
 4731;50;217;66;Spoleto;x
 4732;216;236;203;Terracina;x
 4733;144;222;92;Molise;x
-4734;239;33;241;Benevento;x
+4734;239;33;241;Principato Ulteriore;x
 4735;77;22;255;Oristano;x
 4736;255;193;247;Trapani;x
-4737;172;68;159;Agrigento;x
+4737;172;68;159;Girgenti;x
 4738;110;243;21;Trieste;x
 4739;255;193;31;Bergamo;x
 4740;123;111;79;Como;x
@@ -4762,20 +4762,20 @@ province;red;green;blue;x;x
 4761;154;237;147;Traungau;x
 4762;243;138;80;Wienerwald;x
 4763;238;230;38;Alps6;x
-4764;179;106;111;Salins;x
-4765;255;253;196;Mulhouse;x
-4766;138;136;91;Verdun;x
+4764;179;106;111;Jura;x
+4765;255;253;196;Seine-et-Marne;x
+4766;138;136;91;Meuse;x
 4767;253;135;143;Zweibrucken;x
 4768;253;215;143;Julich;x
-4769;125;215;143;Lille;x
+4769;125;215;143;Nord;x
 4770;181;160;75;s-Hertogenbosch;x
 4771;52;36;48;Verden;x
 4772;228;189;115;Celle;x
 4773;70;135;54;Göttingen;x
 4774;175;138;37;Fulda;x
 4775;199;14;89;Bielefeld;x
-4776;177;186;20;Blois;x
-4777;202;126;16;Forez;x
+4776;177;186;20;Loir-et-Cher;x
+4777;202;126;16;Rhône;x
 4778;32;31;94;Görlitz;x
 4779;124;10;162;Gallipoli;x
 4780;25;224;138;Ohrid;x

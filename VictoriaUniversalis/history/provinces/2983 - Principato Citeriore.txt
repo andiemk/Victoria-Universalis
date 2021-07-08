@@ -1,24 +1,24 @@
 add_core = TTS
 owner = TTS
 controller = TTS
-capital = "Naples"
+capital = "Salerno"
 base_manpower = 0
 base_production = 0
-base_tax = 35
+base_tax = 14
 is_city = yes
 religion = catholic
 culture = neapolitan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 783.227
+		value = 309.52
 	}
 	set_variable = {
 		which = mid_pop
-		value = 449.867
+		value = 170.614
 	}
 	set_variable = {
 		which = upper_pop
-		value = 173.397
+		value = 65.973
 	}
 }

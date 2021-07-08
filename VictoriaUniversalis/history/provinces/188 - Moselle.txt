@@ -1,24 +1,24 @@
-add_core = TTS
-owner = TTS
-controller = TTS
-capital = "Benevento"
+add_core = FRA
+owner = FRA
+controller = FRA
+capital = "Metz"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 11
 is_city = yes
 religion = catholic
-culture = neapolitan
+culture = franconian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 0
+		value = 242.797
 	}
 	set_variable = {
 		which = mid_pop
-		value = 0
+		value = 131.473
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0
+		value = 50.911
 	}
 }

@@ -11,14 +11,14 @@ culture = basque
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 144.579
+		value = 134.428
 	}
 	set_variable = {
 		which = mid_pop
-		value = 74.276
+		value = 68.425
 	}
 	set_variable = {
 		which = upper_pop
-		value = 28.888
+		value = 26.633
 	}
 }

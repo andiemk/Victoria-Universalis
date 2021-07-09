@@ -4,21 +4,21 @@ controller = SPA
 capital = "Castellón"
 base_manpower = 0
 base_production = 0
-base_tax = 4
+base_tax = 5
 is_city = yes
 religion = catholic
 culture = catalan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 85.402
+		value = 117.625
 	}
 	set_variable = {
 		which = mid_pop
-		value = 40.551
+		value = 58.786
 	}
 	set_variable = {
 		which = upper_pop
-		value = 15.881
+		value = 22.917
 	}
 }

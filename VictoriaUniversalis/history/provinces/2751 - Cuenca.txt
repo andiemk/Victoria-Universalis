@@ -4,21 +4,21 @@ controller = SPA
 capital = "Cuenca"
 base_manpower = 0
 base_production = 0
-base_tax = 4
+base_tax = 8
 is_city = yes
 religion = catholic
 culture = castillian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 90.871
+		value = 182.874
 	}
 	set_variable = {
 		which = mid_pop
-		value = 43.614
+		value = 96.481
 	}
 	set_variable = {
 		which = upper_pop
-		value = 17.064
+		value = 37.44
 	}
 }

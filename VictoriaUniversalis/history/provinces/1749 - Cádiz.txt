@@ -1,24 +1,24 @@
 add_core = SPA
 owner = SPA
 controller = SPA
-capital = "CÃ¡diz"
+capital = "Cádiz"
 base_manpower = 0
 base_production = 0
-base_tax = 6
+base_tax = 8
 is_city = yes
 religion = catholic
 culture = andalucian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 147.945
+		value = 187.252
 	}
 	set_variable = {
 		which = mid_pop
-		value = 76.22
+		value = 99.029
 	}
 	set_variable = {
 		which = upper_pop
-		value = 29.637
+		value = 38.421
 	}
 }

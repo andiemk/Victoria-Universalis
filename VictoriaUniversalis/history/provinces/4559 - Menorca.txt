@@ -1,7 +1,7 @@
 add_core = SPA
 owner = SPA
 controller = SPA
-capital = "MahÃ³n"
+capital = "Mahón"
 base_manpower = 0
 base_production = 0
 base_tax = 1
@@ -11,14 +11,14 @@ culture = catalan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 24.369
+		value = 37.483
 	}
 	set_variable = {
 		which = mid_pop
-		value = 8.731
+		value = 14.927
 	}
 	set_variable = {
 		which = upper_pop
-		value = 3.521
+		value = 5.948
 	}
 }

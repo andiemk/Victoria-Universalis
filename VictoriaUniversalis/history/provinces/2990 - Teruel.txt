@@ -11,14 +11,14 @@ culture = aragonese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 113.728
+		value = 127.964
 	}
 	set_variable = {
 		which = mid_pop
-		value = 56.56
+		value = 64.709
 	}
 	set_variable = {
 		which = upper_pop
-		value = 22.059
+		value = 25.201
 	}
 }

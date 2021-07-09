@@ -4,21 +4,21 @@ controller = SPA
 capital = "Jaén"
 base_manpower = 0
 base_production = 0
-base_tax = 6
+base_tax = 7
 is_city = yes
 religion = catholic
 culture = andalucian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 131.308
+		value = 156.338
 	}
 	set_variable = {
 		which = mid_pop
-		value = 66.63
+		value = 81.075
 	}
 	set_variable = {
 		which = upper_pop
-		value = 25.941
+		value = 31.507
 	}
 }

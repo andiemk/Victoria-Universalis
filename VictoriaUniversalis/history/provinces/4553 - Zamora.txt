@@ -4,21 +4,21 @@ controller = SPA
 capital = "Zamora"
 base_manpower = 0
 base_production = 0
-base_tax = 6
+base_tax = 4
 is_city = yes
 religion = catholic
 culture = leonese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 135.106
+		value = 95.296
 	}
 	set_variable = {
 		which = mid_pop
-		value = 68.815
+		value = 46.104
 	}
 	set_variable = {
 		which = upper_pop
-		value = 26.783
+		value = 18.025
 	}
 }

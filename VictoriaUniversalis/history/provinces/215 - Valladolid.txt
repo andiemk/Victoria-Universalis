@@ -11,14 +11,14 @@ culture = castillian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 123.038
+		value = 109.425
 	}
 	set_variable = {
 		which = mid_pop
-		value = 61.883
+		value = 54.108
 	}
 	set_variable = {
 		which = upper_pop
-		value = 24.112
+		value = 21.114
 	}
 }

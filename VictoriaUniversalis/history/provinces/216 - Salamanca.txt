@@ -4,21 +4,21 @@ controller = SPA
 capital = "Salamanca"
 base_manpower = 0
 base_production = 0
-base_tax = 6
+base_tax = 5
 is_city = yes
 religion = catholic
 culture = leonese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 142.961
+		value = 123.752
 	}
 	set_variable = {
 		which = mid_pop
-		value = 73.342
+		value = 62.293
 	}
 	set_variable = {
 		which = upper_pop
-		value = 28.528
+		value = 24.269
 	}
 }

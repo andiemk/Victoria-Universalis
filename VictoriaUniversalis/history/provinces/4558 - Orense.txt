@@ -11,14 +11,14 @@ culture = galician
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 193.151
+		value = 184.116
 	}
 	set_variable = {
 		which = mid_pop
-		value = 102.465
+		value = 97.204
 	}
 	set_variable = {
 		which = upper_pop
-		value = 39.744
+		value = 37.718
 	}
 }

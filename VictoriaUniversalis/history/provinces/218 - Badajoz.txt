@@ -11,14 +11,14 @@ culture = andalucian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 182.763
+		value = 180.175
 	}
 	set_variable = {
 		which = mid_pop
-		value = 96.416
+		value = 94.91
 	}
 	set_variable = {
 		which = upper_pop
-		value = 37.415
+		value = 36.836
 	}
 }

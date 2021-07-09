@@ -11,14 +11,14 @@ culture = catalan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 144.877
+		value = 136.649
 	}
 	set_variable = {
 		which = mid_pop
-		value = 74.448
+		value = 69.703
 	}
 	set_variable = {
 		which = upper_pop
-		value = 28.954
+		value = 27.126
 	}
 }

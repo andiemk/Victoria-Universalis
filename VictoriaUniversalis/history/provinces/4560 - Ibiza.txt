@@ -4,21 +4,21 @@ controller = SPA
 capital = "Ibiza"
 base_manpower = 0
 base_production = 0
-base_tax = 1
+base_tax = 2
 is_city = yes
 religion = catholic
 culture = catalan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 31.246
+		value = 48.039
 	}
 	set_variable = {
 		which = mid_pop
-		value = 11.902
+		value = 20.284
 	}
 	set_variable = {
 		which = upper_pop
-		value = 4.766
+		value = 8.034
 	}
 }

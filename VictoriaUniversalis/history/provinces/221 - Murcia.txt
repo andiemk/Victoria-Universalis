@@ -1,24 +1,24 @@
 add_core = SPA
 owner = SPA
 controller = SPA
-capital = "Murcia"
+capital = "Cartagena"
 base_manpower = 0
 base_production = 0
-base_tax = 8
+base_tax = 7
 is_city = yes
 religion = catholic
 culture = andalucian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 193.851
+		value = 164.204
 	}
 	set_variable = {
 		which = mid_pop
-		value = 102.873
+		value = 85.633
 	}
 	set_variable = {
 		which = upper_pop
-		value = 39.902
+		value = 33.263
 	}
 }

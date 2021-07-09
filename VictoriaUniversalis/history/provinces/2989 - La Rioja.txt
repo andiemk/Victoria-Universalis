@@ -1,7 +1,7 @@
 add_core = SPA
 owner = SPA
 controller = SPA
-capital = "LogroÃ±o"
+capital = "Logroño"
 base_manpower = 0
 base_production = 0
 base_tax = 4
@@ -11,14 +11,14 @@ culture = castillian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 97.126
+		value = 88.716
 	}
 	set_variable = {
 		which = mid_pop
-		value = 47.136
+		value = 42.405
 	}
 	set_variable = {
 		which = upper_pop
-		value = 18.423
+		value = 16.597
 	}
 }

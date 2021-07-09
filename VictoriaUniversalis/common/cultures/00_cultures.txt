@@ -901,7 +901,7 @@ amazonian = {
 	dynasty_names = {
 		Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
 	}
-
+}
 
 germanic = {
 	graphical_culture = westerngfx

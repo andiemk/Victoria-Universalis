@@ -1,0 +1,24 @@
+add_core = BEL
+owner = BEL
+controller = BEL
+capital = "Liège"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+religion = catholic
+culture = wallonian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 223.581
+	}
+	set_variable = {
+		which = mid_pop
+		value = 120.229
+	}
+	set_variable = {
+		which = upper_pop
+		value = 46.583
+	}
+}

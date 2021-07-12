@@ -88,11 +88,11 @@ province;red;green;blue;x;x
 87;140;78;128;Pas-de-Calais;x
 88;12;80;192;Vienne;x
 89;140;82;255;Somme;x
-90;12;84;0;Vlaanderen;x
-91;141;86;64;Hainault;x
-92;13;88;128;Brabant;x
-93;141;90;192;Liège;x
-94;13;92;255;Luxemburg;x
+90;12;84;0;West Flanders;x
+91;141;86;64;Hainaut;x
+92;13;88;128;South Brabant;x
+93;141;90;192;Arlon;x
+94;13;92;255;Luxembourg;x
 95;141;94;0;Noord;x
 96;13;96;64;Zeeland;x
 97;141;98;128;Holland;x
@@ -164,7 +164,7 @@ province;red;green;blue;x;x
 163;151;102;192;Crete;x
 164;23;104;255;Naxos;x
 165;151;106;0;Bern;x
-166;23;108;64;Schwyz;x
+166;23;108;64;Ticino;x
 167;151;110;128;Seine-Inférieure;x
 168;24;112;192;Calvados;x
 169;152;114;255;Côtes-du-Nord;x
@@ -1740,9 +1740,9 @@ province;red;green;blue;x;x
 1739;108;253;253;Southern Pacifc #24;x
 1740;109;203;203;Southern Pacifc #25;x
 1741;110;203;253;Southern Pacifc #26;x
-1742;66;68;126;Limburg;x
+1742;66;68;126;Maastricht;x
 1743;194;70;173;Aisne;x
-1744;66;72;32;Antwerpen;x
+1744;66;72;32;Antwerp;x
 1745;195;74;79;Santander;x
 1746;67;76;126;Burgos;x
 1747;195;78;173;Cáceres;x
@@ -1863,20 +1863,20 @@ province;red;green;blue;x;x
 1862;211;54;173;Cremona;x
 1863;84;56;32;Graz;x
 1864;212;58;79;Somogy;x
-1865;84;60;126;Ghent;x
-1866;212;62;173;Namur ;x
+1865;84;60;126;East Flanders;x
+1866;212;62;173;Namur;x
 1867;84;64;32;Cantal;x
 1868;212;66;79;Augsburg;x
-1869;84;68;126;Zürich;x
-1870;213;70;173;S:t Gallen;x
-1871;85;72;32;Wallis;x
+1869;84;68;126;Lucerne;x
+1870;213;70;173;Zürich;x
+1871;85;72;32;Valais;x
 1872;86;84;126;Ulm;x
 1873;85;76;126;Chur;x
 1874;213;78;173;Bremen;x
 1875;142;110;192;Cuneo;x
 1876;213;82;79;Frankfurt;x
 1877;86;92;126;Saône-et-Loire;x
-1878;214;86;173;Aachen;x
+1878;214;86;173;Liège;x
 1879;86;88;32;Sarthe;x
 1880;214;90;79;Haut-Rhin;x
 1881;213;74;79;Anguilla;x
@@ -2972,7 +2972,7 @@ province;red;green;blue;x;x
 2971;231;154;5;Hoya;x
 2972;249;240;1;Paderborn;x
 2973;255;162;53;Meppen;x
-2974;248;19;19;Loon;x
+2974;248;19;19;Hasselt;x
 2975;42;231;108;Kleves;x
 2976;205;23;23;Perugia;x
 2977;248;231;136;Urbino;x
@@ -4720,7 +4720,7 @@ province;red;green;blue;x;x
 4719;161;116;28;Ain;x
 4720;29;123;204;Geneva;x
 4721;192;98;255;Fribourg;x
-4722;33;178;172;Illanz;x
+4722;33;178;172;Graubünden;x
 4723;63;106;212;Opole;x
 4724;28;140;117;Pardubice;x
 4725;182;22;144;Jindrichuv Hradec;x

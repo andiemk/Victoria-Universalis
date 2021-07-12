@@ -16,7 +16,9 @@ AND = "countries/Andorra.txt"
 
 #Italy
 SMA = "countries/SanMarino.txt"
+
 #Low Countries
+BEL = "countries/Belgium.txt"
 
 #Russia 
 

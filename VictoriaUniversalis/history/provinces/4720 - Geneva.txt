@@ -1,0 +1,24 @@
+add_core = SWI
+owner = SWI
+controller = SWI
+capital = "Geneva"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+religion = reformed
+culture = arpitan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 221.931
+	}
+	set_variable = {
+		which = mid_pop
+		value = 119.265
+	}
+	set_variable = {
+		which = upper_pop
+		value = 46.212
+	}
+}

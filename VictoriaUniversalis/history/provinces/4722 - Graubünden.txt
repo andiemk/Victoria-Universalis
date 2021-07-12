@@ -1,0 +1,24 @@
+add_core = SWI
+owner = SWI
+controller = SWI
+capital = "Chur"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = reformed
+culture = swiss
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 54.494
+	}
+	set_variable = {
+		which = mid_pop
+		value = 23.668
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.348
+	}
+}

@@ -1,0 +1,24 @@
+add_core = BEL
+owner = BEL
+controller = BEL
+capital = "Mons"
+base_manpower = 0
+base_production = 0
+base_tax = 16
+is_city = yes
+religion = catholic
+culture = wallonian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 358.275
+	}
+	set_variable = {
+		which = mid_pop
+		value = 199.279
+	}
+	set_variable = {
+		which = upper_pop
+		value = 77.002
+	}
+}

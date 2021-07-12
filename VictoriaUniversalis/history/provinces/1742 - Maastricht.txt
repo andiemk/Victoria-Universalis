@@ -1,0 +1,24 @@
+add_core = BEL
+owner = BEL
+controller = BEL
+capital = "Maastricht"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+religion = catholic
+culture = dutch
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 113.215
+	}
+	set_variable = {
+		which = mid_pop
+		value = 56.268
+	}
+	set_variable = {
+		which = upper_pop
+		value = 21.946
+	}
+}

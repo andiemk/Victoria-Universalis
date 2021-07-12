@@ -1,0 +1,24 @@
+add_core = BEL
+owner = BEL
+controller = BEL
+capital = "Arlon"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+religion = catholic
+culture = wallonian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 99.218
+	}
+	set_variable = {
+		which = mid_pop
+		value = 48.318
+	}
+	set_variable = {
+		which = upper_pop
+		value = 18.88
+	}
+}

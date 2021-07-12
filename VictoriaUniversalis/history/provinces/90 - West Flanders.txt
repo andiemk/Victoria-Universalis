@@ -1,0 +1,24 @@
+add_core = BEL
+owner = BEL
+controller = BEL
+capital = "Bruges"
+base_manpower = 0
+base_production = 0
+base_tax = 16
+is_city = yes
+religion = catholic
+culture = flemish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 352.605
+	}
+	set_variable = {
+		which = mid_pop
+		value = 195.943
+	}
+	set_variable = {
+		which = upper_pop
+		value = 75.719
+	}
+}

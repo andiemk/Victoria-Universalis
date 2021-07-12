@@ -901,8 +901,8 @@ amazonian = {
 	dynasty_names = {
 		Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
 	}
-}
 
+}
 germanic = {
 	graphical_culture = westerngfx
 
@@ -1059,6 +1059,8 @@ germanic = {
 	}
 	swabian = {
 		primary = SWA
+	}
+	alsatian = {
 	}
 	swiss = {
 		primary = SWI
@@ -2310,6 +2312,8 @@ french	= {
 	}
 	occitain = {
 		primary = PRO
+	}
+	arpitan = {
 	}
 	wallonian = {
 		primary = HAI

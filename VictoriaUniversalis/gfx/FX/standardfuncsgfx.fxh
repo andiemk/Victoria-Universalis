@@ -339,6 +339,10 @@ float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex)
 // 	}
 // 	else { return color; }
 // }
+float ApplyPaperDist(float color, float base)
+{
+	return lerp(base, color, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+}
 
 #endif // STANDARDFUNCS_H_
 ]]

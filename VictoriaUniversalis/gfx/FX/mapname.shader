@@ -111,7 +111,7 @@ PixelShader =
 		{
 			float4 vSample = tex2D( DiffuseTexture, v.vTexCoord );
 			
-			vSample.a = ApplyPaperDist(0.7f * vSample.a, vSample.a);
+			vSample.a = ApplyPaperDist(PAPER_MAPTEXT_OPACITY * vSample.a, vSample.a);
 			vSample.a *= vTargetOpacity_Fade.x * vTargetOpacity_Fade.y;
 
 			vSample.rgb = ApplyDistanceFog( vSample.rgb, v.vPrepos, GetFoWColor( v.vPrepos, FoWTexture), FoWDiffuse );

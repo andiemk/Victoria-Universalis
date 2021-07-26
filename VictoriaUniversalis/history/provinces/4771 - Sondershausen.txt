@@ -1,0 +1,25 @@
+add_core = SCS
+owner = SCS
+controller = SCS
+capital = "Sondershausen"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 35.162
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.787
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.503
+	}
+}

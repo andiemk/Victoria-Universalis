@@ -1,0 +1,25 @@
+add_core = REU
+owner = REU
+controller = REU
+capital = "Schleiz"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 62.087
+	}
+	set_variable = {
+		which = mid_pop
+		value = 27.727
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.921
+	}
+}

@@ -1,0 +1,25 @@
+add_core = BAV
+owner = BAV
+controller = BAV
+capital = "Würzburg"
+base_manpower = 0
+base_production = 0
+base_tax = 14
+is_city = yes
+hre = yes
+religion = catholic
+culture = franconian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 327.507
+	}
+	set_variable = {
+		which = mid_pop
+		value = 181.184
+	}
+	set_variable = {
+		which = upper_pop
+		value = 70.04
+	}
+}

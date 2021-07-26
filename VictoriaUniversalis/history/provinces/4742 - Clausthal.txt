@@ -1,0 +1,25 @@
+add_core = HAN
+owner = HAN
+controller = HAN
+capital = "Clausthal"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 78.456
+	}
+	set_variable = {
+		which = mid_pop
+		value = 36.686
+	}
+	set_variable = {
+		which = upper_pop
+		value = 14.388
+	}
+}

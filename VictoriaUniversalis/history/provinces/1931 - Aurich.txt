@@ -1,0 +1,25 @@
+add_core = HAN
+owner = HAN
+controller = HAN
+capital = "Aurich"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 93.467
+	}
+	set_variable = {
+		which = mid_pop
+		value = 45.074
+	}
+	set_variable = {
+		which = upper_pop
+		value = 17.627
+	}
+}

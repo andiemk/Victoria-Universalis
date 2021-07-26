@@ -1,0 +1,25 @@
+add_core = HAN
+owner = HAN
+controller = HAN
+capital = "Hanover"
+base_manpower = 0
+base_production = 0
+base_tax = 8
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 186.882
+	}
+	set_variable = {
+		which = mid_pop
+		value = 98.814
+	}
+	set_variable = {
+		which = upper_pop
+		value = 38.338
+	}
+}

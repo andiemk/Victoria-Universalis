@@ -1,0 +1,25 @@
+add_core = SCG
+owner = SCG
+controller = SCG
+capital = "Gotha"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 58.57
+	}
+	set_variable = {
+		which = mid_pop
+		value = 25.837
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.189
+	}
+}

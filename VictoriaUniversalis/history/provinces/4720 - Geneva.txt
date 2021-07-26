@@ -11,14 +11,14 @@ culture = arpitan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 221.931
+		value = 185.848
 	}
 	set_variable = {
 		which = mid_pop
-		value = 119.265
+		value = 105.027
 	}
 	set_variable = {
 		which = upper_pop
-		value = 46.212
+		value = 40.533
 	}
 }

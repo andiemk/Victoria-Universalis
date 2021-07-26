@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Hirschberg "
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 146.989
+	}
+	set_variable = {
+		which = mid_pop
+		value = 75.667
+	}
+	set_variable = {
+		which = upper_pop
+		value = 29.424
+	}
+}

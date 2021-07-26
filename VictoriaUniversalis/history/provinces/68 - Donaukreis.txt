@@ -1,0 +1,25 @@
+add_core = WUR
+owner = WUR
+controller = WUR
+capital = "Ulm"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+hre = yes
+religion = catholic
+culture = swabian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 210.039
+	}
+	set_variable = {
+		which = mid_pop
+		value = 112.317
+	}
+	set_variable = {
+		which = upper_pop
+		value = 43.537
+	}
+}

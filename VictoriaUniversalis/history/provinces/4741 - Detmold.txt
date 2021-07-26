@@ -1,0 +1,25 @@
+add_core = LPP
+owner = LPP
+controller = LPP
+capital = "Detmold"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+hre = yes
+religion = protestant
+culture = hannoverian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 61.535
+	}
+	set_variable = {
+		which = mid_pop
+		value = 27.429
+	}
+	set_variable = {
+		which = upper_pop
+		value = 10.806
+	}
+}

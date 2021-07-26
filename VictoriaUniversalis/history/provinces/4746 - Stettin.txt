@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Stettin"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+hre = yes
+religion = reformed
+culture = pommeranian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 137.143
+	}
+	set_variable = {
+		which = mid_pop
+		value = 69.988
+	}
+	set_variable = {
+		which = upper_pop
+		value = 27.235
+	}
+}

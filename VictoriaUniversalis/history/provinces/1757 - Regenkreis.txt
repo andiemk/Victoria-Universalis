@@ -1,0 +1,25 @@
+add_core = BAV
+owner = BAV
+controller = BAV
+capital = "Regensburg"
+base_manpower = 0
+base_production = 0
+base_tax = 11
+is_city = yes
+hre = yes
+religion = catholic
+culture = bavarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 254.312
+	}
+	set_variable = {
+		which = mid_pop
+		value = 138.218
+	}
+	set_variable = {
+		which = upper_pop
+		value = 53.507
+	}
+}

@@ -1,0 +1,25 @@
+add_core = BRU
+owner = BRU
+controller = BRU
+capital = "Brunswick"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 94.436
+	}
+	set_variable = {
+		which = mid_pop
+		value = 45.619
+	}
+	set_variable = {
+		which = upper_pop
+		value = 17.838
+	}
+}

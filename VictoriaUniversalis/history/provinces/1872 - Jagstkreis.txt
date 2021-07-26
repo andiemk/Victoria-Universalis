@@ -1,0 +1,25 @@
+add_core = WUR
+owner = WUR
+controller = WUR
+capital = "Ludwigsburg"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+hre = yes
+religion = protestant
+culture = swabian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 202.307
+	}
+	set_variable = {
+		which = mid_pop
+		value = 107.804
+	}
+	set_variable = {
+		which = upper_pop
+		value = 41.8
+	}
+}

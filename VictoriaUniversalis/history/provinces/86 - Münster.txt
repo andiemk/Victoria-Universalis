@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Münster"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = catholic
+culture = hannoverian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 229.83
+	}
+	set_variable = {
+		which = mid_pop
+		value = 123.884
+	}
+	set_variable = {
+		which = upper_pop
+		value = 47.99
+	}
+}

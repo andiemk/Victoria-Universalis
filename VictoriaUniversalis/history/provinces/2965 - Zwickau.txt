@@ -1,0 +1,25 @@
+add_core = SAX
+owner = SAX
+controller = SAX
+capital = "Zwickau"
+base_manpower = 0
+base_production = 0
+base_tax = 14
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 317.845
+	}
+	set_variable = {
+		which = mid_pop
+		value = 175.505
+	}
+	set_variable = {
+		which = upper_pop
+		value = 67.855
+	}
+}

@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Lissa"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+hre = no
+religion = reformed
+culture = polish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 113.569
+	}
+	set_variable = {
+		which = mid_pop
+		value = 56.469
+	}
+	set_variable = {
+		which = upper_pop
+		value = 22.024
+	}
+}

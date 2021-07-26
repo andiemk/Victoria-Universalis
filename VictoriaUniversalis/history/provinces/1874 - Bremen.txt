@@ -1,0 +1,25 @@
+add_core = BRE
+owner = BRE
+controller = BRE
+capital = "Bremen"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = protestant
+culture = hannoverian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 29.925
+	}
+	set_variable = {
+		which = mid_pop
+		value = 11.278
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.521
+	}
+}

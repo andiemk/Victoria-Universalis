@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Magdeburg"
+base_manpower = 0
+base_production = 0
+base_tax = 15
+is_city = yes
+hre = yes
+religion = reformed
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 330.608
+	}
+	set_variable = {
+		which = mid_pop
+		value = 183.007
+	}
+	set_variable = {
+		which = upper_pop
+		value = 70.742
+	}
+}

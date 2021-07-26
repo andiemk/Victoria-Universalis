@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Eylau"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = no
+religion = reformed
+culture = polish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 67.4
+	}
+	set_variable = {
+		which = mid_pop
+		value = 30.607
+	}
+	set_variable = {
+		which = upper_pop
+		value = 12.037
+	}
+}

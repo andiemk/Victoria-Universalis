@@ -8,8 +8,20 @@
 #Eastern Europe
 
 #France 
-	
+NEU = "countries/Neuchatal.txt"
+
 #HRE
+STR = "countries/MecklenburgStrelitz.txt"
+HSD = "countries/HesseDarmstadt.txt"
+SCG = "countries/SaxeCoburgGotha.txt"
+WEI = "countries/SaxeWeimarEisenach.txt"
+SMG = "countries/SaxeMeiningen.txt"
+SCR = "countries/SchwarzburgRudolstadt.txt"
+SCS = "countries/SchwarzburgSondershausen.txt"
+ATG = "countries/SaxeAltenburg.txt"
+REU = "countries/Reuss.txt"
+HOH = "countries/Hohenzollern.txt"
+WPY = "countries/WaldeckPyrmont.txt"
 	
 #Spain
 AND = "countries/Andorra.txt"

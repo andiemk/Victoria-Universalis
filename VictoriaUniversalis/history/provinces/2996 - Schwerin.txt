@@ -1,0 +1,25 @@
+add_core = MKL
+owner = MKL
+controller = MKL
+capital = "Schwerin"
+base_manpower = 0
+base_production = 0
+base_tax = 12
+is_city = yes
+hre = yes
+religion = protestant
+culture = pommeranian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 265.629
+	}
+	set_variable = {
+		which = mid_pop
+		value = 144.851
+	}
+	set_variable = {
+		which = upper_pop
+		value = 56.059
+	}
+}

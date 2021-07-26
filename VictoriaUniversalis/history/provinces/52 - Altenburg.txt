@@ -1,0 +1,25 @@
+add_core = ATG
+owner = ATG
+controller = ATG
+capital = "Altenburg"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 45.743
+	}
+	set_variable = {
+		which = mid_pop
+		value = 19.098
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.573
+	}
+}

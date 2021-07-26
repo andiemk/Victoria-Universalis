@@ -1,0 +1,25 @@
+add_core = OLD
+owner = OLD
+controller = OLD
+capital = "Oldenburg"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 122.98
+	}
+	set_variable = {
+		which = mid_pop
+		value = 61.851
+	}
+	set_variable = {
+		which = upper_pop
+		value = 24.099
+	}
+}

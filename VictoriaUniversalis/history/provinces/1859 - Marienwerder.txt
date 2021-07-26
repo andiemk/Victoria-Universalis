@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Marienwerder"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+hre = no
+religion = reformed
+culture = prussian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 206.45
+	}
+	set_variable = {
+		which = mid_pop
+		value = 110.222
+	}
+	set_variable = {
+		which = upper_pop
+		value = 42.731
+	}
+}

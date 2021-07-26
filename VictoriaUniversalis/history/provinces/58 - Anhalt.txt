@@ -1,0 +1,25 @@
+add_core = ANH
+owner = ANH
+controller = ANH
+capital = "Dessau"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = reformed
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 86.797
+	}
+	set_variable = {
+		which = mid_pop
+		value = 41.331
+	}
+	set_variable = {
+		which = upper_pop
+		value = 16.182
+	}
+}

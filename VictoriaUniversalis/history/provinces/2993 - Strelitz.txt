@@ -1,0 +1,25 @@
+add_core = STR
+owner = STR
+controller = STR
+capital = "Strelitz"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+hre = yes
+religion = protestant
+culture = pommeranian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 54.258
+	}
+	set_variable = {
+		which = mid_pop
+		value = 23.543
+	}
+	set_variable = {
+		which = upper_pop
+		value = 9.299
+	}
+}

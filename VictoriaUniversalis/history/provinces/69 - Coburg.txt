@@ -1,0 +1,25 @@
+add_core = SCG
+owner = SCG
+controller = SCG
+capital = "Coburg"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 26.776
+	}
+	set_variable = {
+		which = mid_pop
+		value = 9.818
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.948
+	}
+}

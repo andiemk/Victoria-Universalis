@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Breslau"
+base_manpower = 0
+base_production = 0
+base_tax = 16
+is_city = yes
+hre = yes
+religion = protestant
+culture = schlesian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 362.431
+	}
+	set_variable = {
+		which = mid_pop
+		value = 201.724
+	}
+	set_variable = {
+		which = upper_pop
+		value = 77.943
+	}
+}

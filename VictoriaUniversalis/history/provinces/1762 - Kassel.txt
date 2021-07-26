@@ -1,0 +1,25 @@
+add_core = HES
+owner = HES
+controller = HES
+capital = "Kassel"
+base_manpower = 0
+base_production = 0
+base_tax = 11
+is_city = yes
+hre = yes
+religion = reformed
+culture = hessian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 259.692
+	}
+	set_variable = {
+		which = mid_pop
+		value = 141.371
+	}
+	set_variable = {
+		which = upper_pop
+		value = 54.72
+	}
+}

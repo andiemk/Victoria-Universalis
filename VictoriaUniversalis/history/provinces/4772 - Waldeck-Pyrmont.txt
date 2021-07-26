@@ -1,0 +1,25 @@
+add_core = WPY
+owner = WPY
+controller = WPY
+capital = "Arolsen"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = catholic
+culture = hessian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 37.256
+	}
+	set_variable = {
+		which = mid_pop
+		value = 14.815
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.905
+	}
+}

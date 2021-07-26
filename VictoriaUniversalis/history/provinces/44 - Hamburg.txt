@@ -1,0 +1,25 @@
+add_core = HAM
+owner = HAM
+controller = HAM
+capital = "Hamburg"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 111.508
+	}
+	set_variable = {
+		which = mid_pop
+		value = 55.295
+	}
+	set_variable = {
+		which = upper_pop
+		value = 21.571
+	}
+}

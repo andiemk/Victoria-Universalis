@@ -1,0 +1,25 @@
+add_core = BAV
+owner = BAV
+controller = BAV
+capital = "Munich"
+base_manpower = 0
+base_production = 0
+base_tax = 8
+is_city = yes
+hre = yes
+religion = catholic
+culture = bavarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 186.776
+	}
+	set_variable = {
+		which = mid_pop
+		value = 98.752
+	}
+	set_variable = {
+		which = upper_pop
+		value = 38.315
+	}
+}

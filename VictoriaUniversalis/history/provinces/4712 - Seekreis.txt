@@ -1,0 +1,25 @@
+add_core = BAD
+owner = BAD
+controller = BAD
+capital = "Konstanz"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = catholic
+culture = alsatian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 104.673
+	}
+	set_variable = {
+		which = mid_pop
+		value = 51.408
+	}
+	set_variable = {
+		which = upper_pop
+		value = 20.072
+	}
+}

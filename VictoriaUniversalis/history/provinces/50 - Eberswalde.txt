@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Eberswalde"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = reformed
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 105.305
+	}
+	set_variable = {
+		which = mid_pop
+		value = 51.767
+	}
+	set_variable = {
+		which = upper_pop
+		value = 20.21
+	}
+}

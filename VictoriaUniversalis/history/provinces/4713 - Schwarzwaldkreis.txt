@@ -1,0 +1,25 @@
+add_core = WUR
+owner = WUR
+controller = WUR
+capital = "Reutlingen"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = catholic
+culture = swabian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 238.657
+	}
+	set_variable = {
+		which = mid_pop
+		value = 129.049
+	}
+	set_variable = {
+		which = upper_pop
+		value = 49.978
+	}
+}

@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Oppeln"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = catholic
+culture = schlesian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 230.29
+	}
+	set_variable = {
+		which = mid_pop
+		value = 124.153
+	}
+	set_variable = {
+		which = upper_pop
+		value = 48.093
+	}
+}

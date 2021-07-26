@@ -1,0 +1,25 @@
+add_core = OLD
+owner = OLD
+controller = OLD
+capital = "Birkenfeld"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = catholic
+culture = hessian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 18.131
+	}
+	set_variable = {
+		which = mid_pop
+		value = 6.052
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.462
+	}
+}

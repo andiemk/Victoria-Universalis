@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Danzig"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = no
+religion = reformed
+culture = prussian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 91.205
+	}
+	set_variable = {
+		which = mid_pop
+		value = 43.802
+	}
+	set_variable = {
+		which = upper_pop
+		value = 17.136
+	}
+}

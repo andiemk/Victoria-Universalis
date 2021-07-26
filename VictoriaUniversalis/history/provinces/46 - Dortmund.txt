@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Dortmund"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+hre = yes
+religion = catholic
+culture = hessian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 200.78
+	}
+	set_variable = {
+		which = mid_pop
+		value = 106.914
+	}
+	set_variable = {
+		which = upper_pop
+		value = 41.457
+	}
+}

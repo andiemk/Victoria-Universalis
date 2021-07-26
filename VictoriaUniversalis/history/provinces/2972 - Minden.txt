@@ -1,0 +1,25 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Minden"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = protestant
+culture = hannoverian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 234.698
+	}
+	set_variable = {
+		which = mid_pop
+		value = 126.732
+	}
+	set_variable = {
+		which = upper_pop
+		value = 49.086
+	}
+}

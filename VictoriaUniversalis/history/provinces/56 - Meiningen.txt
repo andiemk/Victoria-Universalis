@@ -1,0 +1,25 @@
+add_core = SMG
+owner = SMG
+controller = SMG
+capital = "Meiningen"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 88.219
+	}
+	set_variable = {
+		which = mid_pop
+		value = 42.127
+	}
+	set_variable = {
+		which = upper_pop
+		value = 16.489
+	}
+}

@@ -1,0 +1,25 @@
+add_core = NEU
+owner = NEU
+controller = NEU
+capital = "Neuchâtel"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = no
+religion = catholic
+culture = arpitan
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 36.083
+	}
+	set_variable = {
+		which = mid_pop
+		value = 14.238
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.679
+	}
+}

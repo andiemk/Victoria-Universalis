@@ -1,0 +1,25 @@
+add_core = HOH
+owner = HOH
+controller = HOH
+capital = "Sigmaringen"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+hre = yes
+religion = catholic
+culture = swabian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 39.56
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.96
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.351
+	}
+}

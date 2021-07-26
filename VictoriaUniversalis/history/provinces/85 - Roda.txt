@@ -1,0 +1,25 @@
+add_core = ATG
+owner = ATG
+controller = ATG
+capital = "Roda"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+hre = yes
+religion = protestant
+culture = saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 31.464
+	}
+	set_variable = {
+		which = mid_pop
+		value = 12.005
+	}
+	set_variable = {
+		which = upper_pop
+		value = 4.806
+	}
+}

@@ -1,0 +1,25 @@
+add_core = BRU
+owner = BRU
+controller = BRU
+capital = "Holzminden"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 64.674
+	}
+	set_variable = {
+		which = mid_pop
+		value = 29.125
+	}
+	set_variable = {
+		which = upper_pop
+		value = 11.463
+	}
+}

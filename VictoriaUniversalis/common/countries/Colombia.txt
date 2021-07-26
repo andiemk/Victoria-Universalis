@@ -4,7 +4,7 @@ graphical_culture = westerngfx
 
 random_nation_chance = 0
 
-color = { 248  234  141 }
+color = { 204  193  126 }
 
 revolutionary_colors = { 5 15 8 }
 

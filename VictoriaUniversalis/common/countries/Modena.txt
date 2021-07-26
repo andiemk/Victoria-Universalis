@@ -2,8 +2,9 @@
 
 graphical_culture = westerngfx
 
-color = { 68  161  50 }
-revolutionary_colors = { 0 5 0 }
+color = { 81  93  101 }
+
+revolutionary_colors = { 5  13  5 } #Somewhat lilke the 1830s flag of Modena
 
 historical_idea_groups = {
 	trade_ideas
@@ -33,9 +34,9 @@ historical_units = {
 }
 
 monarch_names = {
-	"Bartolomeo #0" = 100
-	"Nicolao #0" = 80
-	"Francesco #0" = 60
+	"Francesco #0" = 100
+	"Alfonso #0" = 80
+	"Ercole #0" = 60
 	"Niccolò #2" = 20
 	"Rinaldo #2" = 20
 	"Borso #0" = 20
@@ -52,6 +53,7 @@ monarch_names = {
 	"Benedetto #0" = 10
 	"Bonifazio #0" = 10
 	"Carlo #0" = 10
+	"Carlo Alessandro #0" = 10
 	"Clemente #0" = 10
 	"Filiberto #0" = 10
 	"Foresto #0" = 10
@@ -90,13 +92,15 @@ leader_names = {
 
 ship_names = {
 	Albareto "Anselmo da Campione"
-	Baggiovara
+	Baggiovara "Borso d'Este" 
 	Ca'Fusara Cicerone Cittanova Cognento Collegara 
 	Este
+	"Fiumi Panaro" "Fiumi Secchia"
 	Ganaceto
 	Lanfranco Lesignana Leodoino
 	Marzaglia 
 	Navicello Nonantola
+	"Obizzo d'Este"  
 	Portile 
 	"re Enzo"
 	"Santa Maria della Pomposa" "Sant'Agostino" Sant'Ambrogio "Santo Anselmo"

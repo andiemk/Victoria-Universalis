@@ -312,7 +312,7 @@ float3 Paper(float3 pos, in sampler2D TItex)
 
 float BlendOverlayH(float original, float blend)
 {
-	return (original <= 0.5) ? 2 * original * blend : 1 - (2 * (1-original) * (1-blend));
+	return ((original <= 0.5) ? 2 * original * blend : 1 - (2 * (1-original) * (1-blend)));
 }
 float3 BlendOverlay(float3 original, float3 blend)
 {
@@ -322,14 +322,57 @@ float3 BlendOverlay(float3 original, float3 blend)
 		BlendOverlayH(original.b, blend.b)
 	);
 }
+float BlendTransparencyH(float original, float blend)
+{
+	float Transparency = lerp(0.0f, PAPER_OPACITY, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	
+	return ((1 - Transparency) * original + Transparency * blend);
+}
+float3 BlendTransparency(float3 original, float3 blend)
+{
+	return float3(
+		BlendTransparencyH(original.r, blend.r),
+		BlendTransparencyH(original.g, blend.g),
+		BlendTransparencyH(original.b, blend.b)
+	);
+}
 
-float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex)
+float BlendTransparencyWaterH(float original, float blend)
+{
+	float Transparency = lerp(DARKWATER_OPACITY, 0.0f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	
+	return ((1 - Transparency) * original + Transparency * blend);
+}
+float3 BlendTransparencyWater(float3 original, float3 blend)
+{
+	return float3(
+		BlendTransparencyWaterH(original.r, blend.r),
+		BlendTransparencyWaterH(original.g, blend.g),
+		BlendTransparencyWaterH(original.b, blend.b)
+	);
+}
+
+float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex, bool isWater)
 {
 	if ( PAPER )
 	{
-		return BlendOverlay(color, Paper(pos, TItex));
+		if ( isWater )
+		{
+			return BlendOverlay(color, Paper(pos, TItex));
+		}
+		else
+		{
+			return BlendTransparency(BlendOverlay(color, Paper(pos, TItex)), GetTIColor(pos, TItex));
+		}
 	}
 	else { return color; }
+}
+
+float3 ApplyDarkWater(float3 color)
+{
+	
+	return BlendTransparencyWater(BlendOverlay(color, lerp(float3(0.4, 0.4, 0.4), float3(0.5, 0.5, 0.5), saturate(vCamPos.y / Paper_HDiv - Paper_HSub))), float3(0.0, 0.0, 0.0));
+
 }
 // float4 ApplyPaper(float4 color, float3 pos, in sampler2D TItex)
 // {
@@ -339,6 +382,7 @@ float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex)
 // 	}
 // 	else { return color; }
 // }
+
 float ApplyPaperDist(float color, float base)
 {
 	return lerp(base, color, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));

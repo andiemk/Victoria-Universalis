@@ -562,6 +562,8 @@ PixelShader =
 			}
 	#endif	// end TERRAIN_SHADER
 	#ifdef COLOR_SHADER
+	
+		
 		#ifdef TERRAIN_AND_COLOR_SHADER
 			else
 		#endif
@@ -569,14 +571,37 @@ PixelShader =
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
 				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
 				
-				float2 vBlend = float2( 0.54f, 0.5f );
-				vOut = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
+				//float2 vBlend = float2( 0.54f, 0.5f );
+				float terrainBlend = lerp(0.50f, 0.2f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float colorBlend = lerp(0.45f, 0.7f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float2 vBlend = float2( terrainBlend, colorBlend );
+				
+				float3 vOutInit = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
 				//vOut = CalculateMapLighting( vOut, vHeightNormalSample );
-				vOut = calculate_secondary( Input.uv, vOut, Input.prepos.xz );
+				vOutInit = calculate_secondary( Input.uv, vOutInit, Input.prepos.xz );
+				
+				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
+				//float2 snowBlend = float2( 0.6f, 0.5f );
+				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse ) * snowBlend.x + vTerrainDiffuseSample.rgb * snowBlend.y;
+				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );	
+				
+				float3 vOutFinal = (vTerrainDiffuseSample.rgb * vBlend.x + vColorMapSample.rgb * vBlend.y); //Modded
+				vOut = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y ); //Original - Provinces are really grey
+				vOutFinal = CalculateMapLighting( vOutFinal, vHeightNormalSample );
+				vOutFinal = calculate_secondary( Input.uv, vOutFinal, Input.prepos.xz );
+				
+				//vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
+				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
+				
+				//float3 vOutFinal = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
+				//vOutFinal = CalculateMapLighting( vOutFinal, vHeightNormalSample );
+				//vOutFinal = calculate_secondary( Input.uv, vOutFinal, Input.prepos.xz );
+				
+				vOut = lerp(vOutFinal, vOutInit, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 			}
 	#endif	// end COLOR_SHADER
 
-			vOut = ApplyPaper(vOut, Input.prepos, TITexture);
+			vOut = ApplyPaper(vOut, Input.prepos, TITexture, false);
 
 			// Grab the shadow term
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_MAP, Input.vScreenCoord, ShadowMap );

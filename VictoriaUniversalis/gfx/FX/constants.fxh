@@ -63,6 +63,7 @@ static const float 	TREE_SEASON_FADE_TWEAK 		= 2.5f;
 
 static const float 	WATER_TILE					= 1.0f;
 static const float 	WATER_TIME_SCALE			= 12.0f;
+static const float DARKWATER_OPACITY			= 0.2f;
 
 
 // --------------------------------------------------------------
@@ -120,10 +121,11 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 
 static const bool  PAPER						= true;
 
-static const float PAPER_HEIGHT_MIN				= 400.0f;  // no paper effect below this
-static const float PAPER_HEIGHT_MAX				= 450.0f;  // full paper effect above this
-
+static const float PAPER_HEIGHT_MIN				= 380.0f;  // no paper effect below this
+static const float PAPER_HEIGHT_MAX				= 420.0f;  // full paper effect above this
+static const float PAPER_OPACITY				= 0.3f;  // opacity of additional paper layer over land
 static const float PAPER_MAPTEXT_OPACITY		= 0.65f;
+
 
 // static const float LINE1_DISTANCE				= 144.0f;
 // static const float LINE1_WIDTH					= 1.0f;

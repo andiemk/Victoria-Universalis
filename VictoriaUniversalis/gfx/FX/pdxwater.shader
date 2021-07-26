@@ -388,8 +388,8 @@ PixelShader =
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_WATER, vShadowCoord, ShadowMap );
 			outColor *= fShadowTerm;
 
-			outColor = ApplyPaper(outColor, Input.pos, TITexture);	
-
+			outColor = ApplyPaper(outColor, Input.pos, TITexture, true);	
+			outColor = ApplyDarkWater(outColor);
 			outColor = ApplyDistanceFog( outColor, Input.pos ) * vFoW;
 			return float4( lerp( ComposeSpecular( outColor, specular * vFoW ), vTIColor.rgb, TI ), 1.0f - waterHeight );
 		}

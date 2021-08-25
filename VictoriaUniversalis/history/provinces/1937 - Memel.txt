@@ -1,0 +1,24 @@
+add_core = PRU
+owner = PRU
+controller = PRU
+capital = "Memel"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = reformed
+culture = prussian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 35.323
+	}
+	set_variable = {
+		which = mid_pop
+		value = 13.866
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.534
+	}
+}

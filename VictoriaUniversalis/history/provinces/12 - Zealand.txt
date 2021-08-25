@@ -1,0 +1,24 @@
+add_core = DAN
+owner = DAN
+controller = DAN
+capital = "Copenhagen"
+base_manpower = 0
+base_production = 0
+base_tax = 11
+is_city = yes
+religion = protestant
+culture = danish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 252.937
+	}
+	set_variable = {
+		which = mid_pop
+		value = 137.412
+	}
+	set_variable = {
+		which = upper_pop
+		value = 53.197
+	}
+}

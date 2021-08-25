@@ -1,0 +1,24 @@
+add_core = SWG
+owner = SWG
+controller = SWG
+capital = "Schleswig"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+religion = protestant
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 138.608
+	}
+	set_variable = {
+		which = mid_pop
+		value = 70.832
+	}
+	set_variable = {
+		which = upper_pop
+		value = 27.561
+	}
+}

@@ -1,27 +1,27 @@
 province;red;green;blue;x;x
 1;128;34;64;Stockholm;x
 2;0;36;128;Östergötland;x
-3;128;38;192;Småland;x
-4;0;40;255;Bergslagen;x
+3;128;38;192;Kalmar;x
+4;0;40;255;Västmanland;x
 5;128;42;0;Värmland;x
-6;0;44;64;Skåne;x
-7;129;46;128;Västergötland;x
-8;1;48;192;Dalaskogen;x
-9;129;50;255;Hälsingland;x
+6;0;44;64;Malmöhus;x
+7;129;46;128;Skaraborg;x
+8;1;48;192;Kopparberg;x
+9;129;50;255;Västernorrland;x
 10;1;52;0;Jämtland;x
 11;129;54;64;Västerbotten;x
-12;1;56;128;Sjælland;x
-13;129;58;192;Slesvig;x
-14;2;60;255;Fyn;x
-15;130;62;0;Midtjylland;x
-16;2;64;64;Bohuslän;x
+12;1;56;128;Zealand;x
+13;129;58;192;South Schleswig;x
+14;2;60;255;Funen;x
+15;130;62;0;West Jutland;x
+16;2;64;64;Gothenburg & Bohus;x
 17;130;66;128;Akershus;x
-18;2;68;192;Umeå;x
+18;2;68;192;Södermanland;x
 19;130;70;255;Österbotten;x
 20;2;72;0;Trøndelag;x
 21;131;74;64;Hålogaland;x
 22;3;76;128;Oplandene;x
-23;131;78;192;Bergenshus;x
+23;131;78;192;Bergenhus;x
 24;3;80;255;Stavanger;x
 25;131;82;0;Gotland;x
 26;3;84;64;Halland;x
@@ -368,7 +368,7 @@ province;red;green;blue;x;x
 367;180;126;128;Azores;x
 368;52;128;192;Purús;x
 369;180;130;255;Orkney;x
-370;52;132;0;Reykjavik;x
+370;52;132;0;Reykjavík;x
 371;181;134;64;Akureyri;x
 372;53;136;128;Derry;x
 373;181;138;192;Dublin;x
@@ -1935,7 +1935,7 @@ province;red;green;blue;x;x
 1934;251;0;36;Basilicata;x
 1935;52;0;240;Semigallia;x
 1936;55;0;0;Kovno;x
-1937;65;0;250;Grodno;x
+1937;65;0;250;Memel;x
 1938;75;0;25;Wizna;x 
 1939;85;0;225;Leczyca;x
 1940;95;0;50;Belz;x
@@ -1977,13 +1977,13 @@ province;red;green;blue;x;x
 1976;93;0;244;Dead Sea;x
 1977;94;0;248;Mälaren;x
 1978;95;0;232;Shetland;x
-1979;96;0;236;Färöarnax;x
+1979;96;0;236;Faroe Islands;x
 1980;136;253;253;Sea of Japan;x
 1981;98;0;244;Bornholm;x
 1982;99;0;248;Blekinge;x
-1983;100;0;232;Lolland;x
-1984;101;0;236;Nordjylland;x
-1985;102;240;0;Närke;x
+1983;100;0;232;Maribo;x
+1984;101;0;236;North Jutland;x
+1985;102;240;0;Örebro;x
 1986;103;0;244;New Caledonia;x
 1987;104;0;248;Society Islands;x
 1988;105;0;232;Rapa Nui;x
@@ -3026,7 +3026,7 @@ province;red;green;blue;x;x
 3025;129;102;29;Kemerovo;x
 3026;226;0;117;Grenada;x
 3027;22;2;107;Saint Thomas;x
-3028;192;97;151;Sønderborg;x
+3028;192;97;151;North Schleswig;x
 3029;190;110;220;Victoria Strait;x
 3030;195;110;220;Desolation Islands;x
 3031;207;110;230;Unused18
@@ -4112,7 +4112,7 @@ province;red;green;blue;x;x
 4111;119;212;150;Charente-Inférieure;x
 4112;157;124;213;Lot-et-Garonne;x
 4113;103;160;108;Uleaborg;x
-4114;145;85;134;Luleå;x
+4114;145;85;134;Norrbotten;x
 4115;156;39;189;Mazyr;x
 4116;119;162;166;Belyov;x
 4117;205;163;151;Bezhetsk;x
@@ -4140,7 +4140,7 @@ province;red;green;blue;x;x
 4139;54;54;236;Oulujärvi;x
 4140;34;34;210;Saimaa;x
 4141;207;42;19;Glückstadt;x
-4142;198;219;57;Aarhus;x
+4142;198;219;57;East Jutland;x
 4143;127;186;98;Smålenene;x
 4144;222;69;44;Bratsberg;x
 4145;201;191;169;Agdesiden;x
@@ -4161,10 +4161,10 @@ province;red;green;blue;x;x
 4160;224;220;117;Alps3;x
 4161;208;202;39;Alps4;x
 4162;231;224;22;Alps5;x
-4163;220;144;23;Elfsborg;x
-4164;150;213;76;Dalsland;x
-4165;220;78;202;Göinge;x
-4166;54;157;76;Tiohärad/Värend;x
+4163;220;144;23;Kronoberg;x
+4164;150;213;76;Älvsborg;x
+4165;220;78;202;Kristianstad;x
+4166;54;157;76;Jönköping;x
 4167;195;207;97;High Atlas;x
 4168;135;142;79;High Atlas2;x
 4169;222;203;239;Aures;x
@@ -4743,7 +4743,7 @@ province;red;green;blue;x;x
 4742;24;36;126;Clausthal;x
 4743;70;32;26;Weimar;x
 4744;35;63;199;Leipzig;x
-4745;86;194;97;Rügen;x
+4745;86;194;97;Gävleborg;x
 4746;213;132;0;Stettin;x
 4747;111;118;8;Bremerhaven;x
 4748;170;79;248;Potsdam;x

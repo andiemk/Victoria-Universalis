@@ -1,0 +1,24 @@
+add_core = SWE
+owner = SWE
+controller = SWE
+capital = "Vänersborg"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+religion = protestant
+culture = swedish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 123.721
+	}
+	set_variable = {
+		which = mid_pop
+		value = 62.275
+	}
+	set_variable = {
+		which = upper_pop
+		value = 24.263
+	}
+}

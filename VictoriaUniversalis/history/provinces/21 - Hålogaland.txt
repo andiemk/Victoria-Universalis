@@ -1,0 +1,24 @@
+add_core = NOR
+owner = NOR
+controller = NOR
+capital = "Bodø"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = norwegian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 35.8
+	}
+	set_variable = {
+		which = mid_pop
+		value = 14.099
+	}
+	set_variable = {
+		which = upper_pop
+		value = 5.625
+	}
+}

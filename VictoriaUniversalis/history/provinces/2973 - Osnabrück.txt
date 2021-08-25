@@ -1,0 +1,25 @@
+add_core = HAN
+owner = HAN
+controller = HAN
+capital = "Osnabrück"
+base_manpower = 0
+base_production = 0
+base_tax = 7
+is_city = yes
+hre = yes
+religion = catholic
+culture = lower_saxon
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 154.377
+	}
+	set_variable = {
+		which = mid_pop
+		value = 79.939
+	}
+	set_variable = {
+		which = upper_pop
+		value = 31.07
+	}
+}

@@ -1,0 +1,24 @@
+add_core = DAN
+owner = DAN
+controller = DAN
+capital = "Rønne"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = danish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 16.827
+	}
+	set_variable = {
+		which = mid_pop
+		value = 5.522
+	}
+	set_variable = {
+		which = upper_pop
+		value = 2.251
+	}
+}

@@ -1,5 +1,6 @@
 
 #Scandinavia
+SWG = "countries/Schleswig.txt"
 
 #Balkans
 

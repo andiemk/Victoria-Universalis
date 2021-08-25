@@ -1,0 +1,24 @@
+add_core = DAN
+owner = DAN
+controller = DAN
+capital = "Reykjavík"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = icelandic
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 23.226
+	}
+	set_variable = {
+		which = mid_pop
+		value = 8.225
+	}
+	set_variable = {
+		which = upper_pop
+		value = 3.321
+	}
+}

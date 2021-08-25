@@ -1,0 +1,24 @@
+add_core = NOR
+owner = NOR
+controller = NOR
+capital = "Skien"
+base_manpower = 0
+base_production = 0
+base_tax = 1
+is_city = yes
+religion = protestant
+culture = norwegian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 38.101
+	}
+	set_variable = {
+		which = mid_pop
+		value = 15.233
+	}
+	set_variable = {
+		which = upper_pop
+		value = 6.068
+	}
+}

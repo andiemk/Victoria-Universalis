@@ -1,0 +1,24 @@
+add_core = NOR
+owner = NOR
+controller = NOR
+capital = "Ålesund"
+base_manpower = 0
+base_production = 0
+base_tax = 2
+is_city = yes
+religion = protestant
+culture = norwegian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 44.787
+	}
+	set_variable = {
+		which = mid_pop
+		value = 18.607
+	}
+	set_variable = {
+		which = upper_pop
+		value = 7.382
+	}
+}

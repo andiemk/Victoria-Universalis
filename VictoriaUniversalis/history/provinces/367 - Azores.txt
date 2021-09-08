@@ -11,14 +11,14 @@ culture = portugese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 130.352
+		value = 131.895
 	}
 	set_variable = {
 		which = mid_pop
-		value = 66.081
+		value = 66.968
 	}
 	set_variable = {
 		which = upper_pop
-		value = 25.73
+		value = 26.071
 	}
 }

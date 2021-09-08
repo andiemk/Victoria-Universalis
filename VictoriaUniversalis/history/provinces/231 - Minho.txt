@@ -4,21 +4,21 @@ controller = POR
 capital = "Braga"
 base_manpower = 0
 base_production = 0
-base_tax = 8
+base_tax = 11
 is_city = yes
 religion = catholic
 culture = portugese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 190.955
+		value = 248.697
 	}
 	set_variable = {
 		which = mid_pop
-		value = 101.186
+		value = 134.928
 	}
 	set_variable = {
 		which = upper_pop
-		value = 39.252
+		value = 52.241
 	}
 }

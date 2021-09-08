@@ -1,24 +1,24 @@
 add_core = POR
 owner = POR
 controller = POR
-capital = "Aveiro"
+capital = "Viseu"
 base_manpower = 0
 base_production = 0
-base_tax = 5
+base_tax = 7
 is_city = yes
 religion = catholic
 culture = portugese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 127.283
+		value = 154.32
 	}
 	set_variable = {
 		which = mid_pop
-		value = 64.318
+		value = 79.906
 	}
 	set_variable = {
 		which = upper_pop
-		value = 25.05
+		value = 31.057
 	}
 }

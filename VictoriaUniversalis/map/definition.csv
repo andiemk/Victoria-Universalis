@@ -226,7 +226,7 @@ province;red;green;blue;x;x
 225;160;98;0;Córdoba;x
 226;32;100;64;Gibraltar;x
 227;160;102;128;Lisbon;x
-228;32;104;192;Beira Interior;x
+228;32;104;192;Beira Baixa;x
 229;160;106;255;Alentejo;x
 230;32;108;0;Algarve;x
 231;161;110;64;Minho;x
@@ -3029,8 +3029,8 @@ province;red;green;blue;x;x
 3028;192;97;151;North Schleswig;x
 3029;190;110;220;Victoria Strait;x
 3030;195;110;220;Desolation Islands;x
-3031;207;110;230;Unused18
-3032;207;110;231;Unused19
+3031;207;110;230;Channel Islands;x
+3032;207;110;231;Beira Alta;x
 3033;207;110;232;Unused20
 3034;207;110;233;Unused21
 3035;207;110;234;Unused22

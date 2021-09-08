@@ -1,24 +1,24 @@
-add_core = POR
-owner = POR
-controller = POR
-capital = "Aveiro"
+add_core = GBR
+owner = GBR
+controller = GBR
+capital = "Saint Peter Port"
 base_manpower = 0
 base_production = 0
-base_tax = 5
+base_tax = 2
 is_city = yes
-religion = catholic
-culture = portugese
+religion = protestant
+culture = english
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 127.283
+		value = 43.013
 	}
 	set_variable = {
 		which = mid_pop
-		value = 64.318
+		value = 17.702
 	}
 	set_variable = {
 		which = upper_pop
-		value = 25.05
+		value = 7.03
 	}
 }

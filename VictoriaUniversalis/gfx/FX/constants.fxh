@@ -35,7 +35,7 @@ static const float	LIGHT_HDR_RANGE 			= 0.8f;
 // ------------------    TERRAIN        -------------------------
 // --------------------------------------------------------------
 
-static const float 	TERRAIN_TILE_FREQ 			= 128.0f;
+static const float 	TERRAIN_TILE_FREQ 			= 32.0f;
 
 // MILD_WINTER_VALUE = ###,						defines.lua   (reload defines)
 // NORMAL_WINTER_VALUE = ##,					defines.lua   (reload defines)

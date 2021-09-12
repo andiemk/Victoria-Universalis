@@ -123,7 +123,7 @@ static const bool  PAPER						= true;
 
 static const float PAPER_HEIGHT_MIN				= 380.0f;  // no paper effect below this
 static const float PAPER_HEIGHT_MAX				= 420.0f;  // full paper effect above this
-static const float PAPER_OPACITY				= 0.3f;  // opacity of additional paper layer over land
+static const float PAPER_OPACITY				= 0.4f;  // opacity of additional paper layer over land
 static const float PAPER_MAPTEXT_OPACITY		= 0.65f;
 
 

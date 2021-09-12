@@ -192,10 +192,30 @@ float GetTI( float4 vFoWColor )
 	return vFoWColor.r;
 	//return saturate( (vFoWColor.r-0.5f) * 1000.0f );
 }
+float4 GetTIColorRed( float3 vPos, in sampler2D TITexture )
+{
+	float4 color = tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return float4(color.r, color.r, color.r, color.r);
+}
+float4 GetTIColorGreen( float3 vPos, in sampler2D TITexture )
+{
+	float4 color = tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return float4(color.g, color.g, color.g, color.g);
+}
+float4 GetTIColorBlue( float3 vPos, in sampler2D TITexture )
+{
+	float4 color = tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return float4(color.b, color.b, color.b, color.b);
+}
+float4 GetTIColorAlpha( float3 vPos, in sampler2D TITexture )
+{
+	float4 color = tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return float4(color.a, color.a, color.a, color.a);
+}
 
 float4 GetTIColor( float3 vPos, in sampler2D TITexture )
 {
-	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 512.0f, 512.0f ) );
+	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
 }
 
 float GetFoW( float3 vPos, float4 vFoWColor, in sampler2D FoWDiffuse )
@@ -299,16 +319,31 @@ float3 ApplyWaterSnow( float3 vColor, float3 vPos, inout float3 vNormal, float4 
 // }
 const static float Paper_HDiv = PAPER_HEIGHT_MAX - PAPER_HEIGHT_MIN;
 const static float Paper_HSub = PAPER_HEIGHT_MIN / Paper_HDiv;
-float3 Paper(float3 pos, in sampler2D TItex)
+
+float4 PaperRed(float3 pos, in sampler2D TItex)
 {
-	float3 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 512.0f, 512.0f ) );
-	return lerp(float3(0.5, 0.5, 0.5), color, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.r, color.r, color.r, color.r), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 }
 
-// float3 Blend(float3 original, float4 blend)
-// {
-// 	return float3(original.rgb * (1.0f - blend.a) + blend.rgb * blend.a);
-// }
+float4 PaperGreen(float3 pos, in sampler2D TItex)
+{
+	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.g, color.g, color.g, color.g), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+}
+
+float4 PaperBlue(float3 pos, in sampler2D TItex)
+{
+	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.b, color.b, color.b, color.b), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+}
+
+float4 PaperAlpha(float3 pos, in sampler2D TItex)
+{
+	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.a, color.a, color.a, color.a), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+
+}
 
 float BlendOverlayH(float original, float blend)
 {
@@ -337,43 +372,55 @@ float3 BlendTransparency(float3 original, float3 blend)
 	);
 }
 
-float BlendTransparencyWaterH(float original, float blend)
-{
-	float Transparency = lerp(DARKWATER_OPACITY, 0.0f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
-	
-	return ((1 - Transparency) * original + Transparency * blend);
-}
-float3 BlendTransparencyWater(float3 original, float3 blend)
-{
-	return float3(
-		BlendTransparencyWaterH(original.r, blend.r),
-		BlendTransparencyWaterH(original.g, blend.g),
-		BlendTransparencyWaterH(original.b, blend.b)
-	);
-}
-
 float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex, bool isWater)
 {
-	if ( PAPER )
+	if ( PAPER && pos.x < 3200.0f && pos.z > 1280.0f)
 	{
 		if ( isWater )
 		{
-			return BlendOverlay(color, Paper(pos, TItex));
+			return BlendOverlay(color, PaperRed(pos, TItex).rgb);
 		}
 		else
 		{
-			return BlendTransparency(BlendOverlay(color, Paper(pos, TItex)), GetTIColor(pos, TItex));
+			return BlendTransparency(BlendOverlay(color, PaperRed(pos, TItex).rgb), PaperRed(pos, TItex).rgb);
+		}
+	}
+	if ( PAPER && pos.x > 3100.0f && pos.z > 1280.0f)
+	{
+		if ( isWater )
+		{
+			return BlendOverlay(color, PaperGreen(pos, TItex).rgb);
+		}
+		else
+		{
+			return BlendTransparency(BlendOverlay(color, PaperGreen(pos, TItex).rgb), PaperGreen(pos, TItex).rgb);
+		}
+	}
+	if ( PAPER && pos.x < 3200.0f && pos.z < 1280.0f)
+	{
+		if ( isWater )
+		{
+			return BlendOverlay(color, PaperBlue(pos, TItex).rgb);
+		}
+		else
+		{
+			return BlendTransparency(BlendOverlay(color, PaperBlue(pos, TItex).rgb), PaperBlue(pos, TItex).rgb);
+		}
+	}
+	if ( PAPER && pos.x > 3200.0f && pos.z < 1280.0f)
+	{
+		if ( isWater )
+		{
+			return BlendOverlay(color, PaperAlpha(pos, TItex).rgb);
+		}
+		else
+		{
+			return BlendTransparency(BlendOverlay(color, PaperAlpha(pos, TItex).rgb), PaperAlpha(pos, TItex).rgb);
 		}
 	}
 	else { return color; }
 }
 
-float3 ApplyDarkWater(float3 color)
-{
-	
-	return BlendTransparencyWater(BlendOverlay(color, lerp(float3(0.4, 0.4, 0.4), float3(0.5, 0.5, 0.5), saturate(vCamPos.y / Paper_HDiv - Paper_HSub))), float3(0.0, 0.0, 0.0));
-
-}
 // float4 ApplyPaper(float4 color, float3 pos, in sampler2D TItex)
 // {
 // 	if ( PAPER )

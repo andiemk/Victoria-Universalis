@@ -286,9 +286,7 @@ float3 calculate_secondary_compressed( float2 uv, float3 vColor, float2 vPos )
 	float4 vMask = tex2D( OccupationMask, vPos / 8.0 ).rgba;
 
 	// Point sample the color of this province. 
-	float4 vSecondary = GetProvinceColorSampled( uv, IndirectionMap, ProvinceIndirectionMapSize, ProvinceColorMap,
-												ProvinceColorMapSize, 1 );
-
+	float4 vSecondary = GetProvinceColorSampled( uv, IndirectionMap, ProvinceIndirectionMapSize, ProvinceColorMap, ProvinceColorMapSize, 1 );
 
 	const int nDivisor = 6;
 	int3 vTest = int3(vSecondary.rgb * 255.0);
@@ -315,8 +313,23 @@ bool GetFoWAndTI( float3 PrePos, out float4 vFoWColor, out float4 vMonsoonColor,
 {
 	vFoWColor = GetFoWColor( PrePos, FoWTexture);	
 	vMonsoonColor = GetFoWColor( PrePos, MudTexture);
-	TI = GetTI( vFoWColor );	
-	vTIColor = GetTIColor( PrePos, TITexture );
+	TI = GetTI( vFoWColor );
+	if ( PrePos.x < 3200.0f && PrePos.z > 1280.0f)
+	{
+		vTIColor = GetTIColorRed( PrePos, TITexture );
+	}
+	if ( PrePos.x > 3100.0f && PrePos.z > 1280.0f)
+	{
+		vTIColor = GetTIColorGreen( PrePos, TITexture );
+	}
+	if ( PrePos.x < 3200.0f && PrePos.z < 1280.0f)
+	{
+		vTIColor = GetTIColorBlue( PrePos, TITexture );
+	}
+	if ( PrePos.x > 3200.0f && PrePos.z < 1280.0f)
+	{
+		vTIColor = GetTIColorAlpha( PrePos, TITexture );
+	}
 	return ( TI - 0.99f ) * 1000.0f <= 0.0f;
 }
 
@@ -554,11 +567,13 @@ PixelShader =
 				vHeightNormalSample = CalcNormalForLighting( vHeightNormalSample, vTerrainNormalSample );
 
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
-				vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
-				vTerrainDiffuseSample.rgb = ApplyMonsoon( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vMudNormalSample, vMonsoonColor, vTerrainDiffuseSample.a, vMudDiffuseSample.rgb );
+				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
+				//vTerrainDiffuseSample.rgb = ApplyMonsoon( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vMudNormalSample, vMonsoonColor, vTerrainDiffuseSample.a, vMudDiffuseSample.rgb );
 				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
 
-				vOut = CalculateMapLighting( vTerrainDiffuseSample.rgb, vHeightNormalSample );
+				vOut = vTerrainDiffuseSample.rgb;
+				
+				//vOut = CalculateMapLighting( vTerrainDiffuseSample.rgb, vHeightNormalSample );
 			}
 	#endif	// end TERRAIN_SHADER
 	#ifdef COLOR_SHADER
@@ -601,6 +616,7 @@ PixelShader =
 			}
 	#endif	// end COLOR_SHADER
 
+			
 			vOut = ApplyPaper(vOut, Input.prepos, TITexture, false);
 
 			// Grab the shadow term

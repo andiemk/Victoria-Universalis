@@ -321,6 +321,23 @@ PixelShader =
 			float4 vFoWColor = GetFoWColor( Input.pos, FoWTexture);	
 			float TI = GetTI( vFoWColor );	
 			float4 vTIColor = GetTIColor( Input.pos, TITexture );
+			
+			if ( Input.pos.x < 3200.0f && Input.pos.z > 1280.0f)
+			{
+				vTIColor = GetTIColorRed( Input.pos, TITexture );
+			}
+			if ( Input.pos.x > 3100.0f && Input.pos.z > 1280.0f)
+			{
+				vTIColor = GetTIColorGreen( Input.pos, TITexture );
+			}
+			if ( Input.pos.x < 3200.0f && Input.pos.z < 1280.0f)
+			{
+				vTIColor = GetTIColorBlue( Input.pos, TITexture );
+			}
+			if ( Input.pos.x > 3200.0f && Input.pos.z < 1280.0f)
+			{
+				vTIColor = GetTIColorAlpha( Input.pos, TITexture );
+			}
 
 			if( ( TI - 0.99f ) * 1000.0f > 0.0f )
 			{
@@ -331,8 +348,6 @@ PixelShader =
 
 			//Ice effect
 			float4 waterColor = tex2D( WaterColor, Input.uv );
-			
-			//waterColor = ApplyPaper(waterColor, Input.pos, TITexture);
 			
 			// Region colors (provinces)
 			float2 flippedUV = Input.uv;
@@ -375,22 +390,30 @@ PixelShader =
 			float vSpecMultiplier = 3.0f;
 			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) * vSpecMultiplier );
 			
-			refractiveColor = lerp( refractiveColor, waterColor.rgb, 0.3f+(0.7f*vIceFade) );
-			float3 outColor = refractiveColor * ( 1.0f - fresnel ) + reflectiveColor * fresnel;
+			float3 waterColorFlat = float3(0.176, 0.396, 0.588);
+			
+			refractiveColor = lerp( refractiveColor,  waterColorFlat, 0.3f+(0.7f*vIceFade) );
+			float3 outColorInit = refractiveColor * ( 1.0f - fresnel ) + reflectiveColor * fresnel;
 
-			outColor = ApplySnow( outColor, Input.pos, normal, vFoWColor, FoWDiffuse );		
+			outColorInit = ApplySnow( outColorInit, Input.pos, normal, vFoWColor, FoWDiffuse );		
 			
 			float vFoW = GetFoW( Input.pos, vFoWColor, FoWDiffuse );
-	
+			
 			// Grab the shadow term
 			float4 vShadowCoord = Input.vScreenCoord;
 			vShadowCoord.xz = vShadowCoord.xz + normal.xz * vRefractionScale * 0.06f;
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_WATER, vShadowCoord, ShadowMap );
-			outColor *= fShadowTerm;
+			outColorInit *= fShadowTerm;
+				
+			outColorInit = ApplyDistanceFog( outColorInit, Input.pos ) * vFoW;
+			
+			float3 outColorFinal = tex2D( WaterColor, Input.uv );
+			outColorFinal = ApplyPaper(outColorFinal, Input.pos, TITexture, true);
+				
+			outColorFinal = ApplyDistanceFog( outColorFinal, Input.pos ) * vFoW;
+			
+			float3 outColor = lerp(outColorInit, outColorFinal, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
-			outColor = ApplyPaper(outColor, Input.pos, TITexture, true);	
-			outColor = ApplyDarkWater(outColor);
-			outColor = ApplyDistanceFog( outColor, Input.pos ) * vFoW;
 			return float4( lerp( ComposeSpecular( outColor, specular * vFoW ), vTIColor.rgb, TI ), 1.0f - waterHeight );
 		}
 	]]
@@ -461,7 +484,6 @@ PixelShader =
 			float vIceFade = 0.0f;
 			waterColor = ApplyIce( waterColor, Input.pos.xz, normal, vFoWColor, Input.uv_ice, vIceFade );
 			
-			//waterColor = ApplyPaper(waterColor, Input.pos, TITexture);
 			
 			float3 vEyeDir = normalize( Input.pos - vCamPos.xyz );
 			float3 reflection = reflect( vEyeDir, normal );
@@ -506,6 +528,9 @@ PixelShader =
 			vShadowCoord.xz = vShadowCoord.xz + normal.xz * vRefractionScale * 0.06f;
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_WATER, vShadowCoord, ShadowMap );
 			outColor *= fShadowTerm;	
+			
+			outColor = tex2D( WaterColor, Input.uv );
+			outColor = ApplyPaper(outColor, Input.pos, TITexture, true);
 
 			outColor = ApplyDistanceFog( outColor, Input.pos ) * vFoW;
 			//return float4( waterHeight, 0.0f, 0.0f, 1.0f );

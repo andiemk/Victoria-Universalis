@@ -99,8 +99,8 @@ province;red;green;blue;x;x
 98;14;100;192;Utrecht;x
 99;142;102;255;Gelre;x
 100;14;104;0;Friesland;x
-101;142;106;64;Liguria;x
-102;14;108;128;Nizza;x
+101;142;106;64;Genoa;x
+102;14;108;128;Nice;x
 103;85;80;32;Turin;x
 104;14;112;255;Lombardia;x
 105;143;114;0;Parma;x
@@ -203,7 +203,7 @@ province;red;green;blue;x;x
 202;28;52;128;Drôme;x
 203;157;54;192;Lozère;x
 204;29;56;255;Isère;x
-205;157;58;0;Savoy;x
+205;157;58;0;Annecy;x
 206;29;60;64;A Coruña;x
 207;157;62;128;Asturias;x
 208;29;64;192;León;x
@@ -2979,7 +2979,7 @@ province;red;green;blue;x;x
 2978;99;204;234;Arezzo;x
 2979;192;219;10;Novara;x
 2980;241;15;15;Lucca;x
-2981;222;108;69;Monferrato;x
+2981;222;108;69;Alessandria;x
 2982;227;135;53;Syracuse;x
 2983;150;159;47;Principato Citeriore;x
 2984;206;227;169;Calabria Citeriore;x
@@ -2990,7 +2990,7 @@ province;red;green;blue;x;x
 2989;200;58;78;La Rioja;x
 2990;181;150;96;Teruel;x
 2991;243;21;172;Alpes;x
-2992;91;125;222;Albenga;x
+2992;91;125;222;Savona;x
 2993;136;48;142;Strelitz;x
 2994;248;245;157;Neubrandenburg;x
 2995;234;228;174;Kolberg;x
@@ -4155,7 +4155,7 @@ province;red;green;blue;x;x
 4154;225;223;23;Pyrenees;x
 4155;225;223;25;Carpathians;x
 4156;225;223;27;Caucasus;x
-4157;225;223;29;The Alps;x
+4157;225;223;29;Chamberry;x
 4158;117;150;26;Janjero;x
 4159;237;230;38;Alps2;x
 4160;224;220;117;Alps3;x
@@ -4725,7 +4725,7 @@ province;red;green;blue;x;x
 4724;28;140;117;Pardubice;x
 4725;182;22;144;Jindrichuv Hradec;x
 4726;14;8;38;Ostrava;x
-4727;11;159;77;Saluzzo;x
+4727;11;159;77;Aosta;x
 4728;23;128;70;Pontremoli;x
 4729;111;248;124;Padova;x
 4730;24;248;124;Bologna;x

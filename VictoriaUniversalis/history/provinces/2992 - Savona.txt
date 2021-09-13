@@ -1,24 +1,24 @@
 add_core = SPI
 owner = SPI
 controller = SPI
-capital = "Genoa"
+capital = "Savona"
 base_manpower = 0
 base_production = 0
-base_tax = 13
+base_tax = 6
 is_city = yes
 religion = catholic
 culture = ligurian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 288.022
+		value = 132.655
 	}
 	set_variable = {
 		which = mid_pop
-		value = 157.989
+		value = 67.404
 	}
 	set_variable = {
 		which = upper_pop
-		value = 61.115
+		value = 26.24
 	}
 }

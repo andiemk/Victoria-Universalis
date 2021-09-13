@@ -11,14 +11,14 @@ culture = sardinian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 80.152
+		value = 72.523
 	}
 	set_variable = {
 		which = mid_pop
-		value = 37.627
+		value = 33.411
 	}
 	set_variable = {
 		which = upper_pop
-		value = 14.751
+		value = 13.121
 	}
 }

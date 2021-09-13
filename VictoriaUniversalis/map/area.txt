@@ -471,7 +471,7 @@ po_valley_area = { #3
 }
 
 piedmont_area = { #4
-	103 1875 2981 4727
+	103 1875 2981 4157 4727
 }
 
 tuscany_area = { #5

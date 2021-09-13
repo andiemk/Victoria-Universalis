@@ -1,24 +1,24 @@
 add_core = SPI
 owner = SPI
 controller = SPI
-capital = "Nizza"
+capital = "Annecy"
 base_manpower = 0
 base_production = 0
-base_tax = 3
+base_tax = 6
 is_city = yes
 religion = catholic
-culture = ligurian
+culture = arpitan
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 67.832
+		value = 136.723
 	}
 	set_variable = {
 		which = mid_pop
-		value = 30.843
+		value = 69.745
 	}
 	set_variable = {
 		which = upper_pop
-		value = 12.128
+		value = 27.142
 	}
 }

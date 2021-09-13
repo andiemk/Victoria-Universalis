@@ -4,21 +4,21 @@ controller = SPI
 capital = "Turin"
 base_manpower = 0
 base_production = 0
-base_tax = 12
+base_tax = 17
 is_city = yes
 religion = catholic
 culture = piedmontese
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 276.774
+		value = 376.952
 	}
 	set_variable = {
 		which = mid_pop
-		value = 151.389
+		value = 210.268
 	}
 	set_variable = {
 		which = upper_pop
-		value = 58.575
+		value = 81.23
 	}
 }

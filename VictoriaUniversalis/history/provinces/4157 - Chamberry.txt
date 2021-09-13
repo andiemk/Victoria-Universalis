@@ -1,24 +1,23 @@
 add_core = SPI
 owner = SPI
 controller = SPI
-capital = "Saluzzo"
+capital = "Chamberry"
 base_manpower = 0
 base_production = 0
-base_tax = 0
+base_tax = 7
 is_city = yes
 religion = catholic
-culture = piedmontese
-1000.1.1 = {
+culture = arpitan
 	set_variable = {
 		which = lower_pop
-		value = 7.49
+		value = 155.902
 	}
 	set_variable = {
 		which = mid_pop
-		value = 2.104
+		value = 80.822
 	}
 	set_variable = {
 		which = upper_pop
-		value = 0.876
+		value = 31.41
 	}
 }

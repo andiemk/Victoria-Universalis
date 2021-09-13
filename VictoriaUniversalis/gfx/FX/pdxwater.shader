@@ -390,9 +390,7 @@ PixelShader =
 			float vSpecMultiplier = 3.0f;
 			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) * vSpecMultiplier );
 			
-			float3 waterColorFlat = float3(0.176, 0.396, 0.588);
-			
-			refractiveColor = lerp( refractiveColor,  waterColorFlat, 0.3f+(0.7f*vIceFade) );
+			refractiveColor = lerp( refractiveColor,  WATER_COLOR, 0.3f+(0.7f*vIceFade) );
 			float3 outColorInit = refractiveColor * ( 1.0f - fresnel ) + reflectiveColor * fresnel;
 
 			outColorInit = ApplySnow( outColorInit, Input.pos, normal, vFoWColor, FoWDiffuse );		

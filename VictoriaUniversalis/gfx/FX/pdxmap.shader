@@ -261,6 +261,7 @@ float4 sample_terrain( float IndexU, float IndexV, float2 vTileRepeat, float vMi
 	return float4( ( float2( IndexU, IndexV ) + vTileRepeat ) / vTiles + 0.5f / vMipTexels, 0.0f, lod );
 }
 
+
 void calculate_index( float4 IDs, out float4 IndexU, out float4 IndexV, out float vAllSame )
 {
 	IDs *= 255.0f;
@@ -427,7 +428,7 @@ PixelShader =
 			clip( WATER_HEIGHT - Input.prepos.y + TERRAIN_WATER_CLIP_HEIGHT );
 			float3 normal = normalize( tex2D( HeightNormal,Input.uv2 ).rbg - 0.5f );
 			float3 diffuseColor = tex2D( TerrainDiffuse, Input.uv2 * float2(( MAP_SIZE_X / 32.0f ), ( MAP_SIZE_Y / 32.0f ) ) ).rgb;
-			float3 waterColorTint = tex2D( TerrainColorTint, Input.uv2 ).rgb;
+			float3 waterColorTint = WATER_COLOR;
 			
 			float vMin = 17.0f;
 			float vMax = 18.5f;
@@ -487,14 +488,21 @@ PixelShader =
 			calculate_index( tex2D( TerrainIDMap, Input.uv + vOffsets.xy ), IndexU, IndexV, vAllSame );
 
 			float2 vTileRepeat = Input.uv2 * TERRAIN_TILE_FREQ;
+			float2 vTileRepeatPaper = Input.uv2 * TERRAIN_TILE_FREQ_PAPER;
 			vTileRepeat.x *= MAP_SIZE_X/MAP_SIZE_Y;
+			vTileRepeatPaper.x *= MAP_SIZE_X/MAP_SIZE_Y;
 			
 			float lod = clamp( trunc( mipmapLevel( vTileRepeat ) - 0.5f ), 0.0f, 6.0f );
+			float lodPaper = clamp( trunc( mipmapLevel( vTileRepeatPaper ) - 0.5f ), 0.0f, 6.0f );
 			float vMipTexels = pow( 2.0f, ATLAS_TEXEL_POW2_EXPONENT - lod );
+			float vMipTexelsPaper = pow( 2.0f, ATLAS_TEXEL_POW2_EXPONENT - lodPaper );
 			float3 vHeightNormalSample = normalize( tex2D( HeightNormal, Input.uv2 ).rbg - 0.5f );
 			
 			float4 vTerrainSamplePosition = sample_terrain( IndexU.w, IndexV.w, vTileRepeat, vMipTexels, lod, NUM_TILES );
-			float4 vTerrainDiffuseSample = tex2Dlod( TerrainDiffuse, vTerrainSamplePosition );
+			float4 vTerrainSamplePositionPaper = sample_terrain( IndexU.w, IndexV.w, vTileRepeatPaper, vMipTexelsPaper, lodPaper, NUM_TILES );
+			float4 vTerrainDiffuseSamplePaper = tex2Dlod( TerrainDiffuse, vTerrainSamplePositionPaper );
+			float4 vTerrainDiffuseSampleTerrain = tex2Dlod( TerrainColorTint, vTerrainSamplePosition );
+			float4 vTerrainDiffuseSample = lerp(vTerrainDiffuseSampleTerrain, vTerrainDiffuseSamplePaper, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
 			float4 vMudSamplePosition = sample_terrain( IndexU.w, IndexV.w, vTileRepeat, vMipTexels, lod, 1.0f );
 			float4 vMudDiffuseSample = tex2Dlod( MudDiffuse, vMudSamplePosition );
@@ -505,7 +513,9 @@ PixelShader =
 			float3 vTerrainNormalSample = float3( 0, 1, 0 );
 			float3 vMudNormalSample = vTerrainNormalSample;
 		#else
-			float3 vTerrainNormalSample = tex2Dlod( TerrainNormal, vTerrainSamplePosition ).rbg - 0.5f;
+			float3 vTerrainNormalSamplePaper = float3( 1.0, 1.0, 1.0 ) - 0.5f;
+			float3 vTerrainNormalSampleTerrain = tex2Dlod( TerrainNormal, vTerrainSamplePosition ).rbg - 0.5f;
+			float3 vTerrainNormalSample = lerp(vTerrainNormalSampleTerrain, vTerrainNormalSamplePaper, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 			float3 vMudNormalSample = tex2Dlod( TerrainNormal, vMudNormalSamplePosition ).rgb - 0.5f;
 		#endif //NO_SHADER_TEXTURE_LOD
 	#endif
@@ -519,9 +529,9 @@ PixelShader =
 				float4 TerrainSampleX = sample_terrain( IndexU.x, IndexV.x, vTileRepeat, vMipTexels, lod, NUM_TILES );
 				float4 TerrainSampleY = sample_terrain( IndexU.y, IndexV.y, vTileRepeat, vMipTexels, lod, NUM_TILES );
 				float4 TerrainSampleZ = sample_terrain( IndexU.z, IndexV.z, vTileRepeat, vMipTexels, lod, NUM_TILES );
-				float4 ColorRD = tex2Dlod( TerrainDiffuse, TerrainSampleX );
-				float4 ColorLU = tex2Dlod( TerrainDiffuse, TerrainSampleY );
-				float4 ColorRU = tex2Dlod( TerrainDiffuse, TerrainSampleZ );
+				float4 ColorRD = lerp(tex2Dlod( TerrainColorTint, TerrainSampleX ), tex2Dlod( TerrainDiffuse, TerrainSampleX ), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float4 ColorLU = lerp(tex2Dlod( TerrainColorTint, TerrainSampleY ), tex2Dlod( TerrainDiffuse, TerrainSampleY ), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float4 ColorRU = lerp(tex2Dlod( TerrainColorTint, TerrainSampleZ ), tex2Dlod( TerrainDiffuse, TerrainSampleZ ), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
 				float2 vFracVector = float2( Input.uv.x * MAP_SIZE_X - 0.5f, Input.uv.y * MAP_SIZE_Y - 0.5f );
 				float2 vFrac = frac( vFracVector );
@@ -545,9 +555,9 @@ PixelShader =
 
 		#ifdef TERRAIN_SHADER
 			#ifndef NO_SHADER_TEXTURE_LOD
-				float3 terrain_normalRD = tex2Dlod( TerrainNormal, TerrainSampleX ).rbg - 0.5f;
-				float3 terrain_normalLU = tex2Dlod( TerrainNormal, TerrainSampleY ).rbg - 0.5f;
-				float3 terrain_normalRU = tex2Dlod( TerrainNormal, TerrainSampleZ ).rbg - 0.5f;
+				float3 terrain_normalRD = lerp(tex2Dlod( TerrainNormal, TerrainSampleX ).rbg - 0.5f, vTerrainNormalSamplePaper, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float3 terrain_normalLU = lerp(tex2Dlod( TerrainNormal, TerrainSampleY ).rbg - 0.5f, vTerrainNormalSamplePaper, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float3 terrain_normalRU = lerp(tex2Dlod( TerrainNormal, TerrainSampleZ ).rbg - 0.5f, vTerrainNormalSamplePaper, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
 				vTerrainNormalSample =
 					( ( 1.0f - vBlendFactors.x ) * terrain_normalRU  + vBlendFactors.x * terrain_normalLU ) * ( 1.0f - vBlendFactors.z ) +
@@ -556,7 +566,7 @@ PixelShader =
 		#endif
 			}
 
-			float3 TerrainColor = lerp( tex2D( TerrainColorTint, Input.uv2 ), tex2D( TerrainColorTintSecond, Input.uv2 ), vBorderLookup_HeightScale_UseMultisample_SeasonLerp.w ).rgb;
+			float3 TerrainColor = TERRAIN_COLOR;
 			float3 vOut;
 	#ifdef TERRAIN_SHADER
 		#ifdef TERRAIN_AND_COLOR_SHADER
@@ -567,13 +577,14 @@ PixelShader =
 				vHeightNormalSample = CalcNormalForLighting( vHeightNormalSample, vTerrainNormalSample );
 
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
+				
 				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
 				//vTerrainDiffuseSample.rgb = ApplyMonsoon( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vMudNormalSample, vMonsoonColor, vTerrainDiffuseSample.a, vMudDiffuseSample.rgb );
-				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
-
-				vOut = vTerrainDiffuseSample.rgb;
+				vOut = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
+				float3 vOutInit = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
+				vOut = CalculateMapLighting( vOut, vHeightNormalSample );
 				
-				//vOut = CalculateMapLighting( vTerrainDiffuseSample.rgb, vHeightNormalSample );
+				vOut = lerp(vOut, vOutInit, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 			}
 	#endif	// end TERRAIN_SHADER
 	#ifdef COLOR_SHADER
@@ -584,35 +595,23 @@ PixelShader =
 		#endif
 			{
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
-				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
 				
-				//float2 vBlend = float2( 0.54f, 0.5f );
-				float terrainBlend = lerp(0.50f, 0.2f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
-				float colorBlend = lerp(0.45f, 0.7f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float terrainBlend = lerp(0.5f, 0.2f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float colorBlend = lerp(0.40f, 0.7f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 				float2 vBlend = float2( terrainBlend, colorBlend );
 				
 				float3 vOutInit = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
-				//vOut = CalculateMapLighting( vOut, vHeightNormalSample );
 				vOutInit = calculate_secondary( Input.uv, vOutInit, Input.prepos.xz );
 				
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
-				//float2 snowBlend = float2( 0.6f, 0.5f );
-				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse ) * snowBlend.x + vTerrainDiffuseSample.rgb * snowBlend.y;
 				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );	
 				
-				float3 vOutFinal = (vTerrainDiffuseSample.rgb * vBlend.x + vColorMapSample.rgb * vBlend.y); //Modded
 				vOut = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y ); //Original - Provinces are really grey
-				vOutFinal = CalculateMapLighting( vOutFinal, vHeightNormalSample );
-				vOutFinal = calculate_secondary( Input.uv, vOutFinal, Input.prepos.xz );
+				vOut = calculate_secondary( Input.uv, vOut, Input.prepos.xz );
 				
-				//vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
-				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
+				//vOut = CalculateMapLighting( vOut, vHeightNormalSample );
 				
-				//float3 vOutFinal = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
-				//vOutFinal = CalculateMapLighting( vOutFinal, vHeightNormalSample );
-				//vOutFinal = calculate_secondary( Input.uv, vOutFinal, Input.prepos.xz );
-				
-				vOut = lerp(vOutFinal, vOutInit, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				vOut = lerp(vOut, vOutInit, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 			}
 	#endif	// end COLOR_SHADER
 

@@ -35,7 +35,8 @@ static const float	LIGHT_HDR_RANGE 			= 0.8f;
 // ------------------    TERRAIN        -------------------------
 // --------------------------------------------------------------
 
-static const float 	TERRAIN_TILE_FREQ 			= 32.0f;
+static const float 	TERRAIN_TILE_FREQ 					= 128.0f;
+static const float 	TERRAIN_TILE_FREQ_PAPER 			= 32.0f;
 
 // MILD_WINTER_VALUE = ###,						defines.lua   (reload defines)
 // NORMAL_WINTER_VALUE = ##,					defines.lua   (reload defines)
@@ -54,6 +55,7 @@ static const float 	BORDER_TILE					= 0.4f;
 
 static const float 	TREE_SEASON_MIN 			= 0.5f;
 static const float 	TREE_SEASON_FADE_TWEAK 		= 2.5f;
+static const float3 TERRAIN_COLOR					= float3( 0.580, 0.545, 0.431 );
 
 
 // --------------------------------------------------------------
@@ -63,7 +65,7 @@ static const float 	TREE_SEASON_FADE_TWEAK 		= 2.5f;
 
 static const float 	WATER_TILE					= 1.0f;
 static const float 	WATER_TIME_SCALE			= 12.0f;
-static const float DARKWATER_OPACITY			= 0.2f;
+static const float3 WATER_COLOR					= float3(0.156, 0.305, 0.422);
 
 
 // --------------------------------------------------------------

@@ -65,7 +65,7 @@ static const float3 TERRAIN_COLOR					= float3( 0.580, 0.545, 0.431 );
 
 static const float 	WATER_TILE					= 1.0f;
 static const float 	WATER_TIME_SCALE			= 12.0f;
-static const float3 WATER_COLOR					= float3(0.156, 0.305, 0.422);
+static const float3 WATER_COLOR					= float3(0.156, 0.28, 0.422);
 
 
 // --------------------------------------------------------------

@@ -578,10 +578,12 @@ PixelShader =
 
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
 				
-				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
-				//vTerrainDiffuseSample.rgb = ApplyMonsoon( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vMudNormalSample, vMonsoonColor, vTerrainDiffuseSample.a, vMudDiffuseSample.rgb );
-				vOut = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
 				float3 vOutInit = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
+				
+				vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
+				vTerrainDiffuseSample.rgb = ApplyMonsoon( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vMudNormalSample, vMonsoonColor, vTerrainDiffuseSample.a, vMudDiffuseSample.rgb );
+				vOut = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
+				
 				vOut = CalculateMapLighting( vOut, vHeightNormalSample );
 				
 				vOut = lerp(vOut, vOutInit, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
@@ -597,15 +599,17 @@ PixelShader =
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
 				
 				float terrainBlend = lerp(0.5f, 0.2f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
-				float colorBlend = lerp(0.40f, 0.7f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+				float colorBlend = lerp(0.45f, 0.7f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 				float2 vBlend = float2( terrainBlend, colorBlend );
 				
-				float3 vOutInit = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
+				float3 vOutInit = vTerrainDiffuseSample.rgb * vBlend.x + vColorMapSample.rgb * vBlend.y;
+				//float3 vOutInit = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
 				vOutInit = calculate_secondary( Input.uv, vOutInit, Input.prepos.xz );
 				
 				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
 				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );	
 				
+				//vOut = vTerrainDiffuseSample.rgb * vBlend.x + vColorMapSample.rgb * vBlend.y;
 				vOut = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y ); //Original - Provinces are really grey
 				vOut = calculate_secondary( Input.uv, vOut, Input.prepos.xz );
 				

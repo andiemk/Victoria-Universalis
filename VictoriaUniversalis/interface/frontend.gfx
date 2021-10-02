@@ -37,8 +37,13 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_frontend_dev_logo_small"
-		texturefile = "gfx/interface/pdx_dev_logo_small.dds"
+		name = "GFX_frontend_tinto_logo_small"
+		texturefile = "gfx/interface/pdx_tinto_logo_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_frontend_tinto_logo"
+		texturefile = "gfx/interface/pdx_tinto_logo.dds"
 	}
 
 	textSpriteType = {
@@ -231,6 +236,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/emperor_icon.dds"
 		legacy_lazy_load = no
 	}	
+	
+	spriteType = {
+		name = "GFX_Leviathan"
+		texturefile = "gfx/interface/leviathan_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_HicSuntDracones"
+		texturefile = "gfx/interface/dlc_default_icon.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_dlc_default_icon"
@@ -259,6 +276,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_login_logout_button"
 		texturefile = "gfx//interface//button_login_logout.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_login_epic_logout_button"
+		texturefile = "gfx//interface//button_epic_login_logout.dds"
 		noOfFrames = 2
 	}
 

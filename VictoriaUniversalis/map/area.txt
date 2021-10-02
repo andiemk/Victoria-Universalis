@@ -289,70 +289,70 @@ brittany_area = { #5
 }
 
 normandy_area = { #4
-	167 168 1879 3031 4385
+	167 168 3031 4385
 }
 
 provence_area = { #3
-	201 202 2991 4696
+	201 2991 4696
 }
 
 poitou_area = { #4
-	180 4111 4386 4387
+	88 178 4111 4387
 }
 
 guyenne_area = { #4
-	194 198 4112 174
+	194 198 4112
 }
 
 pyrenees_area = { #4
-	175 173 176 4694
+	175 173 174 176
 }
 
 languedoc_area = { #5
-	200 2753 4391 4695 196
+	200 203 2753 4695 196 4694
 }
 
 bourgogne_area = { #3
 	color = { 144 0 32 }
-	192 193 4764
+	193 4764
 }
 
 west_burgundy_area = { #3
-	191 1877 4392
+	185 191 192 1877
 }
 
 massif_central_area = { #3
 	color = { 26 26 217 }
-	190 195 199 4697 4777
+	180 190 195 199 1867 4697
 }
 
 savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy 
-	203 204 205 4719
+	202 204 205 4719 4157 4391 4777
 }
 
 lorraine_area = { #4
-	187 188 189 4766
+	188 189 4766
 }
 
 picardy_area = { #4
-	87 88 89 1743
+	87 89 182 1743 4769
 }
 
 ile_de_france_area = { #4
-	182 183 185 4388
+	183 4765
 }
 
 champagne_area = { #3
-	181 186 4390
+	181 186 4390 4392
 }
 
 loire_area = { #5
 	color = { 231 143 5 }
-	177 178 4389
+	177 1879 4386 4389
 }
 
 orleans_area = {
-	184 179 4776
+	184 187 179 4388 4776
 }
 
 ########################################
@@ -360,7 +360,7 @@ orleans_area = {
 ########################################
 
 wallonia_area = { #4
-	91 93 94 1866
+	91 93 94 1866 1878
 }
 
 holland_area = { #4
@@ -368,16 +368,15 @@ holland_area = { #4
 }
 
 flanders_area = { #3
-	90 1865 4769
+	90 1865 92 1744 2974
 }
 
 frisia_area = { #5
-	99 100 1931 4381 4382
+	99 100 4381 4382
 }
 
 brabant_area = { #3
 	color = { 118 193 153 }
-	92 1744 2974
 }
 
 north_brabant_area = { #3
@@ -458,20 +457,20 @@ macaronesia_area = { #3
 ########################################
 
 venetia_area = { #5
-	108 111 112 1774 4729 4160 4763
+	108 111 112 113 1774 4729 4160 4763
 }
 
 lombardy_area = { #5
-	104 1862 4740 2979
+	104 107 109 1862 4739 4740
 }
 
 po_valley_area = { #3
 	color = { 205 190 47 }
-	109 4739 107
+
 }
 
 piedmont_area = { #4
-	103 1875 2981 4157 4727
+	103 1875 2979 2981 4727
 }
 
 tuscany_area = { #5
@@ -487,11 +486,11 @@ corsica_sardinia_area = { #4
 }
 
 sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
+	124 125 126 2982 4736 4737
 }
 
 western_sicily_area = { #3
-	125 4736 4737
+
 }
 
 naples_area = { #3  #Campania
@@ -512,7 +511,7 @@ apulia_area = { #4
 
 emilia_romagna_area = { #5
 	color = { 24 222 66 }
-	105 106 113 114 3017 4730
+	105 106 114 3017 4730
 }
 
 central_italy_area = { #3
@@ -592,7 +591,7 @@ jutland_area = { #4
 }
 
 denmark_area = { #4 +Bornholm
-	12 14 1981 1983 3028
+	12 14 1981 1983
 }
 
 skaneland_area = { #4
@@ -680,23 +679,23 @@ east_prussia_area = { #5
 }
 
 west_prussia_area = { #3 (South West Prussia)
-	2997 43 1841
+	1859 2963 2997 43 1841 4528
 }
 
 wielkopolska_area = { #5
-   254 4526 255 2963
+   254 4526 255 4523
 }
 
 malopolska_area = { #5
-	262 4527 2960
+	262 4527
 }
 
 red_ruthenia_area = { #5 
-	261 1940 2424 2961 4541
+	67 1940 2424 2959 2960 2961 4541 4707 4711 4715 4718
 }
 
 podolia_volhynia_area = { #3
-	281 4540 1943 
+	281 4540 
 }
 
 volhynia_area = { # 4
@@ -720,11 +719,11 @@ central_poland_area = {
 }
 
 sandomierz_area = {
-	260 2959 259   
+	260 259   
 }
 
 kuyavia_area = {
-	4523 1859 4524 4528
+	4524 
 }
 
 samogitia_area = { #4
@@ -744,7 +743,7 @@ east_dniepr_area = { #4 Left bank Ukraine
 }
 
 chernigov_area = {
-	1945 289 4543
+	289 4543
 }
 
 sloboda_ukraine_area = { #4
@@ -889,36 +888,34 @@ saratov_area = { #3
 ########################################
 
 silesia_area = { #4
-	263 264 2966 4238 4723
+	263 264 2966 4238 4723 4778
 }
 
 bohemia_area = { #5
-	 266 2968 2970 4725 4724
+	 266 267 1771 2957 2967 2968 2970 4725 4724
 }
 
 erzgebirge_area = { #3
-	267 1771 2967
 }
 
 lusatia_area = { #3
-	60 1763 4778
 }
 
 moravia_area = {
-	265 4237 4726
+	265 2956 4237 4726
 }
 
 south_saxony_area = { #4
-	59 61 4744 62
+	60 61 2965 4744
 }
 
 upper_bavaria_area = { #4
 	color = { 180 220 220 }
-	65 2955 4707 4708
+	65 2955 4708
 }
 
 lower_bavaria_area = { #4
-	64 1757 2956 2957
+	64 1757
 }
 
 east_bavaria_area = { #3
@@ -926,50 +923,49 @@ east_bavaria_area = { #3
 } 
 
 lower_swabia_area = { #3 (West Swabia)
-	70 4713 4712
 }
 
 franconia_area = { #4 (Lower Franconia)
 	color = { 121 49 117 }
-	4718 4715 71 79
+	4717 71 79
 }
 
 upper_franconia_area = { #4
-	66 67 4716 4717
+
 }
 
 upper_swabia_area = { #4 (East Swabia)
-	68 1868 4711 1872
+	68 1868 1872 70 4713
 }
 
 northern_saxony_area = { #4 (Saxe-Altmark)
 	color = { 229 20 20 }
-	52 58 2964 4741 4742
+	58 62 2964
 }
 
 thuringia_area = { #3
-	63 2965 4743
+	52 56 63 66 69 85 4716 4743 4771 4773 4775
 }
 
 neumark_area = { #3
 	color = { 234 232 44 }
-	49 2969 4747
+	4747
 }
 
 mittelmark_area = { #5
-	50 51 1759 4748 2993
+	49 50 51 59 74 1759 1763 2969 4748 4786
 }
 
 vorpommern_area = { #4
-	47 2994 4745 1858 
+	2994 4745 1858 
 }
 
 hinter_pommern_area = { #3
-	48 2995 4746
+	47 48 2995 4746
 }
 
 tirol_area = { #5
-	73 110 1768 4710 4758
+	73 110 1768 1873 4710 4758
 }
 
 austria_proper_area = { #5
@@ -978,72 +974,69 @@ austria_proper_area = { #5
 }
 
 inner_austria_area = { #4
-	128 132 1863 4759
+	128 132 1863 4751 4759
 }
 
 carinthia_area = { #4 # Carniola in-game
 	color = { 46 217 110 }
-	129 130 1769 4738 4751
+	129 130 1769 4738
 }
 
 switzerland_area = { #4
-	166 1869 1870 1873 3022 4722
+	166 1869 1870 3022 4722
 }
 
 romandie_area = { #3
-	165 1867 1871 4720 4721
+	165 1871 4720 4721
 }
 
 upper_rhineland_area = { #3 # now 'Baden'
-	72 74 4714 
+	72 77 4712 4714 
 }
 
 alsace_area = { #3
-	75 1880 4765
+	75 1880
 }
 
 palatinate_area = { #3
-	77 1761 4767
+
 }
 
 north_rhine_area = { #4
-	84 85 2975 83
+	84 2975 4768
 }
 
 lower_rhineland_area = { #4
-	80 1760 1878 4768
+	80 1760 1761 4767
 }
 
 westphalia_area = { #3 (South Westphalia)
-	82 2972 4775
+	46 82 86 2972 4741
 }
 
 north_westphalia_area = { #4
-	56 86 2973 69
 }
 
 hesse_area = { #5
-	81 1762 1876 4774 78
+	81 83 1762 1876 4772 4774 78
 }
 
 braunschweig_area = { #4
-	57 1758 2971 4773
 }
    
 weser_area = { #4
-	54 55 1874 4771
 }
 
 holstein_area = { #3
-	13 1775 4141 
+	13 44 45 1775 1857 3028 4141 
 }
 
 lower_saxony_area = { #4
-	44 53 1857 3016 4772
+	53 54 55 57 1758 1874 1931 2971 2973 3016 4742
 }
 
 mecklenburg_area = { #5
-	45 46 2996 4749 4786
+	2993 2996 4749
 }
 
 ########################################
@@ -1079,23 +1072,23 @@ wallachia_area = { #5
 }
 
 moldavia_area = { #5
-	268 1756 2405 4529 4530 4533
+	261 268 1756 1943 1945 2405 4529 4530 4533
 }
 
 transylvania_area = { #4 #Northern Transylvania
-	157 158 1952 4127 4155
+	157 158 1951 4127 4128 4155
 }
 
 southern_transylvania_area = { #3
-	156 1951 4128
+	156 1954 4126
 }
 
 slovakia_area = { #5
-	154 162 1318 1772 4236
+	154 162 929 1318 1772 1952 2538 4236
 }
 
 serbia_area = { #5
-	141 1954 2746 3000 4126 4173 4176 4239 4757
+	141 2746 3000 4176 4239 4757
 }
 
 rascia_area = { #4
@@ -1112,11 +1105,10 @@ bosnia_area = { #5
 
 croatia_area = { #4
 	color = { 18 126 16 }
-	131 1826 4752
+	131 152 1767 1826 4173 4752 4756
 }
 
 slavonia_area = { #4
-	152 4756 1767
 }
 
 east_adriatic_coast_area = { #3
@@ -1124,12 +1116,12 @@ east_adriatic_coast_area = { #3
 }
 
 alfold_area = { #4
-	155 1953 4125
+	153 155 1953 4125
 }
 
 transdanubia_area = { #5
 	color = { 171 92 22 }
-	135 153 1864 4240
+	135 1864 2509 2531 4240
 }
 
 ########################################
@@ -2969,8 +2961,7 @@ cuyo_area  = { #5
 nehuenken_area = { #4
 }
 
-southern_pampas_area  = { #5
-	2866 
+southern_pampas_area  = { #5 
 }
 
 buenos_aires_area = { #4
@@ -2986,7 +2977,7 @@ tucuman_area  = { #3
 }
 
 cordoba_area = {
-	790 2846 2849 2861
+	790 2846 2849 2861 2866
 }
 
 jujuy_area = { #3
@@ -3081,7 +3072,7 @@ kuntisuyu_area = { #4
 }
 
 peruan_coast = { #3
-	805 806 2828
+	805 806 810 2828
 }
 
 chimor_area = { #5
@@ -3097,7 +3088,7 @@ cajamarca_area = { #4
 }
 
 huanuco_area = { #5
-	809 810 811 2826
+	809 811 2826
 }
 
 beni_area = { #3 - Beni Savannah
@@ -3181,7 +3172,7 @@ south_carolina_area = { #5
 }
 
 american_georgia_area = { #3
-    881 929 930 931 2537 2538 2539 2540
+    881 930 931 2537 2539 2540
 }
 
 upper_american_georgia_area = { #3
@@ -3217,7 +3208,7 @@ choctaw_area = { #3
 }
 
 alabama_area = { #4
-	922 924 925 2531 2532
+	922 924 925 2532
 }
 
 kentucky_area = { #3
@@ -3273,7 +3264,7 @@ central_plains_area = { #5
 }
 
 high_plains_area = { #5
-	890 898 2672 2509
+	890 898 2672
 }
 
 dakota_area = { #5

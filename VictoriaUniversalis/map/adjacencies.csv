@@ -19,7 +19,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4779;2296;sea;1320;-1;-1;-1;-1;Gallipoli-Biga
 4110;369;sea;1282;-1;-1;-1;-1;Sutherland-Orkney
 97;100;sea;1269;-1;-1;-1;-1;Holland-Friesland
-96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
 1017;1818;sea;1390;-1;-1;-1;-1;Suo-Chikuzen
 1014;4186;sea;1390;-1;-1;-1;-1;Bungo-Iyo
 4186;1825;sea;1390;-1;-1;-1;-1;Aki-Iyo
@@ -36,10 +35,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 997;981;sea;1493;-1;-1;-1;-1;Chisedek-Taqamkuk
 1050;4658;sea;1379;-1;-1;-1;-1;Deren-Nanghaer
 1215;387;sea;1330;-1;-1;-1;-1;Tajura-Mocha
-112;1774;sea;1308;-1;-1;-1;-1;Venice-Treviso
-112;111;sea;1308;-1;-1;-1;-1;Venice-Friuli
-112;113;sea;1308;-1;-1;-1;-1;Venice-Ferrara
-112;4729;sea;1308;-1;-1;-1;-1;Venice-Padova
 54;4141;sea;1268;-1;-1;-1;-1;Stade-Dithmarschen
 1820;1021;sea;1391;-1;-1;-1;-1;Awa-Settsu
 4131;4193;sea;1387;-1;-1;-1;-1;Oshima-Mutsu

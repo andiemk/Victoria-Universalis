@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Trent"
+base_manpower = 0
+base_production = 0
+base_tax = 7
+is_city = yes
+hre = yes
+religion = catholic
+culture = venetian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 168.935
+	}
+	set_variable = {
+		which = mid_pop
+		value = 88.378
+	}
+	set_variable = {
+		which = upper_pop
+		value = 34.32
+	}
+}

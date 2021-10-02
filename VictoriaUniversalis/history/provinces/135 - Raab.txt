@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Raab"
+base_manpower = 0
+base_production = 0
+base_tax = 15
+is_city = yes
+hre = no
+religion = catholic
+culture = transdanubian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 338.488
+	}
+	set_variable = {
+		which = mid_pop
+		value = 187.64
+	}
+	set_variable = {
+		which = upper_pop
+		value = 72.524
+	}
+}

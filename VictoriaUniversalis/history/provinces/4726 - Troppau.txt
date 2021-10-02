@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Troppau"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = catholic
+culture = e_central_german
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 230.209
+	}
+	set_variable = {
+		which = mid_pop
+		value = 124.106
+	}
+	set_variable = {
+		which = upper_pop
+		value = 48.075
+	}
+}

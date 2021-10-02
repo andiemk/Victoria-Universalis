@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Unghvar"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = no
+religion = catholic
+culture = sw_ukrainian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 231.375
+	}
+	set_variable = {
+		which = mid_pop
+		value = 124.788
+	}
+	set_variable = {
+		which = upper_pop
+		value = 48.338
+	}
+}

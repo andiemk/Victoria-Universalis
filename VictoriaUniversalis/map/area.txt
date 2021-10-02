@@ -458,7 +458,7 @@ macaronesia_area = { #3
 ########################################
 
 venetia_area = { #5
-	108 111 112 1774 4729
+	108 111 112 1774 4729 4160 4763
 }
 
 lombardy_area = { #5
@@ -1083,7 +1083,7 @@ moldavia_area = { #5
 }
 
 transylvania_area = { #4 #Northern Transylvania
-	157 158 1952 4127
+	157 158 1952 4127 4155
 }
 
 southern_transylvania_area = { #3

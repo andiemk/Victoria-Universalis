@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Brünn"
+base_manpower = 0
+base_production = 0
+base_tax = 18
+is_city = yes
+hre = yes
+religion = catholic
+culture = moravian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 403.927
+	}
+	set_variable = {
+		which = mid_pop
+		value = 226.149
+	}
+	set_variable = {
+		which = upper_pop
+		value = 87.34
+	}
+}

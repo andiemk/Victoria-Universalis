@@ -65,13 +65,13 @@ province;red;green;blue;x;x
 64;9;32;255;Unterdonaukreis;x
 65;137;34;0;Munich;x
 66;9;36;64;Schleiz;x
-67;137;38;128;Franken;x
+67;137;38;128;Sanok;x
 68;9;40;192;Donaukreis;x
 69;137;42;255;Coburg;x
 70;10;44;0;Neckarkreis;x
 71;138;46;64;Rezatkreis;x
 72;10;48;128;Oberrheinkreis;x
-73;138;50;192;Tirol;x
+73;138;50;192;North Tyrol;x
 74;10;52;255;Birkenfeld;x
 75;138;54;0;Bas-Rhin;x
 76;10;56;64;Salzburg;x
@@ -102,16 +102,16 @@ province;red;green;blue;x;x
 101;142;106;64;Genoa;x
 102;14;108;128;Nice;x
 103;85;80;32;Turin;x
-104;14;112;255;Lombardia;x
+104;14;112;255;Milan;x
 105;143;114;0;Parma;x
 106;15;116;64;Modena;x
 107;143;118;128;Brescia;x
 108;15;120;192;Verona;x
 109;143;122;255;Mantua;x
-110;15;124;0;Trent;x
-111;143;126;64;Friuli;x
-112;16;128;128;Venezia;x
-113;144;130;192;Ferrara;x
+110;15;124;0;Trentino;x
+111;143;126;64;Udine;x
+112;16;128;128;Venice;x
+113;144;130;192;Rovigo;x
 114;16;132;255;Ravenna;x
 115;144;134;0;Livorno;x
 116;16;136;64;Florence;x
@@ -127,14 +127,14 @@ province;red;green;blue;x;x
 126;18;156;64;Malta;x
 127;146;158;128;Sassari;x
 128;18;32;192;Kärnten;x
-129;146;34;255;Krain;x
+129;146;34;255;Carniola;x
 130;18;36;0;Istria;x
-131;146;38;64;Croatia;x
-132;18;40;128;Steiermark;x
-133;147;42;192;Linz;x
-134;19;44;255;Wien;x
-135;147;46;0;Sopron;x
-136;19;48;64;Dalmatia;x
+131;146;38;64;Zagreb;x
+132;18;40;128;Upper Styria;x
+133;147;42;192;Krems;x
+134;19;44;255;Vienna;x
+135;147;46;0;Raab;x
+136;19;48;64;Spalato;x
 137;147;50;128;Ragusa;x
 138;19;52;192;Zeta;x
 139;147;54;255;Hum;x
@@ -150,17 +150,17 @@ province;red;green;blue;x;x
 149;149;74;255;Edirne;x
 150;21;76;0;Bulgaria;x
 151;149;78;64;Thrace;x
-152;21;80;128;Slavonia;x
-153;149;82;192;Pecs;x
-154;22;84;255;Ersekujvar;x
-155;150;86;0;Szolnok;x
-156;22;88;64;Banat;x
-157;150;90;128;Partium;x
-158;22;92;192;Transylvania;x
+152;21;80;128;Warasdin;x
+153;149;82;192;Pest;x
+154;22;84;255;Sohl;x
+155;150;86;0;Szegedin;x
+156;22;88;64;Temeswar;x
+157;150;90;128;Kreischgebiet;x
+158;22;92;192;Szeklerland;x
 159;150;94;255;Silistria;x
 160;22;96;0;Oltenia;x
 161;151;98;64;Wallachia;x
-162;23;100;128;Carpathia;x
+162;23;100;128;Kaschau;x
 163;151;102;192;Crete;x
 164;23;104;255;Naxos;x
 165;151;106;0;Bern;x
@@ -259,13 +259,13 @@ province;red;green;blue;x;x
 258;36;36;192;Lodz;x
 259;165;38;255;Sandomir;x
 260;37;40;0;Galicien;x
-261;165;42;64;Halicz;x
+261;165;42;64;Cernowitz;x
 262;37;44;128;Krakow;x
 263;165;46;192;Kattowitz;x
 264;37;48;255;Breslau;x
-265;165;50;0;Moravia;x
-266;38;52;64;Bohemia;x
-267;166;54;128;Plsen;x
+265;165;50;0;Brünn;x
+266;38;52;64;Prague;x
+267;166;54;128;Pilsen;x
 268;38;56;192;Bessarabia;x
 269;166;58;255;Podlasia;x
 270;38;60;0;Troki;x
@@ -927,7 +927,7 @@ province;red;green;blue;x;x
 926;13;88;32;Seminole;x
 927;141;90;79;Saint Augustine;x
 928;13;92;126;Tallahassee;x
-929;141;94;173;Muskogee;x
+929;141;94;173;Arwa;x
 930;13;96;32;Columbus;x
 931;141;98;79;Milledgeville;x
 932;14;100;126;Charleston;x
@@ -1316,7 +1316,7 @@ province;red;green;blue;x;x
 1315;66;200;250;Bay of Alexandrian;x
 1316;67;220;250;Palestinian Coast;x
 1317;68;250;250;Gulf of Cyprus;x
-1318;209;246;4;Spis;x
+1318;209;246;4;Zips;x
 1319;70;200;250;Aegean Sea;x
 1320;71;220;250;Sea of Marmara;x
 1321;72;250;250;Gulf of Varna;x
@@ -1765,12 +1765,12 @@ province;red;green;blue;x;x
 1764;69;112;32;Burgas;x
 1765;197;114;79;Nis;x
 1766;70;116;126;Kosovo;x
-1767;198;118;173;Osijek;x
-1768;70;120;32;Lienz;x
-1769;198;122;79;Görz;x
-1770;70;124;126;Ostmarch;x
-1771;198;126;173;Erz;x
-1772;70;128;32;Presburg;x
+1767;198;118;173;Slavonia;x
+1768;70;120;32;East Tyrol;x
+1769;198;122;79;Goritz;x
+1770;70;124;126;Korneuburg;x
+1771;198;126;173;Leitmeritz;x
+1772;70;128;32;Pressburg;x
 1773;199;130;79;Achaea;x
 1774;71;132;126;Treviso;x
 1775;199;134;173;Kiel;x
@@ -1861,8 +1861,8 @@ province;red;green;blue;x;x
 1860;211;50;79;Norfolk;x
 1861;83;52;126;Nottinghamshire;x
 1862;211;54;173;Cremona;x
-1863;84;56;32;Graz;x
-1864;212;58;79;Somogy;x
+1863;84;56;32;Central Styria;x
+1864;212;58;79;Branau;x
 1865;84;60;126;East Flanders;x
 1866;212;62;173;Namur;x
 1867;84;64;32;Cantal;x
@@ -1871,7 +1871,7 @@ province;red;green;blue;x;x
 1870;213;70;173;Zürich;x
 1871;85;72;32;Valais;x
 1872;86;84;126;Jagstkreis;x
-1873;85;76;126;Chur;x
+1873;85;76;126;Vorarlburg;x
 1874;213;78;173;Bremen;x
 1875;142;110;192;Cuneo;x
 1876;213;82;79;Frankfurt;x
@@ -1938,7 +1938,7 @@ province;red;green;blue;x;x
 1937;65;0;250;Memel;x
 1938;75;0;25;Wizna;x 
 1939;85;0;225;Leczyca;x
-1940;95;0;50;Belz;x
+1940;95;0;50;Zolkiew;x
 1941;105;0;200;Turov;x
 1942;110;0;75;Zhytomyr;x
 1943;115;0;175;Bratslav;x
@@ -1949,9 +1949,9 @@ province;red;green;blue;x;x
 1948;65;0;232;Bidar;x
 1949;66;0;236;Tirupati;x
 1950;67;0;240;Meghalaya;x
-1951;68;0;244;Hunyad;x
-1952;69;0;248;Maramaros;x
-1953;70;0;232;Szabolcs;x
+1951;68;0;244;Weissenburg;x
+1952;69;0;248;Subcarpathian Rus;x
+1953;70;0;232;Debrezin;x
 1954;71;0;236;Torontal;x
 1955;172;146;192;Kholmogory;x
 1956;73;0;244;Suzdal;x
@@ -2422,7 +2422,7 @@ province;red;green;blue;x;x
 2421;45;31;18;Juketau;x
 2422;163;72;18;Veda-Suvar;x
 2423;163;189;18;Alatyr;x
-2424;151;186;110;Peremyshl;x
+2424;151;186;110;Sambor;x
 2425;89;61;78;Naryan-Mar;x
 2426;34;74;126;Yamal;x
 2427;166;83;32;Ostyaki;x
@@ -2507,7 +2507,7 @@ province;red;green;blue;x;x
 2506;91;2;95;Green River;x
 2507;217;131;46;Laramie;x
 2508;49;141;246;Platte River;x
-2509;175;43;196;Utsehta;x
+2509;175;43;196;Schomodei;x
 2510;112;164;145;Knife River;x
 2511;238;244;95;Red River;x
 2512;10;121;46;Minnesota River;x
@@ -2529,14 +2529,14 @@ province;red;green;blue;x;x
 2528;34;122;246;Yazoo;x
 2529;160;221;196;Jackson;x
 2530;97;12;145;Biloxi;x
-2531;223;132;95;Napochi;x
+2531;223;132;95;Zala;x
 2532;55;131;46;Tuscaloosa;x
 2533;181;201;246;Chatot;x
 2534;118;131;196;Jacksonville;x
 2535;244;231;145;Calusa;x
 2536;16;19;95;Everglades;x
 2537;142;31;46;Hitchiti;x
-2538;79;131;246;Yamasee;x
+2538;79;131;246;Neutra;x
 2539;205;1;196;Savannah;x
 2540;37;6;145;Augusta;x
 2541;163;191;95;Pendleton;x
@@ -2954,21 +2954,21 @@ province;red;green;blue;x;x
 2953;236;222;116;Hjälmaren;x
 2954;29;59;159;Djerba;x
 2955;107;121;191;Ingolstadt;x
-2956;224;134;54;Straubing;x
-2957;70;224;54;Regensburg;x
+2956;224;134;54;Prerau;x
+2957;70;224;54;Chrudim;x
 2958;239;33;81;Eylau;x
-2959;255;133;59;Tarnow;x
-2960;61;201;123;Sadecki;x
-2961;241;249;20;Lwow;x
+2959;255;133;59;Rzeszow;x
+2960;61;201;123;Wadowice;x
+2961;241;249;20;Lemberg;x
 2962;208;213;71;Rowne;x
 2963;85;232;161;Schneidemühl;x
 2964;75;169;217;Magdeburg;x
 2965;52;253;37;Zwickau;x
 2966;243;1;69;Liegnitz;x
-2967;32;251;212;Eger;x
-2968;88;163;215;Budejovice;x
+2967;32;251;212;Elbogen;x
+2968;88;163;215;Prachin;x
 2969;121;225;101;Grünberg;x
-2970;255;239;163;Hradekco;x
+2970;255;239;163;Bunzlau;x
 2971;231;154;5;Hanover;x
 2972;249;240;1;Minden;x
 2973;255;162;53;Osnabrück;x
@@ -4123,10 +4123,10 @@ province;red;green;blue;x;x
 4122;43;136;207;Shenkursk;x
 4123;43;106;43;Birkaland;x
 4124;109;195;109;Kexholm;x
-4125;210;205;68;Szolnok;x
-4126;229;71;55;Bacs;x
-4127;146;198;217;Turda;x
-4128;142;201;142;Kiralyföld;x
+4125;210;205;68;Mischkolz;x
+4126;229;71;55;Bács;x
+4127;146;198;217;Klausenburg;x
+4128;142;201;142;Hermannstadt;x
 4129;53;164;53;Ust-Vym;x
 4130;222;47;96;Somerset;x
 4131;227;54;54;Nanbu;x
@@ -4153,12 +4153,12 @@ province;red;green;blue;x;x
 4152;113;153;0;Enare;x
 4153;225;223;21;Scandes;x
 4154;225;223;23;Pyrenees;x
-4155;225;223;25;Carpathians;x
+4155;225;223;25;Sathmar;x
 4156;225;223;27;Caucasus;x
 4157;225;223;29;Chamberry;x
 4158;117;150;26;Janjero;x
 4159;237;230;38;Alps2;x
-4160;224;220;117;Alps3;x
+4160;224;220;117;Belluno;x
 4161;208;202;39;Alps4;x
 4162;231;224;22;Alps5;x
 4163;220;144;23;Kronoberg;x
@@ -4234,11 +4234,11 @@ province;red;green;blue;x;x
 4233;31;182;184;Bahai Sea;x
 4234;45;117;167;Eastern Yellow Sea;x
 4235;144;225;232;Vistula Lagoon;x
-4236;255;0;0;Trencin;x
-4237;48;237;244;Olomouc;x
+4236;255;0;0;Trentschin;x
+4237;48;237;244;Olmütz;x
 4238;37;208;93;Waldenburg;x
 4239;239;10;10;Belgrade;x
-4240;89;225;36;Fejer;x
+4240;89;225;36;Stuhlweissenburg;x
 4241;203;127;53;Wenden;x
 4242;35;224;48;Ula;x
 4243;239;225;69;Toropets;x
@@ -4531,7 +4531,7 @@ province;red;green;blue;x;x
 4530;135;97;96;Birlad;x
 4531;56;160;69;Giurgiu;x
 4532;200;147;231;Severin;x
-4533;100;226;85;Wielun;x
+4533;100;226;85;Suczawa;x
 4534;171;8;15;Upita;x
 4535;181;39;199;Wilkimierz;x
 4536;125;175;248;Lida;x
@@ -4539,7 +4539,7 @@ province;red;green;blue;x;x
 4538;70;186;107;Chelm;x
 4539;79;252;132;Kremenets;x
 4540;174;173;70;Winnica;x
-4541;166;72;55;Drohobycz;x
+4541;166;72;55;Stanislawow;x
 4542;216;183;153;Lubnie;x
 4543;3;190;120;Rylsk;x
 4544;235;46;209;Bobrujsk;x
@@ -4705,29 +4705,29 @@ province;red;green;blue;x;x
 4704;213;232;183;Tirnovo;x
 4705;203;245;164;Gumulcine;x
 4706;94;32;199;Tolcu;x
-4707;86;92;128;Rosenheim;x
+4707;86;92;128;Tarnopol;x
 4708;136;148;128;Landshut;x
 4709;71;104;32;Passau;x
 4710;48;231;108;Hohenzollern;x
-4711;226;210;106;Donauwörth;x
+4711;226;210;106;Sandez;x
 4712;27;146;0;Seekreis;x
 4713;185;110;79;Schwarzwaldkreis;x
 4714;139;150;128;Mittelrheinkreis;x
-4715;135;130;221;Rothenburg;x
+4715;135;130;221;Tarnow;x
 4716;223;230;73;Gotha;x
 4717;184;22;22;Obermainkreis;x
-4718;8;175;128;Aschaffenburg;x
+4718;8;175;128;Kolomea;x
 4719;161;116;28;Ain;x
 4720;29;123;204;Geneva;x
 4721;192;98;255;Neuchâtel;x
 4722;33;178;172;Graubünden;x
 4723;63;106;212;Oppeln;x
-4724;28;140;117;Pardubice;x
-4725;182;22;144;Jindrichuv Hradec;x
-4726;14;8;38;Ostrava;x
+4724;28;140;117;Königgrätz;x
+4725;182;22;144;Budweis;x
+4726;14;8;38;Troppau;x
 4727;11;159;77;Aosta;x
 4728;23;128;70;Pontremoli;x
-4729;111;248;124;Padova;x
+4729;111;248;124;Padua;x
 4730;24;248;124;Bologna;x
 4731;50;217;66;Spoleto;x
 4732;216;236;203;Terracina;x
@@ -4749,19 +4749,19 @@ province;red;green;blue;x;x
 4748;170;79;248;Potsdam;x
 4749;39;120;238;Stargardland;x
 4750;167;101;106;Kruje;x
-4751;162;186;147;Cilli;x
-4752;232;189;231;Rijeka;x
-4753;144;219;143;Zadar;x
+4751;162;186;147;Lower Styria;x
+4752;232;189;231;Fiume;x
+4753;144;219;143;Zara;x
 4754;177;229;130;Kotor;x
 4755;224;202;77;Podrinje;x
-4756;163;165;183;Bjelovar;x
+4756;163;165;183;Kreutz;x
 4757;133;229;130;Kolubara;x
-4758;186;81;38;Etsch;x
-4759;220;54;163;Upper Carinthia;x
-4760;194;192;231;Innviertel;x
-4761;154;237;147;Traungau;x
-4762;243;138;80;Wienerwald;x
-4763;238;230;38;Alps6;x
+4758;186;81;38;South Tyrol;x
+4759;220;54;163;Carinthia;x
+4760;194;192;231;Upper Austria;x
+4761;154;237;147;Burgenland;x
+4762;243;138;80;Sankt Pölten;x
+4763;238;230;38;Vicenza;x
 4764;179;106;111;Jura;x
 4765;255;253;196;Seine-et-Marne;x
 4766;138;136;91;Meuse;x

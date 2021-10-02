@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Pisek"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+hre = yes
+religion = catholic
+culture = bohemian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 149.85
+	}
+	set_variable = {
+		which = mid_pop
+		value = 77.321
+	}
+	set_variable = {
+		which = upper_pop
+		value = 30.061
+	}
+}

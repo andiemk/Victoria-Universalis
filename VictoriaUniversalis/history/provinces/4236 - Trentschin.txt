@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Trentschin"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = no
+religion = catholic
+culture = w_slovak
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 234.855
+	}
+	set_variable = {
+		which = mid_pop
+		value = 126.824
+	}
+	set_variable = {
+		which = upper_pop
+		value = 49.121
+	}
+}

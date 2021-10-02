@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Graz"
+base_manpower = 0
+base_production = 0
+base_tax = 8
+is_city = yes
+hre = yes
+religion = catholic
+culture = austro_bavarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 188.938
+	}
+	set_variable = {
+		which = mid_pop
+		value = 100.011
+	}
+	set_variable = {
+		which = upper_pop
+		value = 38.8
+	}
+}

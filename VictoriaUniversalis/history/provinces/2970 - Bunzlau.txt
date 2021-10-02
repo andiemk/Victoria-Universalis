@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Jungbunzlau"
+base_manpower = 0
+base_production = 0
+base_tax = 10
+is_city = yes
+hre = yes
+religion = catholic
+culture = bohemian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 231.522
+	}
+	set_variable = {
+		which = mid_pop
+		value = 124.874
+	}
+	set_variable = {
+		which = upper_pop
+		value = 48.371
+	}
+}

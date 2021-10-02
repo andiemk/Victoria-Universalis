@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Szegedin"
+base_manpower = 0
+base_production = 0
+base_tax = 9
+is_city = yes
+hre = no
+religion = protestant
+culture = transylvanian_hungarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 202.799
+	}
+	set_variable = {
+		which = mid_pop
+		value = 108.091
+	}
+	set_variable = {
+		which = upper_pop
+		value = 41.91
+	}
+}

@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Weissenburg"
+base_manpower = 0
+base_production = 0
+base_tax = 12
+is_city = yes
+hre = no
+religion = catholic
+culture = transylvanian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 264.448
+	}
+	set_variable = {
+		which = mid_pop
+		value = 144.159
+	}
+	set_variable = {
+		which = upper_pop
+		value = 55.793
+	}
+}

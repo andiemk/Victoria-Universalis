@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Suczawa"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = no
+religion = orthodox
+culture = moldovian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 70.765
+	}
+	set_variable = {
+		which = mid_pop
+		value = 32.446
+	}
+	set_variable = {
+		which = upper_pop
+		value = 12.748
+	}
+}

@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Krems"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+hre = yes
+religion = catholic
+culture = austro_bavarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 135.546
+	}
+	set_variable = {
+		which = mid_pop
+		value = 69.068
+	}
+	set_variable = {
+		which = upper_pop
+		value = 26.881
+	}
+}

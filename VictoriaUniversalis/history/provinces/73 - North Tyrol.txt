@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Innsbruck"
+base_manpower = 0
+base_production = 0
+base_tax = 6
+is_city = yes
+hre = yes
+religion = catholic
+culture = austro_bavarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 129.269
+	}
+	set_variable = {
+		which = mid_pop
+		value = 65.458
+	}
+	set_variable = {
+		which = upper_pop
+		value = 25.49
+	}
+}

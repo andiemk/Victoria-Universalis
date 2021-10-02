@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Wadowice"
+base_manpower = 0
+base_production = 0
+base_tax = 13
+is_city = yes
+hre = no
+religion = catholic
+culture = lesser_polish
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 305.548
+	}
+	set_variable = {
+		which = mid_pop
+		value = 168.281
+	}
+	set_variable = {
+		which = upper_pop
+		value = 65.075
+	}
+}

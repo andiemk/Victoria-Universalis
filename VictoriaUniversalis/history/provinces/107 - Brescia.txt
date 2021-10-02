@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Brescia"
+base_manpower = 0
+base_production = 0
+base_tax = 8
+is_city = yes
+hre = no
+religion = catholic
+culture = lombard
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 193.253
+	}
+	set_variable = {
+		which = mid_pop
+		value = 102.525
+	}
+	set_variable = {
+		which = upper_pop
+		value = 39.767
+	}
+}

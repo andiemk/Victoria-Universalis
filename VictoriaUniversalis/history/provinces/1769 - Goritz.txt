@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Goritz"
+base_manpower = 0
+base_production = 0
+base_tax = 4
+is_city = yes
+hre = yes
+religion = catholic
+culture = slovene
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 103.912
+	}
+	set_variable = {
+		which = mid_pop
+		value = 50.976
+	}
+	set_variable = {
+		which = upper_pop
+		value = 19.905
+	}
+}

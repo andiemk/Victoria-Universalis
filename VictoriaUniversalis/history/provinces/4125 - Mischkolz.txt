@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Mischkolz"
+base_manpower = 0
+base_production = 0
+base_tax = 12
+is_city = yes
+hre = no
+religion = catholic
+culture = n_hungarian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 283.539
+	}
+	set_variable = {
+		which = mid_pop
+		value = 155.358
+	}
+	set_variable = {
+		which = upper_pop
+		value = 60.103
+	}
+}

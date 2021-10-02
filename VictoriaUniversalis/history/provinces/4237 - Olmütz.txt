@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Olmütz"
+base_manpower = 0
+base_production = 0
+base_tax = 11
+is_city = yes
+hre = yes
+religion = catholic
+culture = moravian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 245.919
+	}
+	set_variable = {
+		which = mid_pop
+		value = 133.301
+	}
+	set_variable = {
+		which = upper_pop
+		value = 51.614
+	}
+}

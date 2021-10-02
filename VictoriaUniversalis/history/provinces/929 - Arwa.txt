@@ -1,0 +1,25 @@
+add_core = HAB
+owner = HAB
+controller = HAB
+capital = "Unterkubin"
+base_manpower = 0
+base_production = 0
+base_tax = 5
+is_city = yes
+hre = no
+religion = catholic
+culture = central_slovak
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 123.521
+	}
+	set_variable = {
+		which = mid_pop
+		value = 62.16
+	}
+	set_variable = {
+		which = upper_pop
+		value = 24.218
+	}
+}

@@ -1,0 +1,783 @@
+vu_pow = {
+	set_variable = {
+		which = exponent
+		which = $EXPONENT$
+	}
+	set_variable = {
+		which = base
+		which = $BASE$
+	}
+	set_variable = {
+		which = pow
+		which = $BASE$
+	}
+	if = {
+		NOT = {
+			check_variable = {
+				which = exponent
+				value = 0
+			}
+		}
+		multiply_variable = {
+			which = exponent
+			value = -1
+		}
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = exponent
+				value = 2
+			}
+		}
+		change_variable = {
+			which = exponent
+			value = -1
+		}
+		multiply_variable = {
+			which = pow
+			which = base
+		}
+	}
+	set_variable = {
+		which = exponent
+		which = $EXPONENT$
+	}
+	if = {
+		NOT = {
+			check_variable = {
+				which = exponent
+				value = 0
+			}
+		}
+		set_variable = {
+			which = pow_output
+			value = 1
+		}
+		divide_variable = {
+			which = pow_output
+			which = pow
+		}
+	}
+	else = {
+		set_variable = {
+			which = pow_output
+			which = pow
+		}
+	}
+	
+}
+vu_getbinary = {
+	set_variable = { which = $INPUT$_binary7 	   value = 0 } # 2^7
+	set_variable = { which = $INPUT$_binary6 	   value = 0 } # 2^6
+	set_variable = { which = $INPUT$_binary5 	   value = 0 } # 2^5
+	set_variable = { which = $INPUT$_binary4 	   value = 0 } # 2^4
+	set_variable = { which = $INPUT$_binary3 	   value = 0 } # 2^3
+	set_variable = { which = $INPUT$_binary2 	   value = 0 } # 2^2
+	set_variable = { which = $INPUT$_binary1	   value = 0 } # 2^1
+	set_variable = { which = $INPUT$_binary0 	   value = 0 } # 2^0
+	set_variable = { which = $INPUT$_binaryminus1  value = 0 } # 2^-1
+	set_variable = { which = $INPUT$_binaryminus2  value = 0 } # 2^-2
+	set_variable = { which = $INPUT$_binaryminus3  value = 0 } # 2^-3
+	set_variable = { which = $INPUT$_binaryminus4  value = 0 } # 2^-4
+	set_variable = { which = $INPUT$_binaryminus5  value = 0 } # 2^-5
+	set_variable = { which = $INPUT$_binaryminus6  value = 0 } # 2^-6
+	set_variable = { which = $INPUT$_binaryminus7  value = 0 } # 2^-7
+	set_variable = { which = $INPUT$_binaryminus8  value = 0 } # 2^-8
+	set_variable = { which = $INPUT$_binaryminus9  value = 0 } # 2^-9
+	set_variable = { which = $INPUT$_binaryminus10 value = 0 } # 2^-10
+
+	set_variable = {
+		which = inputVar
+		which = $INPUT$
+	}
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 128
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary7
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 128
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary7
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 64
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary6
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 64
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary6
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 32
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary5
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 32
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary5
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 16
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary4
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 16
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary4
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 8
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary3
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 8
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary3
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary2
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 4
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary2
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 2
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary1
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 2
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary1
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binary0
+			value = 1
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 1
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binary0
+			value = 0
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.5
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus1
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.5
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus1
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.25
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus2
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.25
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus2
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.125
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus3
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.125
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus3
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.0625
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus4
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.0625
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus4
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.03125
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus5
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.03125
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus5
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.015625
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus6
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.015625
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus6
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.0078125
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus7
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.0078125
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus7
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.00390625
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus8
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.00390625
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus8
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.001953125
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus9
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.001953125
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus9
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+	
+	set_variable = {
+		which = inputVarInit
+		which = inputVar
+	}
+	divide_variable = {
+		which = inputVar
+		value = 0.0009765625
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inputVar
+				value = 1
+			}
+		}
+		set_variable = {
+			which = $INPUT$_binaryminus10
+			value = 1
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+		subtract_variable = {
+			which = inputVar
+			value = 0.0009765625
+		}
+	}
+	else = {
+		set_variable = {
+			which = $INPUT$_binaryminus10
+			value = 0
+		}
+		set_variable = {
+			which = inputVar
+			which = inputVarInit
+		}
+	}
+}

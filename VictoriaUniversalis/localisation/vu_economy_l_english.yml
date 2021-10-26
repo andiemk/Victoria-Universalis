@@ -1,97 +1,94 @@
 ﻿l_english:
- production_grain_display: "Grain Production"
- desc_production_grain_display: "Grain Raw Good:\n   Production: §T[Root.vu_grain_prod.GetValue]§!\n   Demand: §T[Root.vu_grain_dmnd.GetValue]§!\n   Price: §Y[Root.vu_grain_p.GetValue]§!\n   Value: §G[Root.vu_grain_val.GetValue]§!"
- production_coal_display: "Coal Production"
- desc_production_coal_display: "Coal Raw Good:\n   Production: §T[Root.vu_coal_prod.GetValue]§!\n   Demand: §T[Root.vu_coal_dmnd.GetValue]§!\n   Price: §Y[Root.vu_coal_p.GetValue]§!\n   Value: §G[Root.vu_coal_val.GetValue]§!"
  
- provincial_demand_display: "Province Demand"
- desc_provincial_demand_display: "Province Demand:\n   Grain: Demand [Root.vu_grain_dmnd.GetValue]\n   Coal: Demand [Root.vu_coal_dmnd.GetValue]"
+ fruits_veggies_display: "Orchard"
+ desc_fruits_veggies_display: "Fruits Produced: §T[Root.fruits_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.fruits_price.GetValue]§!¤"
  
+ fruits_veggies_display: "Vegetable Farm"
+ desc_fruits_veggies_display: "Vegetables Produced: §T[Root.veggies_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.veggies_price.GetValue]§!¤"
+
+ sulfur_display: "Sulfur Mine"
+ desc_sulfur_display: "Sulfur Produced: §T[Root.sulfur_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.sulfur_price.GetValue]§!¤"
+
+ oil_display: "Oil Field"
+ desc_oil_display: "Oil Produced: §T[Root.oil_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.oil_price.GetValue]§!¤"
+
+ timber_display: "Timber Farm"
+ desc_timber_display: "Timber Produced: §T[Root.timber_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.timber_price.GetValue]§!¤"
+
+ rubber_display: "Rubber Plantation"
+ desc_rubber_display: "Rubber Produced: §T[Root.rubber_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.rubber_price.GetValue]§!¤"
+
+ opium_display: "Opium Plantation"
+ desc_opium_display: "Opium Produced: §T[Root.opium_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.opium_price.GetValue]§!¤"
+
+ iron_display: "Iron Mine"
+ desc_iron_display: "Iron Produced: §T[Root.iron_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.iron_price.GetValue]§!¤"
+
+ fish_display: "Fishery"
+ desc_fish_display: "Fish Produced: §T[Root.fish_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.fish_price.GetValue]§!¤"
+
+ fur_display: "Fur Hunting Grounds"
+ desc_fur_display: "Fur Produced: §T[Root.fur_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.fur_price.GetValue]§!¤"
+
+ grain_display: "Grain Farm"
+ desc_grain_display: "Grain Produced: §T[Root.grain_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.grain_price.GetValue]§!¤ [Root.total_trade_value_binary0.GetValue] [Root.total_trade_value.GetValue]"
+
+ livestock_display: "Ranch"
+ desc_livestock_display: "Livestock Produced: §T[Root.livestock_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.livestock_price.GetValue]§!¤"
+
+ salt_display: "Salt Mine"
+ desc_salt_display: "Salt Produced: §T[Root.salt_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.salt_price.GetValue]§!¤"
+
+ wool_display: "Sheep Ranch"
+ desc_wool_display: "Wool Produced: §T[Root.wool_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.wool_price.GetValue]§!¤"
+
+ copper_display: "Copper Mine"
+ desc_copper_display: "Copper Produced: §T[Root.copper_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
  
- 
- fruits_veggies_display: "Fruits and Vegetables"
- desc_fruits_veggies_display: "Fruits and Vegetables Produced: §T[Root.fruits_veggies_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.fruits_veggies_price.GetValue]§!¤"
-
- sulfur_display: "Sulfur"
- desc_sulfur_display: "Sulfur Produced: §T[Root.sulfur_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.sulfur_price.GetValue]§!¤"
-
- oil_display: "Oil"
- desc_oil_display: "Oil Produced: §T[Root.oil_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.oil_price.GetValue]§!¤"
-
- timber_display: "Timber"
- desc_timber_display: "Timber Produced: §T[Root.timber_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.timber_price.GetValue]§!¤"
-
- rubber_display: "Rubber"
- desc_rubber_display: "Rubber Produced: §T[Root.rubber_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.rubber_price.GetValue]§!¤"
-
- opium_display: "Opium"
- desc_opium_display: "Opium Produced: §T[Root.opium_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.opium_price.GetValue]§!¤"
-
- iron_display: "Iron"
- desc_iron_display: "Iron Produced: §T[Root.iron_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.iron_price.GetValue]§!¤"
-
- fish_display: "Fish"
- desc_fish_display: "Fish Produced: §T[Root.fish_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.fish_price.GetValue]§!¤"
-
- fur_display: "Fur"
- desc_fur_display: "Fur Produced: §T[Root.fur_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.fur_price.GetValue]§!¤"
-
- grain_display: "Grain"
- desc_grain_display: "Grain Produced: §T[Root.grain_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.grain_price.GetValue]§!¤"
-
- livestock_display: "Livestock"
- desc_livestock_display: "Livestock Produced: §T[Root.livestock_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.livestock_price.GetValue]§!¤"
-
- salt_display: "Salt"
- desc_salt_display: "Salt Produced: §T[Root.salt_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.salt_price.GetValue]§!¤"
-
- wool_display: "Wool"
- desc_wool_display: "Wool Produced: §T[Root.wool_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.wool_price.GetValue]§!¤"
-
- copper_display: "Copper"
- desc_copper_display: "Copper Produced: §T[Root.copper_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
+ copper_display: "Aluminum Mine"
+ desc_copper_display: "Aluminum Produced: §T[Root.copper_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
 
  spices_display: "Spices"
- desc_spices_display: "Spices Produced: §T[Root.spices_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.spices_price.GetValue]§!¤"
+ desc_spices_display: "Spices Produced: §T[Root.spices_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.spices_price.GetValue]§!¤"
 
- tea_display: "Tea"
- desc_tea_display: "Tea Produced: §T[Root.tea_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.tea_price.GetValue]§!¤"
+ tea_display: "Tea Plantation"
+ desc_tea_display: "Tea Produced: §T[Root.tea_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.tea_price.GetValue]§!¤"
 
- cocoa_display: "Cocoa"
- desc_cocoa_display: "Cocoa Produced: §T[Root.cocoa_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.cocoa_price.GetValue]§!¤"
+ cocoa_display: "Cocoa Plantation"
+ desc_cocoa_display: "Cocoa Produced: §T[Root.cocoa_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.cocoa_price.GetValue]§!¤"
 
- coffee_display: "Coffee"
- desc_coffee_display: "Coffee Produced: §T[Root.coffee_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.coffee_price.GetValue]§!¤"
+ coffee_display: "Coffee Plantation"
+ desc_coffee_display: "Coffee Produced: §T[Root.coffee_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.coffee_price.GetValue]§!¤"
 
- cotton_display: "Cotton"
- desc_cotton_display: "Cotton Produced: §T[Root.cotton_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.cotton_price.GetValue]§!¤"
+ cotton_display: "Cotton Plantation"
+ desc_cotton_display: "Cotton Produced: §T[Root.cotton_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.cotton_price.GetValue]§!¤"
 
- sugar_display: "Sugar"
- desc_sugar_display: "Sugar Produced: §T[Root.sugar_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.sugar_price.GetValue]§!¤"
+ sugar_display: "Sugar Plantation"
+ desc_sugar_display: "Sugar Produced: §T[Root.sugar_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.sugar_price.GetValue]§!¤"
 
- tobacco_display: "Tobacco"
- desc_tobacco_display: "Tobacco Produced: §T[Root.tobacco_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.tobacco_price.GetValue]§!¤"
+ tobacco_display: "Tobacco Plantation"
+ desc_tobacco_display: "Tobacco Produced: §T[Root.tobacco_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.tobacco_price.GetValue]§!¤"
 
- dyes_display: "Dyes"
- desc_dyes_display: "Dyes Produced: §T[Root.dyes_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.dyes_price.GetValue]§!¤"
+ dyes_display: "Dye Plantation"
+ desc_dyes_display: "Dyes Produced: §T[Root.dyes_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.dyes_price.GetValue]§!¤"
 
- tropical_wood_display: "Tropical Wood"
- desc_tropical_wood_display: "Tropical Wood Produced: §T[Root.tropical_wood_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.tropical_wood_price.GetValue]§!¤"
+ tropical_wood_display: "Tropical Tree Farm"
+ desc_tropical_wood_display: "Tropical Wood Produced: §T[Root.tropical_wood_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.tropical_wood_price.GetValue]§!¤"
 
- gems_display: "Gems"
- desc_gems_display: "Gems Produced: §T[Root.gems_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.gems_price.GetValue]§!¤"
+ gems_display: "Gemstone Mine"
+ desc_gems_display: "Gems Produced: §T[Root.gems_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.gems_price.GetValue]§!¤"
 
- coal_display: "Coal"
- desc_coal_display: "Coal Produced: §T[Root.coal_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.coal_price.GetValue]§!¤"
+ coal_display: "Coal Mine"
+ desc_coal_display: "Coal Produced: §T[Root.coal_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.coal_price.GetValue]§!¤"
 
- ivory_display: "Ivory"
- desc_ivory_display: "Ivory Produced: §T[Root.ivory_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.ivory_price.GetValue]§!¤"
+ ivory_display: "Ivory Hunting Grounds"
+ desc_ivory_display: "Ivory Produced: §T[Root.ivory_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.ivory_price.GetValue]§!¤"
 
- slaves_display: "Slaves"
- desc_slaves_display: "Slaves Produced: §T[Root.slaves_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.slaves_price.GetValue]§!¤"
+ slaves_display: "Slave Market"
+ desc_slaves_display: "Enslaved persons: §T[Root.slaves_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.slaves_price.GetValue]§!¤"
 
- silk_display: "Silk"
- desc_silk_display: "Silk Produced: §T[Root.silk_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.silk_price.GetValue]§!¤"
+ silk_display: "Silkworm Farm"
+ desc_silk_display: "Silk Produced: §T[Root.silk_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.silk_price.GetValue]§!¤"
 
- assorted_minerals_display: "Assorted Minerals"
- desc_assorted_minerals_display: "Assorted Minerals Produced: §T[Root.assorted_minerals_amount.GetValue]§!\nCurrent Price: §Y[Root.Owner.assorted_minerals_price.GetValue]§!¤"
+ assorted_minerals_display: "Mineral Mine"
+ desc_assorted_minerals_display: "Assorted Minerals Produced: §T[Root.assorted_minerals_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.assorted_minerals_price.GetValue]§!¤"

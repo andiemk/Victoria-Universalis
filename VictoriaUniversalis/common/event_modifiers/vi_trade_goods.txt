@@ -1,0 +1,137 @@
+trade_value_binary7 = { trade_value = 128 }
+trade_value_binary6 = { trade_value = 64 }
+trade_value_binary5 = { trade_value= 32 }
+trade_value_binary4 = { trade_value = 16 }
+trade_value_binary3 = { trade_value = 8 }
+trade_value_binary2 = { trade_value = 4 }
+trade_value_binary1 = { trade_value = 2 }
+trade_value_binary0 = { trade_value = 1 }
+trade_value_binaryminus1 = { trade_value = 0.5 }
+trade_value_binaryminus2 = { trade_value = 0.25 }
+trade_value_binaryminus3 = { trade_value = 0.125 }
+trade_value_binaryminus4 = { trade_value = 0.0625 }
+trade_value_binaryminus5 = { trade_value = 0.03125 }
+trade_value_binaryminus6 = { trade_value = 0.015625 }
+trade_value_binaryminus7 = { trade_value = 0.0078125 }
+trade_value_binaryminus8 = { trade_value = 0.00390625 }
+trade_value_binaryminus9 = { trade_value = 0.001953125 }
+trade_value_binaryminus10 = { trade_value = 0.0009765625 }
+
+
+fruits_display = { #price = 3.0
+	picture = "trade_good_fruits_veggies"
+}
+veggies_display = { #price = 3.0
+	picture = "trade_good_fruits_veggies"
+}
+sulfur_display = { #price = 3.3
+	picture = "trade_good_sulfur"
+}
+
+oil_display = { #price = 10.0
+	picture = "trade_good_oil"
+}
+
+timber_display = { #price = 2.0
+	picture = "trade_good_timber"
+}
+
+rubber_display = { #price = 4.0
+	picture = "trade_good_rubber"
+}
+
+opium_display = { #price = 4.5
+	picture = "trade_good_opium"
+}
+
+iron_display = { #price = 4.5
+	picture = "trade_good_iron"
+}
+
+fish_display = { #price = 2.0
+	picture = "trade_good_fish"
+}
+
+fur_display = { #price = 3.5
+	picture = "trade_good_fur"
+}
+
+grain_display = { #price = 2.0
+	picture = "trade_good_grain"
+}
+
+livestock_display = { #price = 3.5
+	picture = "trade_good_livestock"
+}
+
+salt_display = { #price = 3.3
+	picture = "trade_good_salt"
+}
+
+wool_display = { #price = 2.9
+	picture = "trade_good_wool"
+}
+
+copper_display = { #price = 3.45
+	picture = "trade_good_copper"
+}
+
+aluminum_display = { #price = 3.45
+	picture = "trade_good_copper"
+}
+
+spices_display = { #price = 3.3
+	picture = "trade_good_spices"
+}
+
+tea_display = { #price = 3.0
+	picture = "trade_good_tea"
+}
+
+cocoa_display = { #price = 5.4
+	picture = "trade_good_cocoa"
+}
+
+coffee_display = { #price = 3.3
+	picture = "trade_good_coffee"
+}
+
+cotton_display = { #price = 5.0
+	picture = "trade_good_cotton"
+}
+
+sugar_display = { #price = 5.3
+	picture = "trade_good_sugar"
+}
+
+tobacco_display = { #price = 4.5
+	picture = "trade_good_tobacco"
+}
+
+dyes_display = { #price = 4.0
+	picture = "trade_good_dyes"
+}
+
+gems_display = { #price = 3.0
+	picture = "trade_good_gems"
+}
+
+coal_display = { #price = 7.0
+	picture = "trade_good_coal"
+}
+
+ivory_display = { #price = 5.0
+	picture = "trade_good_ivory"
+}
+
+slaves_display = { #price = 2.2
+	picture = "trade_good_slaves"
+}
+
+silk_display = { #price = 5.0
+	picture = "trade_good_silk"
+}
+
+assorted_minerals_display = { #price = 4.0
+	picture = "trade_good_assorted_minerals"
+}

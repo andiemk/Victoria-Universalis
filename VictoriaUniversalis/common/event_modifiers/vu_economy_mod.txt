@@ -1,6 +1,0 @@
-production_grain_display = {
-	picture = "trade_goods_grain"
-}
-production_coal_display = {
-	picture = "trade_goods_coal"
-}

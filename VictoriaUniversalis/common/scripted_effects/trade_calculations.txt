@@ -1,19 +1,118 @@
 set_prices = {
-	set_variable = {	which = grain_price	value = 2.00	}
-	set_variable = {	which = coal_price	value = 7.00	}
+	set_variable = {	which = fruits_price	value = 2.50	}
+	set_variable = {	which = veggies_price	value = 2.00	}
+	set_variable = {	which = sulfur_price			value = 3.00	}
+	set_variable = {	which = precious_metals_price	value = 9.00	}
+	set_variable = {	which = oil_price				value = 8.25	}
+	set_variable = {	which = timber_price			value = 2.00	}
+	set_variable = {	which = rubber_price			value = 2.50	}
+	set_variable = {	which = opium_price				value = 2.50	}
+	set_variable = {	which = iron_price				value = 3.00	}
+	set_variable = {	which = fish_price				value = 2.50	}
+	set_variable = {	which = fur_price				value = 2.00	}
+	set_variable = {	which = grain_price				value = 2.50	}
+	set_variable = {	which = livestock_price			value = 2.00	}
+	set_variable = {	which = salt_price				value = 3.00	}
+	set_variable = {	which = wool_price				value = 2.50	}
+	set_variable = {	which = copper_price			value = 3.00	}
+	set_variable = {	which = aluminum_price			value = 3.00	}
+	set_variable = {	which = spices_price			value = 4.00	}
+	set_variable = {	which = tea_price				value = 2.00	}
+	set_variable = {	which = cocoa_price				value = 5.00	}
+	set_variable = {	which = coffee_price			value = 4.00	}
+	set_variable = {	which = cotton_price			value = 3.00	}
+	set_variable = {	which = sugar_price				value = 3.00	}
+	set_variable = {	which = tobacco_price			value = 3.00	}
+	set_variable = {	which = dyes_price				value = 4.00	}
+	set_variable = {	which = tropical_wood_price		value = 2.00	}
+	set_variable = {	which = gems_price				value = 4.00	}
+	set_variable = {	which = coal_price				value = 7.00	}
+	set_variable = {	which = ivory_price				value = 5.30	}
+	set_variable = {	which = slaves_price			value = 2.00	}
+	set_variable = {	which = silk_price				value = 10.00	}
+	set_variable = {	which = assorted_minerals_price	value = 3.00	}	
 }
-calculate_total_goods = {
+remove_good_value_modifiers = {
+	remove_province_modifier = trade_value_binary7
+	remove_province_modifier = trade_value_binary6
+	remove_province_modifier = trade_value_binary5
+	remove_province_modifier = trade_value_binary4
+	remove_province_modifier = trade_value_binary3
+	remove_province_modifier = trade_value_binary2
+	remove_province_modifier = trade_value_binary1
+	remove_province_modifier = trade_value_binary0
+	remove_province_modifier = trade_value_binaryminus1
+	remove_province_modifier = trade_value_binaryminus2
+	remove_province_modifier = trade_value_binaryminus3
+	remove_province_modifier = trade_value_binaryminus4
+	remove_province_modifier = trade_value_binaryminus5
+	remove_province_modifier = trade_value_binaryminus6
+	remove_province_modifier = trade_value_binaryminus7
+	remove_province_modifier = trade_value_binaryminus8
+	remove_province_modifier = trade_value_binaryminus9
+	remove_province_modifier = trade_value_binaryminus10
+
+}
+calculate_allgoods_effect = {
+	set_variable = {	which = total_trade_value	value = 0	}
+	remove_good_value_modifiers = yes
+	calculate_goods_produced = yes
+	calculate_rawgood_effect = { GOOD = fruits }
+	calculate_rawgood_effect = { GOOD = veggies }
+	calculate_rawgood_effect = { GOOD = sulfur }
+	calculate_rawgood_effect = { GOOD = precious_metals }
+	calculate_rawgood_effect = { GOOD = oil }
+	calculate_rawgood_effect = { GOOD = timber }
+	calculate_rawgood_effect = { GOOD = rubber }
+	calculate_rawgood_effect = { GOOD = opium }
+	calculate_rawgood_effect = { GOOD = iron }
+	calculate_rawgood_effect = { GOOD = fish }
+	calculate_rawgood_effect = { GOOD = fur }
+	calculate_rawgood_effect = { GOOD = grain }
+	calculate_rawgood_effect = { GOOD = livestock }
+	calculate_rawgood_effect = { GOOD = salt }
+	calculate_rawgood_effect = { GOOD = wool }
+	calculate_rawgood_effect = { GOOD = copper }
+	calculate_rawgood_effect = { GOOD = aluminum }
+	calculate_rawgood_effect = { GOOD = spices }
+	calculate_rawgood_effect = { GOOD = tea }
+	calculate_rawgood_effect = { GOOD = cocoa }
+	calculate_rawgood_effect = { GOOD = coffee }
+	calculate_rawgood_effect = { GOOD = cotton }
+	calculate_rawgood_effect = { GOOD = sugar }
+	calculate_rawgood_effect = { GOOD = tobacco }
+	calculate_rawgood_effect = { GOOD = dyes }
+	calculate_rawgood_effect = { GOOD = tropical_wood }
+	calculate_rawgood_effect = { GOOD = gems }
+	calculate_rawgood_effect = { GOOD = coal }
+	calculate_rawgood_effect = { GOOD = ivory }
+	calculate_rawgood_effect = { GOOD = slaves }
+	calculate_rawgood_effect = { GOOD = silk }
+	calculate_rawgood_effect = { GOOD = assorted_minerals }
+	
+	#calculate_allindustrygoods_effect = yes
+	apply_price_modifiers = yes
+}
+
+calculate_allindustrygoods_effect = {
+	
+}
+
+calculate_goods_produced = {
 	set_variable = {	which = production_modifiers	value = 0	}
 	set_variable = {	which = global_production_modifiers	value = 0	}
-	set_variable = {	which = province_labor_force	value = 0	}
+	set_variable = {	which = rural_production	value = 0	}
+	set_variable = {	which = industrial_production	value = 0	}
+	set_variable = {	which = industrial_goods_produced	value = 0	}
+	set_variable = {	which = rural_goods_produced	value = 0	}
 	set_variable = {	which = province_goods_produced	value = 0	}
 	
 	export_to_variable = {
-		which = province_factories
+		which = industrial_production
 		value = base_production
 	}
 	export_to_variable = {
-		which = province_labor_force
+		which = rural_production
 		value = base_tax
 	}
 	export_to_variable = {
@@ -25,7 +124,6 @@ calculate_total_goods = {
 		value = modifier:global_trade_goods_size_modifier
 		who = owner
 	}
-
 	change_variable = {
 		which = production_modifiers
 		which = global_production_modifiers
@@ -34,73 +132,210 @@ calculate_total_goods = {
 		which = production_modifiers
 		value = 1
 	}
-	set_variable = {	
-		which = province_goods_produced	
-		which = province_labor_force	
+	change_variable = {
+		which = rural_goods_produced
+		which = rural_production
 	}
+	change_variable = {
+		which = industrial_goods_produced
+		which = industrial_production
+	}	
 	multiply_variable = {
-		which = province_goods_produced
+		which = industrial_goods_produced
 		value = 0.2
 	}
 	multiply_variable = {
-		which = province_goods_produced
+		which = rural_goods_produced
+		value = 0.2
+	}
+	multiply_variable = {
+		which = industrial_goods_produced
 		which = production_modifiers
+	}
+	multiply_variable = {
+		which = rural_goods_produced
+		which = production_modifiers
+	}
+	
+	change_variable = {	
+		which = province_goods_produced	
+		which = rural_production	
+	}
+	change_variable = {
+		which = province_goods_produced
+		which = industrial_production
 	}
 
 }
-calculate_good_amount_effect = {
-	set_variable = {	which = $GOOD$_amount	value = 0	}
+calculate_rawgood_effect = {
+	set_variable = {	which = $GOOD$_produced	value = 0	}
+	set_variable = {	which = $GOOD$_trade_value	value = 0	}
 	
 	if = {
 		limit = {
 			has_province_modifier = $GOOD$_display	
 		}
+		set_variable = {
+			which = $GOOD$_price
+			which = owner
+		}
 		change_variable = {
-			which = $GOOD$_amount
-			which = province_goods_produced
+			which = $GOOD$_produced
+			which = rural_goods_produced
 		}
-		if = {
-			limit = {
-				has_province_modifier = $GOOD$_20
-			}
-			multiply_variable = {
-				which = $GOOD$_amount
-				value = 0.2
-			}
+		
+		change_variable = {
+			which = $GOOD$_trade_value
+			which = $GOOD$_produced
 		}
-		if = {
-			limit = {
-				has_province_modifier = $GOOD$_40
-			}
-			multiply_variable = {
-				which = $GOOD$_amount
-				value = 0.4
-			}
+
+		multiply_variable = {
+			which = $GOOD$_trade_value
+			which = $GOOD$_price
 		}
-		if = {
-			limit = {
-				has_province_modifier = $GOOD$_60
-			}
-			multiply_variable = {
-				which = $GOOD$_amount
-				value = 0.6
-			}
+		change_variable = {
+			which = total_trade_value
+			which = $GOOD$_trade_value
 		}
-		if = {
-			limit = {
-				has_province_modifier = $GOOD$_80
-			}
-			multiply_variable = {
-				which = $GOOD$_amount
-				value = 0.8
-			}
+
+		# Refresh	
+		remove_province_modifier = $GOOD$_display
+		add_permanent_province_modifier = {
+			name = $GOOD$_display
+			duration = -1
 		}
 	}
-
-	# Refresh	
-	remove_province_modifier = $GOOD$_display
-	add_permanent_province_modifier = {
-		name = $GOOD$_display
-		duration = -1
+}
+calculate_industrygood_effect = {
+}
+apply_price_modifiers = {
+	vu_getbinary = {
+		INPUT = total_trade_value
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary7 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary7
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary6 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary6
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary5 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary5
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary4 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary5
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary3 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary3
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary2 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary2
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary1 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary1
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binary0 value = 1 } }
+		add_province_modifier = {
+			name = trade_value_binary0
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus1 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus1
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus2 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus2
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus3 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus3
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus4 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus4
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus5 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus5
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus6 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus6
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus7 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus7
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus8 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus8
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus9 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus9
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = { limit = { is_variable_equal = { which = total_trade_value_binaryminus10 value = 1 } }
+		add_province_modifier = { #
+			name = trade_value_binaryminus10
+			duration = -1
+			hidden = yes
+		}
 	}
 }

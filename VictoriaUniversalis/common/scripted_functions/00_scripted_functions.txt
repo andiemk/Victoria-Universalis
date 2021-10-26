@@ -83,27 +83,18 @@ can_abandon_state = {
 }
 
 can_improve_tax = {
-	condition = {
-		potential = {
-			always = yes
-		}
-		allow = {
-			always = no
-		}
-	}
+	#condition = {
+	#	potential = {
+	#		always = yes
+	#	}
+	#	allow = {
+	#		always = no
+	#	}
+	#}
 }
 
 can_improve_production = {
-	condition = {
-		potential = {
-			NOT = { technology_group = western } #Temporary
-		}
-		allow = {
-			FROM = {
-				treasury = 100
-			}
-		}
-	}
+
 }
 
 can_improve_manpower = {

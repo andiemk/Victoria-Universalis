@@ -70,3 +70,7 @@ NDefines.NFrontend.CREDITS_POS_Z = 2021.0
 NDefines.NFrontend.CREDITS_LOOK_X = 2916.0
 NDefines.NFrontend.CREDITS_LOOK_Y = 21.0
 NDefines.NFrontend.CREDITS_LOOK_Z = 2251.0
+
+-- Custom defines for graphics:
+
+NDefines.NGraphics.PROVINCE_NAME_DRAW_DISTANCE = 400.0

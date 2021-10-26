@@ -312,7 +312,8 @@ float3 calculate_secondary_compressed( float2 uv, float3 vColor, float2 vPos )
 
 bool GetFoWAndTI( float3 PrePos, out float4 vFoWColor, out float4 vMonsoonColor, out float TI, out float4 vTIColor )
 {
-	vFoWColor = GetFoWColor( PrePos, FoWTexture);	
+	vFoWColor = GetFoWColor( PrePos, FoWTexture);
+	//vFoWColor = float4(GetFoWColor( PrePos, FoWTexture).r,GetFoWColor( PrePos, FoWTexture).r,GetFoWColor( PrePos, FoWTexture).r,0.0f);	
 	vMonsoonColor = GetFoWColor( PrePos, MudTexture);
 	TI = GetTI( vFoWColor );
 	if ( PrePos.x < 3200.0f && PrePos.z > 1280.0f)
@@ -449,8 +450,8 @@ PixelShader =
 			float vFade = saturate( vPos.y - 18.0f );
 			float vNormalFade = saturate( saturate( vNormal.y + 0.9f ) * 10.0f );
 
-			float vNoise = tex2D( FoWDiffuse, ( vPos.xz + 0.5f ) / 100.0f  ).r;
-			float FoWDiffuseColor = tex2D( FoWDiffuse, ( vPos.xz + 0.5f ) / 10.0f  ).r;
+			float vNoise = tex2D( MudDiffuse, ( vPos.xz + 0.5f ) / 100.0f  ).r;
+			float FoWDiffuseColor = tex2D( MudDiffuse, ( vPos.xz + 0.5f ) / 10.0f  ).r;
 			
 			float vIsMonsoon = lerp( vFoWColor.b, vFoWColor.g, vFoWOpacity_Time.z ) * 0.70;
 

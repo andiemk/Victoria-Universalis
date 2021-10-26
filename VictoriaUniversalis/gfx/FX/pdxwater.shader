@@ -384,14 +384,14 @@ PixelShader =
 			fresnel = saturate( fresnelBias + ( 1.0f - fresnelBias ) * pow( 1.0f - fresnel, 10.0f ) );
 			fresnel *= (1.0f-vIceFade); //No fresnel when we have snow
 			
-			float3 H = normalize( -vLightDir + -vEyeDir );
+			float3 H = normalize( -vLightDir*0.0f + -vEyeDir + float3(0.0f,1.0f,-0.4f));
 			float vSpecWidth = MAP_SIZE_X*0.9f;
 			
-			float vSpecMultiplier = 3.0f;
-			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) * vSpecMultiplier );
+			float vSpecMultiplier = 0.3f;
+			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) *vSpecMultiplier );
 			
 			refractiveColor = lerp( refractiveColor,  WATER_COLOR, 0.3f+(0.7f*vIceFade) );
-			float3 outColorInit = refractiveColor * ( 1.0f - fresnel ) + reflectiveColor * fresnel;
+			float3 outColorInit = refractiveColor* ( 1.0f - fresnel ) + reflectiveColor * fresnel;
 
 			outColorInit = ApplySnow( outColorInit, Input.pos, normal, vFoWColor, FoWDiffuse );		
 			
@@ -402,17 +402,25 @@ PixelShader =
 			vShadowCoord.xz = vShadowCoord.xz + normal.xz * vRefractionScale * 0.06f;
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_WATER, vShadowCoord, ShadowMap );
 			outColorInit *= fShadowTerm;
-				
+			
+			float3 HeightOverlay = tex2D( HeightTexture, Input.uv ).rgb;
+			
 			outColorInit = ApplyDistanceFog( outColorInit, Input.pos ) * vFoW;
+			
+			outColorInit = (GetOverlay(outColorInit, HeightOverlay, 1.0f)*0.7+ WATER_COLOR*0.3f)*0.8f;
+			
+			outColorInit = float3( lerp( ComposeSpecular( outColorInit, specular * vFoW ), vTIColor.rgb, TI ));
 			
 			float3 outColorFinal = tex2D( WaterColor, Input.uv );
 			outColorFinal = ApplyPaper(outColorFinal, Input.pos, TITexture, true);
 				
 			outColorFinal = ApplyDistanceFog( outColorFinal, Input.pos ) * vFoW;
 			
+			outColorFinal = float3( lerp( outColorFinal, vTIColor.rgb, TI ));
+			
 			float3 outColor = lerp(outColorInit, outColorFinal, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
-			return float4( lerp( ComposeSpecular( outColor, specular * vFoW ), vTIColor.rgb, TI ), 1.0f - waterHeight );
+			return float4(outColor , 1.0f - waterHeight);
 		}
 	]]
 	
@@ -508,31 +516,42 @@ PixelShader =
 			fresnel = saturate( fresnelBias + ( 1.0f - fresnelBias ) * pow( 1.0f - fresnel, 10.0f ) );
 			fresnel *= (1.0f-vIceFade); //No fresnel when we have snow
 			
-			float3 H = normalize( -vLightDir + -vEyeDir );
+			float3 H = normalize( -vLightDir*0.0f + -vEyeDir + float3(0.0f,1.0f,-0.3f));
 			float vSpecWidth = MAP_SIZE_X*0.9f;
 			
-			float vSpecMultiplier = 3.0f;
-			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) * vSpecMultiplier );
+			float vSpecMultiplier = 0.3f;
+			float specular = saturate( pow( saturate( dot( H, normal ) ), vSpecWidth ) *vSpecMultiplier );
 			
-			refractiveColor = lerp( refractiveColor, waterColor.rgb, 0.3f+(0.7f*vIceFade) );
-			float3 outColor = refractiveColor * ( 1.0f - fresnel ) + reflectiveColor * fresnel;
-			
-			outColor = ApplySnow( outColor, Input.pos, normal, vFoWColor, FoWDiffuse );		
+			refractiveColor = lerp( refractiveColor,  WATER_COLOR, 0.3f+(0.7f*vIceFade) );
+			float3 outColorInit = refractiveColor* ( 1.0f - fresnel ) + reflectiveColor * fresnel;
+
+			outColorInit = ApplySnow( outColorInit, Input.pos, normal, vFoWColor, FoWDiffuse );		
 			
 			float vFoW = GetFoW( Input.pos, vFoWColor, FoWDiffuse );
-
+			
 			// Grab the shadow term
 			float4 vShadowCoord = Input.vScreenCoord;
 			vShadowCoord.xz = vShadowCoord.xz + normal.xz * vRefractionScale * 0.06f;
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_WATER, vShadowCoord, ShadowMap );
-			outColor *= fShadowTerm;	
+			outColorInit *= fShadowTerm;
 			
-			outColor = tex2D( WaterColor, Input.uv );
-			outColor = ApplyPaper(outColor, Input.pos, TITexture, true);
+			float3 HeightOverlay = tex2D( HeightTexture, Input.uv ).rgb;
+			
+			outColorInit = ApplyDistanceFog( outColorInit, Input.pos ) * vFoW;
+			
+			outColorInit = GetOverlay(outColorInit, HeightOverlay, 2.0f);
+			
+			outColorInit = float3( lerp( ComposeSpecular( outColorInit, specular * vFoW ), vTIColor.rgb, TI ));
+			
+			float3 outColorFinal = tex2D( WaterColor, Input.uv );
+			outColorFinal = ApplyPaper(outColorFinal, Input.pos, TITexture, true);
+				
+			outColorFinal = ApplyDistanceFog( outColorFinal, Input.pos ) * vFoW;
+			outColorFinal = float3( lerp( outColorFinal, vTIColor.rgb, TI ));
+			
+			float3 outColor = lerp(outColorInit, outColorFinal, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 
-			outColor = ApplyDistanceFog( outColor, Input.pos ) * vFoW;
-			//return float4( waterHeight, 0.0f, 0.0f, 1.0f );
-			return float4( lerp( ComposeSpecular( outColor, specular * vFoW ), vTIColor.rgb, TI ), 1.0f - waterHeight );
+			return float4(outColor , 1.0f - waterHeight);
 		}
 	]]
 	

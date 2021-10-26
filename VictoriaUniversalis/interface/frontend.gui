@@ -460,13 +460,13 @@ guiTypes = {
 				{
 					name ="version_background"
 					spriteType = "GFX_frontend_version_bg"
-					position = { x= 402 y = 115 }
+					position = { x= 402 y = 135 }
 				}
 				
 				
 				instantTextBoxType = {
 					name ="version_label"
-					position = { x= 402 y = 115 }
+					position = { x= 402 y = 135 }
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
 					text = "EU4 v0.00 (TODO)"

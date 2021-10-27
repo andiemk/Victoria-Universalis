@@ -1,0 +1,29 @@
+add_core = SER
+owner = SER
+controller = SER
+capital = "Požarevac"
+base_manpower = 0
+base_production = 0
+base_tax = 3
+is_city = yes
+hre = no
+religion = orthodox
+culture = shtokavian
+1000.1.1 = {
+	set_variable = {
+		which = lower_pop
+		value = 71.784
+	}
+	set_variable = {
+		which = mid_pop
+		value = 33.005
+	}
+	set_variable = {
+		which = upper_pop
+		value = 12.964
+	}
+	add_permanent_province_modifier = {
+		name = copper_display
+		duration = -1
+	}
+}

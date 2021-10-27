@@ -1,7 +1,7 @@
 add_core = ARC
 owner = ARC
 controller = ARC
-capital = "Córdoba"
+capital = "Cordova"
 base_manpower = 0
 base_production = 0
 base_tax = 3

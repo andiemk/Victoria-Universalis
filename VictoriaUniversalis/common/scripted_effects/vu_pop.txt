@@ -10,7 +10,7 @@ vu_pop_recalc = {
 	change_variable = { which = total_pop which = lower_pop }
 	if = {
 		limit = {
-			check_variable = { which = total_pop value = 0.001 }
+			check_variable = { which = total_pop value = 0.001 } # More than one person in the province
 		}
 		vu_pop_recalc_h = { pop=upper }
 		vu_pop_recalc_h = { pop=mid }

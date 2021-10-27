@@ -22,4 +22,8 @@ culture = central_slovak
 		which = upper_pop
 		value = 57.126
 	}
+	add_permanent_province_modifier = {
+		name = assorted_minerals_display
+		duration = -1
+	}
 }

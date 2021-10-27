@@ -4,22 +4,26 @@ controller = PRU
 capital = "Lyck"
 base_manpower = 0
 base_production = 0
-base_tax = 5
+base_tax = 3
 is_city = yes
 hre = no
-religion = reformed
+religion = protestant
 culture = polish
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 128.529
+		value = 82.567
 	}
 	set_variable = {
 		which = mid_pop
-		value = 65.034
+		value = 38.969
 	}
 	set_variable = {
 		which = upper_pop
-		value = 25.326
+		value = 15.27
+	}
+	add_permanent_province_modifier = {
+		name = timber_display
+		duration = -1
 	}
 }

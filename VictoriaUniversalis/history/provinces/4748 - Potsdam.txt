@@ -7,8 +7,8 @@ base_production = 0
 base_tax = 7
 is_city = yes
 hre = yes
-religion = reformed
-culture = saxon
+religion = protestant
+culture = e_low_german
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
@@ -21,5 +21,9 @@ culture = saxon
 	set_variable = {
 		which = upper_pop
 		value = 34.796
+	}
+	add_permanent_province_modifier = {
+		name = wool_display
+		duration = -1
 	}
 }

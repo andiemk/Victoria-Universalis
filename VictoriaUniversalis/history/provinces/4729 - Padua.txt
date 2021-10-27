@@ -22,4 +22,8 @@ culture = venetian
 		which = upper_pop
 		value = 33.968
 	}
+	add_permanent_province_modifier = {
+		name = fruits_display
+		duration = -1
+	}
 }

@@ -6,6 +6,7 @@ base_manpower = 0
 base_production = 0
 base_tax = 14
 is_city = yes
+hre = no
 religion = catholic
 culture = gascon
 1000.1.1 = {
@@ -20,5 +21,9 @@ culture = gascon
 	set_variable = {
 		which = upper_pop
 		value = 67.036
+	}
+	add_permanent_province_modifier = {
+		name = timber_display
+		duration = -1
 	}
 }

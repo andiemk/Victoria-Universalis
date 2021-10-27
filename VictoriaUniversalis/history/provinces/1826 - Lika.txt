@@ -22,4 +22,8 @@ culture = shtokavian
 		which = upper_pop
 		value = 27.372
 	}
+	add_permanent_province_modifier = {
+		name = fish_display
+		duration = -1
+	}
 }

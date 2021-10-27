@@ -21,4 +21,8 @@ culture = basque
 		which = upper_pop
 		value = 26.633
 	}
+	add_permanent_province_modifier = {
+		name = iron_display
+		duration = -1
+	}
 }

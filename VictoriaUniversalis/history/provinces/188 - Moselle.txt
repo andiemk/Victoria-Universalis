@@ -6,8 +6,9 @@ base_manpower = 0
 base_production = 0
 base_tax = 11
 is_city = yes
+hre = no
 religion = catholic
-culture = hessian
+culture = w_central_german
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
@@ -20,5 +21,9 @@ culture = hessian
 	set_variable = {
 		which = upper_pop
 		value = 50.911
+	}
+	add_permanent_province_modifier = {
+		name = coal_display
+		duration = -1
 	}
 }

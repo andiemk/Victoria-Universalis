@@ -6,8 +6,9 @@ base_manpower = 0
 base_production = 0
 base_tax = 8
 is_city = yes
+hre = no
 religion = catholic
-culture = cosmopolitan_french
+culture = francien
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
@@ -20,5 +21,9 @@ culture = cosmopolitan_french
 	set_variable = {
 		which = upper_pop
 		value = 35.705
+	}
+	add_permanent_province_modifier = {
+		name = grain_display
+		duration = -1
 	}
 }

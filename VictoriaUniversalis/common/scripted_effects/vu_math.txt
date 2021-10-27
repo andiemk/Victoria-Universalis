@@ -1,4 +1,4 @@
-vu_pow = {
+vu_pow = { # This function is work in progress. Input a base and a power and it will raise the base to that power
 	set_variable = {
 		which = exponent
 		which = $EXPONENT$
@@ -67,7 +67,7 @@ vu_pow = {
 	}
 	
 }
-vu_getbinary = {
+vu_getbinary = { # Converts input into binary number and saves each digit into a variable
 	set_variable = { which = $INPUT$_binary7 	   value = 0 } # 2^7
 	set_variable = { which = $INPUT$_binary6 	   value = 0 } # 2^6
 	set_variable = { which = $INPUT$_binary5 	   value = 0 } # 2^5

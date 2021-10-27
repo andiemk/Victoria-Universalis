@@ -4,22 +4,26 @@ controller = PRU
 capital = "Berlin"
 base_manpower = 0
 base_production = 0
-base_tax = 9
+base_tax = 14
 is_city = yes
 hre = yes
-religion = reformed
-culture = saxon
+religion = protestant
+culture = e_central_german
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
-		value = 210.663
+		value = 308.526
 	}
 	set_variable = {
 		which = mid_pop
-		value = 112.681
+		value = 170.03
 	}
 	set_variable = {
 		which = upper_pop
-		value = 43.677
+		value = 65.748
+	}
+	add_permanent_province_modifier = {
+		name = fruits_display
+		duration = -1
 	}
 }

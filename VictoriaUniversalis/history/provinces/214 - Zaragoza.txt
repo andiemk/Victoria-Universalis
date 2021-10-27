@@ -7,7 +7,7 @@ base_production = 0
 base_tax = 8
 is_city = yes
 religion = catholic
-culture = aragonese
+culture = n_castilian
 1000.1.1 = {
 	set_variable = {
 		which = lower_pop
@@ -20,5 +20,9 @@ culture = aragonese
 	set_variable = {
 		which = upper_pop
 		value = 35.597
+	}
+	add_permanent_province_modifier = {
+		name = iron_display
+		duration = -1
 	}
 }

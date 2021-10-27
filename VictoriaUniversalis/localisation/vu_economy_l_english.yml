@@ -1,10 +1,10 @@
 ﻿l_english:
  
- fruits_veggies_display: "Orchard"
- desc_fruits_veggies_display: "Fruits Produced: §T[Root.fruits_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.fruits_price.GetValue]§!¤"
+ fruits_display: "Orchard"
+ desc_fruits_display: "Fruits Produced: §T[Root.fruits_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.fruits_price.GetValue]§!¤"
  
- fruits_veggies_display: "Vegetable Farm"
- desc_fruits_veggies_display: "Vegetables Produced: §T[Root.veggies_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.veggies_price.GetValue]§!¤"
+ veggies_display: "Vegetable Farm"
+ desc_veggies_display: "Vegetables Produced: §T[Root.veggies_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.veggies_price.GetValue]§!¤"
 
  sulfur_display: "Sulfur Mine"
  desc_sulfur_display: "Sulfur Produced: §T[Root.sulfur_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.sulfur_price.GetValue]§!¤"
@@ -33,7 +33,7 @@
  grain_display: "Grain Farm"
  desc_grain_display: "Grain Produced: §T[Root.grain_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.grain_price.GetValue]§!¤ [Root.total_trade_value_binary0.GetValue] [Root.total_trade_value.GetValue]"
 
- livestock_display: "Ranch"
+ livestock_display: "Livestock Ranch"
  desc_livestock_display: "Livestock Produced: §T[Root.livestock_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.livestock_price.GetValue]§!¤"
 
  salt_display: "Salt Mine"
@@ -45,10 +45,10 @@
  copper_display: "Copper Mine"
  desc_copper_display: "Copper Produced: §T[Root.copper_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
  
- copper_display: "Aluminum Mine"
- desc_copper_display: "Aluminum Produced: §T[Root.copper_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
+ aluminum_display: "Aluminum Mine"
+ desc_aluminum_display: "Aluminum Produced: §T[Root.copper_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.copper_price.GetValue]§!¤"
 
- spices_display: "Spices"
+ spices_display: "Spice Plantation"
  desc_spices_display: "Spices Produced: §T[Root.spices_produced.GetValue]§!\nCurrent Price: §Y[Root.Owner.spices_price.GetValue]§!¤"
 
  tea_display: "Tea Plantation"

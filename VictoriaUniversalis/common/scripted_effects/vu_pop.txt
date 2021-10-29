@@ -24,6 +24,23 @@ vu_pop_recalc_h = {
 }
 
 vu_pop_grow = {
+    set_variable = {
+        which = pop_grow_rate
+        value = 1.1
+    }
+    multiply_variable = {
+        which = upper_pop
+        which = pop_growth_rate
+    }
+    multiply_variable = {
+        which = mid_pop
+        which = pop_growth_rate
+    }
+    multiply_variable = {
+        which = lower_pop
+        which = pop_growth_rate
+    }
+    vu_pop_recalc = yes
 }
 vu_pop_grow_h = {
 }

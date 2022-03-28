@@ -233,7 +233,7 @@ guiTypes = {
 				{
 					name ="frontend_top_bg"
 					spriteType = "GFX_frontend_top_bg"
-					position = { x= -1024 y = 0 }
+					position = { x= -2048 y = 0 }
 					###Orientation = "CENTER_UP"
 				}
 
@@ -256,15 +256,23 @@ guiTypes = {
 				upsound = ""
 				downsound = ""
 				fullscreen=yes
-				Orientation = "UPPER_LEFT"
+				Orientation = "CENTER"
+
+				#iconType =
+				#{
+				#	name ="frontend_dev_logo"
+				#	spriteType = "GFX_frontend_dev_logo"
+				#	position = { x= -155 y = 15 }
+				#	Orientation = "UPPER_RIGHT"
+				#}
 
 				iconType =
 				{
-					name ="frontend_dev_logo"
-					spriteType = "GFX_frontend_dev_logo"
-					position = { x= -155 y = 15 }
-					Orientation = "UPPER_RIGHT"
+					name ="frontend_game_logo"
+					spriteType = "GFX_frontend_game_logo"
+					position = { x= -317 y = -119 }
 				}
+
 
 			}
 
@@ -272,9 +280,9 @@ guiTypes = {
 			windowType = {
 				name ="new_content"
 				backGround=""
-				position = { x = -320 y = 1024 }
-				show_position = { x = -320 y = 1024 }
-				hide_position = { x = 320 y = 1024 }
+				position = { x = -10320 y = 1024 }
+				show_position = { x = -10320 y = 1024 }
+				hide_position = { x = -9680 y = 1024 }
 				animation_type = "decelerated"
 				animation_time = 300
 				size = { x=300 y =20}
@@ -345,9 +353,9 @@ guiTypes = {
 				name ="mainmenu_panel_bottom"
 				backGround=""
 				
-				position = { x = -552 y = -84 }
-				show_position = { x = -552 y = -84 }
-				hide_position = { x = -552 y = 100 }
+				position = { x=0 y =-1 }
+				show_position = { x=0 y =-1 }
+				hide_position = { x=0 y = 200 }
 				animation_type = "decelerated"
 				animation_time = 300
 				size = { x=1024 y =768}
@@ -358,18 +366,19 @@ guiTypes = {
 				upsound = ""
 				downsound = ""
 				fullscreen=yes
-				Orientation = "CENTER"
-				
+				Orientation = "CENTER_DOWN"
+
 				iconType =
 				{
-					name ="frontend_game_logo"
-					spriteType = "GFX_frontend_game_logo"
-					position = { x= 236 y = -100 }
+					name ="frontend_bottom_bg"
+					spriteType = "GFX_frontend_bottom_small_bg"
+					position = { x= -2048 y = -90 }
 				}
+				
 
 				guiButtonType = {
 					name = "single_player_button"
-					position = { x = 517 y = 408 }
+					position = { x = -36 y = -220 }
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_SINGLE_PLAYER"
 					buttonFont = "vic_29_black"
@@ -392,7 +401,7 @@ guiTypes = {
 
 				windowType = {
 					name ="continue_container"
-					position = { x= 202 y = 408 }
+					position = { x= -351 y = -220 }
 
 					iconType =
 					{
@@ -431,11 +440,95 @@ guiTypes = {
 						spriteType = "GFX_ironman_icon"
 						position = { x= 275 y = 10 }
 					}
+
+				}
+
+				#iconType =
+				#{
+				#	name ="version_background"
+				#	spriteType = "GFX_frontend_version_bg"
+				#	position = { x= 402 y = 135 }
+				#}
+				
+				
+				instantTextBoxType = {
+					name ="version_label"
+					if_resolution = {
+						max_width = 1024
+						position = { x= -492 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1025
+						max_width = 1152
+						position = { x= -556 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1153
+						max_width = 1280
+						position = { x= -620 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1281
+						max_width = 1366
+						position = { x= -663 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1367
+						max_width = 1400
+						position = { x= -760 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1401
+						max_width = 1600
+						position = { x= -780 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1601
+						max_width = 1680
+						position = { x= -840 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1681
+						max_width = 1792
+						position = { x= -876 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1793
+						max_width = 1856
+						position = { x= -908 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1857
+						max_width = 1920
+						position = { x= -940 y = -39 }
+					}
+					if_resolution = {
+						min_width = 1921
+						max_width = 2048
+						position = { x= -1004 y = -39 }
+					}
+					if_resolution = {
+						min_width = 2049
+						max_width = 2560
+						position = { x= -1260 y = -39 }
+					}
+					if_resolution = {
+						min_width = 2561
+						max_width = 3840
+						position = { x= -1900 y = -39 }
+					}
+						
+					font = "vic_18"
+					borderSize = {x = 0 y = 0}
+					text = "EU4 v0.00 (TODO)"
+					format = left
+					maxWidth = 300
+					maxHeight = 20
 				}
 
 				guiButtonType = {
 					name = "multi_player_button"
-					position = { x = 721 y = 408}
+					position = { x = 168 y = -220}
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_MULTI_PLAYER"
 					buttonFont = "vic_29_black"
@@ -456,24 +549,7 @@ guiTypes = {
 				#}
 				###
 
-				iconType =
-				{
-					name ="version_background"
-					spriteType = "GFX_frontend_version_bg"
-					position = { x= 402 y = 135 }
-				}
 				
-				
-				instantTextBoxType = {
-					name ="version_label"
-					position = { x= 402 y = 135 }
-					font = "vic_18"
-					borderSize = {x = 0 y = 0}
-					text = "EU4 v0.00 (TODO)"
-					format = centre
-					maxWidth = 300
-					maxHeight = 20
-				}
 
 				guiButtonType = {
 					name = "nudge_button"
@@ -485,7 +561,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "tutorial_button"
-					position = { x = 145 y = 470 }
+					position = { x = -408 y = -157 }
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_TUTORIAL"
 					buttonFont = "vic_29_black"
@@ -507,7 +583,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "credits_button"
-					position = { x = 349 y = 470	 }
+					position = { x = -204 y = -157	 }
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_CREDITS"
 					buttonFont = "vic_29_black"
@@ -515,7 +591,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "settings_button"
-					position = { x = 553 y = 470 }
+					position = { x = 0 y = -157 }
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_OPTIONS"
 					buttonFont = "vic_29_black"
@@ -523,7 +599,7 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "exit_button"
-					position = { x = 757 y = 470 }
+					position = { x = 204 y = -157 }
 					quadTextureSprite ="GFX_frontend_basic_button"
 					buttonText = "FE_EXIT"
 					buttonFont = "vic_29_black"
@@ -569,12 +645,7 @@ guiTypes = {
 				fullScreen = no
 				Orientation = "CENTER_DOWN"
 				
-				iconType =
-				{
-					name ="frontend_bottom_bg"
-					spriteType = "GFX_frontend_bottom_small_bg"
-					position = { x= -472 y = -6 }
-				}
+				
 
 				iconType = {
 					name = "background"

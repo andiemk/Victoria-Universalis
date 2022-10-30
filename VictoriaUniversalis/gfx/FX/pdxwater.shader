@@ -411,7 +411,7 @@ PixelShader =
 			
 			outColorInit = float3( lerp( ComposeSpecular( outColorInit, specular * vFoW ), vTIColor.rgb, TI ));
 			
-			float3 outColorFinal = tex2D( WaterColor, Input.uv );
+			float3 outColorFinal = tex2D( WaterColor, Input.uv ).rgb;
 			outColorFinal = ApplyPaper(outColorFinal, Input.pos, TITexture, true);
 				
 			outColorFinal = ApplyDistanceFog( outColorFinal, Input.pos ) * vFoW;

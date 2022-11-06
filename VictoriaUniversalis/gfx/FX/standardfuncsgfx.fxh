@@ -319,29 +319,33 @@ float3 ApplyWaterSnow( float3 vColor, float3 vPos, inout float3 vNormal, float4 
 // }
 const static float Paper_HDiv = PAPER_HEIGHT_MAX - PAPER_HEIGHT_MIN;
 const static float Paper_HSub = PAPER_HEIGHT_MIN / Paper_HDiv;
+const static float Detail_HDiv = DETAIL_HEIGHT_MAX - DETAIL_HEIGHT_MIN;
+const static float Detail_HSub = DETAIL_HEIGHT_MAX / Detail_HDiv;
+const static float PAPER_LERP = saturate(vCamPos.y / Paper_HDiv - Paper_HSub);
+const static float DETAIL_LERP = saturate(vCamPos.y / Detail_HDiv - Detail_HSub);
 
 float4 PaperRed(float3 pos, in sampler2D TItex)
 {
 	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
-	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.r, color.r, color.r, color.r), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.r, color.r, color.r, color.r), PAPER_LERP);
 }
 
 float4 PaperGreen(float3 pos, in sampler2D TItex)
 {
 	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
-	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.g, color.g, color.g, color.g), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.g, color.g, color.g, color.g), PAPER_LERP);
 }
 
 float4 PaperBlue(float3 pos, in sampler2D TItex)
 {
 	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
-	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.b, color.b, color.b, color.b), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.b, color.b, color.b, color.b), PAPER_LERP);
 }
 
 float4 PaperAlpha(float3 pos, in sampler2D TItex)
 {
 	float4 color = tex2D( TItex, ( pos.xz + 0.5f ) / float2( 3200.0f, 1280.0f ) );
-	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.a, color.a, color.a, color.a), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	return lerp(float4(0.5, 0.5, 0.5, 0.5), float4(color.a, color.a, color.a, color.a), PAPER_LERP);
 
 }
 
@@ -359,7 +363,7 @@ float3 BlendOverlay(float3 original, float3 blend)
 }
 float BlendTransparencyH(float original, float blend)
 {
-	float Transparency = lerp(0.0f, PAPER_OPACITY, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
+	float Transparency = lerp(0.0f, PAPER_OPACITY, PAPER_LERP);
 	
 	return ((1 - Transparency) * original + Transparency * blend);
 }
@@ -430,10 +434,6 @@ float3 ApplyPaper(float3 color, float3 pos, in sampler2D TItex, bool isWater)
 // 	else { return color; }
 // }
 
-float ApplyPaperDist(float color, float base)
-{
-	return lerp(base, color, saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
-}
 
 #endif // STANDARDFUNCS_H_
 ]]

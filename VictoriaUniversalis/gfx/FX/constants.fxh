@@ -35,8 +35,9 @@ static const float	LIGHT_HDR_RANGE 			= 0.8f;
 // ------------------    TERRAIN        -------------------------
 // --------------------------------------------------------------
 
-static const float 	TERRAIN_TILE_FREQ 					= 128.0f;
-static const float 	TERRAIN_TILE_FREQ_PAPER 			= 32.0f;
+static const float 	TERRAIN_TILE_FREQ 					= 32.0f;
+static const float 	TERRAIN_DETAIL_TILE_FREQ 			= 96.0f;
+
 
 // MILD_WINTER_VALUE = ###,						defines.lua   (reload defines)
 // NORMAL_WINTER_VALUE = ##,					defines.lua   (reload defines)
@@ -53,9 +54,11 @@ static const float 	BORDER_TILE					= 0.4f;
 // Snow fade									standardfuncsgfx.fxh   
 // 	float vSnow = saturate( saturate( vNoise - ( 1.0f - vIsSnow ) ) * 5.0f );
 
-static const float 	TREE_SEASON_MIN 			= 0.5f;
-static const float 	TREE_SEASON_FADE_TWEAK 		= 2.5f;
+static const float 	TREE_SEASON_MIN 		       	= 0.5f;
+static const float 	TREE_SEASON_FADE_TWEAK 	    	= 2.5f;
 static const float3 TERRAIN_COLOR					= float3( 0.580, 0.545, 0.431 );
+static const float  DETAIL_HEIGHT_MIN				= 1.0f;
+static const float  DETAIL_HEIGHT_MAX				= 200.0f;
 
 
 // --------------------------------------------------------------
@@ -127,6 +130,7 @@ static const float PAPER_HEIGHT_MIN				= 400.0f;  // no paper effect below this
 static const float PAPER_HEIGHT_MAX				= 500.0f;  // full paper effect above this
 static const float PAPER_OPACITY				= 0.4f;  // opacity of additional paper layer over land
 static const float PAPER_MAPTEXT_OPACITY		= 0.65f;
+static const float PAPER_TILE_FREQ 			    = 32.0f;
 
 
 // static const float LINE1_DISTANCE				= 144.0f;

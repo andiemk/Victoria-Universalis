@@ -13,15 +13,6 @@ PixelShader =
 {
 	Samplers = 
 	{
-		TerrainDiffuse = 
-		{
-			AddressV = "Wrap"
-			MagFilter = "Linear"
-			AddressU = "Wrap"
-			Index = 0
-			MipFilter = "Linear"
-			MinFilter = "Linear"
-		}
 		DiffuseMap = 
 		{
 			AddressV = "Wrap"
@@ -284,7 +275,7 @@ PixelShader =
 		float4 main( VS_OUTPUT In ) : PDX_COLOR
 		{
 			float4 vDiffuseColor = tex2D( DiffuseMap, In.vTexCoord0_TintUV.xy );
-			clip( vDiffuseColor.a - lerp(0.5f, 1.0f, saturate(vCamPos.y / Paper_HDiv - Paper_HSub)) );
+			clip( vDiffuseColor.a - 0.5f );
 			float4 vFoWColor = GetFoWColor( In.vPos, FoWTexture);	
 			float TI = GetTI( vFoWColor );	
 			float4 vTIColor = GetTIColor( In.vPos, TITexture );
@@ -307,17 +298,13 @@ PixelShader =
 			vColor = ApplySnowTree( vColor, In.vPos, vNormal, vFoWColor, FoWDiffuse );	
 			
 			vColor = CalculateLighting( vColor, normalize( vNormal ) );
-
+			
 			// Grab the shadow term
 			float fShadowTerm = GetShadowScaled( SHADOW_WEIGHT_TREE, In.vScreenCoord, ShadowMap );	
 			vColor *= fShadowTerm;
 			vColor = ApplyDistanceFog( vColor, In.vPos, GetFoWColor( In.vPos, FoWTexture), FoWDiffuse );
-			float4 vOut = float4( lerp( ComposeSpecular( vColor, 0.0f ), vTIColor.rgb, TI ), 1.0f );
-			float3 vOutFinal = ApplyPaper(vOut, In.vPos, TITexture, false);
-			//float3 diffuseColor = tex2D( TerrainDiffuse, In.vPos * float2(( MAP_SIZE_X / 32.0f ), ( MAP_SIZE_Y / 32.0f ) ) ).rgb;
-			return float4(vOutFinal.rgb, 1.0f);
-			
-			
+			float4 vColorOut = float4( lerp( ComposeSpecular( vColor, 0.0f ), vTIColor.rgb, TI ), 1.0f );
+			return lerp(vColorOut, float4(0.0f,0.0f,0.0f,0.0f), saturate(vCamPos.y / Paper_HDiv - Paper_HSub));
 		}
 	]]
 
@@ -350,8 +337,8 @@ PixelShader =
 
 BlendState BlendState
 {
-	AlphaTest = no
-	BlendEnable = no
+	AlphaTest = yes
+	BlendEnable = yes
 	WriteMask = "RED|GREEN|BLUE"
 }
 

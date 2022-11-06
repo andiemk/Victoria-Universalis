@@ -90,12 +90,13 @@ float4 RestoreScene( VS_OUTPUT_BLOOM Input, float3 color )
 
 	color = Levels( color, LevelValue.x, LevelValue.y );
 
-	return float4( color, 1.0f );
+	return lerp(float4( color, 1.0f ),float4( color, 0.0f ),PAPER_LERP);
 }
 
 float3 SampleBloom( in sampler2D InSampler, in VS_OUTPUT_BLOOM Input )
 {
-	float3 color = tex2D( InSampler, Input.uvBloom ).rgb * vWeights[3]*0.001f;
+	/* 
+	float3 color = tex2D( InSampler, Input.uvBloom ).rgb * vWeights[3];
 
 	color += vWeights[0] 
 			* ( tex2D( InSampler, Input.uvBloom2_0.xy ).rgb
@@ -108,7 +109,8 @@ float3 SampleBloom( in sampler2D InSampler, in VS_OUTPUT_BLOOM Input )
 				+ tex2D( InSampler, Input.uvBloom2_2.zw ).rgb );
 	
 	color /= vWeights[3] + 2.0f * vWeights[0] + 2.0f * vWeights[1] + 2.0f * vWeights[2];
-	return color;
+	*/
+	return float3(0.0f,0.0f,0.0f);
 }
 ]]
 
